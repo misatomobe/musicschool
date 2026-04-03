@@ -8,46 +8,41 @@
     <meta name="robots" content="noindex">
 </head>
 <body>
-    <div id="container">
+    <div class="l-container">
 
         <!-- header -->
         <header class="l-header">
             <div class="l-header__inner">
-                <div class="header__logo">
-                    <h1>
-                        <a href="#">
-                            <span class="l-header__logo-text">
-                                きたむらミュージックスクール
-                            </span>
-                        </a>
-                    </h1>
-                </div>
-                <div class="l-header__nav pc">
-                    <nav>
-                        <ul class="l-header-nav__lists">
+                <h1 class="c-logo l-header__logo">
+                    <a href="#">
+                        <span class="c-logo__text">
+                            きたむらミュージックスクール
+                        </span>
+                    </a>
+                </h1>
+                
+                <nav class="l-header__nav u-pc-only">
+                    <ul class="l-header__nav-list">
+                        <li><a href="#plan">料金</a></li>
+                        <li><a href="#blog_list">ブログ</a></li>
+                        <li><a href="#blog">卒業実績</a></li>
+                        <li><a href="#contact_form">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- SPハンバーガーメニュー用 -->
+                <div class="l-header__hamburger u-sp-only">
+                    <button class="c-hamburger">
+                        <span class="c-hamburger__line"></span>
+                    </button>
+                    <!-- SPナビ -->
+                    <nav class="l-header__sp-nav">
+                        <ul class="l-header__sp-nav-list">
                             <li><a href="#plan">料金</a></li>
                             <li><a href="#blog_list">ブログ</a></li>
                             <li><a href="#blog">卒業実績</a></li>
-                            <li><a href="#contact_form">お問い合わせ</a></li>
                         </ul>
                     </nav>
-                </div>
-                
-                <!-- SPハンバーガーメニュー用 -->
-                <div class="l-header__humburger sp">
-                    <button class="l-humburger-block hamburger">
-                        <span class="l-humburger-line"></span>
-                    </button>
-                    <!-- SPナビ -->
-                    <div class="l-header__sp-nav">
-                        <nav>
-                            <ul class="l-header__sp-nav__lists">
-                                <li><a href="#plan">料金</a></li>
-                                <li><a href="#blog_list">ブログ</a></li>
-                                <li><a href="#blog">卒業実績</a></li>
-                            </ul>
-                        </nav>
-                    </div>
                 </div>
             </div>
         </header>
