@@ -1,13 +1,15 @@
+@use "../../foundation/variables";
+
 // =====================================
 // common（共通設定）
 // =====================================
 // PC、SPの非表示
-@include sp {
+@include mixin.sp {
   .pc {
     display: none !important;
   }
 }
-@include pc {
+@include mixin.pc {
   .sp {
     display: none !important;
   }
@@ -27,7 +29,7 @@ img {
 section {
   scroll-margin-top: 8rem;
 
-  @include sp {
+  @include mixin.sp {
     scroll-margin-top: 5rem;
   }
 }
@@ -75,14 +77,14 @@ button:hover {
 
 .pc-only {
   display: none;
-  @include pc {
+  @include mixin.pc {
     display: inline;
   }
 }
 
 .sp-only {
   display: none;
-  @include sp {
+  @include mixin.sp {
     display: inline;
   }
 }
@@ -104,7 +106,7 @@ body.is-fixed .top-back-btn {
   h2 {
     font-size: 3rem;
     line-height: calc(33 / 30);
-    color: $main-color;
+    color: variables.$main-color;
     letter-spacing: 0.3em;
     margin-bottom: 0.8rem;
   }
@@ -112,7 +114,7 @@ body.is-fixed .top-back-btn {
   p {
     font-size: 2rem;
     line-height: calc(33 / 20);
-    color: $font-color;
+    color: mixin.$font-color;
     letter-spacing: 0.3em;
   }
 }
