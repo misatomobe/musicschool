@@ -94,6 +94,7 @@ body.is-fixed {
   align-items: center;
   justify-content: center;
   z-index: 10000;
+  gap: 1rem;
 }
 .l-header__hamburger .c-hamburger .c-hamburger__line,
 .l-header__hamburger .c-hamburger .c-hamburger__line::before,
