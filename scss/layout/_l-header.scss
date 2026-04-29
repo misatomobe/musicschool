@@ -44,6 +44,52 @@
             width: 7.1rem;
             height: 5rem;
             background: $main-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+
+            // 三本線
+            .c-hamburger__line,
+            .c-hamburger__line::before,
+            .c-hamburger__line::after {
+                content: "";
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 3.2rem;
+                height: 0.4rem;
+                background: $main-color;
+                border-radius: 10px;
+                transition: 0.3s;
+            }
+            // 中央
+            .c-hamburger__line {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            // 上
+            .c-hamburger__line::before {
+                top: -1.2rem;
+            }
+            // 下
+            .c-hamburger__line::after {
+                top: 1.2rem;
+            }
+            // メニューが開いた時の三本線
+            &.active {
+                .c-hamburger__line {
+                    background: transparent;
+                }
+                .c-hamburger__line::before {
+                    top: 50%;
+                    transform: translateY(-50%) rotate(45deg);
+                }
+                .c-hamburger__line::after {
+                    top: 50%;
+                    transform: translateY(-50%) rotate(-45deg);
+                }
+            }
         }
     }
 }
