@@ -1,0 +1,166 @@
+html {
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  word-break: break-all;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.8333333333;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 0;
+}
+
+html.is-fixed,
+body.is-fixed {
+  overflow: hidden;
+}
+
+.l-header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  background: #fff;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.l-header__inner {
+  padding: 0 2rem;
+}
+
+.l-header__logo a {
+  display: flex;
+  align-items: center;
+  column-gap: 0.95rem;
+  height: 5rem;
+  transition: opacity 0.4s ease;
+}
+.l-header__logo a:hover {
+  opacity: 0.6;
+}
+
+.l-header__logo-image {
+  width: 2rem;
+}
+
+@media (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .sp {
+    display: none !important;
+  }
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.inner {
+  max-width: 88rem;
+  margin: 0 auto;
+}
+
+section {
+  scroll-margin-top: 8rem;
+}
+@media (max-width: 767px) {
+  section {
+    scroll-margin-top: 5rem;
+  }
+}
+
+.ib-span {
+  display: inline-block;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.sp-br,
+.pc-br,
+.tb-br {
+  display: none;
+}
+
+@media (max-width: 765px) {
+  .sp-br {
+    display: inline;
+  }
+}
+@media (min-width: 766px) and (max-width: 1079px) {
+  .tb-br {
+    display: inline;
+  }
+}
+@media (min-width: 1080px) {
+  .pc-br {
+    display: inline;
+  }
+}
+.no-wrap {
+  white-space: nowrap;
+}
+
+.pc-only {
+  display: none;
+}
+@media (min-width: 768px) {
+  .pc-only {
+    display: inline;
+  }
+}
+
+.sp-only {
+  display: none;
+}
+@media (max-width: 767px) {
+  .sp-only {
+    display: inline;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+body.is-fixed .top-back-btn {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none;
+}
+
+.common-title {
+  text-align: center;
+}
+.common-title h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+  color: #CB0000;
+  letter-spacing: 0.3em;
+  margin-bottom: 0.8rem;
+}
+.common-title p {
+  font-size: 2rem;
+  line-height: 1.65;
+  color: #000;
+  letter-spacing: 0.3em;
+}
+
+h4 {
+  font-size: 1.6rem;
+  line-height: 1.5625;
+}

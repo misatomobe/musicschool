@@ -1,4 +1,5 @@
 @use "../../foundation/variables";
+@use "../../foundation/mixin";
 
 // =====================================
 // common（共通設定）
@@ -114,7 +115,7 @@ body.is-fixed .top-back-btn {
   p {
     font-size: 2rem;
     line-height: calc(33 / 20);
-    color: mixin.$font-color;
+    color: variables.$font-color;
     letter-spacing: 0.3em;
   }
 }
