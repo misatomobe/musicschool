@@ -105,10 +105,12 @@
             // 上
             .c-hamburger__line::before {
                 top: -1.2rem;
+
             }
             // 下
             .c-hamburger__line::after {
                 top: 1.2rem;
+
             }
             // メニューが開いた時の三本線
             &.active {
