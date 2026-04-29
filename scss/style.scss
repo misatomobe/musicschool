@@ -2,7 +2,12 @@
 @use "./foundation/mixin";
 @use "./foundation/base";
 
+// layout（配置）
 @use "./layout/l-header";
 @use "./layout/l-footer";
 
+// component（部品）
+@use "./object/component/c-logo";
+
+// utility（補助）
 @use "./object/utility/utility";

@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  font-family: "Yu Gothic", "YuGothic", "Hiragino Sans", "Noto Sans JP", sans-serif;
   font-size: 1.8rem;
   line-height: 1.8333333333;
   font-weight: 400;
@@ -25,14 +25,18 @@ body.is-fixed {
   height: 5rem;
   display: flex;
   background: #fff;
+  justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  padding: 0;
 }
 .l-header__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 2rem;
 }
 .l-header__logo a {
@@ -44,9 +48,6 @@ body.is-fixed {
 }
 .l-header__logo a:hover {
   opacity: 0.6;
-}
-.l-header__logo-image {
-  width: 2rem;
 }
 .l-header__sp-nav {
   position: fixed;
@@ -94,7 +95,6 @@ body.is-fixed {
   align-items: center;
   justify-content: center;
   z-index: 10000;
-  gap: 1rem;
 }
 .l-header__hamburger .c-hamburger .c-hamburger__line,
 .l-header__hamburger .c-hamburger .c-hamburger__line::before,
@@ -130,6 +130,10 @@ body.is-fixed {
 .l-header__hamburger .c-hamburger.active .c-hamburger__line::after {
   top: 50%;
   transform: translateY(-50%) rotate(-45deg);
+}
+
+.c-logo__image {
+  width: 2.55rem;
 }
 
 @media (max-width: 767px) {
