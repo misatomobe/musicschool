@@ -2,7 +2,7 @@
   // ハンバーガーメニュー
   // ==============================
   const hamburger = document.querySelector('.c-hamburger');
-  const spNav = document.querySelector('.sp-nav');
+  const spNav = document.querySelector('.l-header__sp-nav');
 
   if (hamburger && spNav) {
     hamburger.addEventListener('click', () => {

@@ -31,6 +31,39 @@
     &__logo-image {
         width: 2rem;
     }
+    // SPナビ
+    &__sp-nav {
+        position: fixed;
+        width: 30rem;
+        top: 5rem;
+        right: 0;
+        overflow: hidden;
+        transform: translateX(100%);
+        transition: transform 0.4s ease;
+        z-index: 2000;
+        &-list {
+            margin: 0;
+            text-align: left;
+            list-style: none;
+            font-weight: 500;
+            a {
+                color: $font-color02;
+                text-decoration: none;
+                padding: 1.2rem 0 1.3rem 2rem;
+                transition: background-color 0.3s ease, opacity 0.3s ease;
+
+                &::hover {
+                    background-color: $font-color;
+                    opacity: 0.7;
+                }
+            }
+        }
+        &.active {
+            display: block;
+            background: $main-color;
+            transform: translateX(0);
+        }
+    }
 
     // ハンバーガーメニュー
     &__hamburger {
@@ -59,9 +92,10 @@
                 margin: 0 auto;
                 width: 3.2rem;
                 height: 0.4rem;
-                background: $main-color;
+                background: $font-color02;
                 border-radius: 10px;
                 transition: 0.3s;
+                display: block;
             }
             // 中央
             .c-hamburger__line {
@@ -93,3 +127,4 @@
         }
     }
 }
+
