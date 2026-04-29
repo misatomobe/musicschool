@@ -1,0 +1,123 @@
+// =====================================
+// common（共通設定）
+// =====================================
+// PC、SPの非表示
+@include sp {
+  .pc {
+    display: none !important;
+  }
+}
+@include pc {
+  .sp {
+    display: none !important;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.inner {
+  max-width: 88rem;
+  margin: 0 auto;
+}
+
+section {
+  scroll-margin-top: 8rem;
+
+  @include sp {
+    scroll-margin-top: 5rem;
+  }
+}
+
+.ib-span {
+  display: inline-block;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+// 改行制御
+.sp-br,
+.pc-br,
+.tb-br {
+  display: none;
+}
+
+// sp
+@media (max-width: 765px) {
+  .sp-br {
+    display: inline;
+  }
+}
+
+// タブレット
+@media (min-width: 766px) and (max-width: 1079px) {
+  .tb-br { 
+    display: inline;
+  }
+}
+
+// pc
+@media (min-width: 1080px) {
+  .pc-br { 
+    display: inline;
+  }
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.pc-only {
+  display: none;
+  @include pc {
+    display: inline;
+  }
+}
+
+.sp-only {
+  display: none;
+  @include sp {
+    display: inline;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+body.is-fixed .top-back-btn {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none;
+}
+
+// common-title
+.common-title {
+  text-align: center;
+  
+  h2 {
+    font-size: 3rem;
+    line-height: calc(33 / 30);
+    color: $main-color;
+    letter-spacing: 0.3em;
+    margin-bottom: 0.8rem;
+  }
+  
+  p {
+    font-size: 2rem;
+    line-height: calc(33 / 20);
+    color: $font-color;
+    letter-spacing: 0.3em;
+  }
+}
+
+h4 {
+  font-size: 1.6rem;
+  line-height: calc(25 / 16);
+}
