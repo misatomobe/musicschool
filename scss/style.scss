@@ -1,8 +1,8 @@
-@use "./foundation/_variables";
-@use "./foundation/_mixin";
-@use "./foundation/_base";
+@use "./foundation/variables" as *;
+@use "./foundation/mixin";
+@use "./foundation/base";
 
-@use "./layout/_l-header";
-@use "./layout/_l-footer";
+@use "./layout/l-header";
+@use "./layout/l-footer";
 
-@use "./object/utility/_utility";
+@use "./object/utility/utility";
