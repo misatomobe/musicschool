@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
@@ -37,6 +38,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+button {
+  border: none;
+  outline: transparent;
+  outline: none;
+}
+
+/* =========================
+   HEADER
+========================= */
 .l-header {
   width: 100%;
   height: 5rem;
@@ -74,6 +84,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 2rem;
   }
 }
+.l-header {
+  /* =========================
+     LOGO
+  ========================= */
+}
 .l-header__logo a {
   display: flex;
   align-items: center;
@@ -83,6 +98,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .l-header__logo a:hover {
   opacity: 0.6;
+}
+.l-header {
+  /* =========================
+     PC NAV
+  ========================= */
 }
 .l-header__nav {
   display: none;
@@ -99,55 +119,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 .l-header__nav ul a {
   font-size: 1.7rem;
-  line-height: 1.9411764706;
   font-weight: 600;
   color: #000;
-}
-@media (min-width: 769px) and (max-width: 1030px) {
-  .l-header__nav ul a {
-    font-size: 1.5rem;
-  }
 }
 .l-header__nav ul a:hover {
   opacity: 0.7;
 }
 .l-header__nav ul .is-contact a {
   font-size: 1.5rem;
-  line-height: 2.2;
   background: #CB0000;
   color: #fff;
   padding: 1rem 3rem;
+}
+.l-header {
+  /* =========================
+     SP NAV
+  ========================= */
 }
 .l-header__sp-nav {
   position: fixed;
   width: 30rem;
   top: 5rem;
   right: 0;
-  overflow: hidden;
   transform: translateX(100%);
   transition: transform 0.4s ease;
+  background: #CB0000;
   z-index: 2000;
+}
+.l-header__sp-nav.active {
+  transform: translateX(0);
 }
 .l-header__sp-nav-list {
   margin: 0;
-  text-align: left;
   list-style: none;
   font-weight: 500;
 }
 .l-header__sp-nav-list a {
   color: #fff;
-  text-decoration: none;
+  display: block;
   padding: 1.2rem 0 1.3rem 2rem;
-  transition: background-color 0.3s ease, opacity 0.3s ease;
+  transition: 0.3s;
 }
-.l-header__sp-nav-list a::hover {
-  background-color: #000;
+.l-header__sp-nav-list a:hover {
   opacity: 0.7;
 }
-.l-header__sp-nav.active {
-  display: block;
-  background: #CB0000;
-  transform: translateX(0);
+.l-header {
+  /* =========================
+     HAMBURGER
+  ========================= */
 }
 .l-header__hamburger {
   position: relative;
@@ -175,6 +194,7 @@ h1, h2, h3, h4, h5, h6 {
 .l-header__hamburger .c-hamburger .c-hamburger__line::before,
 .l-header__hamburger .c-hamburger .c-hamburger__line::after {
   content: "";
+  position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -186,6 +206,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 .l-header__hamburger .c-hamburger .c-hamburger__line {
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -195,16 +216,19 @@ h1, h2, h3, h4, h5, h6 {
 .l-header__hamburger .c-hamburger .c-hamburger__line::after {
   top: 1.2rem;
 }
+.l-header__hamburger .c-hamburger {
+  /* ACTIVE（×変形） */
+}
 .l-header__hamburger .c-hamburger.active .c-hamburger__line {
   background: transparent;
 }
 .l-header__hamburger .c-hamburger.active .c-hamburger__line::before {
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
+  top: 0;
+  transform: rotate(45deg);
 }
 .l-header__hamburger .c-hamburger.active .c-hamburger__line::after {
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 .c-logo__image {

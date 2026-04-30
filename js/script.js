@@ -1,12 +1,13 @@
-  // ==============================
-  // ハンバーガーメニュー
-  // ==============================
+// ==============================
+// ハンバーガーメニュー
+// ==============================
+document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.c-hamburger');
   const spNav = document.querySelector('.l-header__sp-nav');
 
-  if (hamburger && spNav) {
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      spNav.classList.toggle('active');
-    });
-  }
+  hamburger.addEventListener('click', (e) => {
+    console.log('clicked');
+    hamburger.classList.toggle('active');
+    spNav.classList.toggle('active');
+  });
+});

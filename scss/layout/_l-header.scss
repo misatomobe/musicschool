@@ -1,6 +1,9 @@
 @use "../foundation/variables" as *;
 @use "../foundation/mixin" as *;
 
+/* =========================
+   HEADER
+========================= */
 .l-header {
     width: 100%;
     height: 5rem;
@@ -12,10 +15,11 @@
     top: 0;
     left: 0;
     z-index: 999;
+
     @include pc {
         height: 8rem;
     }
-    
+
     &__inner {
         max-width: 1080px;
         margin: 0 auto;
@@ -25,53 +29,58 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 2rem;
-         @include pc {
-            padding: 0 10rem ;
+
+        @include pc {
+            padding: 0 10rem;
         }
+
         @include tab-only {
             padding: 0 2rem;
         }
-    } 
+    }
 
-    &__logo {
-         a {
-            display: flex;
-            align-items: center;
-            column-gap: 0.95rem;
-            height: 5rem;
-            transition: opacity 0.4s ease;
-            &:hover {
-                opacity: 0.6;
-            }
+    /* =========================
+       LOGO
+    ========================= */
+    &__logo a {
+        display: flex;
+        align-items: center;
+        column-gap: 0.95rem;
+        height: 5rem;
+        transition: opacity 0.4s ease;
+
+        &:hover {
+            opacity: 0.6;
         }
     }
-    // PCナビ
+
+    /* =========================
+       PC NAV
+    ========================= */
     &__nav {
-        display: none; //spでは非表示
+        display: none;
 
         @media (min-width: 768px) {
             display: block;
         }
-         ul {
+
+        ul {
             display: flex;
             align-items: center;
             gap: 3.3rem;
+
             a {
                 font-size: 1.7rem;
-                line-height: calc(33 / 17);
                 font-weight: 600;
                 color: $font-color;
-                @include tab-only  {
-                    font-size: 1.5rem;
-                } 
+
                 &:hover {
                     opacity: 0.7;
                 }
             }
-            // お問い合わせボタン
+
             .is-contact a {
                 font-size: 1.5rem;
-                line-height: calc(33 / 15);
                 background: $main-color;
                 color: $font-color02;
                 padding: 1rem 3rem;
@@ -79,48 +88,53 @@
         }
     }
 
-    // SPナビ
+    /* =========================
+       SP NAV
+    ========================= */
     &__sp-nav {
         position: fixed;
         width: 30rem;
         top: 5rem;
         right: 0;
-        overflow: hidden;
         transform: translateX(100%);
         transition: transform 0.4s ease;
+        background: $main-color;
         z-index: 2000;
+
+        &.active {
+            transform: translateX(0);
+        }
+
         &-list {
             margin: 0;
-            text-align: left;
             list-style: none;
             font-weight: 500;
+
             a {
                 color: $font-color02;
-                text-decoration: none;
+                display: block;
                 padding: 1.2rem 0 1.3rem 2rem;
-                transition: background-color 0.3s ease, opacity 0.3s ease;
+                transition: 0.3s;
 
-                &::hover {
-                    background-color: $font-color;
+                &:hover {
                     opacity: 0.7;
                 }
             }
         }
-        &.active {
-            display: block;
-            background: $main-color;
-            transform: translateX(0);
-        }
     }
 
-    // ハンバーガーメニュー
+    /* =========================
+       HAMBURGER
+    ========================= */
     &__hamburger {
         position: relative;
         z-index: 9999;
         display: block;
-            @include pc {
-                display: none;
-             }        
+
+        @include pc {
+            display: none;
+        }
+
         .c-hamburger {
             position: fixed;
             top: 0;
@@ -133,11 +147,11 @@
             justify-content: center;
             z-index: 10000;
 
-            // 三本線
             .c-hamburger__line,
             .c-hamburger__line::before,
             .c-hamburger__line::after {
                 content: "";
+                position: absolute;
                 left: 0;
                 right: 0;
                 margin: 0 auto;
@@ -148,36 +162,38 @@
                 transition: 0.3s;
                 display: block;
             }
-            // 中央
+
             .c-hamburger__line {
+                position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
             }
-            // 上
+
             .c-hamburger__line::before {
                 top: -1.2rem;
-
             }
-            // 下
+
             .c-hamburger__line::after {
                 top: 1.2rem;
-
             }
-            // メニューが開いた時の三本線
+
+            /* ACTIVE（×変形） */
             &.active {
+
                 .c-hamburger__line {
                     background: transparent;
                 }
+
                 .c-hamburger__line::before {
-                    top: 50%;
-                    transform: translateY(-50%) rotate(45deg);
+                    top: 0;
+                    transform: rotate(45deg);
                 }
+
                 .c-hamburger__line::after {
-                    top: 50%;
-                    transform: translateY(-50%) rotate(-45deg);
+                    top: 0;
+                    transform: rotate(-45deg);
                 }
             }
         }
     }
 }
-
