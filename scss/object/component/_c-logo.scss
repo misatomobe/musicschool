@@ -1,3 +1,4 @@
+@use "../../foundation/mixin" as *;
 .c-logo {
   &__image {
     width: 2.55rem;
@@ -6,5 +7,22 @@
     font-size: 1.3rem;
     line-height: calc(14 / 13);
     font-weight: 600;
+    @include pc {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__main {
+    @include pc {
+      font-size: 2rem;
+      line-height: calc(23 / 20);
+    }
+  }
+  &__sub {
+    @include pc {
+      font-size: 1.5rem;
+      line-height: calc(23 / 15);
+    }
   }
 }

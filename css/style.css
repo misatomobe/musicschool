@@ -61,6 +61,34 @@ ol {
 .l-header__logo a:hover {
   opacity: 0.6;
 }
+.l-header__nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  .l-header__nav {
+    display: block;
+  }
+}
+.l-header__nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3.3rem;
+}
+.l-header__nav ul a {
+  font-size: 1.7rem;
+  line-height: 1.9411764706;
+  font-weight: 600;
+  color: #000;
+}
+.l-header__nav ul a:hover {
+  opacity: 0.7;
+}
+.l-header__nav ul .is-contact a {
+  background: #CB0000;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
 .l-header__sp-nav {
   position: fixed;
   width: 30rem;
@@ -151,6 +179,24 @@ ol {
   font-size: 1.3rem;
   line-height: 1.0769230769;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  .c-logo__text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .c-logo__main {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+}
+@media (min-width: 768px) {
+  .c-logo__sub {
+    font-size: 1.5rem;
+    line-height: 1.5333333333;
+  }
 }
 
 @media (max-width: 767px) {

@@ -32,6 +32,37 @@
             }
         }
     }
+    // PCナビ
+    &__nav {
+        display: none; //spでは非表示
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+         ul {
+            display: flex;
+            align-items: center;
+            gap: 3.3rem;
+            a {
+                font-size: 1.7rem;
+                line-height: calc(33 / 17);
+                font-weight: 600;
+                color: $font-color;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+            // お問い合わせボタン
+            .is-contact a {
+                background: $main-color;
+                color: $font-color02;
+                padding: 1rem 2rem;
+                border-radius: 4px;
+
+            }
+        }
+    }
 
     // SPナビ
     &__sp-nav {
