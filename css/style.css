@@ -136,6 +136,12 @@ body.is-fixed {
   width: 2.55rem;
 }
 
+.c-logo__text {
+  font-size: 1.3rem;
+  line-height: 1.0769230769;
+  font-weight: 500;
+}
+
 @media (max-width: 767px) {
   .pc {
     display: none !important;
