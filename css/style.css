@@ -20,6 +20,18 @@ body.is-fixed {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin-trim: 0;
+}
+
 .l-header {
   width: 100%;
   height: 5rem;
@@ -135,7 +147,6 @@ body.is-fixed {
 .c-logo__image {
   width: 2.55rem;
 }
-
 .c-logo__text {
   font-size: 1.3rem;
   line-height: 1.0769230769;

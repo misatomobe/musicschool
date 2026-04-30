@@ -1,9 +1,10 @@
-.c-logo__image {
-  width: 2.55rem;
+.c-logo {
+  &__image {
+    width: 2.55rem;
+  }
+  &__text {
+    font-size: 1.3rem;
+    line-height: calc(14 / 13);
+    font-weight: 500;
+  }
 }
-
-.c-logo__text {
-  font-size: 1.3rem;
-  line-height: calc(14 / 13);
-  font-weight: 500;
-} 
