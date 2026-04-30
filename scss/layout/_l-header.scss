@@ -117,7 +117,10 @@
     &__hamburger {
         position: relative;
         z-index: 9999;
-        
+        display: block;
+            @include pc {
+                display: none;
+             }        
         .c-hamburger {
             position: fixed;
             top: 0;

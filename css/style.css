@@ -147,6 +147,12 @@ ol {
 .l-header__hamburger {
   position: relative;
   z-index: 9999;
+  display: block;
+}
+@media (min-width: 768px) {
+  .l-header__hamburger {
+    display: none;
+  }
 }
 .l-header__hamburger .c-hamburger {
   position: fixed;
