@@ -17,15 +17,15 @@
     }
     
     &__inner {
+        max-width: 1080px;
+        margin: 0 auto;
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 2rem;
-        margin: 0 auto;
          @include pc {
-            max-width: 1080px;
             padding: 0 10rem ;
         }
         @include tab-only {
