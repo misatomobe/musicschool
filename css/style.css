@@ -32,6 +32,11 @@ ol {
   margin-trim: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
 .l-header {
   width: 100%;
   height: 5rem;
@@ -204,7 +209,6 @@ ol {
 
 .c-logo__image {
   width: 2.55rem;
-  margin: 0;
 }
 .c-logo__text {
   font-size: 1.3rem;
