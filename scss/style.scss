@@ -9,5 +9,8 @@
 // component（部品）
 @use "./object/component/c-logo";
 
+// project（ページ固有）
+@use "./object/project/p-top-fv";
+
 // utility（補助）
 @use "./object/utility/utility";
