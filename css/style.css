@@ -99,6 +99,11 @@ button {
 .l-header__logo a:hover {
   opacity: 0.6;
 }
+@media (max-width: 767px) {
+  .l-header__logo a:hover {
+    opacity: 1;
+  }
+}
 .l-header {
   /* =========================
      PC NAV
@@ -149,24 +154,15 @@ button {
 .l-header__sp-nav.active {
   transform: translateX(0);
 }
-.l-header__sp-nav-list {
+.l-header__sp-nav-lists {
   margin: 0;
   list-style: none;
   font-weight: 500;
 }
-.l-header__sp-nav-list a {
+.l-header__sp-nav-lists a {
   color: #fff;
   display: block;
-  padding: 1.2rem 0 1.3rem 2rem;
-  transition: 0.3s;
-}
-.l-header__sp-nav-list a:hover {
-  opacity: 0.7;
-  background: #000;
-}
-.l-header__sp-nav-list a:active {
-  opacity: 0.7;
-  background: #000;
+  padding: 1.5rem 0 1rem 2rem;
 }
 .l-header {
   /* =========================
