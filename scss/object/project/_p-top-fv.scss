@@ -1,0 +1,21 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+/* =========================
+   FV
+========================= */
+.p-fv {
+    position: relative;
+    margin-top: 5rem;
+    @include pc {
+        margin-top: 8rem;
+    }
+    picture {
+        display: block;
+    }
+    img {
+        width: 100%;
+        min-height: 55rem;
+        object-fit: cover;
+        display: block;
+    }
+}
