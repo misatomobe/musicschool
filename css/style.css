@@ -1,4 +1,10 @@
 @charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
@@ -14,6 +20,7 @@ body {
   font-weight: 400;
   color: #000;
   letter-spacing: 0;
+  margin: 0;
 }
 
 html.is-fixed,
