@@ -318,7 +318,25 @@ button {
    CONCEPT
 ========================= */
 .p-concept {
-  padding: 4.6rem 2rem;
+  padding: 4.5rem 0;
+}
+.p-concept__inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.p-concept__head {
+  text-align: center;
+}
+.p-concept__head h2 {
+  font-size: 2.5rem;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #CB0000;
+}
+.p-concept__head p {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
 }
 
 @media (max-width: 767px) {
