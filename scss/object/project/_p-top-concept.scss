@@ -90,7 +90,7 @@
         line-height: calc(50 / 20);
         font-weight: 600;
         color: $main-color;
-        padding-right: 2.5rem;
+        padding-right: clamp(1rem, 3vw, 2.5rem);
     }
     &__center {
         display: flex;
@@ -107,6 +107,6 @@
         font-size: 2rem;
         line-height: calc(50 / 20);
         font-weight: 500;
-        padding-left: 2.5rem;
+         padding-left: clamp(1rem, 3vw, 2.5rem);
     }
 }

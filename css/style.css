@@ -403,7 +403,7 @@ button {
   line-height: 2.5;
   font-weight: 600;
   color: #CB0000;
-  padding-right: 2.5rem;
+  padding-right: clamp(1rem, 3vw, 2.5rem);
 }
 .p-concept__center {
   display: flex;
@@ -420,7 +420,7 @@ button {
   font-size: 2rem;
   line-height: 2.5;
   font-weight: 500;
-  padding-left: 2.5rem;
+  padding-left: clamp(1rem, 3vw, 2.5rem);
 }
 
 @media (max-width: 767px) {
