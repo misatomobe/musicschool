@@ -375,7 +375,7 @@ button {
 .p-concept__list {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 1rem;
   /* 中央線 */
 }
 .p-concept__list::before {
@@ -386,6 +386,7 @@ button {
   left: 50%;
   transform: translateX(-50%);
   width: 3px;
+  height: 188px;
   background: #CB0000;
 }
 .p-concept__item {
@@ -394,6 +395,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 3rem 1fr;
   align-items: center;
+  height: 5rem;
 }
 .p-concept__en {
   text-align: right;
