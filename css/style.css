@@ -318,7 +318,7 @@ button {
    CONCEPT
 ========================= */
 .p-concept {
-  padding: 4.5rem 0;
+  padding: 4.5rem 0 5rem;
 }
 .p-concept__inner {
   max-width: 1080px;
