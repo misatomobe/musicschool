@@ -338,16 +338,41 @@ button {
   font-size: 1.8rem;
   line-height: 1.6666666667;
 }
+.p-concept__items {
+  position: relative;
+}
 .p-concept {
   /* =========================
-     ITEMS
+      ARROW
   ========================= */
 }
-.p-concept__items {
-  margin-top: 6rem;
+.p-concept__arrow {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 1.5rem;
+  z-index: 2;
+}
+.p-concept__arrow::before, .p-concept__arrow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  width: 3px;
+  height: 2rem;
+  border-radius: 9999px;
+  background: #CB0000;
+  transform-origin: center top;
+}
+.p-concept__arrow::before {
+  transform: rotate(45deg);
+}
+.p-concept__arrow::after {
+  transform: rotate(-45deg);
 }
 .p-concept__list {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -356,26 +381,12 @@ button {
 .p-concept__list::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -1.5rem;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 1px;
+  width: 3px;
   background: #CB0000;
-}
-.p-concept__list {
-  /* 矢印 */
-}
-.p-concept__list::after {
-  content: "";
-  position: absolute;
-  top: -0.5rem;
-  left: 50%;
-  width: 1rem;
-  height: 1rem;
-  border-top: 2px solid #CB0000;
-  border-right: 2px solid #CB0000;
-  transform: translateX(-50%) rotate(-45deg);
 }
 .p-concept__item {
   position: relative;
@@ -387,13 +398,27 @@ button {
 .p-concept__en {
   text-align: right;
   font-size: 2rem;
+  line-height: 2.5;
   font-weight: 600;
   color: #CB0000;
+  padding-right: 2.5rem;
 }
 .p-concept__center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.p-concept__dot {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #CB0000;
+}
+.p-concept__jp {
+  font-size: 2rem;
+  line-height: 2.5;
+  font-weight: 500;
+  padding-left: 2.5rem;
 }
 
 @media (max-width: 767px) {

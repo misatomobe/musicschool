@@ -24,14 +24,41 @@
             line-height: calc(30 / 18);
         }
     }
-    /* =========================
-       ITEMS
-    ========================= */
     &__items {
-        margin-top: 6rem;
-    }
-    &__list {
         position: relative;
+    }
+    /* =========================
+        ARROW
+    ========================= */
+    &__arrow {
+        position: absolute;
+        top: -1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 3rem;
+        height: 1.5rem;
+        z-index: 2;
+    }
+    &__arrow::before,
+    &__arrow::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: calc(50% - 1px);
+        width: 3px;
+        height: 2rem;
+        border-radius: 9999px;
+        background: $main-color;
+        transform-origin: center top;
+    }
+    &__arrow::before {
+        transform: rotate(45deg);
+    }
+    &__arrow::after {
+        transform: rotate(-45deg);
+    }
+
+    &__list {
         display: flex;
         flex-direction: column;
         gap: 5rem;
@@ -40,26 +67,13 @@
         &::before {
             content: "";
             position: absolute;
-            top: 0;
+            top: -1.5rem;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 1px;
+            width: 3px;
             background: $main-color;
         }
-         /* 矢印 */
-         &::after {
-            content: "";
-            position: absolute;
-            top: -0.5rem;
-            left: 50%;
-            width: 1rem;
-            height: 1rem;
-            border-top: 2px solid $main-color;
-            border-right: 2px solid $main-color;
-            transform: translateX(-50%)
-                       rotate(-45deg);
-         }
     }
     &__item {
         position: relative;
@@ -71,12 +85,26 @@
     &__en {
         text-align: right;
         font-size: 2rem;
+        line-height: calc(50 / 20);
         font-weight: 600;
         color: $main-color;
+        padding-right: 2.5rem;
     }
     &__center {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    &__dot {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background: $main-color;
+    }
+    &__jp {
+        font-size: 2rem;
+        line-height: calc(50 / 20);
+        font-weight: 500;
+        padding-left: 2.5rem;
     }
 }
