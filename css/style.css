@@ -338,6 +338,63 @@ button {
   font-size: 1.8rem;
   line-height: 1.6666666667;
 }
+.p-concept {
+  /* =========================
+     ITEMS
+  ========================= */
+}
+.p-concept__items {
+  margin-top: 6rem;
+}
+.p-concept__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  /* 中央線 */
+}
+.p-concept__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  background: #CB0000;
+}
+.p-concept__list {
+  /* 矢印 */
+}
+.p-concept__list::after {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  border-top: 2px solid #CB0000;
+  border-right: 2px solid #CB0000;
+  transform: translateX(-50%) rotate(-45deg);
+}
+.p-concept__item {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 3rem 1fr;
+  align-items: center;
+}
+.p-concept__en {
+  text-align: right;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #CB0000;
+}
+.p-concept__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (max-width: 767px) {
   .pc {
