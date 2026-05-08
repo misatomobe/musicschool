@@ -7,13 +7,14 @@
     line-height: calc(40 / 25);
     font-weight: 700;
     color: $font-color;
+    text-align: center;
 
     &--red {
         color: $main-color;
     }
 
     &--white {
-        color: $main-color02;
+        color: $font-color02;
     }
 }
 

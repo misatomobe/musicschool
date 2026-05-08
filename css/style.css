@@ -271,10 +271,15 @@ button {
   line-height: 1.6;
   font-weight: 700;
   color: #000;
+  text-align: center;
 }
 .c-section-title--red {
   color: #CB0000;
 }
+.c-section-title--white {
+  color: #fff;
+}
+
 /* =========================
    FV
 ========================= */
