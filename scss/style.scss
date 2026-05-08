@@ -8,10 +8,12 @@
 
 // component（部品）
 @use "./object/component/c-logo";
+@use "./object/component/c-section-title";
 
 // project（ページ固有）
 @use "./object/project/p-top-fv";
 @use "./object/project/p-top-concept";
+@use "./object/project/p-top-about";
 
 // utility（補助）
 @use "./object/utility/utility";
