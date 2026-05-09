@@ -239,6 +239,10 @@ button {
   transform: rotate(-45deg);
 }
 
+.l-inner {
+  padding: 5rem 2rem;
+}
+
 .c-logo__image {
   width: 2.55rem;
 }
