@@ -1,3 +1,9 @@
 @use "../../foundation/variables" as *;
 @use "../../foundation/mixin" as *;
 
+/* =========================
+   ABOUT
+========================= */
+.p-about {
+    background: $main-color;
+}

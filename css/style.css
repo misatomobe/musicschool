@@ -431,6 +431,13 @@ button {
   padding-left: clamp(1rem, 3vw, 2.5rem);
 }
 
+/* =========================
+   ABOUT
+========================= */
+.p-about {
+  background: #CB0000;
+}
+
 @media (max-width: 767px) {
   .pc {
     display: none !important;

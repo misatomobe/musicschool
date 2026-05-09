@@ -5,6 +5,7 @@
 // layout（配置）
 @use "./layout/l-header";
 @use "./layout/l-footer";
+@use "./layout/l-inner";
 
 // component（部品）
 @use "./object/component/c-logo";
@@ -14,6 +15,8 @@
 @use "./object/project/p-top-fv";
 @use "./object/project/p-top-concept";
 @use "./object/project/p-top-about";
+
+
 
 // utility（補助）
 @use "./object/utility/utility";
