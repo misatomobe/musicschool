@@ -436,6 +436,23 @@ button {
 }
 
 /* =========================
+   ABOUT
+========================= */
+.p-about {
+  background: #CB0000;
+  color: #fff;
+}
+.p-about__contents {
+  text-align: center;
+}
+.p-about h2 {
+  margin-bottom: 1.4rem;
+}
+.p-about p {
+  line-height: 1.8333333333;
+}
+
+/* =========================
    REASON
 ========================= */
 .p-reason__title-main {
