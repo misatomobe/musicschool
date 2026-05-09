@@ -1,0 +1,31 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   REASON
+========================= */
+.p-reason {
+    &__title-main {
+        margin-bottom: 3.6rem;
+    }
+    &__item img {
+        margin-bottom: 3rem;
+    }
+    &__title {
+        font-size: 2rem;
+        line-height: calc(30 / 20);
+        font-weight: 700;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 1rem;
+    }
+    &__title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $main-color;
+    }
+}
