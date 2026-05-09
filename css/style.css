@@ -445,9 +445,11 @@ button {
 .p-about__contents {
   text-align: center;
 }
+.p-about h2 {
+  margin-bottom: 1.4rem;
+}
 .p-about p {
   line-height: 1.8333333333;
-  margin-top: 1.4rem;
 }
 
 @media (max-width: 767px) {

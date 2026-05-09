@@ -10,8 +10,10 @@
     &__contents {
         text-align: center;
     }
+    h2 {
+        margin-bottom: 1.4rem;
+    }
     p {
      line-height: calc(33 / 18); 
-     margin-top: 1.4rem;  
     }
 }
