@@ -447,6 +447,7 @@ button {
 }
 .p-about p {
   line-height: 1.8333333333;
+  margin-top: 1.4rem;
 }
 
 @media (max-width: 767px) {
