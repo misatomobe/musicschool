@@ -240,7 +240,7 @@ button {
 }
 
 .l-inner {
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 4rem;
 }
 
 .c-logo__image {
@@ -440,6 +440,13 @@ button {
 ========================= */
 .p-about {
   background: #CB0000;
+  color: #fff;
+}
+.p-about__contents {
+  text-align: center;
+}
+.p-about p {
+  line-height: 1.8333333333;
 }
 
 @media (max-width: 767px) {

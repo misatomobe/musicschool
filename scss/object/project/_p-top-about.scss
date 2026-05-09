@@ -6,4 +6,11 @@
 ========================= */
 .p-about {
     background: $main-color;
+    color: $font-color02;
+    &__contents {
+        text-align: center;
+    }
+    p {
+     line-height: calc(33 / 18);   
+    }
 }
