@@ -15,11 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
 // ==============================
 // Swiper
 // ==============================
-<script>
-  const swiper = new Swiper('.card-swiper', {
+const swiper = new Swiper('.p-voice__slider', {
   // Optional parameters
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 20,
+  loop: true,
+  speed: 800,
+
 
   // Navigation arrows
   navigation: {
@@ -31,18 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // when window width is >= 480px
     480: {
       slidesPerView: 2,
-      spaceBetween: 10
+      spaceBetween: 16
     },
     // when window width is >= 768px
     768: {
       slidesPerView: 3,
-      spaceBetween: 15
-    },
-    // when window width is >= 1024px
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 20
+      spaceBetween: 24
     }
   }
 });
-</script>
