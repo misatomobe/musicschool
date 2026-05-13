@@ -20,6 +20,7 @@ const swiper = new Swiper('.p-voice__slider', {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
+  loopAdditionalSlides: 1,
   speed: 800,
 
 
