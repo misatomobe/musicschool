@@ -15,21 +15,34 @@ document.addEventListener('DOMContentLoaded', () => {
 // ==============================
 // Swiper
 // ==============================
-const swiper = new Swiper(".swiper", {
-  loop: true, // ループ
-  speed: 1500, // 少しゆっくり(デフォルトは300)
-  autoplay: { // 自動再生
-    delay: 1000, // 1秒後に次のスライド
-    disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
-  },
-  // ページネーション
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  // 前後の矢印
+<script>
+  const swiper = new Swiper('.card-swiper', {
+  // Optional parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
+
+  // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
+
+  breakpoints: {
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 15
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    }
+  }
 });
+</script>
