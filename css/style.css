@@ -439,7 +439,6 @@ button {
    ABOUT
 ========================= */
 .p-about {
-  background: #CB0000;
   color: #fff;
 }
 .p-about__contents {
@@ -485,6 +484,9 @@ button {
   margin-bottom: 1rem;
 }
 
+/* =========================
+   VOICE
+========================= */
 @media (max-width: 767px) {
   .pc {
     display: none !important;
@@ -597,4 +599,8 @@ body.is-fixed .top-back-btn {
 h4 {
   font-size: 1.6rem;
   line-height: 1.5625;
+}
+
+.u-bg-red {
+  background: #CB0000;
 }

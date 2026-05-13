@@ -124,3 +124,8 @@ h4 {
   font-size: 1.6rem;
   line-height: calc(25 / 16);
 }
+
+// 背景色
+.u-bg-red {
+  background: variables.$main-color;
+}
