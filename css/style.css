@@ -487,6 +487,10 @@ button {
 /* =========================
    VOICE
 ========================= */
+.p-voice h2 {
+  margin-bottom: 3.9rem;
+}
+
 @media (max-width: 767px) {
   .pc {
     display: none !important;
