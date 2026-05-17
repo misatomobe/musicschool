@@ -547,6 +547,27 @@ button {
   flex-direction: column;
   gap: 3.6rem;
 }
+.p-flow__point {
+  position: absolute;
+}
+.p-flow__dot {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #CB0000;
+}
+.p-flow__body h3 {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: left;
+  color: #CB0000;
+}
+.p-flow__body p {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  font-weight: 500;
+}
 
 @media (max-width: 767px) {
   .pc {
