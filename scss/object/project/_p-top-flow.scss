@@ -5,7 +5,7 @@
    FLOW
 ========================= */
 .p-flow {
-    padding: 4.6rem 0 5.5rem;
+    padding: 4.6rem 0 2rem;
     &__inner {
         max-width: 1080px;
         margin: 0 auto;
@@ -19,22 +19,22 @@
     // 縦ライン
     &__line {
         position: absolute;
-        top: 0;
+        top: 1.5rem;
+        bottom: 0;
         left: 0.6rem;
         width: 0.2rem;
-        height: 100%;
         background: $main-color;
     }
     // 矢印
     &__line::after {
         content: "";
         position: absolute;
-        bottom: -0.6rem;
+        bottom: -1.2rem;
         left: -0.5rem;
         width: 1.2rem;
         height: 1.2rem;
-        border-right: 1px solid $main-color;
-        border-bottom: 1px solid $main-color;
+        border-right: 2px solid $main-color;
+        border-bottom: 2px solid $main-color;
         transform: rotate(45deg);
     }
     &__list {
@@ -42,10 +42,16 @@
         flex-direction: column;
         gap: 3.6rem;
     }
+    &__item {
+        position: relative;
+    }
     &__point {
         position: absolute;
+        top: 0.5rem;
+        left: -2.8rem;
     }
     &__dot {
+        display: block;
         width: 2rem;
         height: 2rem;
         border-radius: 50%;
@@ -61,8 +67,8 @@
 
       }
       p {
-         font-size: 1.8rem;
-         line-height: calc(30 / 18);
+         font-size: 1.6rem;
+         line-height: calc(30 / 16);
          font-weight: 500;
       }
    }

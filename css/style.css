@@ -511,7 +511,7 @@ button {
    FLOW
 ========================= */
 .p-flow {
-  padding: 4.6rem 0 5.5rem;
+  padding: 4.6rem 0 2rem;
 }
 .p-flow__inner {
   max-width: 1080px;
@@ -525,21 +525,21 @@ button {
 }
 .p-flow__line {
   position: absolute;
-  top: 0;
+  top: 1.5rem;
+  bottom: 0;
   left: 0.6rem;
   width: 0.2rem;
-  height: 100%;
   background: #CB0000;
 }
 .p-flow__line::after {
   content: "";
   position: absolute;
-  bottom: -0.6rem;
+  bottom: -1.2rem;
   left: -0.5rem;
   width: 1.2rem;
   height: 1.2rem;
-  border-right: 1px solid #CB0000;
-  border-bottom: 1px solid #CB0000;
+  border-right: 2px solid #CB0000;
+  border-bottom: 2px solid #CB0000;
   transform: rotate(45deg);
 }
 .p-flow__list {
@@ -547,10 +547,16 @@ button {
   flex-direction: column;
   gap: 3.6rem;
 }
+.p-flow__item {
+  position: relative;
+}
 .p-flow__point {
   position: absolute;
+  top: 0.5rem;
+  left: -2.8rem;
 }
 .p-flow__dot {
+  display: block;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -564,8 +570,8 @@ button {
   color: #CB0000;
 }
 .p-flow__body p {
-  font-size: 1.8rem;
-  line-height: 1.6666666667;
+  font-size: 1.6rem;
+  line-height: 1.875;
   font-weight: 500;
 }
 
