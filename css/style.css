@@ -507,6 +507,47 @@ button {
   color: #fff;
 }
 
+/* =========================
+   FLOW
+========================= */
+.p-flow {
+  padding: 4.6rem 0 5.5rem;
+}
+.p-flow__inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.p-flow__content {
+  margin-top: 3.6rem;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.p-flow__line {
+  position: absolute;
+  top: 0;
+  left: 0.6rem;
+  width: 0.2rem;
+  height: 100%;
+  background: #CB0000;
+}
+.p-flow__line::after {
+  content: "";
+  position: absolute;
+  bottom: -0.6rem;
+  left: -0.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-right: 1px solid #CB0000;
+  border-bottom: 1px solid #CB0000;
+  transform: rotate(45deg);
+}
+.p-flow__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
 @media (max-width: 767px) {
   .pc {
     display: none !important;

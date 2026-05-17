@@ -1,0 +1,45 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   FLOW
+========================= */
+.p-flow {
+    padding: 4.6rem 0 5.5rem;
+    &__inner {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    &__content {
+        margin-top: 3.6rem;
+        position: relative;
+        padding-left: 2.5rem;
+    }
+    // 縦ライン
+    &__line {
+        position: absolute;
+        top: 0;
+        left: 0.6rem;
+        width: 0.2rem;
+        height: 100%;
+        background: $main-color;
+    }
+    // 矢印
+    &__line::after {
+        content: "";
+        position: absolute;
+        bottom: -0.6rem;
+        left: -0.5rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-right: 1px solid $main-color;
+        border-bottom: 1px solid $main-color;
+        transform: rotate(45deg);
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 3.6rem;
+    }
+}
