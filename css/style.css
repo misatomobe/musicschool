@@ -525,22 +525,29 @@ button {
 }
 .p-flow__line {
   position: absolute;
-  top: 1.5rem;
-  bottom: 0;
+  top: 1rem;
   left: 0.6rem;
   width: 0.2rem;
+  height: calc(100% - 1rem);
+  border-radius: 9999px;
   background: #CB0000;
 }
-.p-flow__line::after {
+.p-flow__line::before, .p-flow__line::after {
   content: "";
   position: absolute;
-  bottom: -1.2rem;
-  left: -0.5rem;
-  width: 1.2rem;
-  height: 1.2rem;
-  border-right: 2px solid #CB0000;
-  border-bottom: 2px solid #CB0000;
-  transform: rotate(45deg);
+  bottom: 0;
+  left: 50%;
+  width: 0.2rem;
+  height: 1.6rem;
+  border-radius: 9999px;
+  background: #CB0000;
+  transform-origin: center bottom;
+}
+.p-flow__line::before {
+  transform: translateX(-50%) rotate(45deg);
+}
+.p-flow__line::after {
+  transform: translateX(-50%) rotate(-45deg);
 }
 .p-flow__list {
   display: flex;

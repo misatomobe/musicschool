@@ -19,24 +19,33 @@
     // 縦ライン
     &__line {
         position: absolute;
-        top: 1.5rem;
-        bottom: 0;
+        top: 1rem;
         left: 0.6rem;
         width: 0.2rem;
+        height: calc(100% - 1rem);
+        border-radius: 9999px;
         background: $main-color;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0.2rem;
+            height: 1.6rem;
+            border-radius: 9999px;
+            background: $main-color;
+            transform-origin: center bottom;
+        }
+        &::before {
+            transform: translateX(-50%) rotate(45deg);
+        }
+        &::after {
+            transform: translateX(-50%) rotate(-45deg);
+        }
     }
-    // 矢印
-    &__line::after {
-        content: "";
-        position: absolute;
-        bottom: -1.2rem;
-        left: -0.5rem;
-        width: 1.2rem;
-        height: 1.2rem;
-        border-right: 2px solid $main-color;
-        border-bottom: 2px solid $main-color;
-        transform: rotate(45deg);
-    }
+
     &__list {
         display: flex;
         flex-direction: column;
