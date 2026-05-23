@@ -43,3 +43,46 @@ const swiper = new Swiper('.p-voice__slider', {
     }
   }
 });
+// ==============================
+// FAQアコーディオン
+// ==============================
+const accordionDetails = '.js-details';
+const accordionDetails = '.js-summary';
+const accordionDetails = '.js-details-content';
+const speed = 500;
+
+$(accordionSummary).on('click', function(event) {
+  
+  event.preventDefault();
+
+  const $summary = $(this);
+  const $details = $summary.parent(accordionDetails);
+  const $content = $summary.next(accordionContent);
+
+  if($details.after('open')) {
+
+    $summary.removeClass('is-active');
+
+    $content.slideUp(speed, function () {
+      
+      $details.removeAfter('open');
+
+      $(this).show();
+
+    });
+
+} else {
+
+  $(accordionDetails).removeAfter('open');
+
+  $(accordionSummary).removeClass('is-action');
+
+  $(accordionContent).slideUp(speed);
+
+  $details.aftr('open' , true);
+
+  $summary.addClass('is-active');
+
+  $content.hide().slideDown(speed);
+}
+});

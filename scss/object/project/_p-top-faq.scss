@@ -55,35 +55,40 @@
     }
     &__btn {
         position: relative;
-        width: 1.6rem;
-        height: 1.6rem;
+        display: inline-block;
+        width: 1.36rem;
+        height: 0.92rem;
         flex-shrink: 0;
+        margin-left: auto;
 
         &::before,
         &::after {
             content: "";
             position: absolute;
-            top: 50%;
+            bottom: 0;
             left: 50%;
-            background: #333;
-            border-radius: 10px;
-            transform: translate(-50%, -50%);
-            transition: 0.3s;
+            width: 2px;
+            height: 1.11rem;
+            border-radius: 9999px;
+            background-color: $font-color;
+            transform-origin: center bottom;
+            transition: transform 0.3s;
         }
         &::before {
-            width: 2px;
-            height: 16px;
+            transform: translateX(-50%) rotate(45deg);
         }
         &::after {
-            width: 16px;
-            height: 2px;
+            transform: translateX(-50%) rotate(-45deg);
         }
     }
 
     // 開いたとき
     &__item[open] &__btn {
         &::before {
-            opacity: 0;
+            transform: translateX(-50%) rotate(-45deg);
+        }
+        &::after {
+            transform: translateX(-50%) rotate(45deg);
         }
     }
     &__answer {
