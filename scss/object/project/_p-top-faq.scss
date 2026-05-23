@@ -22,10 +22,81 @@
         padding: 1.7rem 0;
         list-style: none;
         cursor: pointer;
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+    &__icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: $font-color;
+
+        font-size: 2rem;
+        line-height: calc(30 / 20);
+        font-weight: 600;
+        &--q {
+            background: $font-color02;
+        }
+        &--a {
+            background: $main-color;
+        }
     }
     &__title {
         font-size: 1.6rem;
         line-height: calc(30 / 16);
         font-weight: 500;
+    }
+    &__btn {
+        position: relative;
+        width: 1.6rem;
+        height: 1.6rem;
+        flex-shrink: 0;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: #333;
+            border-radius: 10px;
+            transform: translate(-50%, -50%);
+            transition: 0.3s;
+        }
+        &::before {
+            width: 2px;
+            height: 16px;
+        }
+        &::after {
+            width: 16px;
+            height: 2px;
+        }
+    }
+
+    // 開いたとき
+    &__item[open] &__btn {
+        &::before {
+            opacity: 0;
+        }
+    }
+    &__answer {
+        display: flex;
+        gap: 2rem;
+        padding-bottom: 2.4rem;
+    }
+    &__content {
+        width: 100%;
+        padding: 2.4rem;
+        background: #f8e9e9;
+
+        p {
+            font-weight: 600;
+            color: $main-color;
+        }
     }
 }
