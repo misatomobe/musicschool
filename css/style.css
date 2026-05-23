@@ -585,11 +585,28 @@ button {
 /* =========================
    FAQ
 ========================= */
+.p-faq__contents {
+  margin-top: 4rem;
+}
 .p-faq__item {
   border-top: 0.5px solid;
 }
 .p-faq__item:last-child {
   border-bottom: 0.5px solid;
+}
+.p-faq__summary {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  position: relative;
+  padding: 1.7rem 0;
+  list-style: none;
+  cursor: pointer;
+}
+.p-faq__title {
+  font-size: 1.6rem;
+  line-height: 1.875;
+  font-weight: 500;
 }
 
 @media (max-width: 767px) {
