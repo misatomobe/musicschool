@@ -89,12 +89,12 @@
     &__answer {
         display: flex;
         gap: 2rem;
-        padding-bottom: 2.4rem;
+        padding: 1.7rem 4.7rem 0.9rem 0;
         background: #f8e9e9;
+        align-items: center;
     }
     &__content {
         width: 100%;
-        padding: 2.4rem;
 
         p {
             font-weight: 600;
