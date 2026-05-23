@@ -582,6 +582,16 @@ button {
   font-weight: 500;
 }
 
+/* =========================
+   FAQ
+========================= */
+.p-faq__item {
+  border-top: 0.5px solid;
+}
+.p-faq__item:last-child {
+  border-bottom: 0.5px solid;
+}
+
 @media (max-width: 767px) {
   .pc {
     display: none !important;
