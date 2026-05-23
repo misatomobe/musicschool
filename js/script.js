@@ -46,43 +46,57 @@ const swiper = new Swiper('.p-voice__slider', {
 // ==============================
 // FAQアコーディオン
 // ==============================
+
 const accordionDetails = '.js-details';
-const accordionDetails = '.js-summary';
-const accordionDetails = '.js-details-content';
+const accordionSummary = '.js-summary';
+const accordionContent = '.js-details-content';
 const speed = 500;
 
-$(accordionSummary).on('click', function(event) {
-  
+$(accordionSummary).on('click', function (event) {
+
+  // detailsのデフォルト挙動を停止
   event.preventDefault();
 
+  // クリックした要素
   const $summary = $(this);
+
+  // 親details
   const $details = $summary.parent(accordionDetails);
+
+  // 開閉するcontent
   const $content = $summary.next(accordionContent);
 
-  if($details.after('open')) {
+  // すでに開いている場合
+  if ($details.attr('open')) {
 
+    // active解除
     $summary.removeClass('is-active');
 
+    // 閉じる
     $content.slideUp(speed, function () {
-      
-      $details.removeAfter('open');
+
+      $details.removeAttr('open');
 
       $(this).show();
 
     });
 
-} else {
+  } else {
 
-  $(accordionDetails).removeAfter('open');
+    // 他を閉じる
+    $(accordionDetails).removeAttr('open');
 
-  $(accordionSummary).removeClass('is-action');
+    $(accordionSummary).removeClass('is-active');
 
-  $(accordionContent).slideUp(speed);
+    $(accordionContent).slideUp(speed);
 
-  $details.aftr('open' , true);
+    // 現在を開く
+    $details.attr('open', true);
 
-  $summary.addClass('is-active');
+    $summary.addClass('is-active');
 
-  $content.hide().slideDown(speed);
-}
+    $content.hide().slideDown(speed);
+
+  }
+
 });
