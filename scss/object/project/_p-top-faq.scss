@@ -1,0 +1,14 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   FAQ
+========================= */
+.p-faq {
+    padding: 27.5rem 0;
+    &__inner {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+}
