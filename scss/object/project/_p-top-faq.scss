@@ -40,9 +40,11 @@
         line-height: calc(30 / 20);
         font-weight: 600;
         &--q {
-            background: $font-color02;
+            color: $font-color02;
+            background: $font-color;
         }
         &--a {
+            color: $font-color02;
             background: $main-color;
         }
     }
@@ -88,11 +90,11 @@
         display: flex;
         gap: 2rem;
         padding-bottom: 2.4rem;
+        background: #f8e9e9;
     }
     &__content {
         width: 100%;
         padding: 2.4rem;
-        background: #f8e9e9;
 
         p {
             font-weight: 600;

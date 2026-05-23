@@ -620,9 +620,11 @@ button {
   font-weight: 600;
 }
 .p-faq__icon--q {
-  background: #fff;
+  color: #fff;
+  background: #000;
 }
 .p-faq__icon--a {
+  color: #fff;
   background: #CB0000;
 }
 .p-faq__title {
@@ -661,11 +663,11 @@ button {
   display: flex;
   gap: 2rem;
   padding-bottom: 2.4rem;
+  background: #f8e9e9;
 }
 .p-faq__content {
   width: 100%;
   padding: 2.4rem;
-  background: #f8e9e9;
 }
 .p-faq__content p {
   font-weight: 600;
