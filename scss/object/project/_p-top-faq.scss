@@ -81,16 +81,17 @@
             transform: translateX(-50%) rotate(-45deg);
         }
     }
-
-    // 開いたとき
-    &__item[open] &__btn {
-        &::before {
-            transform: translateX(-50%) rotate(-45deg);
-        }
-        &::after {
-            transform: translateX(-50%) rotate(45deg);
+    &__summary.is-active {
+        .p-faq__btn {
+            &::before {
+                transform: translateX(-50%) rotate(-45deg);
+            }
+            &::after {
+                transform: translateX(-50%) rotate(45deg);
+            }
         }
     }
+
     &__answer {
         display: flex;
         gap: 2rem;

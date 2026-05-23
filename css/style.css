@@ -658,10 +658,10 @@ button {
 .p-faq__btn::after {
   transform: translateX(-50%) rotate(-45deg);
 }
-.p-faq__item[open] .p-faq__btn::before {
+.p-faq__summary.is-active .p-faq__btn::before {
   transform: translateX(-50%) rotate(-45deg);
 }
-.p-faq__item[open] .p-faq__btn::after {
+.p-faq__summary.is-active .p-faq__btn::after {
   transform: translateX(-50%) rotate(45deg);
 }
 .p-faq__answer {
