@@ -1,3 +1,4 @@
+@use "./foundation/reset";
 @use "./foundation/variables" as *;
 @use "./foundation/mixin";
 @use "./foundation/base";
@@ -19,6 +20,7 @@
 @use "./object/project/p-top-voice";
 @use "./object/project/p-top-flow";
 @use "./object/project/p-top-faq";
+@use "./object/project/p-top-blog";
 
 
 // utility（補助）
