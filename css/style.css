@@ -808,7 +808,6 @@ button {
   .p-blog__items {
     flex-direction: row;
     column-gap: 5.6818181818%;
-    width: 100%;
     justify-content: flex-start;
   }
 }
@@ -818,22 +817,30 @@ button {
 @media (min-width: 768px) {
   .p-blog__item {
     width: calc((100% - 6rem) / 3);
-    box-sizing: border-box;
   }
 }
 .p-blog-item__image {
   position: relative;
 }
 .p-blog-item__label {
+  width: 9rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
   background-color: #CB0000;
   color: #fff;
-  padding: 0.6rem 3rem;
   font-size: 1.5rem;
   line-height: 1.6666666667;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  .p-blog-item__label {
+    width: 8rem;
+  }
 }
 .p-blog-item__body {
   padding-top: 3rem;

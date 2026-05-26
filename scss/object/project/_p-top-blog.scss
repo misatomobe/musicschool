@@ -15,7 +15,6 @@
         @include pc {
             flex-direction: row;
             column-gap: calc(50 / 880 * 100%);
-            width: 100%;
             justify-content: flex-start;
         }
     }
@@ -23,22 +22,28 @@
         width: 100%;
         @include pc {
             width: calc((100% - 6rem) / 3);
-            box-sizing: border-box;
         }
     }
     &-item__image {
         position: relative;
     }
     &-item__label {
+        width: 9rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         top: 0;
         left: 0;
         background-color: $main-color;
         color: $font-color02;
-        padding: 0.6rem 3rem;
         font-size: 1.5rem;
         line-height: calc(25 / 15);
         font-weight: 600;
+        @include pc {
+            width: 8rem;
+        }
     }
     &-item__body {
         padding-top: 3rem;
