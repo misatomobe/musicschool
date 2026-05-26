@@ -22,7 +22,7 @@
     &__item {
         width: 100%;
         @include pc {
-            width: calc((100% - (4.3% * 3)) / 3);
+            width: calc((100% - 6rem) / 3);
             box-sizing: border-box;
         }
     }

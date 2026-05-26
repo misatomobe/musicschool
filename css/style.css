@@ -351,6 +351,11 @@ button {
 .l-inner {
   padding: 5rem 2rem 4rem;
 }
+@media (min-width: 768px) {
+  .l-inner {
+    padding: 0 10rem;
+  }
+}
 
 .c-logo__image {
   width: 2.55rem;
@@ -812,7 +817,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog__item {
-    width: 29.0333333333%;
+    width: calc((100% - 6rem) / 3);
     box-sizing: border-box;
   }
 }

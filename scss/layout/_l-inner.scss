@@ -3,4 +3,7 @@
 
 .l-inner {
     padding: 5rem 2rem 4rem;
+    @include pc {
+        padding: 0 10rem;
+    }
 }
