@@ -794,6 +794,28 @@ button {
 .p-blog__contents {
   margin-top: 3.6rem;
 }
+.p-blog__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.1rem;
+}
+@media (min-width: 768px) {
+  .p-blog__items {
+    flex-direction: row;
+    column-gap: 5.6818181818%;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+.p-blog__item {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .p-blog__item {
+    width: 29.0333333333%;
+    box-sizing: border-box;
+  }
+}
 
 @media (max-width: 767px) {
   .pc {
