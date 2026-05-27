@@ -406,8 +406,7 @@ button {
   justify-content: center;
   align-items: center;
   color: #fff;
-  display: grid;
-  place-content: center;
+  transition: 0.3s;
 }
 
 /* =========================
