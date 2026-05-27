@@ -11,6 +11,7 @@
 // component（部品）
 @use "./object/component/c-logo";
 @use "./object/component/c-section-title";
+@use "./object/component/c-button";
 
 // project（ページ固有）
 @use "./object/project/p-top-fv";
@@ -21,6 +22,7 @@
 @use "./object/project/p-top-flow";
 @use "./object/project/p-top-faq";
 @use "./object/project/p-top-blog";
+@use "./object/project/p-cta";
 
 
 // utility（補助）

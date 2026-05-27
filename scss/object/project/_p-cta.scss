@@ -2,5 +2,10 @@
 @use "../../foundation/mixin" as *;
 
 /* =========================
-   button
+   cta
 ========================= */
+.p-cta {
+    &__inner {
+        text-align: center;
+    }
+}
