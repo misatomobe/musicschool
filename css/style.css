@@ -405,8 +405,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  transition: 0.3s;
 }
 
 /* =========================
@@ -415,15 +413,21 @@ button {
 .c-button--contact {
   width: 33.5rem;
   height: 6rem;
+  color: #fff;
   background-color: #CB0000;
   font-size: 2rem;
   line-height: 1.65;
   font-weight: 700;
-  transition: background-color 0.4s, color 0.4s ease;
+  border: 0.1rem solid #CB0000;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 @media (min-width: 768px) {
   .c-button--contact {
     width: 30rem;
+  }
+  .c-button--contact:hover {
+    background-color: #fff;
+    color: #CB0000;
   }
 }
 
@@ -906,6 +910,9 @@ button {
 /* =========================
    cta
 ========================= */
+.p-cta {
+  margin-top: 13.2rem;
+}
 .p-cta__inner {
   display: flex;
   justify-content: center;
