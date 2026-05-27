@@ -1,0 +1,16 @@
+@use "../foundation/variables" as *;
+@use "../foundation/mixin" as *;
+
+/* =========================
+   footer
+========================= */
+.l-footer {
+    background: $main-color;
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30.3rem;
+    }
+}
