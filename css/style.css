@@ -399,8 +399,29 @@ button {
 }
 
 /* =========================
-   button
+   c-button
 ========================= */
+.c-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  display: grid;
+  place-content: center;
+}
+
+/* =========================
+   c-button--contact
+========================= */
+.c-button--contact {
+  width: 33.5rem;
+  height: 6rem;
+  background-color: #CB0000;
+  font-size: 2rem;
+  line-height: 1.65;
+  font-weight: 700;
+}
+
 /* =========================
    FV
 ========================= */
@@ -882,6 +903,7 @@ button {
 ========================= */
 .p-cta__inner {
   text-align: center;
+  padding: 0 2rem;
 }
 
 @media (max-width: 767px) {

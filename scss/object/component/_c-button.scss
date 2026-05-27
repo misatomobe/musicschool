@@ -2,5 +2,15 @@
 @use "../../foundation/mixin" as *;
 
 /* =========================
-   button
+   c-button
 ========================= */
+.c-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $font-color02;
+    display: grid;
+    place-content: center;
+    
+
+}

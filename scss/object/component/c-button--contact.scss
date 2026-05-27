@@ -1,0 +1,18 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   c-button--contact
+========================= */
+.c-button--contact {
+    width: 33.5rem;
+    height: 6rem;
+    background-color: $main-color;
+    font-size: 2rem;
+    line-height: calc(33 / 20);
+    font-weight: 700;
+    transition: background-color 0.4s, color 0.4s ease;
+    @include pc {
+        width: 30rem;
+    }
+}
