@@ -7,20 +7,55 @@
 .l-footer {
     background: $main-color;
     &__main {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 30.3rem;
+        @include pc {
+            height: 30.3rem;
+        }
     }
     &__inner {
         max-width: 72.2rem;
         margin: 0 auto;
         width: 100%;
     }
-    &__logo {
+    &__nav {
+        margin-top: 4.4rem;
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            column-gap: 3rem;
+            row-gap: 0.5rem;  
+        }
+        li {
+            display: flex;
+            justify-content: center;
+            @include pc {
+                text-align: center;
+            }
+            a {
+                font-size: 1.7rem;
+                line-height: calc(33 / 17);
+                font-weight: 700;
+                color: $font-color02;
+                white-space: normal;
+                display: block;
+                text-align: center;
+                white-space: nowrap;
+                @include pc {
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+        &__logo {
         width: 100%;
         margin: 0 auto;
         padding-bottom: 1.874rem;
     }
+}
 }
