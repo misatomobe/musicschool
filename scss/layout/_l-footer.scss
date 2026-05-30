@@ -12,7 +12,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 1rem 2rem 1rem;
+        padding: 1rem 2rem 5rem;
         @include pc {
             height: 30.3rem;
         }
@@ -75,6 +75,37 @@
       @include pc {
         line-height: calc(33 / 15);
       }
+    }
+  }
+  &__sns {
+    margin-top: 1.6rem;
+    @include pc {
+      margin-top: 0.3rem;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1rem;
+        row-gap: 0.5rem;
+        li {
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 2.8rem;
+                transition: opacity 0.4s ease, transform 0.4s ease;
+                @include pc {
+                    &:hover {
+                        opacity: 0.7;
+                        transform: scale(1.2);
+                    }
+                }
+            }
+            &-icon {
+                width: 2.2rem;
+            }
+        }
     }
   }
 }
