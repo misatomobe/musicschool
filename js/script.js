@@ -100,3 +100,18 @@ $(accordionSummary).on('click', function (event) {
   }
 
 });
+
+  // ==============================
+  // ロゴクリックでトップへ
+  // ==============================
+  const logoLink = document.querySelector('.l-header__logo a');
+
+  if (logoLink) {
+    logoLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
