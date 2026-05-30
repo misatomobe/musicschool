@@ -12,6 +12,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 1rem 2rem 1rem;
         @include pc {
             height: 30.3rem;
         }
@@ -31,11 +32,9 @@
             row-gap: 0.5rem;  
         }
         li {
+            text-align: center;
             display: flex;
             justify-content: center;
-            @include pc {
-                text-align: center;
-            }
             a {
                 font-size: 1.7rem;
                 line-height: calc(33 / 17);
@@ -52,10 +51,30 @@
                 }
             }
         }
-        &__logo {
-        width: 100%;
-        margin: 0 auto;
-        padding-bottom: 1.874rem;
     }
-}
+    &__logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.874rem;
+    }
+    &__logo-image {
+        width: 3.23rem;
+    }
+    &__copyright {
+    width: 100%;
+    color: $font-color02;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    margin-top: 2.891rem;
+
+    p {
+      font-size: 1.5rem;
+      line-height: calc(20 / 15);
+      font-weight: 500;
+      @include pc {
+        line-height: calc(33 / 15);
+      }
+    }
+  }
 }
