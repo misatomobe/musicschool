@@ -1,0 +1,16 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   p-fixed-buttons
+========================= */
+.p-fixed-buttons {
+    position: fixed;
+    left: 0;
+    bottom: 3.02rem;
+    width: 100%;
+    z-index: 99999;
+    @include pc {
+        bottom: 2.74rem;
+    }
+}

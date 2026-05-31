@@ -105,13 +105,14 @@ $(accordionSummary).on('click', function (event) {
 // トップへ戻るボタン
 // ==============================
 const topBtn = document.querySelector('.c-button--top');
-const footer = document.querySelector('footer');
+const fixedButtons = document.querySelector('.p-fixed-buttons');
+const footer = document.querySelector('.l-footer');
 const fv = document.querySelector('.p-fv');
 const modal = document.querySelector('.modal');
 
 function updateTopBtn() {
   // 必要な要素が揃っていない場合は処理を抜ける
-  if (!topBtn || !fv) return;
+  if (!topBtn || !fixedButtons || !footer || !fv) return;
 
   // モーダル表示中は最優先で非表示にする
   if (modal && modal.classList.contains('is-active')) {
@@ -119,18 +120,36 @@ function updateTopBtn() {
     return;
   }
 
-  // ①FVの高さを取得
+  // =====================================
+  // TOPボタンの表示・非表示
+  // =====================================
   const fvHeight = fv.offsetHeight;
 
-  // ② スクロール量が①（FVの高さ）を超えたら表示
   if (window.scrollY > fvHeight) {
     topBtn.classList.add('show');
   } else {
     topBtn.classList.remove('show');
   }
+
+  // =====================================
+  // footer接近時の押し上げ処理
+  // =====================================
+  const footerRect = footer.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  // カンプ基準余白
+  const baseBottom = 30.2;
+
+  if (footerRect.top < windowHeight) {
+    const overlap = windowHeight - footerRect.top;
+
+    fixedButtons.style.bottom = `${overlap + baseBottom}px`;
+  } else {
+    fixedButtons.style.bottom = `${baseBottom}px`;
+  }
 }
 
-// イベントリスナーの登録
+// イベントリスナー
 window.addEventListener('scroll', updateTopBtn);
 window.addEventListener('load', updateTopBtn);
 window.addEventListener('resize', updateTopBtn);
