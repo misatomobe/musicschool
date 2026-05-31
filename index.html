@@ -18,7 +18,7 @@
     <div class="l-container">
 
         <!-- 【header】 -->
-        <header class="l-header">
+        <header id="top" class="l-header">
             <div class="l-header__inner">
                 <h1 class="l-header__logo">
                     <a href="#">
@@ -171,7 +171,7 @@
                                         <img src="./images/common/reason03_sp.jpg" alt="きたむらミュージックスクールが選ばれる理由その3">
                                     </picture>                               
                                 </div>                               
-                                <h3 class="p-reason__title">24時間365日使える練習ROOMを完備！<h3>
+                                <h3 class="p-reason__title">24時間365日使える練習ROOMを完備！</h3>
                                 <p class="p-reason__text">コポートするクラスをご用意一年中使える個室の練習ROOMを完備しているため、お仕事帰りや合間の時間も自由に練習が可能です。（アプリで予約が必要です）。</p>                                
                             </div>
                         </div>                     
@@ -476,14 +476,6 @@
                 </div>
             </section>
 
-            <!-- 【お問い合わせ】 -->
-            <section class="p-cta">
-                <div class="p-cta__inner">
-                    <a href="contact_form.html" class="c-button c-button--contact">
-                        お問い合わせ
-                    </a>
-                </div>
-            </section>
         </main>
 
         <!-- footer -->
@@ -553,17 +545,21 @@
 
         <!-- お問い合わせ・トップに戻るボタン -->
         <div class="p-fixed-buttons">
-            <!-- TOPへ戻るボタン -->
+            <!-- TOPへ戻るボタン -->            
             <a href="#top" class="c-button c-button--top">
-                <div class="c-button--image">
-                    <img src="./images/icon-to-top.svg" alt="ページ上部へ戻る" class="c-button--img">
+                <div class="c-button__icon">
+                    <div class="c-button__icon--img">
+                        <img src="./images/icon-to-top.svg" alt="ページ上部へ戻る">
+                    </div>
                 </div>  
             </a>
-
-            <!-- お問合せボタン -->
-            <a href="#contact" class="c-button c-button--contact">
-                お問い合わせ
-            </a>
+            
+            <!-- 【お問い合わせ】 -->
+            <a href="contact_form.html" class="c-button c-button--contact">
+                <div class="c-button__icon">
+                    お問い合わせ
+                </div>        
+            </a>            
         </div>
     </div>
 </body>

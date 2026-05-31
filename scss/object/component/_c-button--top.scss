@@ -1,0 +1,57 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   c-button--top
+========================= */
+.c-button--top {
+    position: fixed;
+    bottom: 7.8rem;
+    right: 2rem;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    @include pc {
+        bottom: 36.5rem;
+        right: 11.6rem;
+    }
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* =========================
+   ボタン本体
+========================= */
+.c-button__icon {
+    width: 6.8rem;
+    height: 6.8rem;
+    background-color: $main-color;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    transition:  transform 0.4s ease, opacity 0.4s ease;
+    &:hover {
+        opacity: 1;
+        transform: none;
+    }
+    @include pc {
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+/* =========================
+   アイコン画像
+========================= */
+.c-button__icon--img {
+    width: 1.7rem;
+    @include pc {
+        width: 2.3rem;
+    }
+}

@@ -101,17 +101,36 @@ $(accordionSummary).on('click', function (event) {
 
 });
 
-  // ==============================
-  // ロゴクリックでトップへ
-  // ==============================
-  const logoLink = document.querySelector('.l-header__logo a');
+// ==============================
+// トップへ戻るボタン
+// ==============================
+const topBtn = document.querySelector('.c-button--top');
+const footer = document.querySelector('footer');
+const fv = document.querySelector('.fv');
+const modal = document.querySelector('.modal');
 
-  if (logoLink) {
-    logoLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
+function updateTopBtn() {
+  // 必要な要素が揃っていない場合は処理を抜ける
+  if (!topBtn || !fv) return;
+
+  // モーダル表示中は最優先で非表示にする
+  if (modal && modal.classList.contains('is-active')) {
+    topBtn.classList.remove('show');
+    return;
   }
+
+  // ①FVの高さを取得
+  const fvHeight = fv.offsetHeight;
+
+  // ② スクロール量が①（FVの高さ）を超えたら表示
+  if (window.scrollY > fvHeight) {
+    topBtn.classList.add('show');
+  } else {
+    topBtn.classList.remove('show');
+  }
+}
+
+// イベントリスナーの登録
+window.addEventListener('scroll', updateTopBtn);
+window.addEventListener('load', updateTopBtn);
+window.addEventListener('resize', updateTopBtn);
