@@ -5,24 +5,43 @@
    c-button--contact
 ========================= */
 .c-button--contact {
+    position: fixed;
+    left: 50%;
+    bottom: 2rem;
+    transform: translateX(-50%);
+    z-index: 99998;
+    @include pc {
+        left: auto;
+        right: 11.6rem;
+        bottom: 27rem;
+        transform: none;
+    }
+}
+/* =========================
+   c-button--icon
+========================= */
+.c-button--contact__icon {
     width: 33.5rem;
     height: 6rem;
-    color: $font-color02;
     background-color: $main-color;
-
-    font-size: 2rem;
-    line-height: calc(33 / 20);
-    font-weight: 700;
     border: 0.1rem solid $main-color;
-
-    transition:
-        background-color 0.4s ease,
-        color 0.4s ease;
-        @include pc {
-            width: 30rem;
-            &:hover {
-                background-color: $font-color02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:  transform 0.4s ease, opacity 0.4s ease;
+    p {
+        color: $font-color02;
+        font-size: 2rem;
+        line-height: calc(33 / 20);
+        font-weight: 700;
+    }
+    @include pc {
+        width: 3rem;
+        &:hover {
+            background-color: $font-color02;
+            p {
                 color: $main-color;
             }
         }
     }
+}
