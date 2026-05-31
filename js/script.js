@@ -106,7 +106,7 @@ $(accordionSummary).on('click', function (event) {
 // ==============================
 const topBtn = document.querySelector('.c-button--top');
 const footer = document.querySelector('footer');
-const fv = document.querySelector('.fv');
+const fv = document.querySelector('.p-fv');
 const modal = document.querySelector('.modal');
 
 function updateTopBtn() {

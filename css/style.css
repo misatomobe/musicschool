@@ -513,12 +513,6 @@ button {
 /* =========================
    c-button
 ========================= */
-.c-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* =========================
    c-button--contact
 ========================= */
@@ -541,6 +535,61 @@ button {
     background-color: #fff;
     color: #CB0000;
   }
+}
+
+/* =========================
+   c-button--top
+========================= */
+.c-button--top {
+  position: fixed;
+  bottom: 7.8rem;
+  right: 2rem;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .c-button--top {
+    bottom: 36.5rem;
+    right: 11.6rem;
+  }
+}
+.c-button--top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* =========================
+   ボタン本体
+========================= */
+.c-button__icon {
+  width: 6.8rem;
+  height: 6.8rem;
+  background-color: #CB0000;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.c-button__icon:hover {
+  opacity: 1;
+  transform: none;
+}
+@media (min-width: 768px) {
+  .c-button__icon:hover {
+    opacity: 0.7;
+  }
+}
+
+/* =========================
+   アイコン画像
+========================= */
+.c-button__icon--img {
+  width: 100%;
 }
 
 /* =========================
