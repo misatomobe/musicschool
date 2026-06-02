@@ -137,7 +137,7 @@ function updateTopBtn() {
   const windowHeight = window.innerHeight;
 
   // カンプ基準余白
-  const baseBottom = 30.2;
+  const baseBottom = 0.3;
 
   if (footerRect.top < windowHeight) {
     const overlap = windowHeight - footerRect.top;
