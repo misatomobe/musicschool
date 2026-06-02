@@ -570,9 +570,6 @@ button {
   bottom: 8rem;
   right: 2rem;
   z-index: 99999;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
   display: inline-block;
   border-radius: 50%;
   overflow: hidden;
@@ -582,10 +579,6 @@ button {
     bottom: 36.5rem;
     right: 11.6rem;
   }
-}
-.c-button--top.show {
-  opacity: 1;
-  visibility: visible;
 }
 
 /* =========================
@@ -1119,6 +1112,13 @@ button {
   bottom: 3.02rem;
   width: 100%;
   z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+.p-fixed-buttons.show {
+  opacity: 1;
+  visibility: visible;
 }
 @media (min-width: 768px) {
   .p-fixed-buttons {

@@ -104,7 +104,6 @@ $(accordionSummary).on('click', function (event) {
 // ==============================
 // トップへ戻るボタン
 // ==============================
-const topBtn = document.querySelector('.c-button--top');
 const fixedButtons = document.querySelector('.p-fixed-buttons');
 const footer = document.querySelector('.l-footer');
 const fv = document.querySelector('.p-fv');
@@ -112,11 +111,11 @@ const modal = document.querySelector('.modal');
 
 function updateTopBtn() {
   // 必要な要素が揃っていない場合は処理を抜ける
-  if (!topBtn || !fixedButtons || !footer || !fv) return;
+  if (!fixedButtons || !footer || !fv) return;
 
   // モーダル表示中は最優先で非表示にする
   if (modal && modal.classList.contains('is-active')) {
-    topBtn.classList.remove('show');
+    fixedButtons.classList.remove('show');
     return;
   }
 
@@ -126,9 +125,9 @@ function updateTopBtn() {
   const fvHeight = fv.offsetHeight;
 
   if (window.scrollY > fvHeight) {
-    topBtn.classList.add('show');
+    fixedButtons.classList.add('show');
   } else {
-    topBtn.classList.remove('show');
+    fixedButtons.classList.remove('show');
   }
 
   // =====================================
