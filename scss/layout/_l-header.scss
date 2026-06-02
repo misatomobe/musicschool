@@ -74,7 +74,7 @@
             align-items: center;
             gap: 3.3rem;
 
-            a {
+            li:not(.is-contact) a {
                 font-size: 1.7rem;
                 font-weight: 600;
                 color: $font-color;
@@ -101,7 +101,15 @@
                 font-size: 1.5rem;
                 background: $main-color;
                 color: $font-color02;
+                border: 0.1rem solid $main-color;
                 padding: 1rem 3rem;
+                transition: 0.4s ease;
+                @include pc {
+                    &:hover {
+                        background-color: $font-color02;
+                        color: $main-color;
+                    }
+                }
             }
         }
     }

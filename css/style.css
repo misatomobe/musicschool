@@ -238,14 +238,14 @@ button {
   align-items: center;
   gap: 3.3rem;
 }
-.l-header__nav ul a {
+.l-header__nav ul li:not(.is-contact) a {
   font-size: 1.7rem;
   font-weight: 600;
   color: #000;
   transition: opacity 0.4s ease;
   position: relative;
 }
-.l-header__nav ul a::after {
+.l-header__nav ul li:not(.is-contact) a::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -257,14 +257,22 @@ button {
   transform-origin: left;
   transition: transform 0.7s ease;
 }
-.l-header__nav ul a:hover::after {
+.l-header__nav ul li:not(.is-contact) a:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
 .l-header__nav ul .is-contact a {
   font-size: 1.5rem;
   background: #CB0000;
   color: #fff;
+  border: 0.1rem solid #CB0000;
   padding: 1rem 3rem;
+  transition: 0.4s ease;
+}
+@media (min-width: 768px) {
+  .l-header__nav ul .is-contact a:hover {
+    background-color: #fff;
+    color: #CB0000;
+  }
 }
 .l-header {
   /* =========================
