@@ -552,7 +552,7 @@ button {
 }
 @media (min-width: 768px) {
   .c-button--contact__icon {
-    width: 3rem;
+    width: 30rem;
   }
   .c-button--contact__icon:hover {
     background-color: #fff;
@@ -576,7 +576,7 @@ button {
 }
 @media (min-width: 768px) {
   .c-button--top {
-    bottom: 36.5rem;
+    bottom: 9.1rem;
     right: 11.6rem;
   }
 }

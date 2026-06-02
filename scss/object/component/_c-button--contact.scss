@@ -35,7 +35,7 @@
         font-weight: 700;
     }
     @include pc {
-        width: 3rem;
+        width: 30rem;
         &:hover {
             background-color: $font-color02;
             p {
