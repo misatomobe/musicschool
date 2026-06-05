@@ -76,7 +76,8 @@
 
             li:not(.is-contact) a {
                 font-size: 1.7rem;
-                font-weight: 600;
+                line-height: calc(33 / 17);
+                font-weight: 700;
                 color: $font-color;
                 transition: opacity 0.4s ease;
                 position: relative;
@@ -99,6 +100,8 @@
 
             .is-contact a {
                 font-size: 1.5rem;
+                line-height: calc(28 / 15);
+                font-weight: 700;
                 background: $main-color;
                 color: $font-color02;
                 border: 0.1rem solid $main-color;
@@ -133,8 +136,10 @@
 
         &-lists {
             margin: 0;
+            font-size: 1.8rem;
+            line-height: calc(33 / 18);
             list-style: none;
-            font-weight: 500;
+            font-weight: 700;
 
             a {
                 color: $font-color02;
@@ -180,7 +185,9 @@
                 height: 0.4rem;
                 background: $font-color02;
                 border-radius: 10px;
-                transition: 0.3s;
+                transition: top 0.4s ease,
+                            transform 0.4s ease,
+                            background-color 0.4s ease;
                 display: block;
             }
 
