@@ -25,6 +25,7 @@
         }
     }
     &__arch {
+        display: block;
         margin-top: 2rem;
         @include pc {
             margin-top: 3.4rem;
