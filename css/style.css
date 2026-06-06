@@ -703,6 +703,22 @@ button {
   font-size: 1.8rem;
   line-height: 1.6666666667;
 }
+.p-concept__text {
+  margin-top: 0.7rem;
+}
+@media (min-width: 768px) {
+  .p-concept__text {
+    margin-top: 1.7rem;
+  }
+}
+.p-concept__arch {
+  margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .p-concept__arch {
+    margin-top: 3.4rem;
+  }
+}
 .p-concept__items {
   position: relative;
 }

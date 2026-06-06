@@ -18,6 +18,18 @@
             line-height: calc(30 / 18);
         }
     }
+    &__text {
+        margin-top: 0.7rem;
+        @include pc {
+            margin-top: 1.7rem;
+        }
+    }
+    &__arch {
+        margin-top: 2rem;
+        @include pc {
+            margin-top: 3.4rem;
+        }
+    }
     &__items {
         position: relative;
     }
