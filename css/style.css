@@ -495,6 +495,11 @@ button {
     padding: 0 10rem;
   }
 }
+@media (min-width: 769px) and (max-width: 1030px) {
+  .l-inner {
+    padding: 0 2rem;
+  }
+}
 
 .c-logo__image {
   width: 2.55rem;

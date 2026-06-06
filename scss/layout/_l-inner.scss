@@ -6,4 +6,7 @@
     @include pc {
         padding: 0 10rem;
     }
+    @include tab-only {
+        padding: 0 2rem;
+    }
 }
