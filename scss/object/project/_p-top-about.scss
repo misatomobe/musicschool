@@ -6,6 +6,9 @@
 ========================= */
 .p-about {
     color: $font-color02;
+    @include pc {
+        padding: 6.8rem 0 6rem 0;
+    }
     &__contents {
         text-align: center;
     }

@@ -34,4 +34,10 @@
     h3 {
         margin-bottom: 1rem;
     }
+    &__text {
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+        font-weight: 500;
+    }
+
 }
