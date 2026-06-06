@@ -68,6 +68,7 @@
     &__list {
         display: flex;
         flex-direction: column;
+        position: relative;
         gap: 1rem;
 
         /* 中央線 */
@@ -75,11 +76,10 @@
             content: "";
             position: absolute;
             top: -1.5rem;
-            bottom: 0;
+            bottom: 1.5rem;
             left: 50%;
             transform: translateX(-50%);
             width: 3px;
-            height: 188px;
             background: $main-color;
         }
     }
