@@ -33,6 +33,10 @@
     }
     &__items {
         position: relative;
+        margin-top: 1rem;
+        @include pc {
+            margin-top: 0;
+        }
     }
     /* =========================
         ARROW

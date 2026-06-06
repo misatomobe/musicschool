@@ -722,6 +722,12 @@ button {
 }
 .p-concept__items {
   position: relative;
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .p-concept__items {
+    margin-top: 0;
+  }
 }
 .p-concept {
   /* =========================
