@@ -16,6 +16,7 @@
         p {
             font-size: 1.8rem;
             line-height: calc(30 / 18);
+            font-weight: 500;
         }
     }
     &__text {
@@ -99,7 +100,7 @@
         text-align: right;
         font-size: 2rem;
         line-height: calc(50 / 20);
-        font-weight: 600;
+        font-weight: 700;
         color: $main-color;
         padding-right: clamp(1rem, 3vw, 2.5rem);
     }

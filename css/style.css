@@ -702,6 +702,7 @@ button {
 .p-concept__head p {
   font-size: 1.8rem;
   line-height: 1.6666666667;
+  font-weight: 500;
 }
 .p-concept__text {
   margin-top: 0.7rem;
@@ -789,7 +790,7 @@ button {
   text-align: right;
   font-size: 2rem;
   line-height: 2.5;
-  font-weight: 600;
+  font-weight: 700;
   color: #CB0000;
   padding-right: clamp(1rem, 3vw, 2.5rem);
 }
