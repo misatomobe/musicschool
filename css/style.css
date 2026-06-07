@@ -860,6 +860,9 @@ button {
     display: flex;
   }
 }
+.p-reason_body {
+  width: 100%;
+}
 .p-reason__item img {
   margin-bottom: 3rem;
 }
@@ -870,6 +873,8 @@ button {
   position: relative;
   display: inline-block;
   padding-bottom: 1rem;
+  padding-left: 5rem;
+  display: block;
 }
 .p-reason__title::after {
   content: "";
@@ -887,6 +892,7 @@ button {
   font-size: 1.6rem;
   line-height: 1.875;
   font-weight: 500;
+  padding-left: 5rem;
 }
 
 /* =========================
