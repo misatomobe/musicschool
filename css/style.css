@@ -953,8 +953,13 @@ button {
   width: 2.04rem;
   height: 2.98rem;
   opacity: 0.5;
-  top: 16.3rem;
+  position: absolute;
+  top: 50%;
   transform: translateY(-50%);
+  z-index: 10;
+}
+.p-voice .swiper-button-prev {
+  left: 1rem;
 }
 @media (min-width: 768px) {
   .p-voice .swiper-button-prev {
@@ -962,6 +967,9 @@ button {
     transform: translateX(-100%);
     top: 25%;
   }
+}
+.p-voice .swiper-button-next {
+  right: 1rem;
 }
 @media (min-width: 768px) {
   .p-voice .swiper-button-next {

@@ -30,6 +30,8 @@ const swiper = new Swiper('.p-voice__slider', {
     prevEl: '.swiper-button-prev',
   },
 
+  watchOverflow: false,
+
   breakpoints: {
     // when window width is >= 480px
     480: {
@@ -39,7 +41,7 @@ const swiper = new Swiper('.p-voice__slider', {
     // when window width is >= 768px
     768: {
       slidesPerView: 3,
-      spaceBetween: 24
+      spaceBetween: 36
     }
   }
 });

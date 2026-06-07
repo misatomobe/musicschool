@@ -46,10 +46,13 @@
       width: 2.04rem;
       height: 2.98rem;
       opacity: 0.5;
-      top: 16.3rem;
+      position: absolute;
+      top: 50%;
       transform: translateY(-50%);
+      z-index: 10;
    }
    .swiper-button-prev {
+      left: 1rem;
       @include pc {
       left: -2rem;
       transform: translateX(-100%);
@@ -57,6 +60,7 @@
    }
 }
    .swiper-button-next {
+      right: 1rem;
       @include pc {
       right: -2rem;
       transform: translateX(100%);
