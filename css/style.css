@@ -939,6 +939,15 @@ button {
 .p-voice .swiper-button-next {
   width: 2.04rem;
   height: 2.98rem;
+  opacity: 0.5;
+  top: 16.3rem;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .p-voice .swiper-button-prev,
+  .p-voice .swiper-button-next {
+    top: 15.3rem;
+  }
 }
 .p-voice .swiper-button-prev::after,
 .p-voice .swiper-button-next::after {

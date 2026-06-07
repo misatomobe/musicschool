@@ -27,52 +27,57 @@
       }
    }
    .swiper-button-prev,
-.swiper-button-next {
-    width: 2.04rem;
-    height: 2.98rem;
-}
-.swiper-button-prev::after,
-.swiper-button-next::after {
-   content: "";
-}
-
- /* ＞ */
-.swiper-button-next::before,
-.swiper-button-next::after {
-   content: "";
-   position: absolute;
-   top: calc(50% - 0.35rem);
-   right: 0;
-   width: 2.49rem;
-   height: 0.7rem;
-   border-radius: 9999px;
-   background-color: #fff;
-   transform-origin: calc(100% - 0.35rem) 50%;
-}
-.swiper-button-next::before {
-   transform: rotate(38.2deg);
-}
-.swiper-button-next::after {
-   transform: rotate(-38.2deg);
-}
-/* ＜ */
-.swiper-button-prev::before,
-.swiper-button-prev::after {
-   content: "";
-   position: absolute;
-   top: calc(50% - 0.35rem);
-   left: 0;
-   width: 2.49rem;
-   height: 0.7rem;
-   border-radius: 9999px;
-   background-color: #fff;
-   transform-origin: 0.35rem 50%;
-}
-
-.swiper-button-prev::before {
-   transform: rotate(38.2deg);
-}
-.swiper-button-prev::after {
-   transform: rotate(-38.2deg);
-}
+   .swiper-button-next {
+      width: 2.04rem;
+      height: 2.98rem;
+      opacity: 0.5;
+      top: 16.3rem;
+      transform: translateY(-50%);
+      @include pc {
+         top: 15.3rem;
+      }
+   }
+   .swiper-button-prev::after,
+   .swiper-button-next::after {
+      content: "";
+   }
+   
+   /* ＞ */
+   .swiper-button-next::before,
+   .swiper-button-next::after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 0.35rem);
+      right: 0;
+      width: 2.49rem;
+      height: 0.7rem;
+      border-radius: 9999px;
+      background-color: #fff;
+      transform-origin: calc(100% - 0.35rem) 50%;
+   }
+   .swiper-button-next::before {
+      transform: rotate(38.2deg);
+   }
+   .swiper-button-next::after {
+      transform: rotate(-38.2deg);
+   }
+   /* ＜ */
+   .swiper-button-prev::before,
+   .swiper-button-prev::after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 0.35rem);
+      left: 0;
+      width: 2.49rem;
+      height: 0.7rem;
+      border-radius: 9999px;
+      background-color: #fff;
+      transform-origin: 0.35rem 50%;
+   }
+   .swiper-button-prev::before {
+      transform: rotate(38.2deg);
+   }
+   .swiper-button-prev::after {
+      transform: rotate(-38.2deg);
+   }
 }
