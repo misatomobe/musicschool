@@ -919,6 +919,13 @@ button {
 .p-voice h2 {
   margin-bottom: 3.9rem;
 }
+@media (min-width: 768px) {
+  .p-voice__slider {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
 .p-voice__image {
   margin-bottom: 2.7rem;
 }
@@ -948,6 +955,12 @@ button {
   .p-voice .swiper-button-next {
     top: 15.3rem;
   }
+}
+.p-voice .swiper-button-prev {
+  left: -5rem;
+}
+.p-voice .swiper-button-next {
+  right: -5rem;
 }
 .p-voice .swiper-button-prev::after,
 .p-voice .swiper-button-next::after {

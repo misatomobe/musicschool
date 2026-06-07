@@ -8,6 +8,13 @@
    h2 {
       margin-bottom: 3.9rem;
    }
+   &__slider {
+      @include pc {
+         max-width: 1000px;
+         margin: 0 auto;
+         position: relative;
+      }
+   }
    &__image {
       margin-bottom: 2.7rem;
    }
@@ -36,6 +43,12 @@
       @include pc {
          top: 15.3rem;
       }
+   }
+   .swiper-button-prev {
+      left: -5rem;
+   }
+   .swiper-button-next {
+      right: -5rem;
    }
    .swiper-button-prev::after,
    .swiper-button-next::after {
