@@ -2,11 +2,9 @@
 @use "../foundation/mixin" as *;
 
 .l-inner {
-    padding: 5rem 2rem 4rem;
+    padding: 0 2rem;
     @include pc {
-        padding: 0 10rem;
-    }
-    @include tab-only {
-        padding: 0 2rem;
+        max-width: 880px;
+        margin: 0 auto;
     }
 }
