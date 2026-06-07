@@ -956,7 +956,7 @@ button {
   height: 2.98rem;
   opacity: 0.5;
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   z-index: 10;
 }
