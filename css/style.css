@@ -181,23 +181,18 @@ button {
   }
 }
 .l-header__inner {
-  max-width: 1080px;
+  max-width: 880px;
   margin: 0 auto;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding-inline: 2rem;
 }
 @media (min-width: 768px) {
   .l-header__inner {
-    padding: 0 10rem;
-  }
-}
-@media (min-width: 769px) and (max-width: 1030px) {
-  .l-header__inner {
-    padding: 0 2rem;
+    padding-inline: 3rem;
   }
 }
 .l-header {
