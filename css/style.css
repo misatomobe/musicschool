@@ -860,11 +860,21 @@ button {
     display: flex;
   }
 }
-.p-reason_body {
+.p-reason__image {
   width: 100%;
+}
+@media (min-width: 768px) {
+  .p-reason__image {
+    width: 39.8%;
+  }
 }
 .p-reason__item img {
   margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .p-reason__body {
+    flex: 1;
+  }
 }
 .p-reason__title {
   font-size: 2rem;
@@ -873,13 +883,13 @@ button {
   position: relative;
   display: inline-block;
   padding-bottom: 1rem;
-  padding-left: 5rem;
   display: block;
 }
 @media (min-width: 768px) {
   .p-reason__title {
     font-size: 2.2rem;
     line-height: 1.5;
+    padding-left: 5rem;
   }
 }
 .p-reason__title::after {
@@ -898,7 +908,13 @@ button {
   font-size: 1.6rem;
   line-height: 1.875;
   font-weight: 500;
-  padding-left: 5rem;
+}
+@media (min-width: 768px) {
+  .p-reason__text {
+    font-size: 1.8rem;
+    line-height: 1.8333333333;
+    padding-left: 5rem;
+  }
 }
 
 /* =========================
