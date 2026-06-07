@@ -935,6 +935,57 @@ button {
   font-weight: 500;
   color: #fff;
 }
+.p-voice .swiper-button-prev,
+.p-voice .swiper-button-next {
+  width: 2.04rem;
+  height: 2.98rem;
+}
+.p-voice .swiper-button-prev::after,
+.p-voice .swiper-button-next::after {
+  content: "";
+}
+.p-voice {
+  /* ＞ */
+}
+.p-voice .swiper-button-next::before,
+.p-voice .swiper-button-next::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.35rem);
+  right: 0;
+  width: 2.49rem;
+  height: 0.7rem;
+  border-radius: 9999px;
+  background-color: #fff;
+  transform-origin: calc(100% - 0.35rem) 50%;
+}
+.p-voice .swiper-button-next::before {
+  transform: rotate(38.2deg);
+}
+.p-voice .swiper-button-next::after {
+  transform: rotate(-38.2deg);
+}
+.p-voice {
+  /* ＜ */
+}
+.p-voice .swiper-button-prev::before,
+.p-voice .swiper-button-prev::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.35rem);
+  left: 0;
+  width: 2.49rem;
+  height: 0.7rem;
+  border-radius: 9999px;
+  background-color: #fff;
+  transform-origin: 0.35rem 50%;
+}
+.p-voice .swiper-button-prev::before {
+  transform: rotate(38.2deg);
+}
+.p-voice .swiper-button-prev::after {
+  transform: rotate(-38.2deg);
+}
 
 /* =========================
    FLOW
