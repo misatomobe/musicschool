@@ -5,16 +5,24 @@
    VOICE
 ========================= */
 .p-voice {
-   h2 {
-      margin-bottom: 3.9rem;
-   }
-   &__slider {
+   &__slider-wrap {
       @include pc {
-         max-width: 1000px;
-         margin: 0 auto;
+         max-width: 960px;
+         margin-inline: auto;
          position: relative;
       }
    }
+   &__slider {
+      @include pc {
+         max-width: 880px;
+         margin-inline: auto;
+      }
+   }
+   
+   h2 {
+      margin-bottom: 3.9rem;
+   }
+
    &__image {
       margin-bottom: 2.7rem;
    }
@@ -40,16 +48,21 @@
       opacity: 0.5;
       top: 16.3rem;
       transform: translateY(-50%);
-      @include pc {
-         top: 15.3rem;
-      }
    }
    .swiper-button-prev {
-      left: -5rem;
+      @include pc {
+      left: -2rem;
+      transform: translateX(-100%);
+      top: 25%;
    }
+}
    .swiper-button-next {
-      right: -5rem;
+      @include pc {
+      right: -2rem;
+      transform: translateX(100%);
+      top: 25%;
    }
+}
    .swiper-button-prev::after,
    .swiper-button-next::after {
       content: "";

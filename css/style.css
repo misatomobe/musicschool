@@ -916,15 +916,21 @@ button {
 /* =========================
    VOICE
 ========================= */
-.p-voice h2 {
-  margin-bottom: 3.9rem;
+@media (min-width: 768px) {
+  .p-voice__slider-wrap {
+    max-width: 960px;
+    margin-inline: auto;
+    position: relative;
+  }
 }
 @media (min-width: 768px) {
   .p-voice__slider {
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
+    max-width: 880px;
+    margin-inline: auto;
   }
+}
+.p-voice h2 {
+  margin-bottom: 3.9rem;
 }
 .p-voice__image {
   margin-bottom: 2.7rem;
@@ -951,16 +957,18 @@ button {
   transform: translateY(-50%);
 }
 @media (min-width: 768px) {
-  .p-voice .swiper-button-prev,
-  .p-voice .swiper-button-next {
-    top: 15.3rem;
+  .p-voice .swiper-button-prev {
+    left: -2rem;
+    transform: translateX(-100%);
+    top: 25%;
   }
 }
-.p-voice .swiper-button-prev {
-  left: -5rem;
-}
-.p-voice .swiper-button-next {
-  right: -5rem;
+@media (min-width: 768px) {
+  .p-voice .swiper-button-next {
+    right: -2rem;
+    transform: translateX(100%);
+    top: 25%;
+  }
 }
 .p-voice .swiper-button-prev::after,
 .p-voice .swiper-button-next::after {
