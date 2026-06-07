@@ -845,8 +845,20 @@ button {
 .p-reason__title-main {
   margin-bottom: 3.6rem;
 }
+@media (min-width: 768px) {
+  .p-reason__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+}
 .p-reason__item {
   margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+  .p-reason__item {
+    display: flex;
+  }
 }
 .p-reason__item img {
   margin-bottom: 3rem;

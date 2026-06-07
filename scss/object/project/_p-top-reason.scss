@@ -8,8 +8,18 @@
     &__title-main {
         margin-bottom: 3.6rem;
     }
+    &__items {
+        @include pc {
+            display: flex;
+            flex-direction: column;
+            row-gap: 5rem;
+        }
+    }
     &__item {
         margin-bottom: 4rem;
+        @include pc {
+            display: flex;
+        }
     }
     &__item img {
         margin-bottom: 3rem;
@@ -39,5 +49,6 @@
         line-height: calc(30 / 16);
         font-weight: 500;
     }
+
 
 }
