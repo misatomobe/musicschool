@@ -916,11 +916,13 @@ button {
 /* =========================
    VOICE
 ========================= */
+.p-voice__slider-wrap {
+  position: relative;
+}
 @media (min-width: 768px) {
   .p-voice__slider-wrap {
     max-width: 960px;
     margin-inline: auto;
-    position: relative;
   }
 }
 @media (min-width: 768px) {

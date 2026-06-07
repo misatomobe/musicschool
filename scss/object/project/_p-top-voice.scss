@@ -6,10 +6,10 @@
 ========================= */
 .p-voice {
    &__slider-wrap {
+      position: relative;
       @include pc {
          max-width: 960px;
          margin-inline: auto;
-         position: relative;
       }
    }
    &__slider {
