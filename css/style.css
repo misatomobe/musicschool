@@ -1036,6 +1036,11 @@ button {
 .p-voice .swiper-button-prev::after {
   transform: rotate(-38.2deg);
 }
+.p-voice .swiper,
+.p-voice .swiper-wrapper,
+.p-voice .swiper-slide {
+  height: auto;
+}
 
 /* =========================
    FLOW

@@ -118,4 +118,9 @@
    .swiper-button-prev::after {
       transform: rotate(-38.2deg);
    }
+   .swiper,
+   .swiper-wrapper,
+   .swiper-slide {
+      height: auto;
+   }
 }
