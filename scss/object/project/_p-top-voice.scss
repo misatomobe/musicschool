@@ -60,17 +60,17 @@
       z-index: 10;
    }
    .swiper-button-prev {
-      left: 1rem;
+      left: 0;
       @include pc {
-      left: -2rem;
+      left: 0;
       transform: translateX(-100%);
       top: 25%;
    }
 }
    .swiper-button-next {
-      right: 1rem;
+      right: 0;
       @include pc {
-      right: -2rem;
+      right: 0;
       transform: translateX(100%);
       top: 25%;
    }

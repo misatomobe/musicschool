@@ -971,21 +971,21 @@ button {
   z-index: 10;
 }
 .p-voice .swiper-button-prev {
-  left: 1rem;
+  left: 0;
 }
 @media (min-width: 768px) {
   .p-voice .swiper-button-prev {
-    left: -2rem;
+    left: 0;
     transform: translateX(-100%);
     top: 25%;
   }
 }
 .p-voice .swiper-button-next {
-  right: 1rem;
+  right: 0;
 }
 @media (min-width: 768px) {
   .p-voice .swiper-button-next {
-    right: -2rem;
+    right: 0;
     transform: translateX(100%);
     top: 25%;
   }
