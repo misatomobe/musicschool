@@ -938,7 +938,7 @@ button {
 @media (min-width: 768px) {
   .p-voice__slider {
     max-width: 880px;
-    margin-inline: 1.8rem;
+    margin-inline: auto;
   }
 }
 .p-voice h2 {
@@ -967,8 +967,14 @@ button {
   opacity: 0.5;
   position: absolute;
   top: 35%;
-  transform: translateY(-50%);
+  transform: translateY(-10%);
   z-index: 10;
+}
+@media (min-width: 768px) {
+  .p-voice .swiper-button-prev,
+  .p-voice .swiper-button-next {
+    top: 14rem;
+  }
 }
 .p-voice .swiper-button-prev {
   left: 0;
@@ -976,8 +982,8 @@ button {
 @media (min-width: 768px) {
   .p-voice .swiper-button-prev {
     left: 0;
-    transform: translateX(-100%);
-    top: 25%;
+    transform: translate(-100%, -50%);
+    padding-bottom: 3rem;
   }
 }
 .p-voice .swiper-button-next {
@@ -986,8 +992,8 @@ button {
 @media (min-width: 768px) {
   .p-voice .swiper-button-next {
     right: 0;
-    transform: translateX(100%);
-    top: 25%;
+    transform: translate(100%, -50%);
+    padding-bottom: 3rem;
   }
 }
 .p-voice .swiper-button-prev::after,

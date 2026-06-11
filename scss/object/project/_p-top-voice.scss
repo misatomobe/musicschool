@@ -23,7 +23,7 @@
    &__slider {
       @include pc {
          max-width: 880px;
-         margin-inline: 1.8rem;
+         margin-inline: auto;
       }
    }
    
@@ -56,23 +56,26 @@
       opacity: 0.5;
       position: absolute;
       top: 35%;
-      transform: translateY(-50%);
+      transform: translateY(-10%);
       z-index: 10;
+      @include pc {
+         top: 14rem;
+      }
    }
    .swiper-button-prev {
       left: 0;
       @include pc {
       left: 0;
-      transform: translateX(-100%);
-      top: 25%;
+      transform: translate(-100%, -50%);
+      padding-bottom: 3rem;
    }
 }
    .swiper-button-next {
       right: 0;
       @include pc {
       right: 0;
-      transform: translateX(100%);
-      top: 25%;
+      transform: translate(100%, -50%);
+      padding-bottom: 3rem;
    }
 }
    .swiper-button-prev::after,
