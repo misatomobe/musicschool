@@ -938,7 +938,7 @@ button {
 @media (min-width: 768px) {
   .p-voice__slider {
     max-width: 880px;
-    margin-inline: auto;
+    margin-inline: 1.8rem;
   }
 }
 .p-voice h2 {
