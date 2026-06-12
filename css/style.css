@@ -819,6 +819,7 @@ button {
 ========================= */
 .p-about {
   color: #fff;
+  padding: 5rem 0 4rem 0;
 }
 @media (min-width: 768px) {
   .p-about {
