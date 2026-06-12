@@ -1065,7 +1065,7 @@ button {
    FLOW
 ========================= */
 .p-flow {
-  padding: 4.6rem 0 5.5rem;
+  padding: 4.6rem 0 2.5rem;
 }
 @media (min-width: 768px) {
   .p-flow {
@@ -1144,6 +1144,14 @@ button {
 /* =========================
    FAQ
 ========================= */
+.p-faq {
+  padding: 4.5rem 0 2.5rem;
+}
+@media (min-width: 768px) {
+  .p-faq {
+    padding: 3.4rem 0 3.5rem;
+  }
+}
 .p-faq__contents {
   margin-top: 4rem;
 }
@@ -1238,6 +1246,14 @@ button {
 /* =========================
    BLOG
 ========================= */
+.p-blog {
+  padding: 4.5rem 0 2.5rem;
+}
+@media (min-width: 768px) {
+  .p-blog {
+    padding: 3.4rem 0 3.5rem;
+  }
+}
 .p-blog__contents {
   margin-top: 3.6rem;
 }
@@ -1302,10 +1318,13 @@ button {
 }
 .p-blog__link {
   margin-top: 3.7rem;
+  margin-bottom: 19rem;
   text-align: center;
 }
 @media (min-width: 768px) {
   .p-blog__link {
+    margin-top: 3.7rem;
+    margin-bottom: 20.5rem;
     text-align: right;
   }
 }

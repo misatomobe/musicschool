@@ -5,6 +5,10 @@
    FAQ
 ========================= */
 .p-faq {
+    padding: 4.5rem 0 2.5rem;
+    @include pc {
+        padding: 3.4rem 0 3.5rem;
+    }
     &__contents {
         margin-top: 4rem;
     }
