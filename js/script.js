@@ -33,13 +33,7 @@ const swiper = new Swiper('.p-voice__slider', {
   watchOverflow: false,
 
   breakpoints: {
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 16
-    },
-    // when window width is >= 768px
-    768: {
+  768: {
       slidesPerView: 3,
       spaceBetween: 36
     }
