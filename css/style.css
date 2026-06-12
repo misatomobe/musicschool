@@ -840,11 +840,11 @@ button {
    REASON
 ========================= */
 .p-reason {
-  padding: 5rem 0 4rem 0;
+  padding: 5rem 0 4rem;
 }
 @media (min-width: 768px) {
   .p-reason {
-    padding: 6.4rem 0 9rem 0;
+    padding: 6.4rem 0 9rem;
   }
 }
 .p-reason__title-main {
