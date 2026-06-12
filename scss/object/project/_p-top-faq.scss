@@ -60,7 +60,7 @@
         height: 0.92rem;
         flex-shrink: 0;
         margin-left: auto;
-        transition: transform 0.4s;
+        transition: transform 0.4s ease;
 
         &::before,
         &::after {
@@ -73,7 +73,6 @@
             border-radius: 9999px;
             background-color: $font-color;
             transform-origin: center bottom;
-            transition: transform 0.4s ease;
         }
         &::before {
             transform: translateX(-50%) rotate(45deg);

@@ -1180,7 +1180,7 @@ button {
   height: 0.92rem;
   flex-shrink: 0;
   margin-left: auto;
-  transition: transform 0.4s;
+  transition: transform 0.4s ease;
 }
 .p-faq__btn::before, .p-faq__btn::after {
   content: "";
@@ -1192,7 +1192,6 @@ button {
   border-radius: 9999px;
   background-color: #000;
   transform-origin: center bottom;
-  transition: transform 0.4s ease;
 }
 .p-faq__btn::before {
   transform: translateX(-50%) rotate(45deg);
