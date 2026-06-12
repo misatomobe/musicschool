@@ -5,6 +5,10 @@
    REASON
 ========================= */
 .p-reason {
+    padding: 5rem 0 4rem 0;
+    @include pc {
+        padding: 6.4rem 0 9rem 0;
+    }
     &__title-main {
         margin-bottom: 3.6rem;
     }
@@ -17,8 +21,12 @@
     }
     &__item {
         margin-bottom: 4rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
         @include pc {
             display: flex;
+            margin-bottom: 5rem;
         }
     }
     &__image {

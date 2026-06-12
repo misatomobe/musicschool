@@ -839,6 +839,14 @@ button {
 /* =========================
    REASON
 ========================= */
+.p-reason {
+  padding: 5rem 0 4rem 0;
+}
+@media (min-width: 768px) {
+  .p-reason {
+    padding: 6.4rem 0 9rem 0;
+  }
+}
 .p-reason__title-main {
   margin-bottom: 3.6rem;
 }
@@ -852,9 +860,13 @@ button {
 .p-reason__item {
   margin-bottom: 4rem;
 }
+.p-reason__item:last-child {
+  margin-bottom: 0;
+}
 @media (min-width: 768px) {
   .p-reason__item {
     display: flex;
+    margin-bottom: 5rem;
   }
 }
 .p-reason__image {
