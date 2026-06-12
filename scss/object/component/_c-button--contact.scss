@@ -5,6 +5,8 @@
    c-button--contact
 ========================= */
 .c-button--contact {
+    width: 33.5rem;
+    max-width: calc(100vw - 4rem);  
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -20,7 +22,7 @@
    c-button--icon
 ========================= */
 .c-button--contact__icon {
-    width: 33.5rem;
+    width: 100%;
     height: 6rem;
     background-color: $main-color;
     border: 0.1rem solid $main-color;
