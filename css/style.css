@@ -1180,6 +1180,7 @@ button {
   height: 0.92rem;
   flex-shrink: 0;
   margin-left: auto;
+  transition: transform 0.4s;
 }
 .p-faq__btn::before, .p-faq__btn::after {
   content: "";
@@ -1191,7 +1192,7 @@ button {
   border-radius: 9999px;
   background-color: #000;
   transform-origin: center bottom;
-  transition: transform 0.3s;
+  transition: transform 0.4s ease;
 }
 .p-faq__btn::before {
   transform: translateX(-50%) rotate(45deg);
@@ -1199,11 +1200,8 @@ button {
 .p-faq__btn::after {
   transform: translateX(-50%) rotate(-45deg);
 }
-.p-faq__summary.is-active .p-faq__btn::before {
-  transform: translateX(-50%) rotate(-45deg);
-}
-.p-faq__summary.is-active .p-faq__btn::after {
-  transform: translateX(-50%) rotate(45deg);
+.p-faq__summary.is-active .p-faq__btn {
+  transform: rotate(180deg);
 }
 .p-faq__answer {
   display: flex;
