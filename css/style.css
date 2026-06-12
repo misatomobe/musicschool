@@ -1002,7 +1002,7 @@ button {
   height: 2.98rem;
   opacity: 0.5;
   position: absolute;
-  top: 35%;
+  top: 18rem;
   transform: translateY(-10%);
   z-index: 10;
 }
@@ -1019,7 +1019,6 @@ button {
   .p-voice .swiper-button-prev {
     left: 0;
     transform: translate(-100%, -50%);
-    padding-bottom: 3rem;
   }
 }
 .p-voice .swiper-button-next {
@@ -1029,7 +1028,6 @@ button {
   .p-voice .swiper-button-next {
     right: 0;
     transform: translate(100%, -50%);
-    padding-bottom: 3rem;
   }
 }
 .p-voice .swiper-button-prev::after,
