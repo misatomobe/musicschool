@@ -960,8 +960,23 @@ button {
 .p-voice h2 {
   margin-bottom: 3.9rem;
 }
+@media (min-width: 768px) {
+  .p-voice .p-voice__card:hover .p-voice__image img {
+    transform: scale(1.1);
+  }
+  .p-voice .p-voice__card:hover .p-voice__body {
+    opacity: 0.7;
+  }
+}
 .p-voice__image {
+  overflow: hidden;
   margin-bottom: 2.7rem;
+}
+.p-voice__image img {
+  transition: transform 0.4s ease;
+}
+.p-voice__body {
+  transition: opacity 0.4s ease;
 }
 .p-voice__body h3 {
   font-size: 2.2rem;

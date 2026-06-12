@@ -31,10 +31,25 @@
       margin-bottom: 3.9rem;
    }
 
+   @include pc {
+      .p-voice__card:hover {
+         .p-voice__image img {
+            transform: scale(1.1);
+         }
+         .p-voice__body {
+            opacity: 0.7;
+         }
+      }
+   }
    &__image {
+      overflow: hidden;
       margin-bottom: 2.7rem;
+      img {
+         transition: transform 0.4s ease;
+      }
    }
    &__body {
+      transition: opacity 0.4s ease;
       h3 {
          font-size: 2.2rem;
          line-height: calc(33 / 22);
