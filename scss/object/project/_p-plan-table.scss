@@ -1,0 +1,16 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+/* =========================
+   P-Plan-Table
+========================= */
+.p-plan-table {
+    padding: 4.6rem 0 18.6rem;
+    @include pc {
+        padding: 2.85rem 0 22.3rem;
+    }
+    &__scroll {
+        margin-top: 4.8rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
