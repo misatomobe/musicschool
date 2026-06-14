@@ -13,4 +13,28 @@
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
+    &__table {
+        min-width: 760px;
+        border-collapse: collapse;
+        @include pc {
+            width: 100%;
+        }
+    }
+    th,
+    td {
+        text-align: center;
+        vertical-align: middle;
+    }
+    th:first-child {
+        width: 18rem;
+    }
+    td {
+        width: 20rem;
+    }
+    &__note {
+        margin-top: 1.7rem;
+        @include pc {
+            margin-top: 2.85rem;
+        }
+    }
 }

@@ -1547,6 +1547,34 @@ button {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+.p-plan-table__table {
+  min-width: 760px;
+  border-collapse: collapse;
+}
+@media (min-width: 768px) {
+  .p-plan-table__table {
+    width: 100%;
+  }
+}
+.p-plan-table th,
+.p-plan-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+.p-plan-table th:first-child {
+  width: 18rem;
+}
+.p-plan-table td {
+  width: 20rem;
+}
+.p-plan-table__note {
+  margin-top: 1.7rem;
+}
+@media (min-width: 768px) {
+  .p-plan-table__note {
+    margin-top: 2.85rem;
+  }
+}
 
 @media (max-width: 767px) {
   .pc {
