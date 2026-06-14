@@ -646,9 +646,13 @@ button {
    BREADCRUMB
 ========================= */
 .c-breadcrumb {
-  padding: 1.6rem 2rem;
+  padding-left: 2rem;
 }
-
+.c-breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 /* =========================
    FV
 ========================= */
@@ -1450,21 +1454,10 @@ button {
   text-align: center;
 }
 .p-plan-fv__title {
-  font-size: 3rem;
-  line-height: 1.6666666667;
+  font-size: 2.5rem;
+  line-height: 2.4;
   font-weight: 700;
   color: #fff;
-}
-@media (max-width: 350px) {
-  .p-plan-fv__title {
-    font-size: 2.5rem;
-  }
-}
-@media (min-width: 768px) {
-  .p-plan-fv__title {
-    font-size: 4rem;
-    line-height: 1.5;
-  }
 }
 
 @media (max-width: 767px) {

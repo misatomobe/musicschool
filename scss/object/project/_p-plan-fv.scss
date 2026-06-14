@@ -29,16 +29,9 @@
         text-align: center;
     }
     &__title {
-        font-size: 3rem;
-        line-height: calc(50 / 30);
+        font-size: 2.5rem;
+        line-height: calc(60 / 25);
         font-weight: 700;
         color: $font-color02;
-        @include sp-small {
-            font-size: 2.5rem;
-        }
-        @include pc {
-            font-size: 4rem;
-            line-height: calc(60 / 40);
-        }
     }
 }

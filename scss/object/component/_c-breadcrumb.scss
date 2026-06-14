@@ -5,5 +5,13 @@
    BREADCRUMB
 ========================= */
 .c-breadcrumb {
-    padding: 1.6rem 2rem;
+    padding-left: 2rem;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__wrap {
+        
+    }
 }
