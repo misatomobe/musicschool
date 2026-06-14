@@ -16,6 +16,7 @@
 @use "./object/component/c-button--top";
 
 // project（ページ固有）
+// top
 @use "./object/project/p-top-fv";
 @use "./object/project/p-top-concept";
 @use "./object/project/p-top-about";
@@ -26,6 +27,9 @@
 @use "./object/project/p-top-blog";
 @use "./object/project/p-cta";
 @use "./object/project/p-fixed-buttons";
+
+// plan
+@use "./object/project/p-plan-fv";
 
 
 // utility（補助）

@@ -1412,6 +1412,54 @@ button {
   }
 }
 
+/* =========================
+   P-Plan-FV
+========================= */
+.p-plan-fv {
+  position: relative;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .p-plan-fv {
+    margin-top: 8rem;
+  }
+}
+.p-plan-fv picture {
+  display: block;
+}
+.p-plan-fv img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.p-plan-fv__contents {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+.p-plan-fv__title {
+  font-size: 3rem;
+  line-height: 1.6666666667;
+  font-weight: 700;
+  color: #fff;
+}
+@media (max-width: 350px) {
+  .p-plan-fv__title {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .p-plan-fv__title {
+    font-size: 4rem;
+    line-height: 1.5;
+  }
+}
+
 @media (max-width: 767px) {
   .pc {
     display: none !important;
