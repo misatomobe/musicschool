@@ -146,7 +146,7 @@ ul,
 ol {
   list-style: none;
   padding: 0;
-  margin-trim: 0;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -660,7 +660,7 @@ button {
   line-height: 2.0625;
   font-weight: 500;
 }
-.c-breadcrumb__item:not(:last-child):after {
+.c-breadcrumb__item:not(:last-child)::after {
   content: ">";
   margin-inline: 1.8rem;
 }
