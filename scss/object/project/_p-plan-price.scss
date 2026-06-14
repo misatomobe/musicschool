@@ -29,10 +29,20 @@
         align-items: center;
         background-color: $main-color;
     }
+    &__price {
+        color: $font-color02;
+        font-size: 2rem;
+        line-height: calc(33 / 20);
+        font-weight: 700;
+
+    }
     &__plus {
         width: 1.9rem;
         @include pc {
             width: 1.85rem;
         }
     } 
+    &__text {
+        margin-top: 3rem;
+    }
 }

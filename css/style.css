@@ -1506,6 +1506,12 @@ button {
   align-items: center;
   background-color: #CB0000;
 }
+.p-plan-price__price {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.65;
+  font-weight: 700;
+}
 .p-plan-price__plus {
   width: 1.9rem;
 }
@@ -1513,6 +1519,9 @@ button {
   .p-plan-price__plus {
     width: 1.85rem;
   }
+}
+.p-plan-price__text {
+  margin-top: 3rem;
 }
 
 @media (max-width: 767px) {
