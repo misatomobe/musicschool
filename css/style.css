@@ -1506,6 +1506,14 @@ button {
   align-items: center;
   background-color: #CB0000;
 }
+.p-plan-price__plus {
+  width: 1.9rem;
+}
+@media (min-width: 768px) {
+  .p-plan-price__plus {
+    width: 1.85rem;
+  }
+}
 
 @media (max-width: 767px) {
   .pc {

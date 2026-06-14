@@ -28,5 +28,11 @@
         justify-content: center;
         align-items: center;
         background-color: $main-color;
+    }
+    &__plus {
+        width: 1.9rem;
+        @include pc {
+            width: 1.85rem;
+        }
     } 
 }
