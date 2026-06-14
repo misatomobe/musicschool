@@ -43,6 +43,11 @@
         }
     } 
     &__text {
-        margin-top: 3rem;
+        margin-top: 4.8rem;
+        font-weight: 500;
+        @include pc {
+            font-size: 1.8rem;
+            line-height: calc(30 / 18);
+        }
     }
 }
