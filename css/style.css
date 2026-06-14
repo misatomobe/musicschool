@@ -646,13 +646,25 @@ button {
    BREADCRUMB
 ========================= */
 .c-breadcrumb {
-  padding-left: 2rem;
+  background-color: #E8E8E8;
 }
 .c-breadcrumb__list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
+.c-breadcrumb__item {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 2.0625;
+  font-weight: 500;
+}
+.c-breadcrumb__item:not(:last-child):after {
+  content: ">";
+  margin-inline: 1.8rem;
+}
+
 /* =========================
    FV
 ========================= */

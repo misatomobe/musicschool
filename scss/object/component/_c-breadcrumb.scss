@@ -5,13 +5,21 @@
    BREADCRUMB
 ========================= */
 .c-breadcrumb {
-    padding-left: 2rem;
+    background-color: $back-color;
     &__list {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
     }
-    &__wrap {
-        
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        line-height: calc(33 / 16);
+        font-weight: 500;
+        &:not(:last-child):after {
+            content: ">";
+            margin-inline: 1.8rem;     
+        }
     }
 }
