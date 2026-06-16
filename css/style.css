@@ -1579,9 +1579,21 @@ button {
 .p-plan-table tbody tr {
   height: 8.5rem;
 }
-.p-plan-table tbody tr:first-child th,
+.p-plan-table tbody tr:first-child th {
+  font-size: 1.7rem;
+  line-height: 1.7647058824;
+  font-weight: 700;
+}
 .p-plan-table tbody tr:first-child td {
   font-weight: 700;
+}
+.p-plan-table tbody tr:not(:first-child) th {
+  font-size: 1.7rem;
+  line-height: 1.4705882353;
+  font-weight: 500;
+}
+.p-plan-table tbody tr:not(:first-child) td {
+  font-weight: 500;
 }
 .p-plan-table tbody tr:nth-child(even) {
   background-color: rgba(80, 80, 80, 0.149);
@@ -1590,12 +1602,13 @@ button {
   width: 18rem;
   text-align: left;
   padding-left: 2rem;
-  font-size: 1.7rem;
-  line-height: 1.7647058824;
+  font-size: 1.4rem;
+  line-height: 1.4285714286;
 }
 .p-plan-table tbody td {
   font-size: 2.2rem;
   line-height: 1.5;
+  font-weight: 700;
 }
 .p-plan-table__note {
   margin-top: 1.7rem;
