@@ -16,6 +16,7 @@
     &__table {
         min-width: 760px;
         border-collapse: collapse;
+        table-layout: fixed;
         @include pc {
             width: 100%;
         }
@@ -25,11 +26,40 @@
         text-align: center;
         vertical-align: middle;
     }
-    th:first-child {
-        width: 18rem;
+    thead {
+        th {
+            height: 7rem;
+            font-size: 2rem;
+            line-height: calc(30 / 20);
+            font-weight: 700;
+            color: $font-color02;
+            &:not(:first-child) {
+                background-color: $font-color;
+                color: $font-color02;
+            }
+            &:nth-child(3) {
+                background-color: $main-color;
+            }
+        }
     }
-    td {
-        width: 20rem;
+    tboby {
+        tr {
+            height: 8.5rem;
+            &:nth-child(even) {
+                background-color: #505050;
+            }
+        }
+        th {
+            width: 18rem;
+            text-align: left;
+            padding-left: 2rem;
+            font-size: 1.4rem;
+            line-height: calc(20 / 14);
+        }
+        td {
+            font-size: 2rem;
+            font-weight: 700;
+        }
     }
     &__note {
         margin-top: 1.7rem;
