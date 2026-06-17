@@ -25,6 +25,11 @@
         vertical-align: middle;
         border-left: 0.5px solid $font-color;
     }
+    // 一番左端だけ線なし
+    th:first-child,
+    td:first-child {
+        border-left: none;
+    }
     thead {
         th {
             position: relative;
@@ -81,6 +86,13 @@
             &:nth-child(even) {
                 background-color: $table-back-color;
             }
+            // 一番下だけ横線
+            &:last-child {
+                th,
+                td {
+                    border-bottom: 0.5px solid $font-color;
+                }
+            }
         }
         th {
             width: 18rem;
@@ -94,9 +106,10 @@
             line-height: calc(33 / 22);
             font-weight: 700;
         }
+        // 一番右端だけ線なし
         th:last-child,
         td:last-child {
-            border-right: 0.5px solid $font-color;
+            border-right: none;
         }
     }
     &__note {
