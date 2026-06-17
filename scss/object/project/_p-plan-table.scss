@@ -118,4 +118,15 @@
             margin-top: 2.85rem;
         }
     }
+    .is-empty {
+        position: relative;
+    }
+    .is-empty::before {
+        content:"";
+        display: block;
+        width: 3rem;
+        height: 0.1rem;
+        background-color: $font-color;
+        margin-inline: auto;
+    }
 }

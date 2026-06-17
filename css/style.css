@@ -1641,6 +1641,17 @@ button {
     margin-top: 2.85rem;
   }
 }
+.p-plan-table .is-empty {
+  position: relative;
+}
+.p-plan-table .is-empty::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 0.1rem;
+  background-color: #000;
+  margin-inline: auto;
+}
 
 @media (max-width: 767px) {
   .pc {
