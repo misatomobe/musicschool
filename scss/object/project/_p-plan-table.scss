@@ -17,18 +17,18 @@
         min-width: 760px;
         border-collapse: collapse;
         table-layout: fixed;
-        @include pc {
-            width: 100%;
-        }
+        width: 100%;
     }
     th,
     td {
         text-align: center;
         vertical-align: middle;
+        border-left: 0.5px solid $font-color;
     }
     thead {
         th {
-            height: 7rem;
+            position: relative;
+            height: 6.6rem;
             font-size: 2rem;
             line-height: calc(30 / 20);
             font-weight: 700;
@@ -38,10 +38,23 @@
                 color: $font-color02;
             }
             &:nth-child(3) {
-                background-color: $main-color;
+                background-color: transparent;
             }
         }
     }
+    &__recommend {
+        position: absolute;
+        top: -15px;
+        left: 0;
+        right: 0;
+        height: 10rem;
+        background-color: $main-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-block: 0.7rem;
+        z-index: 10;
+        }
     tbody {
         tr {
             height: 8.5rem;
@@ -80,6 +93,10 @@
             font-size: 2.2rem;
             line-height: calc(33 / 22);
             font-weight: 700;
+        }
+        th:last-child,
+        td:last-child {
+            border-right: 0.5px solid $font-color;
         }
     }
     &__note {

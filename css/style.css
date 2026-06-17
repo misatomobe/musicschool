@@ -1551,19 +1551,17 @@ button {
   min-width: 760px;
   border-collapse: collapse;
   table-layout: fixed;
-}
-@media (min-width: 768px) {
-  .p-plan-table__table {
-    width: 100%;
-  }
+  width: 100%;
 }
 .p-plan-table th,
 .p-plan-table td {
   text-align: center;
   vertical-align: middle;
+  border-left: 0.5px solid #000;
 }
 .p-plan-table thead th {
-  height: 7rem;
+  position: relative;
+  height: 6.6rem;
   font-size: 2rem;
   line-height: 1.5;
   font-weight: 700;
@@ -1574,7 +1572,20 @@ button {
   color: #fff;
 }
 .p-plan-table thead th:nth-child(3) {
+  background-color: transparent;
+}
+.p-plan-table__recommend {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  height: 10rem;
   background-color: #CB0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 0.7rem;
+  z-index: 10;
 }
 .p-plan-table tbody tr {
   height: 8.5rem;
@@ -1609,6 +1620,10 @@ button {
   font-size: 2.2rem;
   line-height: 1.5;
   font-weight: 700;
+}
+.p-plan-table tbody th:last-child,
+.p-plan-table tbody td:last-child {
+  border-right: 0.5px solid #000;
 }
 .p-plan-table__note {
   margin-top: 1.7rem;
