@@ -1563,6 +1563,9 @@ button {
 .p-plan-table td:first-child {
   border-left: none;
 }
+.p-plan-table thead {
+  position: relative;
+}
 .p-plan-table thead th {
   position: relative;
   height: 6.6rem;
@@ -1592,9 +1595,15 @@ button {
   height: 8.5rem;
 }
 .p-plan-table tbody tr:first-child th {
-  font-size: 1.7rem;
-  line-height: 1.7647058824;
+  font-size: 1.6rem;
+  line-height: 1.875;
   font-weight: 700;
+}
+@media (min-width: 768px) {
+  .p-plan-table tbody tr:first-child th {
+    font-size: 1.7rem;
+    line-height: 1.7647058824;
+  }
 }
 .p-plan-table tbody tr:first-child td {
   font-size: 2.2rem;

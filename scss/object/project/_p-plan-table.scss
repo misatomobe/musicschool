@@ -31,6 +31,7 @@
         border-left: none;
     }
     thead {
+        position: relative;
         th {
             position: relative;
             height: 6.6rem;
@@ -63,9 +64,13 @@
             height: 8.5rem;
             &:first-child {
                 th {
-                    font-size: 1.7rem;
-                    line-height: calc(30 / 17);
-                    font-weight: 700;                    
+                    font-size: 1.6rem;
+                    line-height: calc(30 / 16);
+                    font-weight: 700;
+                    @include pc {
+                        font-size: 1.7rem;
+                        line-height: calc(30 / 17);
+                    }                    
                 }
                 td {
                     font-size: 2.2rem;
