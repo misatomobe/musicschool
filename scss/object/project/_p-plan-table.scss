@@ -98,7 +98,7 @@
                         font-size: 1.6rem;
                         line-height: calc(25 / 16);
                         font-weight: 500;
-                        @include sp {
+                        @include pc {
                             font-size: 1.7rem;
                             line-height: calc(25 /17);
                         }
@@ -124,6 +124,7 @@
                     font-weight: 500;
                 }
             }
+            // 月額料金の行
             th {
                 width: 18rem;
                 text-align: left;

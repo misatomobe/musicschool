@@ -1635,7 +1635,7 @@ button {
   line-height: 1.5625;
   font-weight: 500;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .p-plan-table tbody tr:not(:first-child) th,
   .p-plan-table tbody tr:not(:first-child) td {
     font-size: 1.7rem;
