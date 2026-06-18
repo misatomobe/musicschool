@@ -42,22 +42,20 @@
                 background-color: $font-color;
                 color: $font-color02;
             }
-            &:nth-child(3) {
-                background-color: transparent;
-            }
+
         }
     }
     &__recommend {
         position: absolute;
         top: -1.5rem;
         left: 0;
-        right: 0;
-        height: 10rem;
+        width: 100%;
+        min-height: 10rem;
         background-color: $main-color;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-block: 0.7rem;
+        padding: 1rem;
         z-index: 10;
         }
     tbody {
