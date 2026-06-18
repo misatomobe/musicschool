@@ -59,6 +59,13 @@
         padding: 1rem;
         z-index: 10;
         }
+    &__lesson {
+        td {
+            font-size: 1.7rem;
+            line-height: calc(25 / 17);
+            font-weight: 500;
+        }
+    }
     tbody {
         tr {
             height: 8.5rem;
@@ -81,8 +88,8 @@
             &:not(:first-child) {
                 th,
                 td {
-                    font-size: 1.7rem;
-                    line-height: calc(25 / 17);
+                    font-size: 1.6rem;
+                    line-height: calc(25 / 16);
                     font-weight: 500;
                 }
             }
@@ -97,6 +104,13 @@
                 }
             }
         }
+        tr.p-plan-table__lesson {
+            td {
+                font-size: 1.7rem;
+                line-height: calc(25 / 17);
+                font-weight: 500;
+            }
+        }
         th {
             width: 18rem;
             text-align: left;
@@ -109,6 +123,7 @@
             line-height: calc(33 / 22);
             font-weight: 700;
         }
+
     }
     &__note {
         margin-top: 1.7rem;
