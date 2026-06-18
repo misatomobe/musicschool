@@ -1553,6 +1553,11 @@ button {
   table-layout: fixed;
   width: 100%;
 }
+.p-plan-table {
+  /* -------------------------
+     共通セル
+  ------------------------- */
+}
 .p-plan-table th,
 .p-plan-table td {
   text-align: center;
@@ -1562,6 +1567,11 @@ button {
 .p-plan-table th:first-child,
 .p-plan-table td:first-child {
   border-left: none;
+}
+.p-plan-table {
+  /* -------------------------
+     テーブル見出し
+  ------------------------- */
 }
 .p-plan-table thead {
   position: relative;
@@ -1591,13 +1601,14 @@ button {
   padding: 1rem;
   z-index: 10;
 }
-.p-plan-table__lesson td {
-  font-size: 1.7rem;
-  line-height: 1.4705882353;
-  font-weight: 500;
+.p-plan-table {
+  /* -------------------------
+              テーブル本文
+  ------------------------- */
 }
 .p-plan-table tbody tr {
   height: 8.5rem;
+  /* 月額料金 */
 }
 .p-plan-table tbody tr:first-child th {
   font-size: 1.6rem;
@@ -1615,11 +1626,21 @@ button {
   line-height: 1.5;
   font-weight: 700;
 }
+.p-plan-table tbody tr {
+  /* 2行目以降 */
+}
 .p-plan-table tbody tr:not(:first-child) th,
 .p-plan-table tbody tr:not(:first-child) td {
   font-size: 1.6rem;
   line-height: 1.5625;
   font-weight: 500;
+}
+@media (max-width: 767px) {
+  .p-plan-table tbody tr:not(:first-child) th,
+  .p-plan-table tbody tr:not(:first-child) td {
+    font-size: 1.7rem;
+    line-height: 1.4705882353;
+  }
 }
 .p-plan-table tbody tr:nth-child(even) {
   background-color: rgba(80, 80, 80, 0.149);
@@ -1627,6 +1648,9 @@ button {
 .p-plan-table tbody tr:last-child th,
 .p-plan-table tbody tr:last-child td {
   border-bottom: 0.5px solid #000;
+}
+.p-plan-table tbody {
+  /* 左端th　2行目以降だけ例外 */
 }
 .p-plan-table tbody tr.p-plan-table__lesson td {
   font-size: 1.7rem;
@@ -1645,6 +1669,11 @@ button {
   line-height: 1.5;
   font-weight: 700;
 }
+.p-plan-table {
+  /* -------------------------
+   補足説明
+  ------------------------- */
+}
 .p-plan-table__note {
   margin-top: 1.7rem;
 }
@@ -1657,6 +1686,9 @@ button {
   color: #CB0000;
 }
 
+/* -------------------------
+    空セル
+------------------------- */
 .is-empty {
   position: relative;
 }
