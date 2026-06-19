@@ -23,15 +23,15 @@
     /* -------------------------
        共通セル
     ------------------------- */
-    th,
-    td {
+    tbody th,
+    tbody td {
         text-align: center;
         vertical-align: middle;
         border-left: 0.5px solid $font-color;
     }
     // 一番左端だけ線なし
-    th:first-child,
-    td:first-child {
+    tbody th:first-child,
+    tbody td:first-child {
         border-left: none;
     }
 
@@ -42,7 +42,7 @@
         position: relative;
         th {
             position: relative;
-            height: 6.6rem;
+            height: 8rem;
             font-size: 2rem;
             line-height: calc(30 / 20);
             font-weight: 700;
@@ -53,6 +53,16 @@
             }
         }
     }
+
+    /* 黒背景 */
+    &__head {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    /* 赤背景 */
     &__recommend {
         position: absolute;
         top: -1.5rem;
