@@ -8,10 +8,19 @@
     @include pc {
         padding: 2.85rem 0 22.3rem;
     }
+    &__wrap {
+        width: 100%;
+    }
     &__scroll {
         margin-top: 4.8rem;
         overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 1.75rem; // 白背景からスクロールバーまでの余白
         -webkit-overflow-scrolling: touch;
+        @include pc {
+            overflow: visible;
+            padding-bottom: 0;
+        }
     }
     &__table {
         min-width: 760px;

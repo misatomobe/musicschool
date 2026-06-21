@@ -1542,10 +1542,21 @@ button {
     padding: 2.85rem 0 22.3rem;
   }
 }
+.p-plan-table__wrap {
+  width: 100%;
+}
 .p-plan-table__scroll {
   margin-top: 4.8rem;
   overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 1.75rem;
   -webkit-overflow-scrolling: touch;
+}
+@media (min-width: 768px) {
+  .p-plan-table__scroll {
+    overflow: visible;
+    padding-bottom: 0;
+  }
 }
 .p-plan-table__table {
   min-width: 760px;
