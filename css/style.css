@@ -1573,16 +1573,13 @@ button {
      テーブル見出し
   ------------------------- */
 }
-.p-plan-table thead {
-  position: relative;
-}
 .p-plan-table thead th {
-  position: relative;
   height: 8rem;
   font-size: 2rem;
   line-height: 1.5;
   font-weight: 700;
   color: #fff;
+  vertical-align: top;
 }
 .p-plan-table thead th:not(:first-child) {
   background-color: #000;
@@ -1612,22 +1609,26 @@ button {
 .p-plan-table {
   /* 赤背景 */
 }
-.p-plan-table__recommend {
-  position: absolute;
-  top: -1.5rem;
-  left: 0;
+.p-plan-table__recommend p {
+  padding-top: 0.6rem;
   width: 100%;
-  min-height: 10rem;
+  height: 100%;
   background-color: #CB0000;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  z-index: 10;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.p-plan-table__small {
+  font-size: 1.7rem;
+  line-height: 1.7647058824;
 }
 .p-plan-table {
   /* -------------------------
-              テーブル本文
+          テーブル本文
   ------------------------- */
 }
 .p-plan-table tbody tr {
