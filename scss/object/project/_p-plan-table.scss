@@ -22,7 +22,7 @@
         }
         &::-webkit-scrollbar-track {
             background: $table-back-color;
-    }
+        }
         &::-webkit-scrollbar-thumb {
             background: $table-back-color02;
             min-width: 1rem;
@@ -60,10 +60,12 @@
     ------------------------- */
     thead {
         th {
-            height: 8rem;
             font-weight: 700;
             color: $font-color02;
-            vertical-align: top;
+            @include pc {
+                height: 8rem;
+                vertical-align: top;
+            }
         }
     }
 
@@ -108,102 +110,108 @@
         font-size: 1.7rem;
         line-height: calc(30 / 17);
     }
-         /* -------------------------
-                テーブル本文
-        ------------------------- */  
-        tbody {
-            tr {
-                height: 8.5rem;
-
-                /* 月額料金 */
-                &:first-child {
-                    th {
-                        font-size: 1.6rem;
-                        line-height: calc(30 / 16);
-                        font-weight: 700;
-                        @include pc {
-                            font-size: 1.7rem;
-                            line-height: calc(30 / 17);
-                        }                    
-                    } 
-                    td {
-                        font-size: 2.2rem;
-                        line-height: calc(33 / 22);
-                        font-weight: 700;
+    /* -------------------------
+        テーブル本文
+    ------------------------- */
+    tbody {
+        
+        /* セル共通 */
+        th,
+        td {
+            height: 8.5rem;
+        }
+        /* 左列 */
+        th {
+            width: 16.9rem;
+            text-align: left;
+            padding-left: 2rem;
+            font-size: 1.4rem;
+            line-height: calc(20 / 14);
+            @include pc {
+                width: 22rem;
+            }
+        }
+        td {
+            font-size: 2.2rem;
+            line-height: calc(33 / 22);
+            font-weight: 700;
+        }
+        tr {
+            /* 月額料金 */
+            &:first-child {
+                th {
+                    font-size: 1.6rem;
+                    line-height: calc(30 / 16);
+                    font-weight: 700;
+                        
+                    @include pc {
+                        font-size: 1.7rem;
+                        line-height: calc(30 / 17);
                     }
                 }
-
-                 /* 2行目以降 */
-                &:not(:first-child) {
-                    th,
-                    td {
-                        font-size: 1.6rem;
-                        line-height: calc(25 / 16);
-                        font-weight: 500;
-                        @include pc {
-                            font-size: 1.7rem;
-                            line-height: calc(25 /17);
-                        }
-                    }
-                }
-                &:nth-child(even) {
-                    background-color: $table-back-color;
-                }
-
-                // 一番下だけ横線
-                &:last-child {
-                    th,
-                    td {
-                        border-bottom: 0.5px solid $font-color;
-                    }
+                td {
+                    font-size: 2.2rem;
+                    line-height: calc(33 / 22);
+                    font-weight: 700;
                 }
             }
-            /* 左端th　2行目以降だけ例外 */   
-            tr.p-plan-table__lesson {
-                td {
+            /* 2行目以降 */
+            &:not(:first-child) {
+            th,
+            td {
+                font-size: 1.6rem;
+                line-height: calc(25 / 16);
+                font-weight: 500;
+                @include pc {
                     font-size: 1.7rem;
                     line-height: calc(25 / 17);
-                    font-weight: 500;
                 }
             }
-            // 月額料金の行
-            th {
-                width: 18rem;
-                text-align: left;
-                padding-left: 2rem;
-                font-size: 1.4rem;
-                line-height: calc(20 / 14);
-            }
+        }
+        &:nth-child(even) {
+            background-color: $table-back-color;
+        }    
+        /* 一番下だけ横線 */
+        &:last-child {
+            th,
             td {
-                font-size: 2.2rem;
-                line-height: calc(33 / 22);
-                font-weight: 700;
+                border-bottom: 0.5px solid $font-color;
             }
         }
-        /* -------------------------
-         補足説明
-        ------------------------- */
-        &__note {
-            margin-top: 1.7rem;
-            @include pc {
-                margin-top: 2.85rem;
-            }
-        }
-        &__accent {
-            color: $main-color;
+    }
+    /* 左端th 2行目以降だけ例外 */
+    tr.p-plan-table__lesson {
+        td {
+            font-size: 1.7rem;
+            line-height: calc(25 / 17);
+            font-weight: 500;
         }
     }
-    /* -------------------------
-        空セル
-    ------------------------- */
-    .is-empty {
-        position: relative;
-        &::before {
-            content:"";
-            display: block;
-            width: 3rem;
-            height: 0.1px;
-            background-color: $font-color;
-            margin-inline: auto;
-        }
+}
+/* -------------------------
+    補足説明
+------------------------- */
+&__note {
+    margin-top: 1.7rem;
+    @include pc {
+        margin-top: 2.85rem;
     }
+}
+&__accent {
+    color: $main-color;
+}
+}
+/* -------------------------
+    空セル
+------------------------- */
+.is-empty {
+    position: relative;
+    &::before {
+        content:"";
+        display: block;
+        width: 3rem;
+        height: 0.1px;
+        background-color: $font-color;
+        margin-inline: auto;
+    }
+}
