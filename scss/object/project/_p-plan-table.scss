@@ -38,6 +38,13 @@
         border-collapse: collapse;
         table-layout: fixed;
         width: 100%;
+        th,
+        td {
+            width: 16.9rem;
+            @include pc {
+                width: 22rem;
+            }
+        }
     }
 
     /* -------------------------
@@ -62,6 +69,7 @@
         th {
             font-weight: 700;
             color: $font-color02;
+            height: 6.6rem;
             @include pc {
                 height: 8rem;
                 vertical-align: top;
@@ -77,16 +85,20 @@
         align-items: flex-end;
 
         p {
-            padding-top: 0.5rem;
+            height: 6.6rem;
             width: 100%;
-            height: 5rem;
             background-color: $font-color;
             display: flex;
             flex-direction: column;
+            text-align: center;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            line-height: calc(30 / 20);
+            @include pc {
+                padding-top: 0.5rem;
+                height: 5rem;
+                font-size: 2rem;
+                line-height: calc(30 / 20);
+            }            
         }
     }
 
@@ -122,13 +134,12 @@
         }
         /* 左列 */
         th {
-            width: 16.9rem;
             text-align: left;
-            padding-left: 2rem;
+            padding-left: 1rem;
             font-size: 1.4rem;
             line-height: calc(20 / 14);
             @include pc {
-                width: 22rem;
+                padding-left: 2rem;
             }
         }
         td {

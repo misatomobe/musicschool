@@ -1575,6 +1575,16 @@ button {
   table-layout: fixed;
   width: 100%;
 }
+.p-plan-table__table th,
+.p-plan-table__table td {
+  width: 16.9rem;
+}
+@media (min-width: 768px) {
+  .p-plan-table__table th,
+  .p-plan-table__table td {
+    width: 22rem;
+  }
+}
 .p-plan-table {
   /* -------------------------
      共通セル
@@ -1598,6 +1608,7 @@ button {
 .p-plan-table thead th {
   font-weight: 700;
   color: #fff;
+  height: 6.6rem;
 }
 @media (min-width: 768px) {
   .p-plan-table thead th {
@@ -1615,16 +1626,22 @@ button {
   align-items: flex-end;
 }
 .p-plan-table__head p {
-  padding-top: 0.5rem;
+  height: 6.6rem;
   width: 100%;
-  height: 5rem;
   background-color: #000;
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .p-plan-table__head p {
+    padding-top: 0.5rem;
+    height: 5rem;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
 }
 .p-plan-table {
   /* 赤背景 */
@@ -1662,15 +1679,14 @@ button {
   /* 左列 */
 }
 .p-plan-table tbody th {
-  width: 16.9rem;
   text-align: left;
-  padding-left: 2rem;
+  padding-left: 1rem;
   font-size: 1.4rem;
   line-height: 1.4285714286;
 }
 @media (min-width: 768px) {
   .p-plan-table tbody th {
-    width: 22rem;
+    padding-left: 2rem;
   }
 }
 .p-plan-table tbody td {
