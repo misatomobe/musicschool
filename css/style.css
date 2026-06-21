@@ -1608,7 +1608,7 @@ button {
 .p-plan-table thead th {
   font-weight: 700;
   color: #fff;
-  height: 6.6rem;
+  height: 10.6rem;
 }
 @media (min-width: 768px) {
   .p-plan-table thead th {
@@ -1634,12 +1634,13 @@ button {
   text-align: center;
   align-items: center;
   justify-content: center;
+  font-size: 2rem;
+  line-height: 1.25;
 }
 @media (min-width: 768px) {
   .p-plan-table__head p {
     padding-top: 0.5rem;
     height: 5rem;
-    font-size: 2rem;
     line-height: 1.5;
   }
 }
@@ -1647,9 +1648,9 @@ button {
   /* 赤背景 */
 }
 .p-plan-table__recommend p {
-  padding-top: 0.6rem;
   width: 100%;
   height: 100%;
+  padding-top: 1rem;
   background-color: #CB0000;
   display: flex;
   flex-direction: column;
@@ -1658,6 +1659,15 @@ button {
   font-size: 2rem;
   line-height: 1.5;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .p-plan-table__recommend p {
+    padding-top: 0.6rem;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
 }
 .p-plan-table__small {
   font-size: 1.7rem;
