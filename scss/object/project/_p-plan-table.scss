@@ -17,6 +17,7 @@
         overflow-y: hidden;
         padding-bottom: 1.75rem; // 白背景からスクロールバーまでの余白
         -webkit-overflow-scrolling: touch;
+        display: block;
         &::-webkit-scrollbar {
             height: 2.5rem;
         }
@@ -34,16 +35,16 @@
         }
     }
     &__table {
-        min-width: 760px;
+        width: 67.6rem;
         border-collapse: collapse;
         table-layout: fixed;
-        width: 100%;
+        @include pc {
+            width: 88rem;
+        }
+        
         th,
         td {
             width: 16.9rem;
-            @include pc {
-                width: 22rem;
-            }
         }
     }
 

@@ -4,7 +4,8 @@
 .l-inner {
     padding: 0 2rem;
     @include pc {
-        max-width: 880px;
+        max-width: 940px;
         margin: 0 auto;
+        padding: 0 3rem;
     }
 }

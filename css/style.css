@@ -487,8 +487,9 @@ button {
 }
 @media (min-width: 768px) {
   .l-inner {
-    max-width: 880px;
+    max-width: 940px;
     margin: 0 auto;
+    padding: 0 3rem;
   }
 }
 
@@ -1551,6 +1552,7 @@ button {
   overflow-y: hidden;
   padding-bottom: 1.75rem;
   -webkit-overflow-scrolling: touch;
+  display: block;
 }
 .p-plan-table__scroll::-webkit-scrollbar {
   height: 2.5rem;
@@ -1570,20 +1572,18 @@ button {
   }
 }
 .p-plan-table__table {
-  min-width: 760px;
+  width: 67.6rem;
   border-collapse: collapse;
   table-layout: fixed;
-  width: 100%;
+}
+@media (min-width: 768px) {
+  .p-plan-table__table {
+    width: 88rem;
+  }
 }
 .p-plan-table__table th,
 .p-plan-table__table td {
   width: 16.9rem;
-}
-@media (min-width: 768px) {
-  .p-plan-table__table th,
-  .p-plan-table__table td {
-    width: 22rem;
-  }
 }
 .p-plan-table {
   /* -------------------------
