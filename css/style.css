@@ -1609,11 +1609,11 @@ button {
   font-weight: 700;
   color: #fff;
   height: 10.6rem;
+  vertical-align: top;
 }
 @media (min-width: 768px) {
   .p-plan-table thead th {
     height: 8rem;
-    vertical-align: top;
   }
 }
 .p-plan-table {

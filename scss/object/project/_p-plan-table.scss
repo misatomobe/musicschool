@@ -70,9 +70,9 @@
             font-weight: 700;
             color: $font-color02;
             height: 10.6rem;
+            vertical-align: top;
             @include pc {
                 height: 8rem;
-                vertical-align: top;
             }
         }
     }
