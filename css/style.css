@@ -1575,15 +1575,9 @@ button {
 }
 .p-plan-table thead th {
   height: 8rem;
-  font-size: 2rem;
-  line-height: 1.5;
   font-weight: 700;
   color: #fff;
   vertical-align: top;
-}
-.p-plan-table thead th:not(:first-child) {
-  background-color: #000;
-  color: #fff;
 }
 .p-plan-table {
   /* 黒背景 */
