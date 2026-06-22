@@ -82,13 +82,15 @@
                 height: 8rem;
             }
         }
+
+        // 2番目（左右線）
         th:nth-child(2) {
             position: relative;
             &::before,
             &::after {
                 content: "";
                 position: absolute;
-                top: 4rem;
+                bottom: 0rem;
                 left: auto;
                 width: 0.5px;
                 height: 6.6rem;
@@ -107,6 +109,25 @@
                 right: 0;
             }
         }
+        // 4番目（左線のみ）
+        th:nth-child(4) {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0.5px;
+                height: 6.6rem;
+                background-color: $font-color;
+
+                @include pc {
+                    height: 5rem;
+                }
+            }
+        }
+
     }
 
     /* 黒背景 */
