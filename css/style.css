@@ -1621,6 +1621,30 @@ button {
     height: 8rem;
   }
 }
+.p-plan-table thead th:nth-child(2) {
+  position: relative;
+}
+.p-plan-table thead th:nth-child(2)::before, .p-plan-table thead th:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 4rem;
+  left: auto;
+  width: 0.5px;
+  height: 6.6rem;
+  background-color: #000;
+}
+@media (min-width: 768px) {
+  .p-plan-table thead th:nth-child(2)::before, .p-plan-table thead th:nth-child(2)::after {
+    height: 5rem;
+    top: 3rem;
+  }
+}
+.p-plan-table thead th:nth-child(2)::before {
+  left: 0;
+}
+.p-plan-table thead th:nth-child(2)::after {
+  right: 0;
+}
 .p-plan-table {
   /* 黒背景 */
 }

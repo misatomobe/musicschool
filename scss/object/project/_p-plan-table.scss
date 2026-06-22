@@ -82,6 +82,31 @@
                 height: 8rem;
             }
         }
+        th:nth-child(2) {
+            position: relative;
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 4rem;
+                left: auto;
+                width: 0.5px;
+                height: 6.6rem;
+                background-color: $font-color;
+                @include pc {
+                    height: 5rem;
+                    top: 3rem;
+                }
+            }
+            // 左線
+            &::before {
+                left: 0;
+            }
+            // 右線
+            &::after {
+                right: 0;
+            }
+        }
     }
 
     /* 黒背景 */
