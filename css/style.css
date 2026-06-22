@@ -1635,7 +1635,7 @@ button {
   width: 100%;
   background-color: #000;
   display: flex;
-  flex-direction: column;
+  flex-wrap: column;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -1646,7 +1646,7 @@ button {
   .p-plan-table__head p {
     padding-top: 0.5rem;
     height: 5rem;
-    line-height: 1.5;
+    line-height: 1.65;
   }
 }
 .p-plan-table {

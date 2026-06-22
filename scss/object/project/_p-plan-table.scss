@@ -77,6 +77,7 @@
             color: $font-color02;
             height: 10.6rem;
             vertical-align: top;
+            
             @include pc {
                 height: 8rem;
             }
@@ -95,16 +96,17 @@
             width: 100%;
             background-color: $font-color;
             display: flex;
-            flex-direction: column;
+            flex-wrap: column;
             text-align: center;
             align-items: center;
             justify-content: center;
             font-size: 2rem;
             line-height: calc(25 / 20);
+
             @include pc {
                 padding-top: 0.5rem;
                 height: 5rem;
-                line-height: calc(30 / 20);
+                line-height: calc(33 / 20);
             }            
         }
     }
