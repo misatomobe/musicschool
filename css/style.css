@@ -1602,6 +1602,9 @@ button {
 .p-plan-table tbody td:first-child {
   border-left: none;
 }
+.p-plan-table tbody th span {
+  display: inline-block;
+}
 .p-plan-table {
   /* -------------------------
      テーブル見出し
@@ -1693,12 +1696,13 @@ button {
 .p-plan-table tbody th {
   text-align: left;
   padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 1.4rem;
   line-height: 1.4285714286;
 }
 @media (min-width: 768px) {
   .p-plan-table tbody th {
-    padding-left: 2rem;
+    padding: 0 2rem;
   }
 }
 .p-plan-table tbody td {
