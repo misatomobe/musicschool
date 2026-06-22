@@ -10,6 +10,7 @@
     }
     &__wrap {
         width: 100%;
+        overflow: hidden;
     }
     &__scroll {
         margin-top: 4.8rem;
@@ -35,16 +36,17 @@
         }
     }
     &__table {
-        width: 67.6rem;
+        width: 100%;
+        min-width: 67.6rem;
         border-collapse: collapse;
         table-layout: fixed;
         @include pc {
-            width: 88rem;
+            min-width: auto;
         }
         
         th,
         td {
-            width: 16.9rem;
+            width: 25%;
         }
     }
 

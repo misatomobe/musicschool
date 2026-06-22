@@ -1545,6 +1545,7 @@ button {
 }
 .p-plan-table__wrap {
   width: 100%;
+  overflow: hidden;
 }
 .p-plan-table__scroll {
   margin-top: 4.8rem;
@@ -1572,18 +1573,19 @@ button {
   }
 }
 .p-plan-table__table {
-  width: 67.6rem;
+  width: 100%;
+  min-width: 67.6rem;
   border-collapse: collapse;
   table-layout: fixed;
 }
 @media (min-width: 768px) {
   .p-plan-table__table {
-    width: 88rem;
+    min-width: auto;
   }
 }
 .p-plan-table__table th,
 .p-plan-table__table td {
-  width: 16.9rem;
+  width: 25%;
 }
 .p-plan-table {
   /* -------------------------
