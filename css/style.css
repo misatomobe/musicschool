@@ -1671,11 +1671,11 @@ button {
   align-items: flex-end;
 }
 .p-plan-table__head p {
-  height: 6.6rem;
+  min-height: 6.6rem;
   width: 100%;
   background-color: #000;
   display: flex;
-  flex-wrap: column;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -1683,11 +1683,14 @@ button {
   line-height: 1.25;
   padding: 1rem;
 }
+.p-plan-table__head p span {
+  display: inline-block;
+}
 @media (min-width: 768px) {
   .p-plan-table__head p {
     padding-top: 0.5rem;
     padding: 0.5rem 1rem 0;
-    height: 5rem;
+    min-height: 5rem;
     line-height: 1.65;
   }
 }
