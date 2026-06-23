@@ -1700,7 +1700,7 @@ button {
 .p-plan-table__recommend p {
   width: 100%;
   height: 100%;
-  padding-top: 1rem;
+  padding: 1rem;
   background-color: #CB0000;
   display: flex;
   flex-direction: column;
@@ -1710,8 +1710,13 @@ button {
   line-height: 1.5;
   text-align: center;
 }
+.p-plan-table__recommend p span {
+  display: inline-block;
+}
 @media (min-width: 768px) {
   .p-plan-table__recommend p {
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 0.6rem;
     width: 100%;
     height: 100%;
@@ -1720,6 +1725,7 @@ button {
   }
 }
 .p-plan-table__small {
+  width: 100%;
   font-size: 1.7rem;
   line-height: 1.7647058824;
 }
