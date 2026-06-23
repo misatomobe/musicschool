@@ -1636,7 +1636,6 @@ button {
 @media (min-width: 768px) {
   .p-plan-table thead th:nth-child(2)::before, .p-plan-table thead th:nth-child(2)::after {
     height: 5rem;
-    top: 3rem;
   }
 }
 .p-plan-table thead th:nth-child(2)::before {
@@ -1682,10 +1681,12 @@ button {
   justify-content: center;
   font-size: 2rem;
   line-height: 1.25;
+  padding: 1rem;
 }
 @media (min-width: 768px) {
   .p-plan-table__head p {
     padding-top: 0.5rem;
+    padding: 0.5rem 1rem 0;
     height: 5rem;
     line-height: 1.65;
   }
