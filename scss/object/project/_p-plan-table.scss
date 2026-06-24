@@ -13,6 +13,7 @@
         overflow: hidden;
     }
     &__scroll {
+        position: relative;
         margin-top: 4.8rem;
         overflow-x: auto;
         overflow-y: hidden;
@@ -33,6 +34,27 @@
         @include pc {
             overflow: visible;
             padding-bottom: 0;
+        }
+    }
+    &__hint {
+        position: absolute;
+        right: 2rem;
+        bottom: 5rem;
+        padding: 0.6rem 1.2rem;
+        background: $hint-color;
+        color: $font-color02;
+        border-radius: 999px;
+        font-size: 1.3rem;
+        z-index: 5;
+        transition:
+            opacity .3s,
+            visibility .3s;
+        @include pc {
+            display: none;
+        }
+        &.is-hidden {
+            opacity: 0;
+            visibility: hidden;
         }
     }
     &__table {

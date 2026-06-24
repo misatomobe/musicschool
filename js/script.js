@@ -148,3 +148,32 @@ function updateTopBtn() {
 window.addEventListener('scroll', updateTopBtn);
 window.addEventListener('load', updateTopBtn);
 window.addEventListener('resize', updateTopBtn);
+
+
+// ==============================
+// テーブル横スクロールヒント
+// ==============================
+const tableScroll = document.querySelector('.p-plan-table__scroll');
+const tableHint = document.querySelector('.p-plan-table__hint');
+
+if (tableScroll && tableHint) {
+
+  const toggleHint = () => {
+
+    // 少しでも横スクロールしたら消す
+    if (tableScroll.scrollLeft > 5) {
+      tableHint.classList.add('is-hidden');
+    } else {
+      tableHint.classList.remove('is-hidden');
+    }
+  };
+
+  // 初回判定
+  toggleHint();
+
+  // スクロール時
+  tableScroll.addEventListener('scroll', toggleHint);
+
+  // リサイズ時
+  window.addEventListener('resize', toggleHint);
+}
