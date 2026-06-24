@@ -55,12 +55,31 @@
         transition:
             opacity .4s,
             visibility .4s;
+        animation: scrollHint 2s ease-in-out infinite;
         @include pc {
             display: none;
         }
         &.is-hidden {
             opacity: 0;
             visibility: hidden;
+
+            // 消えたらアニメ停止
+            animation: none;
+        }
+    }
+    /* 横スクロールを促す揺れ */
+    @keyframes scrollHint {
+        0% {
+            transform: translateX(-50%);
+        }
+        25% {
+            transform: translateX(-55%);
+        }
+        50% {
+            transform: translateX(-45%);
+        }
+        100% {
+            transform: translateX(-50%);
         }
     }
     &__table {
