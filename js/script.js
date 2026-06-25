@@ -153,6 +153,7 @@ window.addEventListener('resize', updateTopBtn);
 // ==============================
 // テーブル横スクロールヒント
 // ==============================
+
 const tableScroll = document.querySelector('.p-plan-table__scroll');
 const tableHint = document.querySelector('.p-plan-table__hint');
 
@@ -160,7 +161,17 @@ if (tableScroll && tableHint) {
 
   const toggleHint = () => {
 
-    // 少しでも横スクロールしたら消す
+    // 横スクロール可能か判定
+    const isScrollable =
+      tableScroll.scrollWidth > tableScroll.clientWidth;
+
+    // スクロール不要なら非表示
+    if (!isScrollable) {
+      tableHint.classList.add('is-hidden');
+      return;
+    }
+
+    // 少しでもスクロールしたら非表示
     if (tableScroll.scrollLeft > 5) {
       tableHint.classList.add('is-hidden');
     } else {
@@ -168,12 +179,12 @@ if (tableScroll && tableHint) {
     }
   };
 
-  // 初回判定
+  // 初回
   toggleHint();
 
-  // スクロール時
+  // 横スクロール
   tableScroll.addEventListener('scroll', toggleHint);
 
-  // リサイズ時
+  // 画面幅変更
   window.addEventListener('resize', toggleHint);
 }
