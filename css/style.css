@@ -1970,6 +1970,8 @@ button {
   justify-content: center;
   align-items: center;
   border: 1px solid #000;
+  line-height: 1.75;
+  font-weight: 700;
   transition: 0.4s;
 }
 .p-pagination__item.is-current span {
@@ -1989,6 +1991,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1.75;
+  font-weight: 700;
+  padding: 0 0.3rem;
 }
 
 @media (max-width: 767px) {
