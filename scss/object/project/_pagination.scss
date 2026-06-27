@@ -39,9 +39,14 @@
                 &:hover {
                     background-color: $font-color;
                     color: $font-color02;
-
                 }
             }
         }
+
+    }
+    &__dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

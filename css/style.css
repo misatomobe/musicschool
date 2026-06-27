@@ -1985,6 +1985,11 @@ button {
     color: #fff;
   }
 }
+.p-pagination__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media (max-width: 767px) {
   .pc {
