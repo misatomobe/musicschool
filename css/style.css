@@ -1932,6 +1932,11 @@ button {
     padding-top: 0;
   }
 }
+@media (min-width: 768px) {
+  .p-blog-list__item .p-blog-item__date {
+    text-align: left;
+  }
+}
 .p-blog-list__item .p-blog-card__text {
   margin-top: 0.8rem;
 }

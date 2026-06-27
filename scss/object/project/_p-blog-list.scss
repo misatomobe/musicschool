@@ -36,6 +36,11 @@
                 padding-top: 0;
             }
         }
+        .p-blog-item__date {
+            @include pc {
+                text-align: left;
+            }
+        }
         .p-blog-card__text {
             margin-top: 0.8rem;
             @include pc {
