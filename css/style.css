@@ -1894,6 +1894,44 @@ button {
   margin-inline: auto;
 }
 
+/* =========================
+   BLOG-list
+========================= */
+@media (min-width: 768px) {
+  .p-blog-list__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-blog-list__item {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-blog-item__link {
+    display: flex;
+    align-items: center;
+    column-gap: 1.1363636364%;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-blog-item__image {
+    width: 50%;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-blog-item__body {
+    flex: 1;
+  }
+}
+
 @media (max-width: 767px) {
   .pc {
     display: none !important;
