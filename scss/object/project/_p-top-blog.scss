@@ -44,7 +44,7 @@
         color: $font-color02;
         font-size: 1.5rem;
         line-height: calc(25 / 15);
-        font-weight: 600;
+        font-weight: 700;
         @include pc {
             width: 8rem;
         }
@@ -55,7 +55,10 @@
     &-item__title {
         font-size: 2rem;
         line-height: calc(30 / 20);
-        font-weight: 600;
+        font-weight: 700;
+        @include pc {
+            line-height: calc(25 / 20);
+        }
     }
     &-item__date {
         display: block;

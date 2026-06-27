@@ -1378,7 +1378,7 @@ button {
   color: #fff;
   font-size: 1.5rem;
   line-height: 1.6666666667;
-  font-weight: 600;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   .p-blog-item__label {
@@ -1391,7 +1391,12 @@ button {
 .p-blog-item__title {
   font-size: 2rem;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .p-blog-item__title {
+    line-height: 1.25;
+  }
 }
 .p-blog-item__date {
   display: block;
@@ -1963,10 +1968,15 @@ button {
 }
 .p-blog-list__item .p-blog-card__text {
   margin-top: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 1.875;
+  font-weight: 500;
 }
 @media (min-width: 768px) {
   .p-blog-list__item .p-blog-card__text {
     margin-top: 1.1rem;
+    font-size: 1.8rem;
+    line-height: 1.6666666667;
   }
 }
 
