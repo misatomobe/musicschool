@@ -5,6 +5,9 @@
    BLOG-list
 ========================= */
 .p-blog-list__items {
+    display: flex;
+    flex-direction: column;
+    row-gap : 7rem;
     @include pc {
             display: flex;
             flex-direction: column;
@@ -21,12 +24,12 @@
        @include pc {
         display: flex;
         align-items: center;
-        column-gap: calc(10 / 880 * 100%);
+        column-gap: calc(50 / 880 * 100%);
        } 
     }
     .p-blog-item__image {
         @include pc {
-            width: 50%;
+            width: 26rem;
             flex-shrink: 0;
         }
     }

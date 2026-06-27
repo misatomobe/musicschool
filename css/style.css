@@ -1897,6 +1897,11 @@ button {
 /* =========================
    BLOG-list
 ========================= */
+.p-blog-list__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7rem;
+}
 @media (min-width: 768px) {
   .p-blog-list__items {
     display: flex;
@@ -1915,13 +1920,13 @@ button {
   .p-blog-item__link {
     display: flex;
     align-items: center;
-    column-gap: 1.1363636364%;
+    column-gap: 5.6818181818%;
   }
 }
 
 @media (min-width: 768px) {
   .p-blog-item__image {
-    width: 50%;
+    width: 26rem;
     flex-shrink: 0;
   }
 }
