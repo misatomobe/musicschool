@@ -1,0 +1,22 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   C-BLOG-ITEM（ブログホバー設定）
+========================= */
+.p-blog-item__link {
+    display: block;
+    color: inherit;
+
+    @include pc {
+        &:hover {
+            .p-blog-item__image {
+                opacity: 0.7;
+            }
+            .p-blog-item__label {
+                color: $main-color;
+                background-color: $font-color02;
+            }
+        }
+    }
+}
