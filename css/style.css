@@ -667,7 +667,7 @@ button {
 }
 
 /* =========================
-   C-BLOG-ITEM（ブログホバー設定）
+   C-BLOG-ITEM（ブログホバー）
 ========================= */
 .p-blog-item__link {
   display: block;
@@ -681,6 +681,21 @@ button {
     color: #CB0000;
     background-color: #fff;
   }
+  .p-blog-item__link:hover .p-blog-item__title,
+  .p-blog-item__link:hover .p-blog-item__date,
+  .p-blog-item__link:hover .p-blog-card__text {
+    color: #CB0000;
+  }
+}
+
+.p-blog-item__image {
+  transition: opacity 0.4s ease;
+}
+
+.p-blog-item__label,
+.p-blog-item__title,
+.p-blog-item__date {
+  transition: color 0.4s ease, background-color 0.4s ease;
 }
 
 /* =========================

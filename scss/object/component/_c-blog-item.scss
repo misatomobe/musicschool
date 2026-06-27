@@ -2,7 +2,7 @@
 @use "../../foundation/mixin" as *;
 
 /* =========================
-   C-BLOG-ITEM（ブログホバー設定）
+   C-BLOG-ITEM（ブログホバー）
 ========================= */
 .p-blog-item__link {
     display: block;
@@ -17,6 +17,21 @@
                 color: $main-color;
                 background-color: $font-color02;
             }
+            .p-blog-item__title,
+            .p-blog-item__date,
+            .p-blog-card__text {
+                color: $main-color;
+            }
         }
     }
+}
+.p-blog-item__image {
+    transition: opacity 0.4s ease;
+}
+.p-blog-item__label,
+.p-blog-item__title,
+.p-blog-item__date {
+    transition: 
+    color 0.4s ease,
+    background-color 0.4s ease;
 }
