@@ -8,10 +8,6 @@
     font-weight: 700;
     color: $font-color;
     text-align: center;
-    @include pc {
-        font-size: 3rem;
-        line-height: calc(50 / 30);
-    }
 
     &--red {
         color: $main-color;
