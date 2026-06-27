@@ -1972,12 +1972,17 @@ button {
   border: 1px solid #000;
   transition: 0.4s;
 }
+.p-pagination__item.is-current span {
+  background-color: #000;
+  color: #fff;
+}
 .p-pagination__item a {
-  color: #CB0000;
+  color: #000;
 }
 @media (min-width: 768px) {
   .p-pagination__item a:hover {
-    background-color: #CB0000;
+    background-color: #000;
+    color: #fff;
   }
 }
 
