@@ -9,38 +9,37 @@
     flex-direction: column;
     row-gap : 3.9rem;
     @include pc {
-            display: flex;
-            flex-direction: column;
-            row-gap: 7rem;
-        }
+        row-gap: 7rem;
     }
+}
 
-    .p-blog-list__item {
-        @include pc {
-            width: 100%; // topページのブログセクション3列指定を解除
+.p-blog-list__item {
+    @include pc {
+        width: 100%; // topページのブログセクション3列指定を解除
         }
-    }
-    .p-blog-item__link {
-       @include pc {
-        display: flex;
-        align-items: center;
-        column-gap: calc(50 / 880 * 100%);
-       } 
-    }
-    .p-blog-item__image {
-        @include pc {
-            width: 26rem;
-            flex-shrink: 0;
+        .p-blog-item__link {
+            @include pc {
+                display: flex;
+                align-items: flex-start;
+                column-gap: calc(50 / 880 * 100%);
+            } 
         }
-    }
-    .p-blog-item__body {
-        @include pc {
-            flex: 1;
+        .p-blog-item__image {
+            @include pc {
+                width: 26rem;
+                flex-shrink: 0;
+            }
         }
-    }
-    .p-blog-card__text {
-        margin-top: 0.8rem;
-        @include pc {
-            margin-top: 1.1rem;
+        .p-blog-item__body {
+            @include pc {
+                flex: 1;
+                padding-top: 0;
+            }
+        }
+        .p-blog-card__text {
+            margin-top: 0.8rem;
+            @include pc {
+                margin-top: 1.1rem;
+            }
         }
     }
