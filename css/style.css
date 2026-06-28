@@ -1984,11 +1984,11 @@ button {
    pagination
 ========================= */
 .p-pagination {
-  margin: 6rem 0 20.3rem;
+  margin: 6rem 0 17.8rem;
 }
 @media (min-width: 768px) {
   .p-pagination {
-    margin: 0.7rem 0 21rem;
+    margin: 0.7rem 0 17.5rem;
   }
 }
 .p-pagination__list {
