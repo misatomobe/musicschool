@@ -13,6 +13,7 @@
     transform: translateX(-50%);
     z-index: 99998;
     @include pc {
+        width: 30rem;
         left: auto;
         right: 0;
         transform: none;

@@ -550,6 +550,7 @@ button {
 }
 @media (min-width: 768px) {
   .c-button--contact {
+    width: 30rem;
     left: auto;
     right: 0;
     transform: none;
