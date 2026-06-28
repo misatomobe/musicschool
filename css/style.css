@@ -419,14 +419,25 @@ button {
   white-space: nowrap;
 }
 @media (min-width: 768px) {
+  .l-footer__nav li a {
+    transition: opacity 0.4s ease;
+  }
   .l-footer__nav li a:hover {
     opacity: 0.7;
   }
 }
-.l-footer__logo {
+.l-footer__logo a {
   display: flex;
   justify-content: center;
   margin-top: 1.874rem;
+}
+@media (min-width: 768px) {
+  .l-footer__logo a {
+    transition: opacity 0.4s ease;
+  }
+  .l-footer__logo a:hover {
+    opacity: 0.7;
+  }
 }
 .l-footer__logo-image {
   width: 3.23rem;
