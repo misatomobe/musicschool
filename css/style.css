@@ -671,6 +671,14 @@ button {
   content: ">";
   margin-inline: 1.8rem;
 }
+@media (min-width: 768px) {
+  .c-breadcrumb__item a {
+    transition: opacity 0.4s ease;
+  }
+  .c-breadcrumb__item a:hover {
+    opacity: 0.7;
+  }
+}
 
 /* =========================
    C-BLOG-ITEM（ブログホバー）
