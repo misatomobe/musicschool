@@ -503,6 +503,19 @@ button {
   }
 }
 
+/* =========================
+   MAIN
+========================= */
+/* FVなしページ専用 */
+.l-main--no-fv {
+  padding-top: 5rem;
+}
+@media (min-width: 768px) {
+  .l-main--no-fv {
+    padding-top: 8rem;
+  }
+}
+
 .c-logo__image {
   width: 2.55rem;
 }
@@ -654,6 +667,8 @@ button {
 ========================= */
 .c-breadcrumb {
   background-color: #E8E8E8;
+  position: relative;
+  z-index: 10;
 }
 .c-breadcrumb__list {
   display: flex;

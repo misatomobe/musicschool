@@ -6,6 +6,9 @@
 ========================= */
 .c-breadcrumb {
     background-color: $back-color;
+    position: relative;
+    z-index: 10;
+
     &__list {
         display: flex;
         flex-wrap: wrap;

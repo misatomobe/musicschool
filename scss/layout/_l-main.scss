@@ -1,0 +1,13 @@
+@use "../foundation/variables" as *;
+@use "../foundation/mixin" as *;
+
+/* =========================
+   MAIN
+========================= */
+/* FVなしページ専用 */
+.l-main--no-fv {
+    padding-top: 5rem;
+    @include pc {
+        padding-top: 8rem;
+    }
+}
