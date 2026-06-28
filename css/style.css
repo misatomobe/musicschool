@@ -554,6 +554,12 @@ button {
     right: 0;
     transform: none;
   }
+  .c-button--contact:hover .c-button--contact__icon {
+    background-color: #fff;
+  }
+  .c-button--contact:hover .c-button--contact__icon p {
+    color: #CB0000;
+  }
 }
 
 /* =========================
@@ -567,7 +573,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 .c-button--contact__icon p {
   color: #fff;
@@ -575,16 +581,11 @@ button {
   line-height: 1.65;
   font-weight: 700;
   letter-spacing: 0.4em;
+  transition: color 0.4s ease;
 }
 @media (min-width: 768px) {
   .c-button--contact__icon {
     width: 30rem;
-  }
-  .c-button--contact__icon:hover {
-    background-color: #fff;
-  }
-  .c-button--contact__icon:hover p {
-    color: #CB0000;
   }
 }
 

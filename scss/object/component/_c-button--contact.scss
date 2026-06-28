@@ -16,6 +16,15 @@
         left: auto;
         right: 0;
         transform: none;
+
+        &:hover {
+            .c-button--contact__icon {
+                background-color: $font-color02;
+                p {
+                    color: $main-color;
+                }
+            }
+        }
     }
 }
 /* =========================
@@ -29,21 +38,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition:  transform 0.4s ease, opacity 0.4s ease;
+    transition: background-color 0.4s ease;
+
     p {
         color: $font-color02;
         font-size: 2rem;
         line-height: calc(33 / 20);
         font-weight: 700;
         letter-spacing: 0.4em;
+        transition: color 0.4s ease;
     }
     @include pc {
-        width: 30rem;
-        &:hover {
-            background-color: $font-color02;
-            p {
-                color: $main-color;
-            }
+        width: 30rem;            
         }
-    }
 }
