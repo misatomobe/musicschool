@@ -2089,9 +2089,7 @@ button {
   }
 }
 .p-blog-details__share-item {
-  width: 6.5rem;
-  height: 4rem;
-  flex-shrink: 0;
+  flex: 1;
 }
 .p-blog-details__share-item img {
   display: block;
@@ -2099,7 +2097,7 @@ button {
   height: 4rem;
 }
 @media (min-width: 768px) {
-  .p-blog-details__share-item {
+  .p-blog-details__share-item img {
     width: auto;
     height: 4rem;
   }
