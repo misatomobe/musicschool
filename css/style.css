@@ -2089,14 +2089,17 @@ button {
   }
 }
 .p-blog-details__share-item {
-  flex: 1;
+  flex: 1 1 0;
 }
 .p-blog-details__share-item img {
   display: block;
-  width: 6.5rem;
-  height: 4rem;
+  width: 100%;
+  height: auto;
 }
 @media (min-width: 768px) {
+  .p-blog-details__share-item {
+    flex: 0 0 auto;
+  }
   .p-blog-details__share-item img {
     width: auto;
     height: 4rem;

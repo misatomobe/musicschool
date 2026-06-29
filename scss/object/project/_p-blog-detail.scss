@@ -18,15 +18,15 @@
         }
     }
     &__share-item {
-        flex: 1;
+        flex: 1 1 0;
 
-        
         img {
             display: block;
-            width: 6.5rem;
-            height: 4rem;
+            width: 100%;
+            height: auto;
         }
         @include pc {
+            flex: 0 0 auto;
             img {
                 width: auto;
                 height: 4rem;
