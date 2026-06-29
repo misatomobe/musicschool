@@ -1,0 +1,36 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   BLOG-DETAILS
+========================= */
+.p-blog-details {
+    &__share {
+        margin-top: 2.1rem;
+    }
+    &__share-list {
+        display: flex;
+        gap: 0.2rem;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        @include pc {
+            gap: 0.4rem;
+        }
+    }
+    &__share-item {
+        width: 6.5rem;
+        height: 4rem;
+        flex: 0 0 auto;
+        
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        @include pc {
+            width: 10.5rem;
+            height: 4rem;
+        }
+    }
+}
