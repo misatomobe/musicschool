@@ -2106,6 +2106,33 @@ button {
   }
 }
 
+/* =========================
+   CONTACT-SEND
+========================= */
+.c-button--contact--center {
+  position: static;
+  transform: none;
+}
+
+.p-contact-send__text {
+  padding: 4rem 0;
+}
+.p-contact-send__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  height: 6rem;
+}
+.p-contact-send__button .c-button--contact {
+  position: relative;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  transform: translateX(0);
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 767px) {
   .pc {
     display: none !important;

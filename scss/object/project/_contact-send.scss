@@ -1,0 +1,31 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   CONTACT-SEND
+========================= */
+
+.c-button--contact--center {
+    position: static;
+    transform: none;
+}
+.p-contact-send {
+    &__text {
+        padding: 4rem 0;
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+        height: 6rem;
+        .c-button--contact {
+            position: relative;
+            left: auto;
+            right: auto;
+            bottom: auto;
+            transform: translateX(0);
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
