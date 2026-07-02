@@ -2115,13 +2115,18 @@ button {
 }
 
 .p-contact-send__text {
-  padding: 4rem 0;
+  padding-top: 4.7rem;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .p-contact-send__text {
+    text-align: center;
+  }
 }
 .p-contact-send__button {
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
-  height: 6rem;
+  margin: 4rem 0 5rem;
 }
 .p-contact-send__button .c-button--contact {
   position: relative;

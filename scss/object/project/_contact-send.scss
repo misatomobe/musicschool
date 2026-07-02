@@ -11,13 +11,16 @@
 }
 .p-contact-send {
     &__text {
-        padding: 4rem 0;
+        padding-top: 4.7rem;
+        font-weight: 500;
+        @include pc {
+            text-align: center;
+        }
     }
     &__button {
         display: flex;
         justify-content: center;
-        margin-top: 4rem;
-        height: 6rem;
+        margin: 4rem 0 5rem;
         .c-button--contact {
             position: relative;
             left: auto;
