@@ -2115,7 +2115,7 @@ button {
 }
 
 .p-contact-send__text {
-  padding-top: 4.7rem;
+  margin-top: 4.7rem;
   font-weight: 500;
 }
 @media (min-width: 768px) {
@@ -2136,6 +2136,23 @@ button {
   transform: translateX(0);
   display: block;
   margin: 0 auto;
+}
+
+/* =========================
+   404
+========================= */
+.page-404 .p-contact-send__text {
+  margin-top: 4.2rem;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .page-404 .p-contact-send__text {
+    text-align: center;
+    margin: 4rem 0 9rem;
+  }
+}
+.page-404 .p-contact-send__button {
+  margin-top: 0;
 }
 
 @media (max-width: 767px) {

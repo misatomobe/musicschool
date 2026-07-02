@@ -1,0 +1,19 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   404
+========================= */
+.page-404 {
+    .p-contact-send__text {
+        margin-top: 4.2rem;
+        font-weight: 500;
+        @include pc {
+            text-align: center;
+            margin: 4rem 0 9rem;
+        }
+    }
+    .p-contact-send__button {
+        margin-top: 0;
+    }
+}
