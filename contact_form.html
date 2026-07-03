@@ -106,44 +106,56 @@
                                 </div>
                                 <form action="#">
                                     <div class="contact__form-block">
+                                        <!-- 会社名 -->
                                         <dl class="form-flex">
                                             <dt>
-                                                <label for="your-name">お名前 *</label>
+                                                <label for="your-company">会社名</label>
                                             </dt>
                                             <dd>
-                                                <input type="text" name="your-name" id="your-name" class="form-control" placeholder="例：北村太郎" required>
+                                                <input type="text" name="your-company" id="your-company" class="form-control" placeholder="例：きたむらミュージックスクール" required>
                                             </dd>
                                         </dl>
-                                        <dl class="form-flex sp-flex">
-                                        <dt>性別</dt> 
-                                        <dd class="form-radio">
-                                            <label class="radio-item">
-                                                <input type="radio" id="your-gender" name="gender" value="male" class="radiobutton" required>
-                                                <span>男性</span>
-                                            </label>
-                                            <label class="radio-item">
-                                                <input type="radio" name="gender" value="female" class="radiobutton" required>
-                                                <span>女性</span>
-                                            </label>
-                                        </dd>
+                                        
+                                        <!-- お名前 -->
+                                        <dl class="form-flex">
+                                            <dt>
+                                                <label for="your-name">お名前</label>
+                                            </dt>
+                                            <dd>
+                                                <input type="text" name="your-name" id="your-name" class="form-control" placeholder="例：北村　翔平" required>
+                                            </dd>
                                         </dl>
+
                                         <!-- メールアドレス -->
                                         <dl class="form-flex">
                                             <dt>
                                                 <label for="your-email">メールアドレス *</label>
                                             </dt>
                                             <dd>
-                                                <input type="email" name="your-email" id="your-email" class="form-control" placeholder="例：aaaaaaaa@gmail.com" required>
+                                                <input type="email" name="your-email" id="your-email" class="form-control" placeholder="info@kitamura.musicschool.jp" required>
                                             </dd>
                                         </dl>
+
+                                        <!-- 電話番号 -->
+                                        <dl class="form-flex">
+                                            <dt>
+                                                <label for="your-phone">電話番号 *</label>
+                                            </dt>
+                                            <dd>
+                                                <input type="tel" name="your-phone" id="your-phone" class="form-control" placeholder="090-1234-5678" required>
+                                            </dd>
+                                        </dl>
+                                        
+                                        <!-- 目的 -->
                                         <dl class="qa-list form-flex">
                                             <dt>
-                                                <label for="kinds">問い合わせ種別</label>
+                                                <label for="kinds">目的<br>(複数選択可)</label>
                                             </dt>
                                             <dd class="form-select">
                                                 <div class="form-area custom-select">
                                                     <select name="kinds" id="kinds" class="form-control">
-                                                        <option value="家づくりについて">家づくりについて</option>
+                                                        <option value="プランについてのお問い合わせ">プランについてのお問い合わせ</option>
+                                                        <option value="ヒアリングのご予約">ヒアリングのご予約</option>
                                                         <option value="資料請求">資料請求</option>
                                                         <option value="その他">その他</option>
                                                     </select>   
