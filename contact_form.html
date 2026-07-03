@@ -1,0 +1,314 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ｜きたむらミュージックスクール</title>
+    <meta name="description" content="きたむらミュージックスクールへのお問い合わせページです。レッスンに関するご質問やご相談、資料請求など、お気軽にお問い合わせください。">
+    <meta name="keywords" content="きたむらミュージックスクール, お問い合わせ, レッスン, ご質問, ご相談, 資料請求, 音楽教室, 茨城県笠間市">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- 自分のJS -->
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="l-container">
+        
+        <!-- ※共通【header】 -->
+        <header id="top" class="l-header">
+            <div class="l-header__inner">
+                <h1 class="l-header__logo">
+                    <a href="#">
+                        <span class="c-logo__image">
+                            <img src="./images/common/rogo.svg" alt="きたむらミュージックスクール">
+                        </span>
+                        <span class="c-logo__text">
+                            <span class="c-logo__main">きたむら</span>
+                            <span class="c-logo__sub">ミュージックスクール</span>
+                        </span>
+                    </a>
+                </h1>
+                
+                <nav class="l-header__nav u-pc-only">
+                    <ul class="l-header__nav-list">
+                        <li><a href="./plan.html">料金</a></li>
+                        <li><a href="./blog_list.html">ブログ</a></li>
+                        <li><a href="./result_list.html">卒業実績</a></li>
+                        <li class="is-contact">
+                            <a href="./contact_form.html">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <!-- SPハンバーガーメニュー用 -->
+                <div class="l-header__hamburger u-sp-only">
+                    <button class="c-hamburger">
+                        <span class="c-hamburger__line"></span>
+                    </button>
+                    <!-- SPナビ -->
+                    <nav class="l-header__sp-nav">
+                        <ul class="l-header__sp-nav-lists">
+                            <li><a href="./plan.html">料金</a></li>
+                            <li><a href="./blog_list.html">ブログ</a></li>
+                            <li><a href="./result_list.html">卒業実績</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- 【main】 -->
+        <main class="l-main">
+
+            <!-- 【page-fv】blog/contact/plan/404共通 -->
+            <section class="p-blog-fv p-fv">
+                <picture>
+                    <source srcset="images/send/send_pc.jpg" media="(min-width: 768px)">
+                    <img src="images/send/send_sp.jpg" alt="きたむらミュージックスクールのお問い合わせ">
+                </picture>
+                <div class="p-plan-fv__contents">
+                    <div class="p-plan-fv__catch">
+                        <h2 class="p-plan-fv__title">
+                          お問い合わせ 
+                        </h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 【breadcrumb】 -->
+            <nav class="c-breadcrumb" aria-label="パンくずリスト">
+                <div class="l-inner">
+                    <ol class="c-breadcrumb__list">
+                        <li class="c-breadcrumb__item">
+                            <a href="./index.html">ホーム</a>
+                        </li>
+                        <li class="c-breadcrumb__item">
+                            <span>お問い合わせ</span>
+                        </li>
+                    </ol>
+                </div>
+            </nav>
+
+            <!-- 【お問い合わせ】 -->
+             <section class="p-blog">
+                <div class="l-inner">
+                    <div class="p-blog__contents">
+                        <!-- お問い合わせフォームページ専用レイアウト -->
+                        <div class="p-blog-list__items">
+                            <div class="contact__contents">
+                                <div class="contact__text">
+                                    <p>当校に関するご質問・ご相談・資料請求は下記のフォームからお気軽にお問い合わせください。<br>
+                                        通常３営業日以内にメールにてご連絡させていただきます。
+                                    </p>
+                                </div>
+                                <form action="#">
+                                    <div class="contact__form-block">
+                                        <dl class="form-flex">
+                                            <dt>
+                                                <label for="your-name">お名前 *</label>
+                                            </dt>
+                                            <dd>
+                                                <input type="text" name="your-name" id="your-name" class="form-control" placeholder="例：北村太郎" required>
+                                            </dd>
+                                        </dl>
+                                        <dl class="form-flex sp-flex">
+                                        <dt>性別</dt> 
+                                        <dd class="form-radio">
+                                            <label class="radio-item">
+                                                <input type="radio" id="your-gender" name="gender" value="male" class="radiobutton" required>
+                                                <span>男性</span>
+                                            </label>
+                                            <label class="radio-item">
+                                                <input type="radio" name="gender" value="female" class="radiobutton" required>
+                                                <span>女性</span>
+                                            </label>
+                                        </dd>
+                                        </dl>
+                                        <!-- メールアドレス -->
+                                        <dl class="form-flex">
+                                            <dt>
+                                                <label for="your-email">メールアドレス *</label>
+                                            </dt>
+                                            <dd>
+                                                <input type="email" name="your-email" id="your-email" class="form-control" placeholder="例：aaaaaaaa@gmail.com" required>
+                                            </dd>
+                                        </dl>
+                                        <dl class="qa-list form-flex">
+                                            <dt>
+                                                <label for="kinds">問い合わせ種別</label>
+                                            </dt>
+                                            <dd class="form-select">
+                                                <div class="form-area custom-select">
+                                                    <select name="kinds" id="kinds" class="form-control">
+                                                        <option value="家づくりについて">家づくりについて</option>
+                                                        <option value="資料請求">資料請求</option>
+                                                        <option value="その他">その他</option>
+                                                    </select>   
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <!-- 内容 -->
+                                        <dl class="form-area message-area">
+                                            <dt>
+                                                <label for="your-content">内容 *</label>
+                                            </dt>
+                                            <dd>
+                                                <textarea name="your-content" id="your-content" class="form-control form-textarea" cols="30" rows="10" required></textarea>
+                                            </dd>
+                                        </dl>
+                                        <!-- チェックボックス -->
+                                        <dl class="checkbox-group">
+                                            <dt>何を見て当社HPを知りましたか？ (複数回答可)　*</dt>
+                                            <dd class="form-checkbox">
+                                                <div class="checkbox-col">
+                                                    <label class="checkbox-item">
+                                                        <input type="checkbox" name="how-know" value="インターネット">
+                                                        <span>インターネット</span>
+                                                    </label> 
+                                                </div> 
+                                                <div class="checkbox-col">
+                                                    <label class="checkbox-item">
+                                                        <input type="checkbox" name="how-know" value="チラシ">
+                                                        <span>チラシ</span>
+                                                    </label>
+                                                </div> 
+                                                <div class="checkbox-col">
+                                                    <label class="checkbox-item">
+                                                        <input type="checkbox" name="how-know" value="住宅展示場">
+                                                        <span>住宅展示場</span>
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox-col">
+                                                    <label class="checkbox-item">
+                                                        <input type="checkbox" name="square-check" value="看板">
+                                                        <span>看板</span>
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox-col">
+                                                    <label class="checkbox-item">
+                                                        <input type="checkbox" name="square-check" value="各種SNS">
+                                                        <span>各種SNS</span>
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox-col">
+                                                    <label class="checkbox-item">
+                                                        <input type="checkbox" name="square-check" value="紹介">
+                                                        <span>紹介</span>
+                                                    </label> 
+                                                </div>
+                                                <div class="checkbox-col">
+                                                    <label class="checkbox-item">
+                                                        <input type="checkbox" name="square-check" value="通りがかり">
+                                                        <span>通りがかり</span>
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox-col">
+                                                    <label class="checkbox-item">
+                                                        <input type="checkbox" name="square-check" value="その他">
+                                                        <span>その他</span>
+                                                    </label>
+                                                </div>                                            
+                                            </dd>
+                                        </dl>
+                                        <div class="submit-btn">
+                                            <button type="submit">内容に同意して送信</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ※共通footer -->
+        <footer class="l-footer">
+            <div class="l-footer__main">
+                <div class="l-footer__inner">
+
+                    <div class="l-footer__nav">
+                        <nav>
+                            <ul>
+                                <li><a href="#">ホーム</a></li>
+                                <li><a href="./plan.html">料金</a></li>
+                                <li><a href="./blog_list.html">ブログ</a></li>
+                                <li><a href="./result_list.html">卒業実績</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="l-footer__logo">
+                        <a href="#">
+                            <img
+                                src="./images/common/logo-white.svg"
+                                alt="きたむらミュージックスクール"
+                                class="l-footer__logo-image">
+                        </a>
+                    </div>
+
+                    <div class="l-footer__copyright">
+                        <p>Copyright © 0000 KITAMURA music school Inc.<br class="sp-br"> All Rights</p>
+                    </div>
+
+                    <div class="l-footer__sns">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="l-footer__sns-icon">
+                                        <img src="./images/common/icon-twitter.svg" alt="twitterアイコン">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="l-footer__sns-icon">
+                                        <img src="./images/common/icon-facebook.svg" alt="facebookアイコン">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="l-footer__sns-icon">
+                                        <img src="./images/common/icon-youtube.svg" alt="youtubeアイコン">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="l-footer__sns-icon">
+                                        <img src="./images/common/icon-instagram.svg" alt="instagramアイコン">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </footer>
+
+        <!-- ※共通buttons -->
+        <div class="p-fixed-buttons">
+            <!-- TOPへ戻るボタン -->            
+            <a href="#" class="c-button--top">
+                <div class="c-button__icon">
+                    <div class="c-button__icon--img">
+                        <img src="./images/icon-to-top.svg" alt="ページ上部へ戻る">
+                    </div>
+                </div>  
+            </a>
+            
+            <!-- 【お問い合わせ】 -->
+            <a href="./contact_form.html" class="c-button--contact">
+                <div class="c-button--contact__icon">
+                    <p>お問い合わせ</p>
+                </div>        
+            </a>
+        </div>
+            
+    </div>
+</body>
+</html>
