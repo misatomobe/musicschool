@@ -2107,6 +2107,20 @@ button {
 }
 
 /* =========================
+   CONTACT_FORM
+========================= */
+.p-contact__contents {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+@media (min-width: 768px) {
+  .p-contact__contents {
+    gap: 6.5rem;
+  }
+}
+
+/* =========================
    CONTACT-SEND
 ========================= */
 .c-button--contact--center {

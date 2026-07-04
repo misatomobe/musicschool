@@ -1,0 +1,14 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   CONTACT_FORM
+========================= */
+.p-contact__contents {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    @include pc {
+        gap: 6.5rem;
+    }
+}
