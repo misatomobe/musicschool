@@ -93,60 +93,60 @@
             </nav>
 
             <!-- 【お問い合わせフォーム】 -->
-             <section class="p-blog">
+             <section class="p-contact">
                 <div class="l-inner">
-                    <div class="p-blog__contents">
+                    <div class="p-contact__contents">
+
                         <!-- お問い合わせフォームページ専用レイアウト -->
-                        <div class="p-blog-list__items">
-                            <div class="contact__contents">
-                                <div class="contact__text">
-                                    <p>当校に関するご質問・ご相談・資料請求は下記のフォームからお気軽にお問い合わせください。</p>
-                                    <p>通常３営業日以内にメールにてご連絡させていただきます。</p>
-                                </div>
-                                <form action="#">
-                                    <div class="contact__form-block">
-                                        <!-- 会社名 -->
-                                        <dl class="form-flex">
+                        <div class="p-contact__lead">
+                            <p>当校に関するご質問・ご相談・資料請求は下記のフォームからお気軽にお問い合わせください。</p>
+                            <p>通常３営業日以内にメールにてご連絡させていただきます。</p>
+                        </div>
+                        
+                        <form action="#" class="p-contact__form">
+                            <div class="p-contact__form-block">
+                                <!-- 会社名 -->
+                                <dl class="p-contact__item">
                                             <dt>
                                                 <label for="your-company">会社名</label>
                                             </dt>
                                             <dd>
                                                 <input type="text" name="your-company" id="your-company" class="form-control" placeholder="例：きたむらミュージックスクール" required>
                                             </dd>
-                                        </dl>
+                                </dl>
                                         
-                                        <!-- お名前 -->
-                                        <dl class="form-flex">
+                                <!-- お名前 -->
+                                <dl class="p-contact__item">
                                             <dt>
                                                 <label for="your-name">お名前</label>
                                             </dt>
                                             <dd>
                                                 <input type="text" name="your-name" id="your-name" class="form-control" placeholder="例：北村　翔平" required>
                                             </dd>
-                                        </dl>
-
-                                        <!-- メールアドレス -->
-                                        <dl class="form-flex">
+                                </dl>
+                                
+                                <!-- メールアドレス -->
+                                <dl class="p-contact__item">
                                             <dt>
                                                 <label for="your-email">メールアドレス</label>
                                             </dt>
                                             <dd>
                                                 <input type="email" name="your-email" id="your-email" class="form-control" placeholder="info@kitamura.musicschool.jp" required>
                                             </dd>
-                                        </dl>
+                                </dl>
 
-                                        <!-- 電話番号 -->
-                                        <dl class="form-flex">
+                                <!-- 電話番号 -->
+                                <dl class="p-contact__item">
                                             <dt>
                                                 <label for="your-phone">電話番号</label>
                                             </dt>
                                             <dd>
                                                 <input type="tel" name="your-phone" id="your-phone" class="form-control" placeholder="090-1234-5678">
                                             </dd>
-                                        </dl>
+                                </dl>
 
-                                        <!-- チェックボックス -->
-                                        <dl class="checkbox-group">
+                                <!-- チェックボックス -->
+                                <dl class="p-contact__item p-contact__item--checkbox">
                                             <dt>目 的<br>(複数選択可)</dt>
                                             <dd class="form-checkbox">
                                                 <div class="checkbox-col">
@@ -175,26 +175,23 @@
                                                     </label>
                                                 </div>                                            
                                             </dd>
-                                        </dl>
+                                </dl>
 
-                                        <!-- 内容 -->
-                                        <dl class="form-area message-area">
-                                            <dt>
+                                <!-- 内容 -->
+                                <dl class="p-contact__item p-contact__item--textarea">
+                                    <dt>
                                                 <label for="your-content">内容</label>
-                                            </dt>
-                                            <dd>
-                                                <textarea name="your-content" id="your-content" class="form-control form-textarea" cols="30" rows="10"></textarea>
-                                            </dd>
-                                        </dl>
-                                        
+                                    </dt>
+                                    <dd>
+                                        <textarea name="your-content" id="your-content" class="form-control form-textarea" cols="30" rows="10"></textarea>
+                                    </dd>
+                                </dl>                                    
 
-                                        <div class="submit-btn">
-                                            <button type="submit">送信</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                <div class="p-contact__submit">
+                                    <button type="submit">送信</button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>
