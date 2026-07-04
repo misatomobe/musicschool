@@ -33,6 +33,12 @@
             border: 0.1rem solid $font-color;
             padding: 0 2rem;
 
+            font-size: 1.5rem;
+            line-height: calc(33 / 15);
+            
+            &::placeholder {
+                color: $font-color03;
+            }
         }
     }
 }
