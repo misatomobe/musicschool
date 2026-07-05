@@ -557,9 +557,32 @@ button {
   color: #fff;
 }
 
-/* =========================
-   c-button
-========================= */
+/* ==================================================
+   c-button（contact_form、404）高さ50pxのボタン
+================================================== */
+.c-button {
+  width: 100%;
+  max-width: 30rem;
+  height: 5rem;
+  background-color: #CB0000;
+  border: 0.1rem solid #CB0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .c-button {
+    max-width: 25rem;
+    font-size: 2.5rem;
+    line-height: 1.32;
+  }
+}
+
 /* =========================
    c-button--contact
 ========================= */
@@ -2156,12 +2179,17 @@ button {
   min-width: 0;
 }
 .p-contact__contents dd textarea.form-textarea {
-  height: 30rem;
+  height: 19rem;
   padding: 1.3rem 2rem;
   line-height: 1.6;
   word-break: break-all;
   resize: none;
   display: block;
+}
+@media (min-width: 768px) {
+  .p-contact__contents dd textarea.form-textarea {
+    height: 30rem;
+  }
 }
 .p-contact__contents .checkbox-item {
   display: flex;
