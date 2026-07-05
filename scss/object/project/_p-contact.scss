@@ -40,7 +40,7 @@
                 color: $font-color03;
             }
         }
-
+        
         // checkbox
         .form-checkbox {
             display: grid;
@@ -53,6 +53,16 @@
             justify-content: flex-start;
             width: fit-content;
             min-width: 0;
+        }
+        
+        // テキストエリア
+        textarea.form-textarea {
+            height: 30rem;
+            padding: 1.3rem 2rem;
+            line-height: 1.6;
+            word-break: break-all;
+            resize: none;
+            display: block;
         }
     }
 
@@ -83,4 +93,6 @@
         border-left: 0.2rem solid $main-color;
         transform: rotate(-45deg);
     }
+
+
 }

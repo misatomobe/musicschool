@@ -2155,6 +2155,14 @@ button {
   width: fit-content;
   min-width: 0;
 }
+.p-contact__contents dd textarea.form-textarea {
+  height: 30rem;
+  padding: 1.3rem 2rem;
+  line-height: 1.6;
+  word-break: break-all;
+  resize: none;
+  display: block;
+}
 .p-contact__contents .checkbox-item {
   display: flex;
   align-items: center;
