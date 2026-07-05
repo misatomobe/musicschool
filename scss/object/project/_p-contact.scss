@@ -21,6 +21,26 @@
             }
         }
     }
+    
+    .p-contact__item {
+        @include pc {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        dt {
+            @include pc {
+                width: 20rem;
+                flex-shrink: 0;
+            }
+        }
+
+        dd {
+            @include pc {
+                flex:1;
+            }
+        }
+    }
 
     dt {
         font-size: 1.6rem;
@@ -90,7 +110,6 @@
     }
     
     // クリック領域
-    
     .checkbox-item {
         display: flex;
         align-items: center;
@@ -121,20 +140,3 @@
     }
 }
 
-.p-contact__item {
-    @include pc {
-        display: flex;
-        align-items: flex-start;
-    }
-    dt {
-        @include pc {
-            width: 20rem;
-            flex-shrink: 0;
-        }
-    }
-    dd {
-        @include pc {
-            flex: 1;
-        }
-    }
-}

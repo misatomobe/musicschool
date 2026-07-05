@@ -2163,6 +2163,23 @@ button {
     margin-top: 3rem;
   }
 }
+@media (min-width: 768px) {
+  .p-contact__contents .p-contact__item {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  .p-contact__contents .p-contact__item dt {
+    width: 20rem;
+    flex-shrink: 0;
+  }
+}
+@media (min-width: 768px) {
+  .p-contact__contents .p-contact__item dd {
+    flex: 1;
+  }
+}
 .p-contact__contents dt {
   font-size: 1.6rem;
   line-height: 2.0625;
@@ -2242,24 +2259,6 @@ button {
   border-bottom: 0.2rem solid #CB0000;
   border-left: 0.2rem solid #CB0000;
   transform: rotate(-45deg);
-}
-
-@media (min-width: 768px) {
-  .p-contact__item {
-    display: flex;
-    align-items: flex-start;
-  }
-}
-@media (min-width: 768px) {
-  .p-contact__item dt {
-    width: 20rem;
-    flex-shrink: 0;
-  }
-}
-@media (min-width: 768px) {
-  .p-contact__item dd {
-    flex: 1;
-  }
 }
 
 /* =========================
