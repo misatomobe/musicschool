@@ -2149,16 +2149,37 @@ button {
   margin-top: 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
-.p-contact__contents dd .checkbox-item {
-  display: inline-flex;
-  align-items: center;
+.p-contact__contents dd .checkbox-col {
+  display: flex;
+  justify-content: flex-start;
+  width: fit-content;
   min-width: 0;
 }
-.p-contact__contents dd .checkbox-item input[type=checkbox] + span {
-  display: inline-block;
-  padding-left: 4rem;
+.p-contact__contents .checkbox-item {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  cursor: pointer;
+  min-width: fit-content;
+}
+.p-contact__contents .checkbox-item input[type=checkbox] {
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border: 0.1rem solid #000;
   position: relative;
-  white-space: nowrap;
+  cursor: pointer;
+}
+.p-contact__contents .checkbox-item input[type=checkbox]:checked::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.3rem;
+  width: 1rem;
+  height: 0.5rem;
+  border-bottom: 0.2rem solid #CB0000;
+  border-left: 0.2rem solid #CB0000;
+  transform: rotate(-45deg);
 }
 
 /* =========================
