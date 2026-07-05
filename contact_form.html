@@ -103,7 +103,7 @@
                             <p>通常３営業日以内にメールにてご連絡させていただきます。</p>
                         </div>
                         
-                        <form action="#" class="p-contact__form">
+                        <form action="./contact_send.html" class="p-contact__form">
                             <div class="p-contact__form-block">
                                 <!-- 会社名 -->
                                 <dl class="p-contact__item">
@@ -147,7 +147,10 @@
 
                                 <!-- チェックボックス -->
                                 <dl class="p-contact__item p-contact__item--checkbox">
-                                            <dt>目 的<span>(複数選択可)</span></dt>
+                                            <dt>
+                                                <span class="p-contact__label">目的</span>
+                                                <span>(複数選択可)</span>
+                                            </dt>
                                             <dd class="form-checkbox">
                                                 <div class="checkbox-col">
                                                     <label class="checkbox-item">
@@ -189,11 +192,9 @@
 
                                 <!-- 【送信ボタン】 -->
                                 <div class="p-contact-send__button">
-                                    <a href="./contact_send.html" class="c-button--contact">
-                                        <div class="c-button">
-                                            <p>送信</p>
-                                        </div>        
-                                    </a>
+                                    <button type="submit" class="c-button">
+                                        <p>送信</p>
+                                    </button>
                                 </div>
 
                             </div>

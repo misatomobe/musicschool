@@ -28,6 +28,23 @@
         font-weight: 500;
     }
 
+
+    // 文字間隔調整
+    .p-contact__item--checkbox {
+        dt {
+            letter-spacing: 0.3rem;
+
+            span {
+                display: inline;
+                letter-spacing: 0;
+                @include pc {
+                    display: block;
+                    margin-top: 0.2rem;
+                }
+            }
+        }
+    }
+
     dd {
         .form-control {
             width: 100%;
@@ -101,5 +118,23 @@
         border-bottom: 0.2rem solid $main-color;
         border-left: 0.2rem solid $main-color;
         transform: rotate(-45deg);
+    }
+}
+
+.p-contact__item {
+    @include pc {
+        display: flex;
+        align-items: flex-start;
+    }
+    dt {
+        @include pc {
+            width: 20rem;
+            flex-shrink: 0;
+        }
+    }
+    dd {
+        @include pc {
+            flex: 1;
+        }
     }
 }
