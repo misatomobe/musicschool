@@ -2256,6 +2256,11 @@ button {
   transform: rotate(-45deg);
 }
 
+.p-contact-send__button.p-contact__submit {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
 /* =========================
    CONTACT-SEND
 ========================= */
@@ -2276,7 +2281,13 @@ button {
 .p-contact-send__button {
   display: flex;
   justify-content: center;
-  margin: 4rem 0 5rem;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .p-contact-send__button {
+    margin-bottom: 10rem;
+  }
 }
 .p-contact-send__button .c-button--contact {
   position: relative;

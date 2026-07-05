@@ -20,7 +20,11 @@
     &__button {
         display: flex;
         justify-content: center;
-        margin: 4rem 0 5rem;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        @include pc {
+            margin-bottom: 10rem;
+        }
         .c-button--contact {
             position: relative;
             left: auto;
