@@ -107,7 +107,7 @@ const modal = document.querySelector('.modal');
 
 function updateTopBtn() {
   // 必要な要素が揃っていない場合は処理を抜ける
-  if (!fixedButtons || !footer || !fv) return;
+  if (!fixedButtons || !footer) return;
 
   // モーダル表示中は最優先で非表示にする
   if (modal && modal.classList.contains('is-active')) {
@@ -118,9 +118,12 @@ function updateTopBtn() {
   // =====================================
   // TOPボタンの表示・非表示
   // =====================================
-  const fvHeight = fv.offsetHeight;
 
-  if (window.scrollY > fvHeight) {
+  // FVがあるページはFVの高さ、
+  // FVがないページは300pxスクロールで表示
+  const showPosition = fv ? fv.offsetHeight : 300;
+
+  if (window.scrollY > showPosition) {
     fixedButtons.classList.add('show');
   } else {
     fixedButtons.classList.remove('show');
