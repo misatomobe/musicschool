@@ -2320,6 +2320,21 @@ button {
   margin-top: 0;
 }
 
+/* =========================
+   SEARCH
+========================= */
+.p-search-result__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.6rem;
+}
+@media (min-width: 768px) {
+  .p-search-result__head {
+    mar-gin-top: 6.6rem;
+  }
+}
+
 @media (max-width: 767px) {
   .pc {
     display: none !important;

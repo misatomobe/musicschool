@@ -1,0 +1,17 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   SEARCH
+========================= */
+.p-search-result {
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3.6rem;
+        @include pc {
+            mar-gin-top: 6.6rem;
+        }
+    }
+}
