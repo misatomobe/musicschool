@@ -14,4 +14,14 @@
             mar-gin-top: 6.6rem;
         }
     }
+    &__title,
+    &__count {
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+        font-weight: 500;
+
+        span {
+            font-weight: 700;
+        }
+    }
 }

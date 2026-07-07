@@ -2334,6 +2334,14 @@ button {
     mar-gin-top: 6.6rem;
   }
 }
+.p-search-result__title, .p-search-result__count {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  font-weight: 500;
+}
+.p-search-result__title span, .p-search-result__count span {
+  font-weight: 700;
+}
 
 @media (max-width: 767px) {
   .pc {
