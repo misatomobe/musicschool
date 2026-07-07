@@ -2342,6 +2342,9 @@ button {
 .p-search-result__title span, .p-search-result__count span {
   font-weight: 700;
 }
+.p-search-result .p-blog__contents {
+  margin-top: 4.2rem;
+}
 
 @media (max-width: 767px) {
   .pc {
