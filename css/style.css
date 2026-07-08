@@ -2346,6 +2346,29 @@ button {
   margin-top: 4.2rem;
 }
 
+/* =========================
+   RESULT-LIST
+========================= */
+.p-result-list__items {
+  margin-top: 4.9rem;
+}
+@media (min-width: 768px) {
+  .p-result-list__items {
+    margin-top: 3.8rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10.6rem;
+    row-gap: 6.1rem;
+    justify-content: flex-start;
+  }
+}
+
+.p-result-list-item__link {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 767px) {
   .pc {
     display: none !important;

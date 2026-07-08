@@ -1,0 +1,22 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   RESULT-LIST
+========================= */
+.p-result-list__items {
+    margin-top: 4.9rem;
+    @include pc {
+        margin-top: 3.8rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10.6rem;
+        row-gap: 6.1rem;
+        justify-content: flex-start;
+    }
+}
+.p-result-list-item__link {
+    display: flex;
+    flex-direction: column;
+}
