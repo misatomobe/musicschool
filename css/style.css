@@ -2351,6 +2351,9 @@ button {
 ========================= */
 .p-result-list__items {
   margin-top: 4.9rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.1rem;
 }
 @media (min-width: 768px) {
   .p-result-list__items {
@@ -2374,6 +2377,22 @@ button {
   .p-result-list-item__link .p-blog-item__image {
     width: 100%;
     flex-shrink: 1;
+  }
+}
+.p-result-list-item__link h3 {
+  margin-top: 2rem;
+}
+.p-result-list-item__link time {
+  margin-top: 1rem;
+}
+
+.p-result-list__pagination {
+  margin-top: 6.1rem;
+  margin-bottom: 17.2rem;
+}
+@media (min-width: 768px) {
+  .p-result-list__pagination {
+    margin-top: 7.1rem;
   }
 }
 

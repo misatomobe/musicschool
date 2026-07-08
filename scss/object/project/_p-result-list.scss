@@ -6,6 +6,9 @@
 ========================= */
 .p-result-list__items {
     margin-top: 4.9rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.1rem;
     @include pc {
         margin-top: 3.8rem;
         width: 100%;
@@ -27,5 +30,19 @@
             width: 100%;
             flex-shrink: 1;
         }
+    }
+    h3 {
+        margin-top: 2rem;
+    }
+    time {
+        margin-top: 1rem;
+    }
+}
+
+.p-result-list__pagination {
+    margin-top: 6.1rem;
+    margin-bottom: 17.2rem;
+    @include pc {
+        margin-top: 7.1rem;
     }
 }
