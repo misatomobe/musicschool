@@ -17,17 +17,15 @@
     }
 }
 .p-result-list-item__link {
+    @include pc {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .p-blog-item__image {
         @include pc {
             width: 100%;
             flex-shrink: 1;
         }
-    }
-}
-
-.p-result-list-item__link {
-        @include pc {
-        display: flex;
-        flex-direction: column;
     }
 }
