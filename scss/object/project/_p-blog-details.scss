@@ -162,6 +162,12 @@
         line-height: calc(28 / 17);
         font-weight: 500;
     }
+
+    /*  カテゴリー */
+    &__category-item {
+        padding: 1.5rem 0;
+        border-bottom: 0.5px solid $font-color;
+    }
 }
 
 

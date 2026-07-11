@@ -2267,6 +2267,13 @@ button {
   line-height: 1.6470588235;
   font-weight: 500;
 }
+.p-blog-details {
+  /*  カテゴリー */
+}
+.p-blog-details__category-item {
+  padding: 1.5rem 0;
+  border-bottom: 0.5px solid #000;
+}
 
 /* =========================
    CONTACT_FORM
