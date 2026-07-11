@@ -2136,6 +2136,40 @@ button {
     height: 4rem;
   }
 }
+.p-blog-details {
+  /* 前・次の記事画像 */
+}
+.p-blog-details__pager-image {
+  display: none;
+}
+@media (min-width: 768px) {
+  .p-blog-details__pager-image {
+    display: block;
+  }
+}
+.p-blog-details {
+  /* バナー広告 */
+}
+.p-blog-details__mail-magazine {
+  border: 0.5px solid #000;
+  font-size: 1.8rem;
+  line-height: 1.8333333333;
+  font-weight: 700;
+}
+.p-blog-details__sidebar-title {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+.p-blog-details__mail-magazine-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  min-height: 22.8rem;
+  background: #E8E8E8;
+}
 
 /* =========================
    CONTACT_FORM
