@@ -2117,8 +2117,27 @@ button {
 .p-blog-details__date {
   text-align: left;
 }
+.p-blog-details__body {
+  padding-top: 4rem;
+}
+.p-blog-details__text {
+  margin-top: 1.7rem;
+}
+@media (min-width: 768px) {
+  .p-blog-details__text {
+    margin-top: 1.5rem;
+  }
+}
 .p-blog-details__share {
   margin-top: 2.1rem;
+}
+.p-blog-details__share .p-blog-card__text {
+  margin-top: 2.7rem;
+}
+@media (min-width: 768px) {
+  .p-blog-details__share .p-blog-card__text {
+    margin-top: 4.8rem;
+  }
 }
 .p-blog-details__share-list {
   display: flex;
