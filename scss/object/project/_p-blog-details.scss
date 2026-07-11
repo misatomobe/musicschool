@@ -5,6 +5,10 @@
    BLOG-DETAILS
 ========================= */
 .p-blog-details {
+    padding: 5rem 0 19.7rem;
+    @include pc {
+        padding: 7rem 0 18.7rem;
+    }
     &__share {
         margin-top: 2.1rem;
     }
@@ -34,6 +38,19 @@
         }
     }
 
+    
+    // サイドバー上余白
+    &__sidebar > section {
+        margin-top: 3rem;
+
+        @include pc {
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+
     /* 前・次の記事画像 */
     &__pager-image {
         display: none;
@@ -44,17 +61,19 @@
     /* バナー広告 */
     &__mail-magazine {
         border: 0.5px solid $font-color;
-
         font-size: 1.8rem;
         line-height: calc(33 / 18);
         font-weight: 700;
+        @include pc {
+            max-width: 25rem;
+        }
     }
 
     &__sidebar-title {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         height: 5rem;
         background: $font-color;
         color: $font-color02;
@@ -71,4 +90,40 @@
         background: $banner;
     }
 
+    /*  検索 */
+    &__search {
+        border: 0.5px solid $font-color;
+    }
+
+    &__search-form {
+        display: flex;
+        margin: 2rem;
+        justify-content: center;
+        align-items: center;
+        height: 5.4rem;
+        
+    }
+
+    &__search-input {
+        flex: 1;
+        min-width: 0;
+        height: 5.4rem;
+        padding: 1rem;
+        background: $banner;
+    }
+    &__search-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        cursor: pointer;
+
+        img {
+            display: block;
+            width: 5.4rem;
+            height: auto;
+        }       
+    }
 }
+
+
