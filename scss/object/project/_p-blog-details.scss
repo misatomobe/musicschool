@@ -124,6 +124,36 @@
             height: auto;
         }       
     }
+
+    /*  検索 */
+    &__recommend-item {
+        margin-top: 2rem;
+        @include pc {
+            margin-top: 1.5rem;
+        }
+    }
+
+    &__recommend-link {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+    &__recommend-image {
+        width: 16rem;
+        aspect-ratio: 16 / 11;
+        background: $banner;
+        flex-shrink: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include pc {
+            width: 9.5rem;
+            aspect-ratio: 95 / 75;
+
+        }
+    }
 }
 
 
