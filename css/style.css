@@ -2114,6 +2114,9 @@ button {
     padding: 7rem 0 18.7rem;
   }
 }
+.p-blog-details__date {
+  text-align: left;
+}
 .p-blog-details__share {
   margin-top: 2.1rem;
 }

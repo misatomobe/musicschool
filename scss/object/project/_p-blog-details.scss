@@ -6,12 +6,19 @@
 ========================= */
 .p-blog-details {
     padding: 5rem 0 19.7rem;
+    
     @include pc {
         padding: 7rem 0 18.7rem;
     }
+
+    &__date {
+        text-align: left;
+    }
+
     &__share {
         margin-top: 2.1rem;
     }
+
     &__share-list {
         display: flex;
         gap: 0.2rem;
