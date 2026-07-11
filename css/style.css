@@ -2227,7 +2227,7 @@ button {
   height: auto;
 }
 .p-blog-details {
-  /*  検索 */
+  /*  おすすめの記事 */
 }
 .p-blog-details__recommend-item {
   margin-top: 2rem;
@@ -2241,6 +2241,11 @@ button {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .p-blog-details__recommend-link {
+    gap: 1.5rem;
+  }
 }
 .p-blog-details__recommend-image {
   width: 16rem;
@@ -2256,6 +2261,11 @@ button {
     width: 9.5rem;
     aspect-ratio: 95/75;
   }
+}
+.p-blog-details__recommend-body {
+  font-size: 1.7rem;
+  line-height: 1.6470588235;
+  font-weight: 500;
 }
 
 /* =========================

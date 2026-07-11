@@ -125,7 +125,7 @@
         }       
     }
 
-    /*  検索 */
+    /*  おすすめの記事 */
     &__recommend-item {
         margin-top: 2rem;
         @include pc {
@@ -137,6 +137,9 @@
         display: flex;
         gap: 2rem;
         align-items: flex-start;
+        @include pc {
+            gap: 1.5rem;
+        }
     }
     &__recommend-image {
         width: 16rem;
@@ -153,6 +156,11 @@
             aspect-ratio: 95 / 75;
 
         }
+    }
+    &__recommend-body {
+        font-size: 1.7rem;
+        line-height: calc(28 / 17);
+        font-weight: 500;
     }
 }
 
