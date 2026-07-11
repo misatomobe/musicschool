@@ -2157,9 +2157,12 @@ button {
   font-weight: 700;
 }
 .p-blog-details__sidebar-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
   background: #000;
   color: #fff;
-  text-align: center;
   font-weight: 700;
 }
 .p-blog-details__mail-magazine-banner {
