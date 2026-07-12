@@ -87,14 +87,31 @@
 
     }
 
+/* H3 */
 &__heading3 {
     margin-top: 3.85rem;
     padding-top: 5rem;
+    padding-left: 1rem;
+   
+    font-size: 2rem;
+    line-height: calc(30 / 20);
+    font-weight: 700;
+
     border-top: 0.05rem solid $font-color;
+    border-left:  solid $font-color;
+
+    @include pc {
+        margin-top: 4.05rem;
+        padding-top: 4.35rem;
+    }
 }
 
-
-
+/* 引用 */
+&__blockquote {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: $banner;
+}
     
     // サイドバー上余白
     &__sidebar > section {

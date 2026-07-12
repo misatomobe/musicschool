@@ -2187,10 +2187,32 @@ button {
   left: 0;
   top: 0;
 }
+.p-blog-details {
+  /* H3 */
+}
 .p-blog-details__heading3 {
   margin-top: 3.85rem;
   padding-top: 5rem;
+  padding-left: 1rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 700;
   border-top: 0.05rem solid #000;
+  border-left: solid #000;
+}
+@media (min-width: 768px) {
+  .p-blog-details__heading3 {
+    margin-top: 4.05rem;
+    padding-top: 4.35rem;
+  }
+}
+.p-blog-details {
+  /* 引用 */
+}
+.p-blog-details__blockquote {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #E8E8E8;
 }
 .p-blog-details__sidebar > section {
   margin-top: 3rem;
