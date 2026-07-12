@@ -2176,6 +2176,13 @@ button {
 }
 .p-blog-details__list {
   margin-top: 2.7rem;
+  margin-bottom: 3.85rem;
+}
+@media (min-width: 768px) {
+  .p-blog-details__list {
+    margin-top: 4.05rem;
+    margin-bottom: 4.35rem;
+  }
 }
 .p-blog-details__list-item {
   position: relative;
@@ -2191,20 +2198,13 @@ button {
   /* H3 */
 }
 .p-blog-details__heading3 {
-  margin-top: 3.85rem;
-  padding-top: 5rem;
+  padding-top: 2rem;
   padding-left: 1rem;
   font-size: 2rem;
   line-height: 1.5;
   font-weight: 700;
   border-top: 0.05rem solid #000;
-  border-left: solid #000;
-}
-@media (min-width: 768px) {
-  .p-blog-details__heading3 {
-    margin-top: 4.05rem;
-    padding-top: 4.35rem;
-  }
+  border-left: 0.3rem solid #000;
 }
 .p-blog-details {
   /* 引用 */
