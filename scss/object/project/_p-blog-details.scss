@@ -153,10 +153,10 @@
             font-weight: 700;
             color: $main-color;
 
-            padding-bottom: 0;
-            border-bottom: 0.05rem solid $main-color;
+            text-decoration: underline;
+            text-decoration-thickness: 0.1rem;
+            text-underline-offset: 0.3rem;
         }
-
     }
     
     // サイドバー上余白

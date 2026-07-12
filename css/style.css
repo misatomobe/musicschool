@@ -2255,7 +2255,9 @@ button {
   line-height: 1.65;
   font-weight: 700;
   color: #CB0000;
-  border-bottom: 0.05rem solid #CB0000;
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.3rem;
 }
 .p-blog-details__sidebar > section {
   margin-top: 3rem;
