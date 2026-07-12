@@ -2227,6 +2227,7 @@ button {
 @media (min-width: 768px) {
   .p-blog-details__blockquote {
     margin-top: 1.7rem;
+    padding: 1.8rem 3rem 1rem 6.7rem;
   }
 }
 .p-blog-details__quote-icon {
@@ -2235,6 +2236,12 @@ button {
   left: 2.548rem;
   width: 2.7rem;
   height: auto;
+}
+@media (min-width: 768px) {
+  .p-blog-details__quote-icon {
+    top: 2rem;
+    left: 3rem;
+  }
 }
 .p-blog-details__sidebar > section {
   margin-top: 3rem;
