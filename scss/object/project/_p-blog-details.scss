@@ -140,6 +140,24 @@
             left: 3rem;
         }
     }
+
+    /* テキストリンク */
+    &__text-link {
+        margin-top: 2.7rem;
+
+        a {
+            display: inline-block;
+
+            font-size: 2rem;
+            line-height: calc(33 / 20);
+            font-weight: 700;
+            color: $main-color;
+
+            padding-bottom: 0;
+            border-bottom: 0.05rem solid $main-color;
+        }
+
+    }
     
     // サイドバー上余白
     &__sidebar > section {

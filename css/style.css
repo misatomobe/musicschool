@@ -2243,6 +2243,20 @@ button {
     left: 3rem;
   }
 }
+.p-blog-details {
+  /* テキストリンク */
+}
+.p-blog-details__text-link {
+  margin-top: 2.7rem;
+}
+.p-blog-details__text-link a {
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 1.65;
+  font-weight: 700;
+  color: #CB0000;
+  border-bottom: 0.05rem solid #CB0000;
+}
 .p-blog-details__sidebar > section {
   margin-top: 3rem;
 }
