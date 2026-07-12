@@ -117,9 +117,23 @@
 
 /* 引用 */
 &__blockquote {
-    margin-top: 3rem;
-    padding: 2rem;
+    position: relative;
+    margin-top: 1.95rem;
+    padding: 1.7rem 2rem 1.1rem 7rem;
     background: $banner;
+    
+    @include pc {
+        margin-top: 1.7rem;
+    }
+}
+
+&__quote-icon {
+    position: absolute;
+    top: 2.186rem;
+    left: 2.548rem;
+
+    width: 2.7rem;
+    height: auto;
 }
     
     // サイドバー上余白
