@@ -2187,6 +2187,11 @@ button {
   left: 0;
   top: 0;
 }
+.p-blog-details__heading3 {
+  margin-top: 3.85rem;
+  padding-top: 5rem;
+  border-top: 0.05rem solid #000;
+}
 .p-blog-details__sidebar > section {
   margin-top: 3rem;
 }
@@ -2210,7 +2215,7 @@ button {
   /* バナー広告 */
 }
 .p-blog-details__mail-magazine {
-  border: 0.5px solid #000;
+  border: 0.05rem solid #000;
   font-size: 1.8rem;
   line-height: 1.8333333333;
   font-weight: 700;
@@ -2241,7 +2246,7 @@ button {
   /*  検索 */
 }
 .p-blog-details__search {
-  border: 0.5px solid #000;
+  border: 0.05rem solid #000;
 }
 .p-blog-details__search-form {
   display: flex;
@@ -2315,7 +2320,7 @@ button {
 }
 .p-blog-details__category-item {
   padding: 1.5rem 0;
-  border-bottom: 0.5px solid #000;
+  border-bottom: 0.05rem solid #000;
 }
 
 /* =========================

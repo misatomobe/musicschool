@@ -87,7 +87,11 @@
 
     }
 
-
+&__heading3 {
+    margin-top: 3.85rem;
+    padding-top: 5rem;
+    border-top: 0.05rem solid $font-color;
+}
 
 
 
@@ -113,7 +117,7 @@
     }
     /* バナー広告 */
     &__mail-magazine {
-        border: 0.5px solid $font-color;
+        border: 0.05rem solid $font-color;
         font-size: 1.8rem;
         line-height: calc(33 / 18);
         font-weight: 700;
@@ -145,7 +149,7 @@
 
     /*  検索 */
     &__search {
-        border: 0.5px solid $font-color;
+        border: 0.05rem solid $font-color;
     }
 
     &__search-form {
@@ -219,7 +223,7 @@
     /*  カテゴリー */
     &__category-item {
         padding: 1.5rem 0;
-        border-bottom: 0.5px solid $font-color;
+        border-bottom: 0.05rem solid $font-color;
     }
 }
 
