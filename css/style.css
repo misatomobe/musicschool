@@ -2199,11 +2199,14 @@ button {
 }
 .p-blog-details__heading3 {
   padding-top: 2rem;
-  padding-left: 1rem;
   font-size: 2rem;
   line-height: 1.5;
   font-weight: 700;
   border-top: 0.05rem solid #000;
+}
+.p-blog-details__heading3 span {
+  display: inline-block;
+  padding-left: 1rem;
   border-left: 0.3rem solid #000;
 }
 .p-blog-details {
