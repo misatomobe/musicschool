@@ -92,55 +92,54 @@
 
     }
 
-/* H3 */
-&__heading3 {
-    padding-top: 5rem;
+    /* H3 */
+    &__heading3 {
+        padding-top: 5rem;
    
-    font-size: 2rem;
-    line-height: calc(30 / 20);
-    font-weight: 700;
+        font-size: 2rem;
+        line-height: calc(30 / 20);
+        font-weight: 700;
 
-    border-top: 0.05rem solid $font-color;
+        border-top: 0.05rem solid $font-color;
 
-    @include pc {
-        padding-top: 4.35rem;
-        line-height: calc(40 / 20);
+        @include pc {
+            padding-top: 4.35rem;
+            line-height: calc(40 / 20);
+        }
+        
+        span {
+            display: inline-block;
+            padding-left: 0.5rem;
+            border-left: 0.3rem solid $font-color;
+        }
     }
     
-    span {
-        display: inline-block;
-        padding-left: 0.5rem;
-        border-left: 0.3rem solid $font-color;
+    /* 引用 */
+    &__blockquote {
+        position: relative;
+        margin-top: 1.95rem;
+        padding: 1.7rem 2rem 1.1rem 7rem;
+        background: $banner;
+        
+        @include pc {
+            margin-top: 1.7rem;
+            padding: 1.8rem 3rem 1rem 6.7rem;
+        }
     }
-}
-
-
-/* 引用 */
-&__blockquote {
-    position: relative;
-    margin-top: 1.95rem;
-    padding: 1.7rem 2rem 1.1rem 7rem;
-    background: $banner;
     
-    @include pc {
-        margin-top: 1.7rem;
-        padding: 1.8rem 3rem 1rem 6.7rem;
+    &__quote-icon {
+        position: absolute;
+        top: 2.186rem;
+        left: 2.548rem;
+
+        width: 2.7rem;
+        height: auto;
+
+        @include pc {
+            top: 2rem;
+            left: 3rem;
+        }
     }
-}
-
-&__quote-icon {
-    position: absolute;
-    top: 2.186rem;
-    left: 2.548rem;
-
-    width: 2.7rem;
-    height: auto;
-
-    @include pc {
-        top: 2rem;
-        left: 3rem;
-    }
-}
     
     // サイドバー上余白
     &__sidebar > section {
