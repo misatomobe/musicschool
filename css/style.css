@@ -2122,13 +2122,12 @@ button {
 @media (min-width: 768px) {
   .p-blog-details__contents {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    column-gap: 2.7777777778%;
+    column-gap: 3rem;
   }
 }
 @media (min-width: 768px) {
-  .p-blog-details__main {
+  .p-blog-details__article {
     width: 55.5555555556%;
   }
 }

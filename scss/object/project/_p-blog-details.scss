@@ -17,13 +17,12 @@
     &__contents {
         @include pc {
             display: flex;
-            justify-content: space-between;
             align-items: flex-start;
-            column-gap: calc(30 / 1080 * 100%);
+            column-gap: 3rem;
         }
     }
 
-    &__main {
+    &__article {
         @include pc {
             width: calc(600 / 1080 * 100%);
         }
