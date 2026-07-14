@@ -10,6 +10,16 @@
     @include pc {
         padding: 7rem 0 18.7rem;
     }
+    .p-blog-details__link {
+        display: flex;
+        flex-direction: column;
+    }
+    .p-blog-item__image-main {
+        width: 100%;
+        flex-shrink: 1;
+    }
+
+
 
     /* =========================
        レイアウト
