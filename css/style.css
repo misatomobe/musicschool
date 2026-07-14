@@ -2128,12 +2128,12 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog-details__article {
-    width: 55.5555555556%;
+    width: 68.1818181818%;
   }
 }
 @media (min-width: 768px) {
   .p-blog-details__sidebar {
-    width: 23.1481481481%;
+    flex: 1;
   }
 }
 .p-blog-details__date {

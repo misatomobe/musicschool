@@ -24,13 +24,13 @@
 
     &__article {
         @include pc {
-            width: calc(600 / 1080 * 100%);
+            width: calc(600 / 880 * 100%);
         }
     }
 
     &__sidebar {
         @include pc {
-            width: calc(250 / 1080 * 100%);
+            flex: 1;
         }
     }
 
