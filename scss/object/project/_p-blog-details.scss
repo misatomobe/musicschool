@@ -46,12 +46,31 @@
         }
     }
 
+    /* =========================
+       アイキャッチ部分
+    ========================= */
+    &__body-main {
+        margin-top: 3rem;
+
+        @include pc {
+            margin-top: 4.6rem;
+        }
+    }
+
     &__date {
         text-align: left;
     }
 
     &__body {
         padding-top: 4rem;
+    }
+
+    &__title-main {
+        @include pc {
+            font-size: 2.5rem;
+            line-height: calc(40 / 25);
+        }
+
     }
 
     &__text {
@@ -70,32 +89,22 @@
             }
         }
     }
-
+/* =========================
+       SNSシェアリンク
+    ========================= */
     &__share-list {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         gap: 0.2rem;
-        flex-wrap: nowrap;
 
         @include pc {
-            gap: 0.4rem;
+            gap: 0.3rem;
         }
     }
-
     &__share-item {
-        flex: 1 1 0;
-
-        img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-        @include pc {
-            flex: 0 0 auto;
-            img {
-                width: auto;
-                height: 4rem;
-            }
-        }
+        flex: 0 1 auto;
+        min-width: 0;
     }
 
     &__image {
