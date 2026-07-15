@@ -2218,6 +2218,7 @@ button {
 @media (min-width: 768px) {
   .p-blog-details__image {
     margin-top: 1.7rem;
+    width: 33.5rem;
   }
 }
 .p-blog-details__list {
