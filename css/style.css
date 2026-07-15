@@ -2360,21 +2360,6 @@ button {
 .p-blog-details__pager-heading--next {
   justify-content: flex-end;
 }
-.p-blog-details__related-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 7rem;
-  height: 5rem;
-  background: #000;
-  color: #fff;
-  font-weight: 700;
-}
-@media (min-width: 768px) {
-  .p-blog-details__related-title {
-    margin-top: 10rem;
-  }
-}
 .p-blog-details__pager-item {
   width: 46.5671641791%;
   box-sizing: border-box;
@@ -2399,9 +2384,36 @@ button {
   display: block;
 }
 .p-blog-details {
+  /* 関連記事 */
+}
+.p-blog-details__related-item {
+  margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .p-blog-details__related-item {
+    margin-top: 3rem;
+  }
+}
+.p-blog-details__related-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  height: 5rem;
+  background: #000;
+  color: #fff;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .p-blog-details__related-title {
+    margin-top: 10rem;
+  }
+}
+.p-blog-details {
   /* バナー広告 */
 }
 .p-blog-details__mail-magazine {
+  min-height: 26.8rem;
   border: 0.05rem solid #000;
   font-size: 1.8rem;
   line-height: 1.8333333333;
@@ -2410,6 +2422,7 @@ button {
 @media (min-width: 768px) {
   .p-blog-details__mail-magazine {
     max-width: 25rem;
+    height: 20rem;
   }
 }
 .p-blog-details__sidebar-title {
@@ -2428,6 +2441,12 @@ button {
   margin: 2rem;
   min-height: 22.8rem;
   background: #E8E8E8;
+}
+@media (min-width: 768px) {
+  .p-blog-details__mail-magazine-banner {
+    min-height: 17rem;
+    margin: 1.5rem;
+  }
 }
 .p-blog-details {
   /*  検索 */

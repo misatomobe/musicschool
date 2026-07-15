@@ -264,21 +264,6 @@
 
 
 
-    &__related-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 7rem;
-
-        height: 5rem;
-        background: $font-color;
-        color: $font-color02;
-        font-weight: 700;
-
-        @include pc {
-            margin-top: 10rem;
-        }
-    }
 
 
     &__pager-item {
@@ -307,14 +292,42 @@
         display: block;
     }
 
+    /* 関連記事 */
+    &__related-item {
+        margin-top: 2rem;
+
+        @include pc {
+            margin-top: 3rem;
+        }
+    }
+
+    &__related-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7rem;
+
+        height: 5rem;
+        background: $font-color;
+        color: $font-color02;
+        font-weight: 700;
+        
+        @include pc {
+            margin-top: 10rem;
+        }
+    }
+
+
     /* バナー広告 */
     &__mail-magazine {
+        min-height: 26.8rem;
         border: 0.05rem solid $font-color;
         font-size: 1.8rem;
         line-height: calc(33 / 18);
         font-weight: 700;
         @include pc {
             max-width: 25rem;
+            height: 20rem;
         }
     }
 
@@ -333,10 +346,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
         margin: 2rem;
+        
         min-height: 22.8rem;
         background: $banner;
+
+        @include pc {
+            min-height: 17rem;
+            margin: 1.5rem;
+ 
+        }
     }
 
     /*  検索 */
