@@ -89,9 +89,8 @@
             }
         }
     }
-/* =========================
-       SNSシェアリンク
-    ========================= */
+
+    /* SNSリンクシェア */
     &__share-list {
         display: flex;
         align-items: flex-start;
@@ -101,11 +100,13 @@
             gap: 0.3rem;
         }
     }
+
     &__share-item {
         flex: 0 1 auto;
         min-width: 0;
     }
 
+    /* H2画像 */
     &__image {
         margin-top: 4rem;
         @include pc {
@@ -222,7 +223,7 @@
         margin-top: 5rem;
 
         @include pc {
-            column-gap: calc(80 / 560 * 100%);
+            column-gap: calc(80 / 600 * 100%);
             margin-top: 8rem;
         }
     }
@@ -231,11 +232,14 @@
         display: none;
         @include pc {
             display: block;
+            width: 9.8rem;
+            height: 6.8rem;
+            flex-shrink: 0;
         }
     }
 
     &__pager-content {
-        margin-top: 1.5rem;
+        margin-top: 1.6rem;
         display: flex;
         align-items: center;
     }
@@ -258,6 +262,8 @@
         justify-content: flex-end;
     }
 
+
+
     &__related-title {
         display: flex;
         justify-content: center;
@@ -274,14 +280,27 @@
         }
     }
 
+
     &__pager-item {
         width: calc(156 / 335 * 100%);
         box-sizing: border-box;
         flex: 0 0 auto;
         
         @include pc {
-            width: calc(260 / 880 * 100%);
+            width: calc(260 / 600 * 100%);
         }
+    }
+
+    &__pager-body {
+        flex: 1;
+        min-width: 0;
+        margin-left: 1.6rem;
+    }
+
+    &__pager-title {
+        font-size: 1.6rem;
+        line-height: calc(25 / 16);
+        font-weight: 700;
     }
 
     &__pager-link {

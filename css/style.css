@@ -2194,9 +2194,7 @@ button {
   }
 }
 .p-blog-details {
-  /* =========================
-         SNSシェアリンク
-      ========================= */
+  /* SNSリンクシェア */
 }
 .p-blog-details__share-list {
   display: flex;
@@ -2211,6 +2209,9 @@ button {
 .p-blog-details__share-item {
   flex: 0 1 auto;
   min-width: 0;
+}
+.p-blog-details {
+  /* H2画像 */
 }
 .p-blog-details__image {
   margin-top: 4rem;
@@ -2325,7 +2326,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog-details__pager {
-    column-gap: 14.2857142857%;
+    column-gap: 13.3333333333%;
     margin-top: 8rem;
   }
 }
@@ -2335,10 +2336,13 @@ button {
 @media (min-width: 768px) {
   .p-blog-details__pager-image {
     display: block;
+    width: 9.8rem;
+    height: 6.8rem;
+    flex-shrink: 0;
   }
 }
 .p-blog-details__pager-content {
-  margin-top: 1.5rem;
+  margin-top: 1.6rem;
   display: flex;
   align-items: center;
 }
@@ -2378,8 +2382,18 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog-details__pager-item {
-    width: 29.5454545455%;
+    width: 43.3333333333%;
   }
+}
+.p-blog-details__pager-body {
+  flex: 1;
+  min-width: 0;
+  margin-left: 1.6rem;
+}
+.p-blog-details__pager-title {
+  font-size: 1.6rem;
+  line-height: 1.5625;
+  font-weight: 700;
 }
 .p-blog-details__pager-link {
   display: block;
