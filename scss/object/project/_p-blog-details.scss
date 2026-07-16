@@ -339,6 +339,14 @@
             }
     }
 
+    &__related-image {
+        flex: 0 0 20rem;
+    }
+
+    &__related-body {
+        flex: 1;
+    }
+
     &__related-heading {
         margin-top: 0.9rem;
         font-size: 1.7rem;
@@ -360,11 +368,8 @@
         
         @include pc {
             margin-top: 1.3rem;
+        }
     }
-
-
-
-
 
     /* バナー広告 */
     &__mail-magazine {
@@ -470,7 +475,6 @@
         @include pc {
             width: 9.5rem;
             aspect-ratio: 95 / 75;
-
         }
     }
     &__recommend-body {

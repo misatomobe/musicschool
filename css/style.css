@@ -2436,6 +2436,12 @@ button {
     gap: 3rem;
   }
 }
+.p-blog-details__related-image {
+  flex: 0 0 20rem;
+}
+.p-blog-details__related-body {
+  flex: 1;
+}
 .p-blog-details__related-heading {
   margin-top: 0.9rem;
   font-size: 1.7rem;
@@ -2454,6 +2460,11 @@ button {
   font-size: 1.7rem;
   line-height: 1.7647058824;
   font-weight: 500;
+}
+@media (min-width: 768px) {
+  .p-blog-details__related-date {
+    margin-top: 1.3rem;
+  }
 }
 .p-blog-details {
   /* バナー広告 */
