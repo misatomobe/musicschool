@@ -340,15 +340,26 @@
     }
 
     &__related-heading {
+        margin-top: 0.9rem;
         font-size: 1.7rem;
         line-height: calc(28 / 17);
         font-weight: 700;
+
+        @include pc {
+            margin-top: 0;
+            font-size: 2rem;
+            line-height: calc(25 / 20);
+        }
     }
 
     &__related-date {
+        margin-top: 0.4rem;
         font-size: 1.7rem;
         line-height: calc(30 / 17);
         font-weight: 500;
+        
+        @include pc {
+            margin-top: 1.3rem;
     }
 
 

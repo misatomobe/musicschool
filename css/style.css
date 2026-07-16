@@ -2437,11 +2437,20 @@ button {
   }
 }
 .p-blog-details__related-heading {
+  margin-top: 0.9rem;
   font-size: 1.7rem;
   line-height: 1.6470588235;
   font-weight: 700;
 }
+@media (min-width: 768px) {
+  .p-blog-details__related-heading {
+    margin-top: 0;
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+}
 .p-blog-details__related-date {
+  margin-top: 0.4rem;
   font-size: 1.7rem;
   line-height: 1.7647058824;
   font-weight: 500;
