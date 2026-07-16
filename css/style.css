@@ -188,7 +188,12 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 3rem;
+  padding-inline: 2rem;
+}
+@media (min-width: 768px) {
+  .l-header__inner {
+    padding-inline: 3rem;
+  }
 }
 .l-header {
   /* =========================

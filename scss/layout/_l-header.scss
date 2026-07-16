@@ -28,7 +28,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-inline: 3rem;
+        padding-inline: 2rem;
+
+        @include pc {
+            padding-inline: 3rem;
+        }
     }
 
     /* =========================
