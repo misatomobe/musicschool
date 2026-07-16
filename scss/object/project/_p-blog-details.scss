@@ -293,20 +293,6 @@
     }
 
     /* 関連記事 */
-    &__related-item {
-        margin-top: 2rem;
-
-        @include pc {
-            margin-top: 3rem;
-        }
-    }
-
-    &__related-link {
-            display: flex;
-            align-items: flex-start;
-    }
-
-
     &__related-title {
         display: flex;
         justify-content: center;
@@ -323,6 +309,14 @@
         }
     }
 
+    &__related-item {
+        margin-top: 2rem;
+
+        @include pc {
+            margin-top: 3rem;
+        }
+    }
+
     &__related-image {
         width: 16rem;
         height: 11rem;
@@ -334,6 +328,30 @@
             height: 14rem; 
         }
     }
+
+    &__related-link {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+
+            @include pc {
+                gap: 3rem;
+            }
+    }
+
+    &__related-heading {
+        font-size: 1.7rem;
+        line-height: calc(28 / 17);
+        font-weight: 700;
+    }
+
+    &__related-date {
+        font-size: 1.7rem;
+        line-height: calc(30 / 17);
+        font-weight: 500;
+    }
+
+
 
 
 
