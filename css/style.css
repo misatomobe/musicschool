@@ -2399,6 +2399,10 @@ button {
     margin-top: 3rem;
   }
 }
+.p-blog-details__related-link {
+  display: flex;
+  align-items: flex-start;
+}
 .p-blog-details__related-title {
   display: flex;
   justify-content: center;
@@ -2412,6 +2416,18 @@ button {
 @media (min-width: 768px) {
   .p-blog-details__related-title {
     margin-top: 10rem;
+  }
+}
+.p-blog-details__related-image {
+  width: 16rem;
+  height: 11rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+@media (min-width: 768px) {
+  .p-blog-details__related-image {
+    width: 20rem;
+    height: 14rem;
   }
 }
 .p-blog-details {

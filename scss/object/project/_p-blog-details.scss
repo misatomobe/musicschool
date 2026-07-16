@@ -301,6 +301,12 @@
         }
     }
 
+    &__related-link {
+            display: flex;
+            align-items: flex-start;
+    }
+
+
     &__related-title {
         display: flex;
         justify-content: center;
@@ -316,6 +322,19 @@
             margin-top: 10rem;
         }
     }
+
+    &__related-image {
+        width: 16rem;
+        height: 11rem;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        @include pc {
+            width: 20rem;
+            height: 14rem; 
+        }
+    }
+
 
 
     /* バナー広告 */
