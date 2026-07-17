@@ -2436,9 +2436,6 @@ button {
     gap: 3rem;
   }
 }
-.p-blog-details__related-image {
-  flex: 0 0 20rem;
-}
 .p-blog-details__related-body {
   flex: 1;
 }
@@ -2465,6 +2462,21 @@ button {
   .p-blog-details__related-date {
     margin-top: 1.3rem;
   }
+}
+.p-blog-details__related-label {
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #CB0000;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+  font-weight: 700;
 }
 .p-blog-details {
   /* バナー広告 */

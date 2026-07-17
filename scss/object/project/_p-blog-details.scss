@@ -339,10 +339,6 @@
             }
     }
 
-    &__related-image {
-        flex: 0 0 20rem;
-    }
-
     &__related-body {
         flex: 1;
     }
@@ -369,6 +365,22 @@
         @include pc {
             margin-top: 1.3rem;
         }
+    }
+
+    &__related-label {
+        width: 8rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #CB0000;
+        color: #fff;
+        font-size: 1.5rem;
+        line-height: calc(25 / 15);
+        font-weight: 700;
     }
 
     /* バナー広告 */
