@@ -2336,7 +2336,7 @@ button {
 @media (min-width: 768px) {
   .p-blog-details__pager {
     column-gap: 13.3333333333%;
-    margin-top: 5.1rem;
+    margin-top: 5.3rem;
   }
 }
 .p-blog-details__pager-image {
@@ -2382,6 +2382,11 @@ button {
 .p-blog-details__pager-body {
   flex: 1;
   min-width: 0;
+}
+@media (min-width: 768px) {
+  .p-blog-details__pager-body {
+    margin-left: 1.6rem;
+  }
 }
 .p-blog-details__pager-title {
   font-size: 1.6rem;

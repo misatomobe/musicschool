@@ -227,7 +227,7 @@
 
         @include pc {
             column-gap: calc(80 / 600 * 100%);
-            margin-top: 5.1rem;
+            margin-top: 5.3rem;
         }
     }
 
@@ -278,6 +278,10 @@
     &__pager-body {
         flex: 1;
         min-width: 0;
+
+        @include pc {
+            margin-left: 1.6rem;
+        }
     }
 
     &__pager-title {
