@@ -2388,17 +2388,24 @@ button {
   display: block;
 }
 .p-blog-details {
-  /* 関連記事 */
+  /* 関連記事・サイドバー共通の見出し */
 }
-.p-blog-details__related-title {
+.p-blog-details__related-title, .p-blog-details__sidebar-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7rem;
   height: 5rem;
   background: #000;
   color: #fff;
+  font-size: 1.8rem;
+  line-height: 1.8333333333;
   font-weight: 700;
+}
+.p-blog-details {
+  /* 関連記事だけ */
+}
+.p-blog-details__related-title {
+  margin-top: 6.4rem;
 }
 @media (min-width: 768px) {
   .p-blog-details__related-title {
@@ -2492,17 +2499,6 @@ button {
     max-width: 25rem;
     height: 20rem;
   }
-}
-.p-blog-details__sidebar-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5rem;
-  background: #000;
-  color: #fff;
-  font-size: 1.8rem;
-  line-height: 1.8333333333;
-  font-weight: 700;
 }
 .p-blog-details__mail-magazine-banner {
   display: flex;

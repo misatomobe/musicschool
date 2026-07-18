@@ -287,18 +287,25 @@
         display: block;
     }
 
-    /* 関連記事 */
-    &__related-title {
+    /* 関連記事・サイドバー共通の見出し */
+    &__related-title,
+    &__sidebar-title {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 7rem;
 
         height: 5rem;
         background: $font-color;
         color: $font-color02;
+        font-size: 1.8rem;
+        line-height: calc(33 / 18);
         font-weight: 700;
-        
+    }
+
+    /* 関連記事だけ */
+    &__related-title {
+        margin-top: 6.4rem;
+
         @include pc {
             margin-top: 10rem;
         }
@@ -391,19 +398,6 @@
         }
     }
 
-    &__sidebar-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        height: 5rem;
-        background: $font-color;
-        color: $font-color02;
-        font-size: 1.8rem;
-        line-height: calc(33 / 18);
-        font-weight: 700;
-    }
-
     &__mail-magazine-banner {
         display: flex;
         justify-content: center;
@@ -416,7 +410,6 @@
         @include pc {
             min-height: 17rem;
             margin: 1.5rem;
- 
         }
     }
 
