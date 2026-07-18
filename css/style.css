@@ -2313,7 +2313,7 @@ button {
   text-underline-offset: 0.3rem;
 }
 .p-blog-details__sidebar > section {
-  margin-top: 3rem;
+  margin-top: 2.9rem;
 }
 @media (min-width: 768px) {
   .p-blog-details__sidebar > section:first-child {
@@ -2583,6 +2583,7 @@ button {
   }
 }
 .p-blog-details__recommend-body {
+  margin-top: 1rem;
   font-size: 1.7rem;
   line-height: 1.6470588235;
   font-weight: 500;
@@ -2591,7 +2592,7 @@ button {
   /*  カテゴリー */
 }
 .p-blog-details__category-item {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 0.1rem;
   border-bottom: 0.05rem solid #000;
 }
 
