@@ -150,7 +150,7 @@
         border-top: 0.05rem solid $font-color;
 
         @include pc {
-            padding-top: 4.35rem;
+            padding-top: 3.9rem;
             line-height: calc(40 / 20);
         }
         
@@ -171,6 +171,8 @@
         @include pc {
             margin-top: 1.7rem;
             padding: 1.8rem 3rem 1rem 6.7rem;
+            font-size: 1.8rem;
+            line-height: calc(30 / 18);
         }
     }
     
@@ -225,7 +227,7 @@
 
         @include pc {
             column-gap: calc(80 / 600 * 100%);
-            margin-top: 8rem;
+            margin-top: 5.1rem;
         }
     }
 

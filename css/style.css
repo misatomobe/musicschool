@@ -2261,7 +2261,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog-details__heading3 {
-    padding-top: 4.35rem;
+    padding-top: 3.9rem;
     line-height: 2;
   }
 }
@@ -2283,6 +2283,8 @@ button {
   .p-blog-details__blockquote {
     margin-top: 1.7rem;
     padding: 1.8rem 3rem 1rem 6.7rem;
+    font-size: 1.8rem;
+    line-height: 1.6666666667;
   }
 }
 .p-blog-details__quote-icon {
@@ -2334,7 +2336,7 @@ button {
 @media (min-width: 768px) {
   .p-blog-details__pager {
     column-gap: 13.3333333333%;
-    margin-top: 8rem;
+    margin-top: 5.1rem;
   }
 }
 .p-blog-details__pager-image {
