@@ -407,14 +407,13 @@
 
     /* バナー広告 */
     &__mail-magazine {
-        min-height: 26.8rem;
+        min-height: 20rem;
         border: 0.05rem solid $font-color;
         font-size: 1.8rem;
         line-height: calc(33 / 18);
         font-weight: 700;
         @include pc {
             max-width: 25rem;
-            height: 20rem;
         }
     }
 
@@ -444,6 +443,10 @@
         justify-content: center;
         align-items: center;
         height: 5.4rem;
+
+        @include pc {
+            margin: 1.5rem;
+        }
         
     }
 
@@ -465,6 +468,11 @@
             display: block;
             width: 5.4rem;
             height: auto;
+
+            @include pc {
+                width: 4rem;
+                height: auto;
+            }
         }       
     }
 

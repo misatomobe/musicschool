@@ -2509,7 +2509,7 @@ button {
   /* バナー広告 */
 }
 .p-blog-details__mail-magazine {
-  min-height: 26.8rem;
+  min-height: 20rem;
   border: 0.05rem solid #000;
   font-size: 1.8rem;
   line-height: 1.8333333333;
@@ -2518,7 +2518,6 @@ button {
 @media (min-width: 768px) {
   .p-blog-details__mail-magazine {
     max-width: 25rem;
-    height: 20rem;
   }
 }
 .p-blog-details__mail-magazine-banner {
@@ -2548,6 +2547,11 @@ button {
   align-items: center;
   height: 5.4rem;
 }
+@media (min-width: 768px) {
+  .p-blog-details__search-form {
+    margin: 1.5rem;
+  }
+}
 .p-blog-details__search-input {
   flex: 1;
   min-width: 0;
@@ -2566,6 +2570,12 @@ button {
   display: block;
   width: 5.4rem;
   height: auto;
+}
+@media (min-width: 768px) {
+  .p-blog-details__search-button img {
+    width: 4rem;
+    height: auto;
+  }
 }
 .p-blog-details {
   /*  おすすめの記事 */
