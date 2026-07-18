@@ -2418,7 +2418,13 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog-details__related-title {
-    margin-top: 10rem;
+    margin-top: 9.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .p-blog-details__related-title--left {
+    justify-content: flex-start;
+    padding-left: 3rem;
   }
 }
 .p-blog-details__related-item {
