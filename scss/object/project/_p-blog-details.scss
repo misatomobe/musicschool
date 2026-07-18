@@ -61,10 +61,6 @@
         text-align: left;
     }
 
-    &__body {
-        padding-top: 4rem;
-    }
-
     &__title-main {
         @include pc {
             font-size: 2.5rem;
@@ -106,6 +102,10 @@
         min-width: 0;
     }
 
+    &__heading2 {
+        margin-top: 3.9rem;
+    }
+
     /* H2画像 */
     &__image {
         margin-top: 4rem;
@@ -117,7 +117,7 @@
 
     &__list {
         margin-top: 2.7rem;
-        margin-bottom: 3.85rem;
+        margin-bottom: 3.7rem;
         @include pc {
             margin-top: 4.05rem;
             margin-bottom : 4.35rem;
@@ -220,7 +220,7 @@
         display: flex;
         justify-content: flex-start;
         column-gap: calc(22 / 334 * 100%);
-        margin-top: 5rem;
+        margin-top: 4.4rem;
 
         @include pc {
             column-gap: calc(80 / 600 * 100%);
@@ -241,7 +241,7 @@
     &__pager-content {
         margin-top: 1.6rem;
         display: flex;
-        align-items: center;
+        align-items: start;
     }
 
     &__pager-heading {
@@ -262,10 +262,6 @@
         justify-content: flex-end;
     }
 
-
-
-
-
     &__pager-item {
         width: calc(156 / 335 * 100%);
         box-sizing: border-box;
@@ -279,7 +275,6 @@
     &__pager-body {
         flex: 1;
         min-width: 0;
-        margin-left: 1.6rem;
     }
 
     &__pager-title {
@@ -404,6 +399,8 @@
         height: 5rem;
         background: $font-color;
         color: $font-color02;
+        font-size: 1.8rem;
+        line-height: calc(33 / 18);
         font-weight: 700;
     }
 

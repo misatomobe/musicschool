@@ -2170,9 +2170,6 @@ button {
 .p-blog-details__date {
   text-align: left;
 }
-.p-blog-details__body {
-  padding-top: 4rem;
-}
 @media (min-width: 768px) {
   .p-blog-details__title-main {
     font-size: 2.5rem;
@@ -2215,6 +2212,9 @@ button {
   flex: 0 1 auto;
   min-width: 0;
 }
+.p-blog-details__heading2 {
+  margin-top: 3.9rem;
+}
 .p-blog-details {
   /* H2画像 */
 }
@@ -2229,7 +2229,7 @@ button {
 }
 .p-blog-details__list {
   margin-top: 2.7rem;
-  margin-bottom: 3.85rem;
+  margin-bottom: 3.7rem;
 }
 @media (min-width: 768px) {
   .p-blog-details__list {
@@ -2327,7 +2327,7 @@ button {
   display: flex;
   justify-content: flex-start;
   column-gap: 6.5868263473%;
-  margin-top: 5rem;
+  margin-top: 4.4rem;
 }
 @media (min-width: 768px) {
   .p-blog-details__pager {
@@ -2349,7 +2349,7 @@ button {
 .p-blog-details__pager-content {
   margin-top: 1.6rem;
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 .p-blog-details__pager-heading {
   display: flex;
@@ -2378,7 +2378,6 @@ button {
 .p-blog-details__pager-body {
   flex: 1;
   min-width: 0;
-  margin-left: 1.6rem;
 }
 .p-blog-details__pager-title {
   font-size: 1.6rem;
@@ -2501,6 +2500,8 @@ button {
   height: 5rem;
   background: #000;
   color: #fff;
+  font-size: 1.8rem;
+  line-height: 1.8333333333;
   font-weight: 700;
 }
 .p-blog-details__mail-magazine-banner {
