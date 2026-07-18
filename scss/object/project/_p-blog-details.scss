@@ -352,12 +352,16 @@
             gap: 2rem;
 
             @include pc {
-                gap: 3rem;
+                gap: 3.4rem;
             }
     }
 
     &__related-body {
         flex: 1;
+
+        @include pc {
+            padding-right: 2.5rem;
+        }
     }
 
     &__related-heading {
@@ -374,6 +378,7 @@
     }
 
     &__related-date {
+        display: block;
         margin-top: 0.4rem;
         font-size: 1.7rem;
         line-height: calc(30 / 17);

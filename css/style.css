@@ -2454,11 +2454,16 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog-details__related-link {
-    gap: 3rem;
+    gap: 3.4rem;
   }
 }
 .p-blog-details__related-body {
   flex: 1;
+}
+@media (min-width: 768px) {
+  .p-blog-details__related-body {
+    padding-right: 2.5rem;
+  }
 }
 .p-blog-details__related-heading {
   margin-top: 0.9rem;
@@ -2474,6 +2479,7 @@ button {
   }
 }
 .p-blog-details__related-date {
+  display: block;
   margin-top: 0.4rem;
   font-size: 1.7rem;
   line-height: 1.7647058824;
