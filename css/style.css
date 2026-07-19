@@ -2901,14 +2901,28 @@ button {
 /* =========================
    RESULt-DETAILS
 ========================= */
+@media (min-width: 768px) {
+  .p-result-details__profile {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 4rem;
+  }
+}
 .p-result-details__table {
   width: 100%;
+  height: 19rem;
   border-collapse: collapse;
+  margin-top: 2.1rem;
+}
+@media (min-width: 768px) {
+  .p-result-details__table {
+    max-width: 40rem;
+    flex-shrink: 0;
+  }
 }
 .p-result-details__table th,
 .p-result-details__table td {
-  height: 3.8rem;
-  padding: 0 2rem;
+  padding: 0.7rem 0 0 1rem;
   border: 0.05rem solid #000;
   vertical-align: middle;
 }
@@ -2916,6 +2930,8 @@ button {
   width: 12rem;
   background: #E8E8E8;
   text-align: left;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
   font-weight: 700;
 }
 @media (min-width: 768px) {
@@ -2924,6 +2940,8 @@ button {
   }
 }
 .p-result-details__table td {
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
   font-weight: 500;
 }
 
