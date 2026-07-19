@@ -2949,6 +2949,14 @@ button {
   font-size: 1.8rem;
   line-height: 1.6666666667;
 }
+.p-result-details__pager {
+  margin-top: 3.9rem;
+}
+@media (min-width: 768px) {
+  .p-result-details__pager {
+    margin-top: 6rem;
+  }
+}
 
 @media (max-width: 767px) {
   .pc {
