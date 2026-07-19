@@ -21,3 +21,10 @@
     @content;
   }
 }
+
+//フォント設定
+@mixin font($size, $line-height, $weight: 500) {
+  font-size: $size;
+  line-height: calc($line-height / strip-unit($size));
+  font-weight: $weight;
+}

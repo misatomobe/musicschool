@@ -4,3 +4,32 @@
 /* =========================
    RESULt-DETAILS
 ========================= */
+.p-result-details {
+   &__table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th,
+      td {
+         height: 3.8rem;
+         padding: 0 2rem;
+         border: 0.05rem solid $font-color;
+         vertical-align: middle;
+      }
+
+      th {
+         width: 12rem;
+         background: $banner;
+         text-align: left;
+         font-weight: 700;
+
+         @include pc {
+            width: 14rem;
+         }
+      }
+
+      td {
+         font-weight: 500;
+      }
+   }
+}
