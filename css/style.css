@@ -2944,6 +2944,11 @@ button {
   line-height: 1.6666666667;
   font-weight: 500;
 }
+.p-result-details__comment {
+  margin-top: 2.8rem;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+}
 
 @media (max-width: 767px) {
   .pc {
