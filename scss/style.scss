@@ -57,8 +57,10 @@
 // search
 @use "./object/project/p-search";
 
-// result_list
+// result
 @use "./object/project/p-result-list";
+@use "./object/project/p-result-details";
+
 
 // utility（補助）
 @use "./object/utility/utility";
