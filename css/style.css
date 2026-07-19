@@ -2957,6 +2957,9 @@ button {
     margin-top: 6rem;
   }
 }
+.p-result-details__related-heading {
+  margin-top: 0;
+}
 
 @media (max-width: 767px) {
   .pc {
