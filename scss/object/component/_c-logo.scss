@@ -10,12 +10,15 @@
   
   }
   &__text {
+    display: flex;
+    transform: translateX(0.5rem);
     font-size: 1.3rem;
     line-height: calc(14 / 13);
     font-weight: 700;
     @include pc {
       display: flex;
       flex-direction: column;
+      transform: none;
     }
   }
 

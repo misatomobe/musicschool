@@ -41,7 +41,6 @@
     &__logo a {
         display: flex;
         align-items: center;
-        column-gap: 0.7rem;
         height: 5rem;
 
         @include pc {
