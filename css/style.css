@@ -517,7 +517,13 @@ button {
 }
 
 .c-logo__image {
-  width: 2.55rem;
+  display: block;
+  width: 2.031rem;
+}
+@media (min-width: 768px) {
+  .c-logo__image {
+    width: 3.203rem;
+  }
 }
 .c-logo__text {
   font-size: 1.3rem;
@@ -1457,8 +1463,10 @@ button {
     width: 8rem;
   }
 }
-.p-blog-item__label.p-blog-item__label--wide {
-  width: 10rem;
+@media (min-width: 768px) {
+  .p-blog-item__label.p-blog-item__label--wide {
+    width: 10rem;
+  }
 }
 .p-blog-item__body {
   padding-top: 3rem;

@@ -1,7 +1,12 @@
 @use "../../foundation/mixin" as *;
 .c-logo {
   &__image {
-    width: 2.55rem;
+    display: block;
+    width: 2.031rem;
+
+    @include pc {
+      width: 3.203rem;
+    }
   
   }
   &__text {
