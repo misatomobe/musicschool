@@ -1458,20 +1458,8 @@ button {
   }
 }
 @media (min-width: 768px) {
-  .p-blog-item__label--wide {
+  .p-blog-item__label.p-blog-item__label--wide {
     width: 10rem;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #CB0000;
-    color: #fff;
-    font-size: 1.5rem;
-    line-height: 1.6666666667;
-    font-weight: 700;
   }
 }
 .p-blog-item__body {

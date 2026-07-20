@@ -48,23 +48,12 @@
         @include pc {
             width: 8rem;
         }
-    }
-    &-item__label--wide {
-        @include pc {
-            width: 10rem;
-            height: 3rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: $main-color;
-            color: $font-color02;
-            font-size: 1.5rem;
-            line-height: calc(25 / 15);
-            font-weight: 700;
-        } 
+
+        &.p-blog-item__label--wide {
+            @include pc {
+                width: 10rem;
+            }
+        }
     }
 
     &-item__body {
