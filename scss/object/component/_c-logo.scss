@@ -18,7 +18,7 @@
     @include pc {
       display: flex;
       flex-direction: column;
-      transform: none;
+      transform: translateX(1rem);
     }
   }
 

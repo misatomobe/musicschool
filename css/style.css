@@ -535,7 +535,7 @@ button {
   .c-logo__text {
     display: flex;
     flex-direction: column;
-    transform: none;
+    transform: translateX(1rem);
   }
 }
 @media (min-width: 768px) {
