@@ -90,12 +90,18 @@
 
    &__related {
       @include pc {
-         margin-top: 3.8rem;
+         margin-top: 10rem;
       }
    }
 
    &__related-heading {
       margin-top: 0;
+   }
+   
+   .p-blog-details__related-title--left {
+      @include pc {
+         margin-top: 0;
+      }
    }
 
    &__related-image {
