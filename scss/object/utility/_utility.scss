@@ -90,22 +90,6 @@ button:hover {
   }
 }
 
-.pc-only2 {
-  display: none;
-
-  @include mixin.pc {
-    display: block;
-  }
-}
-
-.sp-only2 {
-  display: block;
-
-  @include mixin.pc {
-    display: none;
-  }
-}
-
 a {
   cursor: pointer;
 }

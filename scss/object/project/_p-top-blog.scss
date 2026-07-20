@@ -49,9 +49,28 @@
             width: 8rem;
         }
     }
+    &-item__label--wide {
+        @include pc {
+            width: 10rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $main-color;
+            color: $font-color02;
+            font-size: 1.5rem;
+            line-height: calc(25 / 15);
+            font-weight: 700;
+        } 
+    }
+
     &-item__body {
         padding-top: 3rem;
     }
+
     &-item__title {
         font-size: 2rem;
         line-height: calc(30 / 20);
