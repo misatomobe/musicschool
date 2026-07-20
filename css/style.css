@@ -2919,7 +2919,13 @@ button {
    RESULt-DETAILS
 ========================= */
 @media (min-width: 768px) {
+  .p-result-details__date {
+    margin-top: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
   .p-result-details__profile {
+    margin-top: 4rem;
     display: flex;
     align-items: flex-start;
     column-gap: 4rem;
@@ -2943,6 +2949,12 @@ button {
   border: 0.05rem solid #000;
   vertical-align: middle;
 }
+@media (min-width: 768px) {
+  .p-result-details__table th,
+  .p-result-details__table td {
+    padding-left: 2rem;
+  }
+}
 .p-result-details__table th {
   width: 12rem;
   background: #E8E8E8;
@@ -2965,6 +2977,12 @@ button {
   margin-top: 2.8rem;
   font-size: 1.8rem;
   line-height: 1.6666666667;
+}
+@media (min-width: 768px) {
+  .p-result-details__comment {
+    margin-top: 1.5rem;
+    padding-right: 1rem;
+  }
 }
 .p-result-details__pager {
   margin-top: 3.9rem;
