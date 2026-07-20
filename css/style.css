@@ -2999,8 +2999,19 @@ button {
     flex: 0 0 38.6363636364%;
   }
 }
+@media (min-width: 768px) {
+  .p-result-details__related {
+    margin-top: 3.8rem;
+  }
+}
 .p-result-details__related-heading {
   margin-top: 0;
+}
+@media (min-width: 768px) {
+  .p-result-details__related-image {
+    width: 26rem;
+    height: 18.3rem;
+  }
 }
 
 @media (max-width: 767px) {
