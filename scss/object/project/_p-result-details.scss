@@ -77,8 +77,17 @@
 
       @include pc {
          margin-top: 6rem;
+         column-gap: calc(200 / 880 * 100%);
       }
    }
+   
+   .p-blog-details__pager-item.p-result-details__pager-item {
+      @include pc {
+         width: calc(340 / 880 * 100%);
+         flex: 0 0 calc(340 / 880 * 100%);
+         }  
+      }
+
    &__related-heading {
       margin-top: 0;
    }

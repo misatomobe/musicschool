@@ -2990,6 +2990,13 @@ button {
 @media (min-width: 768px) {
   .p-result-details__pager {
     margin-top: 6rem;
+    column-gap: 22.7272727273%;
+  }
+}
+@media (min-width: 768px) {
+  .p-result-details .p-blog-details__pager-item.p-result-details__pager-item {
+    width: 38.6363636364%;
+    flex: 0 0 38.6363636364%;
   }
 }
 .p-result-details__related-heading {
