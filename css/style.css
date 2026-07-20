@@ -203,7 +203,7 @@ button {
 .l-header__logo a {
   display: flex;
   align-items: center;
-  column-gap: 0.95rem;
+  column-gap: 0.7rem;
   height: 5rem;
 }
 @media (min-width: 768px) {
