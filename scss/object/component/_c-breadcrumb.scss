@@ -10,10 +10,17 @@
     z-index: 10;
     -webkit-overflow-scrolling: touch;
 
+    @include pc {
+        min-height: 5rem;
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+
+        @include pc {
+            transform: translateY(-0.8rem);
+        }
     }
     &__item {
         display: flex;

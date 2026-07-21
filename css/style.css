@@ -511,7 +511,7 @@ button {
 }
 @media (min-width: 768px) {
   .l-main--no-fv {
-    padding-top: 8rem;
+    padding-top: 10rem;
   }
 }
 
@@ -715,10 +715,19 @@ button {
   z-index: 10;
   -webkit-overflow-scrolling: touch;
 }
+@media (min-width: 768px) {
+  .c-breadcrumb {
+    min-height: 5rem;
+  }
+}
 .c-breadcrumb__list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+}
+@media (min-width: 768px) {
+  .c-breadcrumb__list {
+    transform: translateY(-0.8rem);
+  }
 }
 .c-breadcrumb__item {
   display: flex;
