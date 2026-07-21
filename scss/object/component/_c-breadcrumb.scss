@@ -8,6 +8,7 @@
     background-color: $back-color;
     position: relative;
     z-index: 10;
+    -webkit-overflow-scrolling: touch;
 
     &__list {
         display: flex;
@@ -22,8 +23,22 @@
         font-weight: 500;
         &:not(:last-child)::after {
             content: ">";
-            margin-inline: 1.8rem;     
+            margin-inline: 2rem;     
         }
+
+        &--result-details {
+            span {
+                position: relative;
+                top: -0.5rem;
+                line-height: calc(20 / 16);
+
+                @include pc {
+                    line-height: calc(33 / 16);
+                    top: 0;
+                }
+            }
+        }
+
         a {
             @include pc {
                 transition: opacity 0.4s ease;

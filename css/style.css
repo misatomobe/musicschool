@@ -507,7 +507,7 @@ button {
 ========================= */
 /* FVなしページ専用 */
 .l-main--no-fv {
-  padding-top: 5rem;
+  padding-top: 5.5rem;
 }
 @media (min-width: 768px) {
   .l-main--no-fv {
@@ -713,6 +713,7 @@ button {
   background-color: #E8E8E8;
   position: relative;
   z-index: 10;
+  -webkit-overflow-scrolling: touch;
 }
 .c-breadcrumb__list {
   display: flex;
@@ -728,7 +729,18 @@ button {
 }
 .c-breadcrumb__item:not(:last-child)::after {
   content: ">";
-  margin-inline: 1.8rem;
+  margin-inline: 2rem;
+}
+.c-breadcrumb__item--result-details span {
+  position: relative;
+  top: -0.5rem;
+  line-height: 1.25;
+}
+@media (min-width: 768px) {
+  .c-breadcrumb__item--result-details span {
+    line-height: 2.0625;
+    top: 0;
+  }
 }
 @media (min-width: 768px) {
   .c-breadcrumb__item a {
