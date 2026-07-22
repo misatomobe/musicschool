@@ -397,7 +397,7 @@ button {
 }
 @media (min-width: 768px) {
   .l-footer__nav {
-    margin-top: 3.6rem;
+    margin-top: 3.8rem;
   }
 }
 .l-footer__nav ul {
@@ -459,6 +459,11 @@ button {
   text-align: center;
   margin-top: 2.891rem;
 }
+@media (min-width: 768px) {
+  .l-footer__copyright {
+    margin-top: 2.1rem;
+  }
+}
 .l-footer__copyright p {
   font-size: 1.5rem;
   line-height: 1.3333333333;
@@ -483,11 +488,6 @@ button {
   align-items: center;
   column-gap: 0.7rem;
   row-gap: 0.5rem;
-}
-@media (min-width: 768px) {
-  .l-footer__sns ul {
-    column-gap: 1rem;
-  }
 }
 .l-footer__sns ul li a {
   display: flex;
@@ -692,7 +692,7 @@ button {
 }
 @media (min-width: 768px) {
   .c-button--top {
-    bottom: 12.5rem;
+    bottom: 9.5rem;
     right: 11.5rem;
   }
 }
