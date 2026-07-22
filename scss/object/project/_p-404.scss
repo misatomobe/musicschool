@@ -6,7 +6,7 @@
 ========================= */
 .page-404 {
     .p-contact-send {
-        padding: 4.1rem 0 1rem;
+        padding: 4.1rem 0 5rem;
 
         &__text--404 {
             margin-top: 0;
@@ -21,7 +21,10 @@
         }
         
         &__button {
-            margin-top: 0;
+            margin-top: 1rem;
         }
+    }
+    .c-button--contact__icon {
+        height: 5rem;
     }
 }
