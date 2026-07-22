@@ -42,16 +42,21 @@
     justify-content: center;
     align-items: center;
     transition: background-color 0.4s ease;
+    
+    @include pc {
+        width: 30rem;            
+    }
 
     p {
         color: $font-color02;
         font-size: 2rem;
         line-height: calc(33 / 20);
         font-weight: 700;
-        letter-spacing: 0.4em;
+        letter-spacing: 0.15em;
         transition: color 0.4s ease;
-    }
-    @include pc {
-        width: 30rem;            
+        
+        @include pc {
+            letter-spacing: 0.1em;
         }
+    }
 }
