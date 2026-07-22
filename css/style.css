@@ -2832,6 +2832,8 @@ button {
 @media (min-width: 768px) {
   .p-contact-send__text {
     text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.6666666667;
   }
 }
 .p-contact-send__button {
@@ -2858,6 +2860,11 @@ button {
 ========================= */
 .page-404 .p-contact-send {
   padding: 4.1rem 0 5rem;
+}
+@media (min-width: 768px) {
+  .page-404 .p-contact-send {
+    padding: 7rem 0 11.8rem;
+  }
 }
 .page-404 .p-contact-send__text--404 {
   margin-top: 0;

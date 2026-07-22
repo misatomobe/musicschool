@@ -8,6 +8,10 @@
     .p-contact-send {
         padding: 4.1rem 0 5rem;
 
+        @include pc {
+            padding: 7rem 0 11.8rem;
+        }
+
         &__text--404 {
             margin-top: 0;
         }
