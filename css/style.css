@@ -2862,14 +2862,18 @@ button {
 /* =========================
    404
 ========================= */
+.page-404 .p-contact-send {
+  padding: 4.1rem 0 1rem;
+}
+.page-404 .p-contact-send__text--404 {
+  margin-top: 0;
+}
 .page-404 .p-contact-send__text {
-  margin-top: 4.2rem;
   font-weight: 500;
 }
 @media (min-width: 768px) {
   .page-404 .p-contact-send__text {
     text-align: center;
-    margin: 4rem 0 9rem;
   }
 }
 .page-404 .p-contact-send__button {

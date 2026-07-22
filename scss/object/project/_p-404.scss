@@ -5,15 +5,23 @@
    404
 ========================= */
 .page-404 {
-    .p-contact-send__text {
-        margin-top: 4.2rem;
-        font-weight: 500;
-        @include pc {
-            text-align: center;
-            margin: 4rem 0 9rem;
+    .p-contact-send {
+        padding: 4.1rem 0 1rem;
+
+        &__text--404 {
+            margin-top: 0;
         }
-    }
-    .p-contact-send__button {
-        margin-top: 0;
+        
+        &__text {
+            font-weight: 500;
+            
+            @include pc {
+                text-align: center;
+            }
+        }
+        
+        &__button {
+            margin-top: 0;
+        }
     }
 }
