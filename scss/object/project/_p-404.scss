@@ -9,7 +9,7 @@
         padding: 4.1rem 0 5rem;
 
         @include pc {
-            padding: 7rem 0 11.8rem;
+            padding: 7rem 0 9rem;
         }
 
         &__text--404 {
@@ -25,10 +25,21 @@
         }
         
         &__button {
-            margin-top: 1rem;
+            margin-top: 4rem;
         }
     }
-    .c-button--contact__icon {
+
+    .c-button--contact--404 {
+        @include pc {
+            width: 25rem;
+        }
+    }
+
+    .c-button--contact--404 .c-button--contact__icon {
         height: 5rem;
+
+        @include pc {
+            width: 100%;
+        }
     }
 }

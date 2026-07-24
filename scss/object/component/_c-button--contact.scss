@@ -44,7 +44,7 @@
     transition: background-color 0.4s ease;
     
     @include pc {
-        width: 30rem;            
+        width: 100%;            
     }
 
     p {
