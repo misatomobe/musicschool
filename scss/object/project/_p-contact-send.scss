@@ -10,6 +10,10 @@
     transform: none;
 }
 .p-contact-send {
+    @include pc {
+        padding: 2rem 0 9rem;
+    }
+
     &__text {
         margin-top: 4.7rem;
         font-weight: 500;

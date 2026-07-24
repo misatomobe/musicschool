@@ -13,15 +13,19 @@
     @include pc {
         min-height: 5rem;
     }
+    
+    &__inner {
+        padding: 0.1rem 2rem;
+        @include pc {
+            padding: 0.8rem 10rem;
+        }
+    }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
-
-        @include pc {
-            transform: translateY(-0.8rem);
-        }
     }
+
     &__item {
         display: flex;
         align-items: center;
