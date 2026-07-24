@@ -261,7 +261,7 @@ button {
   background: #CB0000;
   color: #fff;
   border: 0.1rem solid #CB0000;
-  padding: 1rem 3rem;
+  padding: 1.2rem 2.9rem;
   transition: 0.4s ease;
 }
 @media (min-width: 768px) {
@@ -674,6 +674,8 @@ button {
 }
 @media (min-width: 768px) {
   .c-button--contact__icon p {
+    font-size: 2.5rem;
+    line-height: 1.32;
     letter-spacing: 0.1em;
   }
 }
