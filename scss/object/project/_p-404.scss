@@ -25,7 +25,12 @@
         }
         
         &__button {
-            margin-top: 4rem;
+            margin-top: 1rem;
+            @include pc {
+                margin-top: 4rem;
+            }
+
+
         }
     }
 

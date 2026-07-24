@@ -2880,7 +2880,12 @@ button {
   }
 }
 .page-404 .p-contact-send__button {
-  margin-top: 4rem;
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .page-404 .p-contact-send__button {
+    margin-top: 4rem;
+  }
 }
 @media (min-width: 768px) {
   .page-404 .c-button--contact--404 {
