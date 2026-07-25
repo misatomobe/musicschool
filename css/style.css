@@ -2757,6 +2757,11 @@ button {
   line-height: 2.0625;
   font-weight: 500;
 }
+.p-contact__contents .p-contact__item--checkbox .form-checkbox {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
 .p-contact__contents .p-contact__item--checkbox dt {
   display: flex;
   align-items: center;
@@ -2789,11 +2794,6 @@ button {
 }
 .p-contact__contents dd .form-control::placeholder {
   color: #B2B2B2;
-}
-.p-contact__contents dd .form-checkbox {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr;
 }
 .p-contact__contents dd .checkbox-col {
   display: flex;

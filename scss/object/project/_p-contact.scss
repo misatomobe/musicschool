@@ -52,7 +52,14 @@
 
 
     // 文字間隔調整
-    .p-contact__item--checkbox {
+    .p-contact__item--checkbox {   
+        // checkbox
+        .form-checkbox {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+
         dt {
             display: flex;
             align-items: center;
@@ -93,12 +100,6 @@
             }
         }
         
-        // checkbox
-        .form-checkbox {
-            display: grid;
-            gap: 2rem;
-            grid-template-columns: 1fr;
-        }
         .checkbox-col {
             display: flex;
             justify-content: flex-start;
@@ -120,6 +121,8 @@
             }
         }
     }
+
+
     
     // クリック領域
     .checkbox-item {
