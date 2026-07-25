@@ -2758,14 +2758,16 @@ button {
   font-weight: 500;
 }
 .p-contact__contents .p-contact__item--checkbox .form-checkbox {
+  margin-top: -0.8rem;
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: 1fr;
 }
 .p-contact__contents .p-contact__item--checkbox dt {
   display: flex;
   align-items: center;
   letter-spacing: 0;
+  padding-bottom: 0.6rem;
 }
 @media (min-width: 768px) {
   .p-contact__contents .p-contact__item--checkbox dt {
@@ -2797,7 +2799,6 @@ button {
 }
 .p-contact__contents dd .checkbox-col {
   display: flex;
-  justify-content: flex-start;
   width: fit-content;
   min-width: 0;
 }

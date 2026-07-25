@@ -55,15 +55,17 @@
     .p-contact__item--checkbox {   
         // checkbox
         .form-checkbox {
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: 1fr;
-    }
+            margin-top: -0.8rem;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr;
+        }
 
         dt {
             display: flex;
             align-items: center;
             letter-spacing: 0;
+            padding-bottom: 0.6rem;
 
             @include pc {
                 display: block;
@@ -102,7 +104,6 @@
         
         .checkbox-col {
             display: flex;
-            justify-content: flex-start;
             width: fit-content;
             min-width: 0;
         }
