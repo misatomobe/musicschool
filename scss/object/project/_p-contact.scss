@@ -14,11 +14,19 @@
     }
 
     .p-contact__form-block {
-        dl:not(:first-of-type) {
+        dl:not(:first-of-type):not(.p-contact__item--textarea) {
             margin-top: 1.4rem;
             @include pc {
                 margin-top: 3rem;
             }
+        }
+    }
+
+    .p-contact__item--textarea {
+        margin-top: 0.8rem;
+
+        @include pc {
+            margin-top: 2rem;
         }
     }
     
@@ -72,10 +80,6 @@
             }
         }
         
-        .p-contact__label {
-            letter-spacing: 1.6rem;
-        }
-
         .p-contact__note {
             letter-spacing: 0;
 
@@ -84,7 +88,14 @@
                 margin-top: 0.2rem;
             }
         }
+    }
 
+    //目的、内容余白調整
+    .p-contact__item--checkbox,
+    .p-contact__item--textarea {
+        .p-contact__label {
+            letter-spacing: 1.6rem;
+        }
     }
 
     dd {

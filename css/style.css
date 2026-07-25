@@ -2723,12 +2723,20 @@ button {
     gap: 6.5rem;
   }
 }
-.p-contact__contents .p-contact__form-block dl:not(:first-of-type) {
+.p-contact__contents .p-contact__form-block dl:not(:first-of-type):not(.p-contact__item--textarea) {
   margin-top: 1.4rem;
 }
 @media (min-width: 768px) {
-  .p-contact__contents .p-contact__form-block dl:not(:first-of-type) {
+  .p-contact__contents .p-contact__form-block dl:not(:first-of-type):not(.p-contact__item--textarea) {
     margin-top: 3rem;
+  }
+}
+.p-contact__contents .p-contact__item--textarea {
+  margin-top: 0.8rem;
+}
+@media (min-width: 768px) {
+  .p-contact__contents .p-contact__item--textarea {
+    margin-top: 2rem;
   }
 }
 @media (min-width: 768px) {
@@ -2774,9 +2782,6 @@ button {
     display: block;
   }
 }
-.p-contact__contents .p-contact__item--checkbox .p-contact__label {
-  letter-spacing: 1.6rem;
-}
 .p-contact__contents .p-contact__item--checkbox .p-contact__note {
   letter-spacing: 0;
 }
@@ -2785,6 +2790,10 @@ button {
     display: block;
     margin-top: 0.2rem;
   }
+}
+.p-contact__contents .p-contact__item--checkbox .p-contact__label,
+.p-contact__contents .p-contact__item--textarea .p-contact__label {
+  letter-spacing: 1.6rem;
 }
 .p-contact__contents dd .form-control {
   width: 100%;
