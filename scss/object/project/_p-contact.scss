@@ -54,17 +54,28 @@
     // 文字間隔調整
     .p-contact__item--checkbox {
         dt {
-            letter-spacing: 0.3rem;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0;
 
-            span {
-                display: inline;
-                letter-spacing: 0;
-                @include pc {
-                    display: block;
-                    margin-top: 0.2rem;
-                }
+            @include pc {
+                display: block;
             }
         }
+        
+        .p-contact__label {
+            letter-spacing: 1.6rem;
+        }
+
+        .p-contact__note {
+            letter-spacing: 0;
+
+            @include pc {
+                display: block;
+                margin-top: 0.2rem;
+            }
+        }
+
     }
 
     dd {
@@ -85,9 +96,8 @@
         // checkbox
         .form-checkbox {
             display: grid;
-            gap: 1.5rem 0 0.2rem;
-            margin-top: 0.5rem;
-            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+            gap: 2rem;
+            grid-template-columns: 1fr;
         }
         .checkbox-col {
             display: flex;
@@ -115,7 +125,7 @@
     .checkbox-item {
         display: flex;
         align-items: center;
-        column-gap: 2rem;
+        column-gap: 1rem;
         cursor: pointer;
         min-width: fit-content;
     }

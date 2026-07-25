@@ -2758,14 +2758,23 @@ button {
   font-weight: 500;
 }
 .p-contact__contents .p-contact__item--checkbox dt {
-  letter-spacing: 0.3rem;
-}
-.p-contact__contents .p-contact__item--checkbox dt span {
-  display: inline;
+  display: flex;
+  align-items: center;
   letter-spacing: 0;
 }
 @media (min-width: 768px) {
-  .p-contact__contents .p-contact__item--checkbox dt span {
+  .p-contact__contents .p-contact__item--checkbox dt {
+    display: block;
+  }
+}
+.p-contact__contents .p-contact__item--checkbox .p-contact__label {
+  letter-spacing: 1.6rem;
+}
+.p-contact__contents .p-contact__item--checkbox .p-contact__note {
+  letter-spacing: 0;
+}
+@media (min-width: 768px) {
+  .p-contact__contents .p-contact__item--checkbox .p-contact__note {
     display: block;
     margin-top: 0.2rem;
   }
@@ -2783,9 +2792,8 @@ button {
 }
 .p-contact__contents dd .form-checkbox {
   display: grid;
-  gap: 1.5rem 0 0.2rem;
-  margin-top: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 2rem;
+  grid-template-columns: 1fr;
 }
 .p-contact__contents dd .checkbox-col {
   display: flex;
@@ -2809,7 +2817,7 @@ button {
 .p-contact__contents .checkbox-item {
   display: flex;
   align-items: center;
-  column-gap: 2rem;
+  column-gap: 1rem;
   cursor: pointer;
   min-width: fit-content;
 }
