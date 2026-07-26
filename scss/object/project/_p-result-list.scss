@@ -35,12 +35,22 @@
             flex-shrink: 1;
         }
     }
-    h3 {
-        margin-top: 2rem;
+
+    .p-result-list-item__body {
+        padding-top: 2rem;
     }
+
     time {
         margin-top: 1rem;
+        font-size: 1.8rem;
+        line-height: calc(32 / 18);
     }
+}
+
+/* h3タイトル専用 */
+.p-result-list-item__title {
+    font-size: 2rem;
+    line-height: calc(25 / 20);
 }
 
 .p-result-list__pagination {

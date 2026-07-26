@@ -3059,11 +3059,19 @@ button {
     flex-shrink: 1;
   }
 }
-.p-result-list-item__link h3 {
-  margin-top: 2rem;
+.p-result-list-item__link .p-result-list-item__body {
+  padding-top: 2rem;
 }
 .p-result-list-item__link time {
   margin-top: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.7777777778;
+}
+
+/* h3タイトル専用 */
+.p-result-list-item__title {
+  font-size: 2rem;
+  line-height: 1.25;
 }
 
 .p-result-list__pagination {
