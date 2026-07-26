@@ -6,6 +6,23 @@
 ========================= */
 .c-button--top {
     position: absolute;
+    bottom: 8rem;
+    right: 2rem;
+    z-index: 99999;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    @include pc {
+        bottom: 9.5rem;
+        right: 11.5rem;
+    }
+}
+
+/* =======================================
+   c-button--top（contact_formページのみ）
+========================================== */
+.c-button--top2 {
+    position: absolute;
     bottom: 1.8rem;
     right: 3rem;
     z-index: 99999;

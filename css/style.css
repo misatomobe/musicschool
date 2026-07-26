@@ -585,7 +585,7 @@ button {
 ================================================== */
 .c-button {
   width: 100%;
-  max-width: 30rem;
+  max-width: 33.5rem;
   height: 5rem;
   background-color: #CB0000;
   border: 0.1rem solid #CB0000;
@@ -697,6 +697,25 @@ button {
 ========================= */
 .c-button--top {
   position: absolute;
+  bottom: 8rem;
+  right: 2rem;
+  z-index: 99999;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .c-button--top {
+    bottom: 9.5rem;
+    right: 11.5rem;
+  }
+}
+
+/* =======================================
+   c-button--top（contact_formページのみ）
+========================================== */
+.c-button--top2 {
+  position: absolute;
   bottom: 1.8rem;
   right: 3rem;
   z-index: 99999;
@@ -705,7 +724,7 @@ button {
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  .c-button--top {
+  .c-button--top2 {
     bottom: 9.5rem;
     right: 11.5rem;
   }
