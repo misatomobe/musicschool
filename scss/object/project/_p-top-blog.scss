@@ -50,9 +50,7 @@
         }
 
         &.p-blog-item__label--wide {
-            @include pc {
-                width: 10rem;
-            }
+            width: 10rem;
         }
     }
 

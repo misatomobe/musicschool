@@ -6,6 +6,10 @@
 ========================= */
 .p-result-list {
     padding: 4.7rem 0 2.5rem;
+
+    @include pc {
+        padding: 6.5rem 0 2.5rem;
+    }
 }
 .p-result-list__items {
     margin-top: 4.9rem;
@@ -40,10 +44,14 @@
         padding-top: 2rem;
     }
 
-    time {
+    .p-result-list-item__date {
         margin-top: 1rem;
         font-size: 1.8rem;
         line-height: calc(32 / 18);
+
+        @include pc {
+            text-align: right;
+        }
     }
 }
 
