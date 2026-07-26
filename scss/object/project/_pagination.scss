@@ -9,11 +9,17 @@
     @include pc {
         margin: 0.7rem 0 17.5rem;
     }
+
     &__list {
         display: flex;
         justify-content: center;
         column-gap: 0.5rem;
+
+        @include pc {
+            column-gap: 1rem;
+        }
     }
+
     &__item {
         a,
         span {
@@ -25,7 +31,12 @@
             border: 1px solid $font-color;
             line-height: calc(28 / 16);
             font-weight: 700;
-            transition: .4s; 
+            transition: .4s;
+            
+            @include pc {
+                width: 5rem;
+                height: 5rem;
+            }
         }
         // 現在ページ
         &.is-current {
@@ -51,5 +62,9 @@
         line-height: calc(28 / 16);
         font-weight: 700;
         padding : 0 0.3rem;
+
+        @include pc {
+            padding: 0 1rem;
+        }
     }
 }
