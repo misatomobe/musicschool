@@ -2898,6 +2898,12 @@ button {
   margin-top: 5rem;
   margin-bottom: 10.8rem;
 }
+@media (min-width: 768px) {
+  .p-contact-send__button.p-contact__submit {
+    margin-top: 4.5rem;
+    margin-bottom: 10rem;
+  }
+}
 
 /* =========================
    CONTACT_FORM ONLY
