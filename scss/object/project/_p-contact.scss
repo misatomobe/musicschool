@@ -40,6 +40,9 @@
             @include pc {
                 width: 17rem;
                 flex-shrink: 0;
+
+                font-size: 2rem;
+                line-height: calc(33 / 20);
             }
         }
 
