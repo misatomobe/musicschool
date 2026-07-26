@@ -697,8 +697,8 @@ button {
 ========================= */
 .c-button--top {
   position: absolute;
-  bottom: 8rem;
-  right: 2rem;
+  bottom: 1.8rem;
+  right: 3rem;
   z-index: 99999;
   display: inline-block;
   border-radius: 50%;
@@ -2853,7 +2853,7 @@ button {
 
 .p-contact-send__button.p-contact__submit {
   margin-top: 5rem;
-  margin-bottom: 10rem;
+  margin-bottom: 10.8rem;
 }
 
 /* =========================
