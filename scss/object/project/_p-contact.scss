@@ -171,3 +171,14 @@
     margin-top: 5rem;
     margin-bottom: 10.8rem;
 }
+
+/* =========================
+   CONTACT_FORM ONLY
+========================= */
+.p-contact {
+    .p-contact-form__text {
+        @include pc {
+            margin-top: 6.8rem;
+        }
+    }
+}

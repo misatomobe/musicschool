@@ -2876,6 +2876,15 @@ button {
 }
 
 /* =========================
+   CONTACT_FORM ONLY
+========================= */
+@media (min-width: 768px) {
+  .p-contact .p-contact-form__text {
+    margin-top: 6.8rem;
+  }
+}
+
+/* =========================
    CONTACT-SEND
 ========================= */
 .c-button--contact--center {
