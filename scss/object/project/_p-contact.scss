@@ -26,7 +26,7 @@
         margin-top: 0.8rem;
 
         @include pc {
-            margin-top: 2rem;
+            margin-top: 3.3rem;
         }
     }
     
@@ -34,9 +34,17 @@
         @include pc {
             display: flex;
             align-items: flex-start;
+
+            @include pc {
+                align-items: center;
+            }
         }
 
         dt {
+            font-size: 1.6rem;
+            line-height: calc(33 / 16);
+            font-weight: 500;
+            
             @include pc {
                 width: 17rem;
                 flex-shrink: 0;
@@ -53,12 +61,6 @@
                 margin-top: 0;
             }
         }
-    }
-
-    dt {
-        font-size: 1.6rem;
-        line-height: calc(33 / 16);
-        font-weight: 500;
     }
 
 
@@ -96,6 +98,10 @@
     //目的、内容余白調整
     .p-contact__item--checkbox,
     .p-contact__item--textarea {
+        @include pc {
+            align-items: flex-start;
+        }
+
         .p-contact__label {
             letter-spacing: 1.6rem;
         }

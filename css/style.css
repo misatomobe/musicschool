@@ -2755,7 +2755,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-contact__contents .p-contact__item--textarea {
-    margin-top: 2rem;
+    margin-top: 3.3rem;
   }
 }
 @media (min-width: 768px) {
@@ -2763,6 +2763,16 @@ button {
     display: flex;
     align-items: flex-start;
   }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .p-contact__contents .p-contact__item {
+    align-items: center;
+  }
+}
+.p-contact__contents .p-contact__item dt {
+  font-size: 1.6rem;
+  line-height: 2.0625;
+  font-weight: 500;
 }
 @media (min-width: 768px) {
   .p-contact__contents .p-contact__item dt {
@@ -2780,11 +2790,6 @@ button {
     flex: 1;
     margin-top: 0;
   }
-}
-.p-contact__contents dt {
-  font-size: 1.6rem;
-  line-height: 2.0625;
-  font-weight: 500;
 }
 .p-contact__contents .p-contact__item--checkbox .form-checkbox {
   margin-top: -0.8rem;
@@ -2810,6 +2815,12 @@ button {
   .p-contact__contents .p-contact__item--checkbox .p-contact__note {
     display: block;
     margin-top: 0.2rem;
+  }
+}
+@media (min-width: 768px) {
+  .p-contact__contents .p-contact__item--checkbox,
+  .p-contact__contents .p-contact__item--textarea {
+    align-items: flex-start;
   }
 }
 .p-contact__contents .p-contact__item--checkbox .p-contact__label,
