@@ -4,11 +4,15 @@
 /* =========================
    RESULT-LIST
 ========================= */
+.p-result-list {
+    padding: 4.7rem 0 2.5rem;
+}
 .p-result-list__items {
     margin-top: 4.9rem;
     display: flex;
     flex-direction: column;
     row-gap: 4.1rem;
+
     @include pc {
         margin-top: 3.8rem;
         width: 100%;
