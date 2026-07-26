@@ -2814,7 +2814,7 @@ button {
 @media (min-width: 768px) {
   .p-contact__contents .p-contact__item--checkbox .p-contact__note {
     display: block;
-    margin-top: 0.2rem;
+    margin-top: -0.4rem;
   }
 }
 @media (min-width: 768px) {
