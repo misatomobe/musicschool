@@ -3130,6 +3130,8 @@ button {
   font-size: 1.8rem;
   line-height: 1.6666666667;
   padding: 0 1rem;
+  position: relative;
+  top: 0.3rem;
 }
 
 /* =========================
