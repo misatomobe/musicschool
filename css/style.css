@@ -647,7 +647,7 @@ button {
 }
 
 /* =====================================
-   c-button--icon（404などのページで使用）
+   c-button--icon（共通デザイン）
 ===================================== */
 .c-button--contact__icon {
   width: 100%;
@@ -690,6 +690,14 @@ button {
   .c-button--contact--404 .c-button--contact__icon {
     height: 5rem;
   }
+}
+
+/* ==============================
+   メインページ用（フォントだけ変更）
+============================== */
+.c-button--contact__icon-main p {
+  font-size: 2rem;
+  line-height: 1.65;
 }
 
 /* =========================
@@ -3041,7 +3049,7 @@ button {
    RESULT-LIST
 ========================= */
 .p-result-list {
-  padding: 4.7rem 0 2.5rem;
+  padding: 4.7rem 0 19.7rem;
 }
 @media (min-width: 768px) {
   .p-result-list {
