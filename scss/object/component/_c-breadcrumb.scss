@@ -17,7 +17,9 @@
     &__inner {
         padding: 0.1rem 2rem;
         @include pc {
-            padding: 0.8rem 10rem;
+            max-width: 940px;
+            margin: 0 auto;
+            padding: 0.8rem 3rem;
         }
     }
 

@@ -786,7 +786,9 @@ button {
 }
 @media (min-width: 768px) {
   .c-breadcrumb__inner {
-    padding: 0.8rem 10rem;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0.8rem 3rem;
   }
 }
 .c-breadcrumb__list {
