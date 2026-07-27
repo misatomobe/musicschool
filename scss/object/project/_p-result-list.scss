@@ -61,10 +61,38 @@
     line-height: calc(25 / 20);
 }
 
+/* ページネーション */ 
 .p-result-list__pagination {
     margin-top: 6.1rem;
     margin-bottom: 17.2rem;
+
     @include pc {
         margin-top: 7.1rem;
     }
+
+    &-list {
+        column-gap: 1rem;
+
+        @include pc {
+            column-gap: 1rem;
+        }
+        
+        .p-pagination__item {
+            a,
+            span {
+                width: 5rem;
+                height: 5rem;
+
+                font-size: 1.8rem;
+                line-height: calc(30 / 18);
+            }
+        }
+    }
+}
+
+/* 「…」専用 */
+.p-result-list__pagination-dots {
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);
+    padding: 0 1rem;
 }
