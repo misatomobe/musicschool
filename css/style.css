@@ -646,9 +646,9 @@ button {
   }
 }
 
-/* =========================
-   c-button--icon
-========================= */
+/* =====================================
+   c-button--icon（404などのページで使用）
+===================================== */
 .c-button--contact__icon {
   width: 100%;
   height: 6rem;
@@ -2150,11 +2150,11 @@ button {
    pagination
 ========================= */
 .p-pagination {
-  margin: 6rem 0 17.8rem;
+  margin-top: 6rem;
 }
 @media (min-width: 768px) {
   .p-pagination {
-    margin: 0.7rem 0 17.5rem;
+    margin-top: 0.7rem;
   }
 }
 .p-pagination__list {
@@ -3045,7 +3045,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-result-list {
-    padding: 6.5rem 0 2.5rem;
+    padding: 6.5rem 0 21rem;
   }
 }
 
@@ -3102,7 +3102,6 @@ button {
 /* ページネーション */
 .p-result-list__pagination {
   margin-top: 6.1rem;
-  margin-bottom: 17.2rem;
 }
 @media (min-width: 768px) {
   .p-result-list__pagination {

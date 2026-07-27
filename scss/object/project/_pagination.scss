@@ -5,9 +5,9 @@
    pagination
 ========================= */
 .p-pagination {
-    margin: 6rem 0 17.8rem;
+    margin-top: 6rem;
     @include pc {
-        margin: 0.7rem 0 17.5rem;
+        margin-top: 0.7rem;
     }
 
     &__list {

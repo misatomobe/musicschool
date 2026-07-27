@@ -8,7 +8,7 @@
     padding: 4.7rem 0 2.5rem;
 
     @include pc {
-        padding: 6.5rem 0 2.5rem;
+        padding: 6.5rem 0 21rem;
     }
 }
 .p-result-list__items {
@@ -64,7 +64,6 @@
 /* ページネーション */ 
 .p-result-list__pagination {
     margin-top: 6.1rem;
-    margin-bottom: 17.2rem;
 
     @include pc {
         margin-top: 7.1rem;
