@@ -72,10 +72,6 @@
 
     &-list {
         column-gap: 1rem;
-
-        @include pc {
-            column-gap: 1rem;
-        }
         
         .p-pagination__item {
             a,

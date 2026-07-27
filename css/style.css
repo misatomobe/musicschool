@@ -3112,11 +3112,6 @@ button {
 .p-result-list__pagination-list {
   column-gap: 1rem;
 }
-@media (min-width: 768px) {
-  .p-result-list__pagination-list {
-    column-gap: 1rem;
-  }
-}
 .p-result-list__pagination-list .p-pagination__item a,
 .p-result-list__pagination-list .p-pagination__item span {
   width: 5rem;
