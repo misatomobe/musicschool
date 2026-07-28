@@ -8,13 +8,14 @@
     padding: 4.5rem 0 20.2rem;
 
     @include pc {
-        padding: 4.5rem 0 20.2rem;
+        padding: 6.4rem 0 27rem;
     }
-    
+
     &__contents {
         margin-top: 4rem;
+
         @include pc {
-            margin-top: 5rem;
+            margin-top: 3.8rem;
         }
     }
     
@@ -45,6 +46,12 @@
     &__text {
         margin-top: 0.8rem;
     }
+
+    &__date {
+        @include pc {
+            margin-top: 1rem;
+        }
+    }
     
     .p-blog-item {
         &__image {
@@ -64,6 +71,7 @@
         &__date {
             @include pc {
                 text-align: left;
+                margin-top: 0.3rem;
             }
         }
     }
