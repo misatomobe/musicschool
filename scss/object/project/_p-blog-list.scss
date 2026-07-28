@@ -5,6 +5,12 @@
    BLOG-list
 ========================= */
 .p-blog-list {
+    padding: 4.5rem 0 20.2rem;
+
+    @include pc {
+        padding: 4.5rem 0 20.2rem;
+    }
+    
     &__contents {
         margin-top: 4rem;
         @include pc {
@@ -35,6 +41,10 @@
             column-gap: calc(50 / 880 * 100%);
         } 
     }
+
+    &__text {
+        margin-top: 0.8rem;
+    }
     
     .p-blog-item {
         &__image {
@@ -59,14 +69,12 @@
     }
     
     .p-blog-card {
-        &__text {
-            margin-top: 0.8rem;
+        &__text {   
             font-size: 1.6rem;
             line-height: calc(30/ 16);
             font-weight: 500;
             
-            @include pc {
-                margin-top: 1.1rem;
+            @include pc {              
                 font-size: 1.8rem;
                 line-height: calc(30/ 18);
             }
