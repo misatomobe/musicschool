@@ -4,48 +4,67 @@
 /* =========================
    BLOG-list
 ========================= */
-.p-blog-list__items {
-    display: flex;
-    flex-direction: column;
-    row-gap : 3.9rem;
-    @include pc {
-        row-gap: 7rem;
+.p-blog-list {
+    &__contents {
+        margin-top: 4rem;
+        @include pc {
+            margin-top: 5rem;
+        }
     }
-}
-
-.p-blog-list__item {
+    
+    &__items {
+        display: flex;
+        flex-direction: column;
+        row-gap : 3.9rem;
+        
+        @include pc {
+            row-gap: 7rem;
+        }
+    }
+    
+    &__item {
     @include pc {
         width: 100%; // topページのブログセクション3列指定を解除
         }
-        .p-blog-item__link {
-            @include pc {
-                display: flex;
-                align-items: flex-start;
-                column-gap: calc(50 / 880 * 100%);
-            } 
-        }
-        .p-blog-item__image {
+    }
+
+    &__link {
+        @include pc {
+            display: flex;
+            align-items: flex-start;
+            column-gap: calc(50 / 880 * 100%);
+        } 
+    }
+    
+    .p-blog-item {
+        &__image {
             @include pc {
                 width: 26rem;
                 flex-shrink: 0;
             }
         }
-        .p-blog-item__body {
+        
+        &__body {
             @include pc {
                 flex: 1;
                 padding-top: 0;
             }
         }
-        .p-blog-item__date {
+
+        &__date {
             @include pc {
                 text-align: left;
             }
         }
-        .p-blog-card__text {
+    }
+    
+    .p-blog-card {
+        &__text {
             margin-top: 0.8rem;
             font-size: 1.6rem;
             line-height: calc(30/ 16);
             font-weight: 500;
+            
             @include pc {
                 margin-top: 1.1rem;
                 font-size: 1.8rem;
@@ -53,3 +72,4 @@
             }
         }
     }
+}
