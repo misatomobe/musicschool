@@ -3050,11 +3050,11 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3.6rem;
+  margin-top: 3.3rem;
 }
 @media (min-width: 768px) {
   .p-search-result__head {
-    mar-gin-top: 6.6rem;
+    margin-top: 6.6rem;
   }
 }
 .p-search-result__title, .p-search-result__count {
@@ -3067,6 +3067,14 @@ button {
 }
 .p-search-result .p-blog__contents {
   margin-top: 4.2rem;
+}
+.p-search-result__text {
+  margin-top: 0.8rem;
+}
+@media (min-width: 768px) {
+  .p-search-result__text {
+    margin-top: 1.2rem;
+  }
 }
 
 /* =========================

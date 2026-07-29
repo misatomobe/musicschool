@@ -9,11 +9,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 3.6rem;
+        margin-top: 3.3rem;
+
         @include pc {
-            mar-gin-top: 6.6rem;
+            margin-top: 6.6rem;
         }
     }
+
     &__title,
     &__count {
         font-size: 1.8rem;
@@ -24,7 +26,16 @@
             font-weight: 700;
         }
     }
+
     .p-blog__contents {
         margin-top: 4.2rem;
+    }
+
+    &__text {
+        margin-top: 0.8rem;
+
+        @include pc {
+            margin-top: 1.2rem;
+        }
     }
 }
