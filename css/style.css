@@ -2107,7 +2107,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog-list {
-    padding: 6.4rem 0 27rem;
+    padding: 6.4rem 0 20.9rem;
   }
 }
 .p-blog-list__contents {
@@ -2186,7 +2186,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-pagination {
-    margin-top: 0.7rem;
+    margin-top: 7rem;
   }
 }
 .p-pagination__list {
