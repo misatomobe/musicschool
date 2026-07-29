@@ -5,15 +5,16 @@
    SEARCH
 ========================= */
 .p-search-result {
+    padding: 3.3rem 0 20.4rem;
+
+    @include pc {
+        padding: 3.3rem 0 6.6rem;
+    }
+
     &__head {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 3.3rem;
-
-        @include pc {
-            margin-top: 6.6rem;
-        }
     }
 
     &__title,

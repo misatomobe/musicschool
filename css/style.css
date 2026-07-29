@@ -3046,16 +3046,18 @@ button {
 /* =========================
    SEARCH
 ========================= */
+.p-search-result {
+  padding: 3.3rem 0 20.4rem;
+}
+@media (min-width: 768px) {
+  .p-search-result {
+    padding: 3.3rem 0 6.6rem;
+  }
+}
 .p-search-result__head {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3.3rem;
-}
-@media (min-width: 768px) {
-  .p-search-result__head {
-    margin-top: 6.6rem;
-  }
 }
 .p-search-result__title, .p-search-result__count {
   font-size: 1.8rem;
