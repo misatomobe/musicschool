@@ -881,7 +881,7 @@ button {
 .p-fv__contents {
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -909,7 +909,7 @@ button {
    CONCEPT
 ========================= */
 .p-concept {
-  padding: 4.5rem 0 5rem;
+  padding: 4.5rem 0 6.3rem;
 }
 .p-concept__inner {
   max-width: 1080px;
@@ -917,7 +917,7 @@ button {
   padding: 0 2rem;
 }
 .p-concept__head {
-  text-align: center;
+  text-align: left;
 }
 .p-concept__head p {
   font-size: 1.8rem;
@@ -943,7 +943,7 @@ button {
 }
 .p-concept__items {
   position: relative;
-  margin-top: 1rem;
+  margin-top: 2.1rem;
 }
 @media (min-width: 768px) {
   .p-concept__items {

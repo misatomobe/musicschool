@@ -6,28 +6,33 @@
 .p-fv {
     position: relative;
     margin-top: 5rem;
+
     @include pc {
         margin-top: 8rem;
     }
+
     picture {
         display: block;
     }
+
     img {
         width: 100%;
         height: auto;
         object-fit: cover;
         display: block;
     }
+
     &__contents {
         width: 100%;
         position: absolute;
-        top: 50%;
+        top: 51%;
         left: 50%;
         transform: translate(-50%, -50%);
         
         z-index: 1;
         text-align: center;
     }
+
     &__title {
         font-size: 3rem;
         line-height: calc(50 / 30);
