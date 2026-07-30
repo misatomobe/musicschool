@@ -42,10 +42,6 @@
     justify-content: center;
     align-items: center;
     transition: background-color 0.4s ease;
-    
-    @include pc {
-        width: 100%;            
-    }
 
     p {
         color: $font-color02;
@@ -83,5 +79,6 @@
     p {
         font-size: 2rem;
         line-height: calc(33 / 20);
+        letter-spacing: 0.3rem;
     }
 }
