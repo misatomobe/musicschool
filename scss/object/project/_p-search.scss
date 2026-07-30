@@ -8,7 +8,7 @@
     padding: 3.3rem 0 20.4rem;
 
     @include pc {
-        padding: 3.3rem 0 6.6rem;
+        padding: 6.6rem 0 6.6rem;
     }
 
     &__head {
@@ -30,6 +30,28 @@
 
     .p-blog__contents {
         margin-top: 4.2rem;
+    }
+
+    .p-blog-item__item {
+        @include pc {
+            display: flex;
+            align-items: flex-start;
+            column-gap: calc(50 / 880 * 100%);
+        }
+    }
+
+    .p-blog-item__image {
+        @include pc {
+            width: 26rem;
+            flex-shrink: 0;
+        }
+    }
+
+    .p-blog-item__body {
+        @include pc {
+            flex: 1;
+            padding-top: 0;
+        }
     }
 
     &__text {
