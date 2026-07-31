@@ -74,7 +74,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        gap: 1rem;
+        gap: .8rem;
 
         /* 中央線 */
         &::before {
@@ -95,6 +95,8 @@
         grid-template-columns: 1fr 3rem 1fr;
         align-items: center;
         height: 5rem;
+
+        margin-top: 1.1rem;
     }
     &__en {
         text-align: right;

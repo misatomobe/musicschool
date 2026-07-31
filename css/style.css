@@ -985,7 +985,7 @@ button {
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 1rem;
+  gap: 0.8rem;
   /* 中央線 */
 }
 .p-concept__list::before {
@@ -1005,6 +1005,7 @@ button {
   grid-template-columns: 1fr 3rem 1fr;
   align-items: center;
   height: 5rem;
+  margin-top: 1.1rem;
 }
 .p-concept__en {
   text-align: right;
