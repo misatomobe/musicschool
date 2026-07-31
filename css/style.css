@@ -1059,15 +1059,15 @@ button {
    REASON
 ========================= */
 .p-reason {
-  padding: 5rem 0 4rem;
+  padding: 4.7rem 0 3.8rem;
 }
 @media (min-width: 768px) {
   .p-reason {
     padding: 6.4rem 0 9rem;
   }
 }
-.p-reason__title-main {
-  margin-bottom: 3.6rem;
+.p-reason__contents {
+  margin-top: 3.7rem;
 }
 @media (min-width: 768px) {
   .p-reason__items {
@@ -1129,10 +1129,8 @@ button {
   height: 2px;
   background-color: #CB0000;
 }
-.p-reason h3 {
-  margin-bottom: 1rem;
-}
 .p-reason__text {
+  margin-top: 1.7rem;
   font-size: 1.6rem;
   line-height: 1.875;
   font-weight: 500;
