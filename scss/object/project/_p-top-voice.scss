@@ -7,7 +7,7 @@
 .p-voice {
    &__inner {
       padding: 4.6rem 2rem 5rem;
-      
+
       @include pc {
          max-width: 1040px;
          margin-inline: auto;
@@ -45,13 +45,14 @@
    }
    &__image {
       overflow: hidden;
-      margin-bottom: 2.7rem;
       img {
          transition: transform 0.4s ease;
       }
    }
    &__body {
+      margin-top: 2.7rem;
       transition: opacity 0.4s ease;
+
       h3 {
          font-size: 2.2rem;
          line-height: calc(33 / 22);
@@ -66,6 +67,7 @@
          }
       }
       p {
+         margin-top: 1rem;
          font-size: 1.8rem;
          line-height: calc(30 / 18);
          font-weight: 500;
