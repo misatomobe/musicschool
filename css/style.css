@@ -1158,6 +1158,7 @@ button {
 }
 .p-voice__slider-wrap {
   position: relative;
+  margin-top: 3.9rem;
 }
 @media (min-width: 768px) {
   .p-voice__slider-wrap {
@@ -1170,9 +1171,6 @@ button {
     max-width: 880px;
     margin-inline: auto;
   }
-}
-.p-voice h2 {
-  margin-bottom: 3.9rem;
 }
 @media (min-width: 768px) {
   .p-voice .p-voice__card:hover .p-voice__image img {
