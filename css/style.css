@@ -964,23 +964,6 @@ button {
   height: 1.5rem;
   z-index: 2;
 }
-.p-concept__arrow::before, .p-concept__arrow::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: calc(50% - 1px);
-  width: 3px;
-  height: 2.2rem;
-  border-radius: 9999px;
-  background: #CB0000;
-  transform-origin: center top;
-}
-.p-concept__arrow::before {
-  transform: rotate(45deg);
-}
-.p-concept__arrow::after {
-  transform: rotate(-45deg);
-}
 .p-concept__list {
   display: flex;
   flex-direction: column;
@@ -997,6 +980,19 @@ button {
   transform: translateX(-50%);
   width: 3px;
   background: #CB0000;
+}
+.p-concept__list {
+  /* 上向き矢印 */
+}
+.p-concept__list::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -1.6rem;
+  transform: translateX(-50%);
+  width: 3.6rem;
+  height: 1.9rem;
+  background: url("../images/top/arrow_up_sp.svg") no-repeat center/contain;
 }
 .p-concept__item {
   position: relative;
