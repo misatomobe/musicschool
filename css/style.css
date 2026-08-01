@@ -1493,7 +1493,7 @@ button {
    BLOG
 ========================= */
 .p-blog {
-  padding: 4.5rem 0 2.5rem;
+  padding: 2.4rem 0 2.5rem;
 }
 @media (min-width: 768px) {
   .p-blog {
@@ -1501,7 +1501,7 @@ button {
   }
 }
 .p-blog__contents {
-  margin-top: 3.6rem;
+  margin-top: 3.9rem;
 }
 .p-blog__items {
   display: flex;
