@@ -1405,6 +1405,13 @@ button {
 .p-faq__item:last-child {
   border-bottom: 0.5px solid;
 }
+.p-faq__item:last-child .p-faq__summary {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.p-faq__item:last-child .p-faq__question-left {
+  top: -0.2rem;
+}
 .p-faq__summary {
   display: flex;
   align-items: center;
@@ -1445,7 +1452,7 @@ button {
   color: #fff;
   background: #CB0000;
   position: relative;
-  top: -0.2rem;
+  top: -0.3rem;
 }
 .p-faq__title {
   font-size: 1.6rem;

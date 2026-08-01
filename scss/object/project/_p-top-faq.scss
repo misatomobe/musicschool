@@ -9,13 +9,25 @@
     @include pc {
         padding: 3.4rem 0 3.5rem;
     }
+
     &__contents {
         margin-top: 3.9rem;
     }
+
     &__item {
         border-top: 0.5px solid;
+        
         &:last-child {
             border-bottom: 0.5px solid;
+            
+            .p-faq__summary {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            .p-faq__question-left {
+                top: -0.2rem;
+            }
         }
     }
 
@@ -61,7 +73,7 @@
             color: $font-color02;
             background: $main-color;
             position: relative;
-            top: -0.2rem;
+            top: -0.3rem;
         }
     }
 
