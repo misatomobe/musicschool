@@ -1389,7 +1389,7 @@ button {
    FAQ
 ========================= */
 .p-faq {
-  padding: 4.5rem 0 2.5rem;
+  padding: 2.9rem 0 2.5rem;
 }
 @media (min-width: 768px) {
   .p-faq {
@@ -1397,7 +1397,7 @@ button {
   }
 }
 .p-faq__contents {
-  margin-top: 4rem;
+  margin-top: 3.9rem;
 }
 .p-faq__item {
   border-top: 0.5px solid;
@@ -1408,14 +1408,20 @@ button {
 .p-faq__summary {
   display: flex;
   align-items: center;
-  gap: 2.25rem;
   position: relative;
-  padding: 1.7rem 0;
+  padding: 1.7rem 0 0.8rem;
   list-style: none;
   cursor: pointer;
 }
 .p-faq__summary::-webkit-details-marker {
   display: none;
+}
+.p-faq__question-left {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -0.4rem;
+  margin-right: 2rem;
 }
 .p-faq__icon {
   width: 3.5rem;
@@ -1449,7 +1455,7 @@ button {
   width: 1.36rem;
   height: 0.92rem;
   flex-shrink: 0;
-  margin-left: auto;
+  margin-left: 3rem;
   transition: transform 0.4s ease;
 }
 .p-faq__btn::before, .p-faq__btn::after {
