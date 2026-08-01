@@ -1342,22 +1342,15 @@ button {
   border-radius: 9999px;
   background: #CB0000;
 }
-.p-flow__line::before, .p-flow__line::after {
+.p-flow__line::after {
   content: "";
   position: absolute;
-  bottom: 0;
   left: 50%;
-  width: 0.2rem;
-  height: 1.6rem;
-  border-radius: 9999px;
-  background: #CB0000;
-  transform-origin: center bottom;
-}
-.p-flow__line::before {
-  transform: translateX(-50%) rotate(45deg);
-}
-.p-flow__line::after {
-  transform: translateX(-50%) rotate(-45deg);
+  bottom: -0.1rem;
+  width: 3.162rem;
+  height: 1.581rem;
+  transform: translateX(-50%);
+  background: url("../images/top/arrow_down_sp.svg") no-repeat center/contain;
 }
 .p-flow__list {
   display: flex;
