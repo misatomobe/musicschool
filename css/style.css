@@ -1493,11 +1493,11 @@ button {
    BLOG
 ========================= */
 .p-blog {
-  padding: 2.4rem 0 2.5rem;
+  padding: 2.4rem 0 19rem;
 }
 @media (min-width: 768px) {
   .p-blog {
-    padding: 6.7rem 0 3.5rem;
+    padding: 6.7rem 0 19rem;
   }
 }
 .p-blog__contents {
@@ -1572,23 +1572,32 @@ button {
 }
 .p-blog__link {
   margin-top: 3.7rem;
-  margin-bottom: 19rem;
   text-align: center;
 }
 @media (min-width: 768px) {
   .p-blog__link {
     margin-top: 3.7rem;
-    margin-bottom: 20.5rem;
     text-align: right;
   }
 }
 .p-blog__link-btn {
+  position: relative;
+  display: inline-block;
   font-size: 1.8rem;
   line-height: 1.6666666667;
   font-weight: 500;
-  padding-bottom: -0.1rem;
-  border-bottom: 0.5px solid;
+  padding-bottom: 0.1rem;
   transition: opacity 0.4s ease;
+}
+.p-blog__link-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0.7rem;
+  transform: translateX(-50%);
+  width: 97%;
+  height: 0.5px;
+  background: currentColor;
 }
 @media (min-width: 768px) {
   .p-blog__link-btn:hover {
