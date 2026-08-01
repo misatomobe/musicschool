@@ -1131,6 +1131,7 @@ button {
 }
 .p-reason__text {
   margin-top: 1.7rem;
+  text-align: left;
   font-size: 1.6rem;
   line-height: 1.875;
   font-weight: 500;
@@ -1335,9 +1336,9 @@ button {
 .p-flow__line {
   position: absolute;
   top: 1rem;
-  left: 1.6rem;
-  width: 0.2rem;
-  height: calc(100% - 1rem);
+  left: 1.7rem;
+  width: 0.3rem;
+  height: calc(100% - 2rem);
   border-radius: 9999px;
   background: #CB0000;
 }
