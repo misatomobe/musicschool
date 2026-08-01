@@ -82,18 +82,44 @@
    }
    .swiper-button-prev,
    .swiper-button-next {
-      width: 2.04rem;
-      height: 2.98rem;
-      opacity: 0.5;
+      width: 3rem;
+      height: 3.6rem;
+
+      opacity: 1;
       position: absolute;
       top: 15rem;
-      transform: translateY(-10%);
       z-index: 10;
+
+      &::after {
+         display: none;
+      }
+
       @include pc {
          top: 14rem;
-         transform: translateY(-50%);
       }
    }
+
+   .swiper-button-prev {
+      background: url("../../images/top/arrow-l-sp.svg") no-repeat center / contain;
+      left: 0;
+
+      @include pc {
+         left: 0;
+         transform: translate(-100%, -50%);
+      }
+   }
+
+   .swiper-button-next {
+      background: url("../../images/top/arrow-r-sp.svg") no-repeat center / contain;
+      right: 0;
+
+      @include pc {
+         right: 0;
+         transform: translate(100%, -50%);
+      }
+   }
+
+
    .swiper-button-prev {
       left: 0;
       @include pc {
@@ -108,49 +134,8 @@
       transform: translate(100%, -50%);
    }
 }
-   .swiper-button-prev::after,
-   .swiper-button-next::after {
-      content: "";
-   }
-   
-   /* ＞ */
-   .swiper-button-next::before,
-   .swiper-button-next::after {
-      content: "";
-      position: absolute;
-      top: calc(50% - 0.35rem);
-      right: 0;
-      width: 2.49rem;
-      height: 0.7rem;
-      border-radius: 9999px;
-      background-color: #fff;
-      transform-origin: calc(100% - 0.35rem) 50%;
-   }
-   .swiper-button-next::before {
-      transform: rotate(38.2deg);
-   }
-   .swiper-button-next::after {
-      transform: rotate(-38.2deg);
-   }
-   /* ＜ */
-   .swiper-button-prev::before,
-   .swiper-button-prev::after {
-      content: "";
-      position: absolute;
-      top: calc(50% - 0.35rem);
-      left: 0;
-      width: 2.49rem;
-      height: 0.7rem;
-      border-radius: 9999px;
-      background-color: #fff;
-      transform-origin: 0.35rem 50%;
-   }
-   .swiper-button-prev::before {
-      transform: rotate(38.2deg);
-   }
-   .swiper-button-prev::after {
-      transform: rotate(-38.2deg);
-   }
+
+
    .swiper,
    .swiper-wrapper,
    .swiper-slide {

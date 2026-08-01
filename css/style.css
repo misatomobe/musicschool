@@ -1223,19 +1223,41 @@ button {
 }
 .p-voice .swiper-button-prev,
 .p-voice .swiper-button-next {
-  width: 2.04rem;
-  height: 2.98rem;
-  opacity: 0.5;
+  width: 3rem;
+  height: 3.6rem;
+  opacity: 1;
   position: absolute;
   top: 15rem;
-  transform: translateY(-10%);
   z-index: 10;
+}
+.p-voice .swiper-button-prev::after,
+.p-voice .swiper-button-next::after {
+  display: none;
 }
 @media (min-width: 768px) {
   .p-voice .swiper-button-prev,
   .p-voice .swiper-button-next {
     top: 14rem;
-    transform: translateY(-50%);
+  }
+}
+.p-voice .swiper-button-prev {
+  background: url("../../images/top/arrow-l-sp.svg") no-repeat center/contain;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .p-voice .swiper-button-prev {
+    left: 0;
+    transform: translate(-100%, -50%);
+  }
+}
+.p-voice .swiper-button-next {
+  background: url("../../images/top/arrow-r-sp.svg") no-repeat center/contain;
+  right: 0;
+}
+@media (min-width: 768px) {
+  .p-voice .swiper-button-next {
+    right: 0;
+    transform: translate(100%, -50%);
   }
 }
 .p-voice .swiper-button-prev {
@@ -1255,52 +1277,6 @@ button {
     right: 0;
     transform: translate(100%, -50%);
   }
-}
-.p-voice .swiper-button-prev::after,
-.p-voice .swiper-button-next::after {
-  content: "";
-}
-.p-voice {
-  /* ＞ */
-}
-.p-voice .swiper-button-next::before,
-.p-voice .swiper-button-next::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 0.35rem);
-  right: 0;
-  width: 2.49rem;
-  height: 0.7rem;
-  border-radius: 9999px;
-  background-color: #fff;
-  transform-origin: calc(100% - 0.35rem) 50%;
-}
-.p-voice .swiper-button-next::before {
-  transform: rotate(38.2deg);
-}
-.p-voice .swiper-button-next::after {
-  transform: rotate(-38.2deg);
-}
-.p-voice {
-  /* ＜ */
-}
-.p-voice .swiper-button-prev::before,
-.p-voice .swiper-button-prev::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 0.35rem);
-  left: 0;
-  width: 2.49rem;
-  height: 0.7rem;
-  border-radius: 9999px;
-  background-color: #fff;
-  transform-origin: 0.35rem 50%;
-}
-.p-voice .swiper-button-prev::before {
-  transform: rotate(38.2deg);
-}
-.p-voice .swiper-button-prev::after {
-  transform: rotate(-38.2deg);
 }
 .p-voice .swiper,
 .p-voice .swiper-wrapper,
