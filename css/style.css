@@ -1455,28 +1455,13 @@ button {
   width: 1.36rem;
   height: 0.92rem;
   flex-shrink: 0;
-  margin-left: 3rem;
+  margin-left: 2.7rem;
+  margin-right: 1.4rem;
   transition: transform 0.4s ease;
-}
-.p-faq__btn::before, .p-faq__btn::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  height: 1.11rem;
-  border-radius: 9999px;
-  background-color: #000;
-  transform-origin: center bottom;
-}
-.p-faq__btn::before {
-  transform: translateX(-50%) rotate(45deg);
-}
-.p-faq__btn::after {
-  transform: translateX(-50%) rotate(-45deg);
+  background: url("../../images/top/faq-arrow-sp.svg") no-repeat center;
 }
 .p-faq__summary.is-active .p-faq__btn {
-  transform: rotate(180deg);
+  transform: translateY(-0.4rem) rotate(180deg);
 }
 .p-faq__answer {
   display: flex;
