@@ -23,6 +23,7 @@
         display: flex;
         align-items: center;
         position: relative;
+        min-height: 5rem;
         padding: 1.7rem 0 0.8rem;
         list-style: none;
         cursor: pointer;
@@ -59,6 +60,8 @@
         &--a {
             color: $font-color02;
             background: $main-color;
+            position: relative;
+            top: -0.2rem;
         }
     }
 
@@ -66,6 +69,7 @@
         font-size: 1.6rem;
         line-height: calc(30 / 16);
         font-weight: 500;
+        flex: 1;
     }
 
     &__btn {
@@ -74,7 +78,7 @@
         width: 1.36rem;
         height: 0.92rem;
         flex-shrink: 0;
-        margin-left: 2.7rem;
+        margin-left: 2rem;
         margin-right: 1.4rem;
         transition: transform 0.4s ease;
 

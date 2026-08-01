@@ -1409,6 +1409,7 @@ button {
   display: flex;
   align-items: center;
   position: relative;
+  min-height: 5rem;
   padding: 1.7rem 0 0.8rem;
   list-style: none;
   cursor: pointer;
@@ -1443,11 +1444,14 @@ button {
 .p-faq__icon--a {
   color: #fff;
   background: #CB0000;
+  position: relative;
+  top: -0.2rem;
 }
 .p-faq__title {
   font-size: 1.6rem;
   line-height: 1.875;
   font-weight: 500;
+  flex: 1;
 }
 .p-faq__btn {
   position: relative;
@@ -1455,7 +1459,7 @@ button {
   width: 1.36rem;
   height: 0.92rem;
   flex-shrink: 0;
-  margin-left: 2.7rem;
+  margin-left: 2rem;
   margin-right: 1.4rem;
   transition: transform 0.4s ease;
   background: url("../../images/top/faq-arrow-sp.svg") no-repeat center;
