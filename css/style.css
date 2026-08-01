@@ -1586,6 +1586,7 @@ button {
   font-size: 1.8rem;
   line-height: 1.6666666667;
   font-weight: 500;
+  padding-bottom: -0.1rem;
   border-bottom: 0.5px solid;
   transition: opacity 0.4s ease;
 }
