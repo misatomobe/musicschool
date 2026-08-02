@@ -7,16 +7,26 @@
 .p-about {
     color: $font-color02;
     padding: 5rem 0 4rem 0;
+
     @include pc {
-        padding: 6.8rem 0 6rem 0;
+        padding: 6.8rem 0 6rem;
     }
+
     &__contents {
         text-align: center;
     }
+
+    &__title {
+        @include pc {
+            font-size: 3rem;
+            line-height: calc(50 / 30);
+        }
+    }
+
     p {
+        margin-top: 3rem;
         font-size: 1.8rem;
         line-height: calc(30 / 18);
         font-weight: 500;
-        margin-top: 1.4rem;
     }
 }

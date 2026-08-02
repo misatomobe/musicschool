@@ -913,7 +913,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-concept {
-    padding: 6.6rem 0 3.3rem;
+    padding: 6.6rem 0 6.2rem;
   }
 }
 .p-concept__inner {
@@ -1053,17 +1053,23 @@ button {
 }
 @media (min-width: 768px) {
   .p-about {
-    padding: 6.8rem 0 6rem 0;
+    padding: 6.8rem 0 6rem;
   }
 }
 .p-about__contents {
   text-align: center;
 }
+@media (min-width: 768px) {
+  .p-about__title {
+    font-size: 3rem;
+    line-height: 1.6666666667;
+  }
+}
 .p-about p {
+  margin-top: 3rem;
   font-size: 1.8rem;
   line-height: 1.6666666667;
   font-weight: 500;
-  margin-top: 1.4rem;
 }
 
 /* =========================
