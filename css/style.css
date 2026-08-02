@@ -1292,6 +1292,7 @@ button {
 @media (min-width: 768px) {
   .p-voice__body p {
     font-size: 1.8rem;
+    width: calc(100% + 2px);
   }
 }
 @media (min-width: 768px) and (max-width: 1030px) {

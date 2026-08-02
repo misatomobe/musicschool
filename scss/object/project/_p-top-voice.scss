@@ -78,9 +78,12 @@
          line-height: calc(30 / 18);
          font-weight: 500;
          color: $font-color02;
+
          @include pc {
             font-size: 1.8rem;
+            width: calc(100% + 2px);
          }
+
          @include tab-only {
             font-size: 1.6rem;
          }
@@ -140,8 +143,6 @@
       transform: translate(100%, -50%);
    }
 }
-
-
    .swiper,
    .swiper-wrapper,
    .swiper-slide {
