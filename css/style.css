@@ -576,6 +576,12 @@ button {
   color: #000;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .c-section-title {
+    font-size: 3rem;
+    line-height: 1.6666666667;
+  }
+}
 .c-section-title--red {
   color: #CB0000;
 }
@@ -1053,23 +1059,22 @@ button {
 }
 @media (min-width: 768px) {
   .p-about {
-    padding: 6.8rem 0 6rem;
+    padding: 6.6rem 0 6.2rem;
   }
 }
 .p-about__contents {
   text-align: center;
 }
-@media (min-width: 768px) {
-  .p-about__title {
-    font-size: 3rem;
-    line-height: 1.6666666667;
-  }
-}
 .p-about p {
-  margin-top: 3rem;
+  margin-top: 1.4rem;
   font-size: 1.8rem;
   line-height: 1.6666666667;
   font-weight: 500;
+}
+@media (min-width: 768px) {
+  .p-about p {
+    margin-top: 3rem;
+  }
 }
 
 /* =========================
