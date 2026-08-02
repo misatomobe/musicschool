@@ -941,6 +941,7 @@ button {
 @media (min-width: 768px) {
   .p-concept__text {
     margin-top: 1.7rem;
+    text-align: center;
   }
 }
 .p-concept__arch {
@@ -950,6 +951,9 @@ button {
 @media (min-width: 768px) {
   .p-concept__arch {
     margin-top: 3.4rem;
+    margin-inline: auto;
+    width: 85.815rem;
+    max-width: 100%;
   }
 }
 .p-concept__items {

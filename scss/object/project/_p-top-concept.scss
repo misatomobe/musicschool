@@ -23,6 +23,7 @@
             line-height: calc(50 / 35);
         }
     }
+
     &__head {
         text-align: left;
         p {
@@ -31,19 +32,28 @@
             font-weight: 500;
         }
     }
+
     &__text {
         margin-top: 0.7rem;
+
         @include pc {
             margin-top: 1.7rem;
+            text-align: center;
         }
     }
+
     &__arch {
         display: block;
         margin-top: 2rem;
+        
         @include pc {
             margin-top: 3.4rem;
+            margin-inline: auto;
+            width: 85.815rem;
+            max-width: 100%;
         }
     }
+
     &__items {
         position: relative;
         margin-top: 2.1rem;
@@ -51,6 +61,7 @@
             margin-top: 0;
         }
     }
+
     /* =========================
         ARROW
     ========================= */
@@ -82,6 +93,7 @@
             width: 3px;
             background: $main-color;
         }
+
         /* 上向き矢印 */
         &::after {
             content: "";
@@ -93,8 +105,8 @@
             height: 1.9rem;
             background: url("../images/top/arrow_up_sp.svg") no-repeat center / contain;
         }
-
     }
+
     &__item {
         position: relative;
         z-index: 1;
@@ -102,9 +114,9 @@
         grid-template-columns: 1fr 3rem 1fr;
         align-items: center;
         height: 5rem;
-
         margin-top: 1.2rem;
     }
+
     &__en {
         text-align: right;
         font-size: 2rem;
@@ -113,17 +125,20 @@
         color: $main-color;
         padding-right: clamp(2.3rem, 3vw, 2.5rem);
     }
+
     &__center {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     &__dot {
         width: 2rem;
         height: 2rem;
         border-radius: 50%;
         background: $main-color;
     }
+
     &__jp {
         font-size: 2rem;
         line-height: calc(50 / 20);
