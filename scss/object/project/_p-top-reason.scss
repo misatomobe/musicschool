@@ -25,6 +25,7 @@
             row-gap: 5rem;
         }
     }
+
     &__item {
         margin-bottom: 4rem;
         &:last-child {
@@ -32,19 +33,25 @@
         }
         @include pc {
             display: flex;
-            margin-bottom: 5rem;
+            margin-bottom: 0;
         }
     }
+
     &__image {
         width: 100%;
         @include pc {
             width: 39.8%;
         } 
     }
+    
     &__item img {
         margin-bottom: 3rem;
-        
+
+        @include pc {
+            margin-bottom: 0;
+        }
     }
+
     &__body {
         @include pc {
             flex: 1;
