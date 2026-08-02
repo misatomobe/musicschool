@@ -21,6 +21,7 @@
 
       @include pc {
          max-width: 1040px;
+         margin-top: 3.5rem;
          padding-inline: 2rem;
       }
    }
@@ -53,6 +54,10 @@
       margin-top: 2.7rem;
       transition: opacity 0.4s ease;
 
+      @include pc {
+         margin-top: 1.8rem;
+      }
+
       h3 {
          font-size: 2.2rem;
          line-height: calc(33 / 22);
@@ -66,6 +71,7 @@
             font-size: 1.7rem;
          }
       }
+
       p {
          margin-top: 1rem;
          font-size: 1.8rem;
