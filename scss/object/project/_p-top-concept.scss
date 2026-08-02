@@ -6,10 +6,22 @@
 ========================= */
 .p-concept {
     padding: 4.5rem 0 3.3rem;
+
+    @include pc {
+        padding: 6.6rem 0 3.3rem;
+    }
+
     &__inner {
         max-width: 1080px;
         margin: 0 auto;
         padding: 0 2rem;
+    }
+
+    &__title {
+        @include pc {
+            font-size: 3.5rem;
+            line-height: calc(50 / 35);
+        }
     }
     &__head {
         text-align: left;
