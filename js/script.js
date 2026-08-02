@@ -35,7 +35,7 @@ const swiper = new Swiper('.p-voice__slider', {
   breakpoints: {
   768: {
       slidesPerView: 3,
-      spaceBetween: 36
+      spaceBetween: 35
     }
   }
 });

@@ -11,7 +11,7 @@
       @include pc {
          max-width: 1040px;
          margin-inline: auto;
-         padding: 4.4rem 6.1rem 8rem;
+         padding: 4.4rem 6.5rem 5rem;
       }
    }
 
@@ -28,11 +28,10 @@
 
    &__slider {
       @include pc {
-         max-width: 880px;
+         max-width: 882px;
          margin-inline: auto;
       }
    }
-
 
    @include pc {
       .p-voice__card:hover {
@@ -44,6 +43,13 @@
          }
       }
    }
+
+   &__card {
+      @include pc {
+         width: 100%;
+      }
+   }
+
    &__image {
       overflow: hidden;
       img {
@@ -81,7 +87,7 @@
 
          @include pc {
             font-size: 1.8rem;
-            width: calc(100% + 2px);
+            width: calc(100% + 3px);
          }
 
          @include tab-only {
@@ -114,7 +120,7 @@
 
       @include pc {
          left: 0;
-         transform: translate(-100%, -50%);
+         transform: translate(-100%, 30%);
       }
    }
 
@@ -124,25 +130,10 @@
 
       @include pc {
          right: 0;
-         transform: translate(100%, -50%);
+         transform: translate(100%, 30%);
       }
    }
 
-
-   .swiper-button-prev {
-      left: 0;
-      @include pc {
-      left: 0;
-      transform: translate(-100%, -50%);
-   }
-}
-   .swiper-button-next {
-      right: 0;
-      @include pc {
-      right: 0;
-      transform: translate(100%, -50%);
-   }
-}
    .swiper,
    .swiper-wrapper,
    .swiper-slide {
