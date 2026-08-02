@@ -1116,7 +1116,7 @@ button {
    REASON
 ========================= */
 .p-reason {
-  padding: 4.7rem 0 3.8rem;
+  padding: 4.7rem 0 3.6rem;
 }
 @media (min-width: 768px) {
   .p-reason {
@@ -1139,7 +1139,7 @@ button {
   }
 }
 .p-reason__item {
-  margin-bottom: 4rem;
+  margin-bottom: 3.8rem;
 }
 .p-reason__item:last-child {
   margin-bottom: 0;
@@ -1177,7 +1177,7 @@ button {
   font-weight: 700;
   position: relative;
   display: inline-block;
-  padding-bottom: 1rem;
+  padding-bottom: 1.1rem;
   display: block;
 }
 @media (min-width: 768px) {
@@ -1197,7 +1197,7 @@ button {
   background-color: #CB0000;
 }
 .p-reason__text {
-  margin-top: 2rem;
+  margin-top: 1.8rem;
   text-align: left;
   font-size: 1.6rem;
   line-height: 1.875;
