@@ -1373,7 +1373,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-flow__content {
-    margin-top: 5.5rem;
+    margin-top: 5.7rem;
     padding-left: 5rem;
   }
 }
@@ -1409,6 +1409,14 @@ button {
 .p-flow__item {
   position: relative;
 }
+@media (min-width: 768px) {
+  .p-flow__item {
+    display: grid;
+    grid-template-columns: 2rem 12rem 1fr;
+    align-items: start;
+    column-gap: 0;
+  }
+}
 .p-flow__point {
   position: absolute;
   top: 0.5rem;
@@ -1416,7 +1424,8 @@ button {
 }
 @media (min-width: 768px) {
   .p-flow__point {
-    left: 0;
+    position: static;
+    left: 0.2rem;
   }
 }
 .p-flow__dot {
@@ -1426,26 +1435,28 @@ button {
   border-radius: 50%;
   background: #CB0000;
 }
-.p-flow__body {
-  padding: 0 1.1rem;
-}
-@media (min-width: 768px) {
-  .p-flow__body {
-    padding: 0 2.5rem;
-  }
-}
-.p-flow__body h3 {
+.p-flow__title {
   font-size: 2.2rem;
   line-height: 1.5;
   font-weight: 700;
   text-align: left;
   color: #CB0000;
 }
-.p-flow__body p {
+@media (min-width: 768px) {
+  .p-flow__title {
+    padding-left: 3rem;
+  }
+}
+.p-flow__text {
   margin-top: 0.9rem;
   font-size: 1.6rem;
   line-height: 1.875;
   font-weight: 500;
+}
+@media (min-width: 768px) {
+  .p-flow__text {
+    margin-top: 0;
+  }
 }
 
 /* =========================

@@ -23,7 +23,7 @@
         padding-left: 3.6rem;
 
         @include pc {
-            margin-top: 5.5rem;
+            margin-top: 5.7rem;
             padding-left: 5rem;
         }
     }
@@ -62,6 +62,13 @@
 
     &__item {
         position: relative;
+
+        @include pc {
+            display: grid;
+            grid-template-columns: 2rem 12rem 1fr;
+            align-items: start;
+            column-gap: 0;
+        }
     }
 
     &__point {
@@ -70,7 +77,8 @@
         left: -2.8rem;
 
         @include pc {
-            left: 0;
+            position: static;
+            left: 0.2rem;
         }
     }
 
@@ -81,26 +89,27 @@
         border-radius: 50%;
         background: $main-color;
     }
-
-    &__body {
-        padding: 0 1.1rem;
+    
+    &__title {
+        font-size: 2.2rem;
+        line-height: calc(33 / 22);
+        font-weight: 700;
+        text-align: left;
+        color: $main-color;
 
         @include pc {
-            padding: 0 2.5rem;
+            padding-left: 3rem;
         }
+    }
 
-      h3 {
-         font-size: 2.2rem;
-         line-height: calc(33 / 22);
-         font-weight: 700;
-         text-align: left;
-         color: $main-color;
-      }
-      p {
+    &__text {
         margin-top: 0.9rem;
         font-size: 1.6rem;
         line-height: calc(30 / 16);
         font-weight: 500;
+
+        @include pc {
+            margin-top: 0;
+        }
       }
-   }
 }
