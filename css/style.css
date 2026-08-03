@@ -1373,8 +1373,8 @@ button {
 }
 @media (min-width: 768px) {
   .p-flow__content {
-    margin-top: 5.7rem;
-    padding-left: 5rem;
+    margin-top: 6.1rem;
+    padding-left: 5.1rem;
   }
 }
 .p-flow__line {
@@ -1412,9 +1412,8 @@ button {
 @media (min-width: 768px) {
   .p-flow__item {
     display: grid;
-    grid-template-columns: 2rem 12rem 1fr;
+    grid-template-columns: 2rem 20rem 1fr;
     align-items: start;
-    column-gap: 0;
   }
 }
 .p-flow__point {
@@ -1444,7 +1443,8 @@ button {
 }
 @media (min-width: 768px) {
   .p-flow__title {
-    padding-left: 3rem;
+    margin-top: 0;
+    margin-left: 5rem;
   }
 }
 .p-flow__text {
@@ -1456,6 +1456,7 @@ button {
 @media (min-width: 768px) {
   .p-flow__text {
     margin-top: 0;
+    margin-left: 4.4rem;
   }
 }
 
