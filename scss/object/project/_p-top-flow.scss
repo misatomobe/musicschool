@@ -6,19 +6,28 @@
 ========================= */
 .p-flow {
     padding: 4.6rem 0 2.5rem;
+
     @include pc {
         padding: 3.4rem 0 4.5rem;
     }
+
     &__inner {
         max-width: 1080px;
         margin: 0 auto;
         padding: 0 2rem;
     }
+
     &__content {
         margin-top: 3.7rem;
         position: relative;
         padding-left: 3.6rem;
+
+        @include pc {
+            margin-top: 5.5rem;
+            padding-left: 5rem;
+        }
     }
+
     // 縦ライン
     &__line {
         position: absolute;
@@ -28,6 +37,10 @@
         height: calc(100% - 2rem);
         border-radius: 9999px;
         background: $main-color;
+
+        @include pc {
+            left: 6rem;
+        }
 
         &::after {
             content: "";
@@ -46,14 +59,21 @@
         flex-direction: column;
         gap: 3.6rem;
     }
+
     &__item {
         position: relative;
     }
+
     &__point {
         position: absolute;
         top: 0.5rem;
         left: -2.8rem;
+
+        @include pc {
+            left: 0;
+        }
     }
+
     &__dot {
         display: block;
         width: 2rem;
@@ -61,8 +81,14 @@
         border-radius: 50%;
         background: $main-color;
     }
+
     &__body {
         padding: 0 1.1rem;
+
+        @include pc {
+            padding: 0 2.5rem;
+        }
+
       h3 {
          font-size: 2.2rem;
          line-height: calc(33 / 22);
