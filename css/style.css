@@ -1116,7 +1116,7 @@ button {
    REASON
 ========================= */
 .p-reason {
-  padding: 4.7rem 0 3.6 rem;
+  padding: 4.7rem 0 3.6rem;
 }
 @media (min-width: 768px) {
   .p-reason {
@@ -1440,6 +1440,7 @@ button {
   font-weight: 700;
   text-align: left;
   color: #CB0000;
+  margin-left: 1.2rem;
 }
 @media (min-width: 768px) {
   .p-flow__title {
@@ -1449,6 +1450,7 @@ button {
 }
 .p-flow__text {
   margin-top: 0.9rem;
+  margin-left: 1.2rem;
   font-size: 1.6rem;
   line-height: 1.875;
   font-weight: 500;

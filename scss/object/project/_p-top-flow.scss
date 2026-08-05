@@ -95,6 +95,7 @@
         font-weight: 700;
         text-align: left;
         color: $main-color;
+        margin-left: 1.2rem;
 
         @include pc {
             margin-top: 0;
@@ -104,6 +105,7 @@
 
     &__text {
         margin-top: 0.9rem;
+        margin-left: 1.2rem;
         font-size: 1.6rem;
         line-height: calc(30 / 16);
         font-weight: 500;
