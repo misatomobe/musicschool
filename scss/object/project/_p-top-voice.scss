@@ -115,7 +115,7 @@
    }
 
    .swiper-button-prev {
-      background: url("../../images/top/arrow-l-sp.svg") no-repeat center / contain;
+      background: url("../images/top/arrow-l-sp.svg") no-repeat center / contain;
       left: 0;
 
       @include pc {
@@ -125,7 +125,7 @@
    }
 
    .swiper-button-next {
-      background: url("../../images/top/arrow-r-sp.svg") no-repeat center / contain;
+      background: url("../images/top/arrow-r-sp.svg") no-repeat center / contain;
       right: 0;
 
       @include pc {

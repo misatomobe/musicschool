@@ -1325,7 +1325,7 @@ button {
   }
 }
 .p-voice .swiper-button-prev {
-  background: url("../../images/top/arrow-l-sp.svg") no-repeat center/contain;
+  background: url("../images/top/arrow-l-sp.svg") no-repeat center/contain;
   left: 0;
 }
 @media (min-width: 768px) {
@@ -1335,7 +1335,7 @@ button {
   }
 }
 .p-voice .swiper-button-next {
-  background: url("../../images/top/arrow-r-sp.svg") no-repeat center/contain;
+  background: url("../images/top/arrow-r-sp.svg") no-repeat center/contain;
   right: 0;
 }
 @media (min-width: 768px) {
@@ -1544,7 +1544,7 @@ button {
   margin-left: 2rem;
   margin-right: 1.4rem;
   transition: transform 0.4s ease;
-  background: url("../../images/top/faq-arrow-sp.svg") no-repeat center;
+  background: url("../images/top/faq-arrow-sp.svg") no-repeat center;
 }
 .p-faq__summary.is-active .p-faq__btn {
   transform: translateY(-0.4rem) rotate(180deg);
