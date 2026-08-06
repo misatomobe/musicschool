@@ -40,6 +40,7 @@
 
         @include pc {
             left: 6rem;
+            height: calc(100% + 1rem); // ← 長くする
         }
 
         &::after {
@@ -53,7 +54,7 @@
             background: url("../images/top/arrow_down_sp.svg") no-repeat center / contain;
 
             @include pc {
-                bottom: -2.8rem;
+                bottom: 0.2rem;
             }
         }
     }
