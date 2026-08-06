@@ -1222,7 +1222,7 @@ button {
   .p-voice__inner {
     max-width: 1040px;
     margin-inline: auto;
-    padding: 4.4rem 6.5rem 5rem;
+    padding: 4.4rem 6.5rem 8.1rem;
   }
 }
 .p-voice__slider-wrap {
@@ -1373,7 +1373,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-flow__content {
-    margin-top: 6.1rem;
+    margin-top: 5.3rem;
     padding-left: 5.1rem;
   }
 }
@@ -1405,6 +1405,11 @@ button {
   display: flex;
   flex-direction: column;
   gap: 3.6rem;
+}
+@media (min-width: 768px) {
+  .p-flow__list {
+    gap: 5.9rem;
+  }
 }
 .p-flow__item {
   position: relative;
@@ -1459,6 +1464,8 @@ button {
   .p-flow__text {
     margin-top: 0;
     margin-left: 4.4rem;
+    font-size: 1.8rem;
+    line-height: 1.6666666667;
   }
 }
 
