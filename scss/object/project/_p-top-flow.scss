@@ -51,6 +51,10 @@
             height: 2rem;
             transform: translateX(-50%);
             background: url("../images/top/arrow_down_sp.svg") no-repeat center / contain;
+
+            @include pc {
+                bottom: -2.8rem;
+            }
         }
     }
 

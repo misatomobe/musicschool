@@ -1401,6 +1401,11 @@ button {
   transform: translateX(-50%);
   background: url("../images/top/arrow_down_sp.svg") no-repeat center/contain;
 }
+@media (min-width: 768px) {
+  .p-flow__line::after {
+    bottom: -2.8rem;
+  }
+}
 .p-flow__list {
   display: flex;
   flex-direction: column;
