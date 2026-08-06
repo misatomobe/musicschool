@@ -1483,11 +1483,16 @@ button {
 }
 @media (min-width: 768px) {
   .p-faq {
-    padding: 3.4rem 0 3.5rem;
+    padding: 6rem 0 3.5rem;
   }
 }
 .p-faq__contents {
   margin-top: 3.9rem;
+}
+@media (min-width: 768px) {
+  .p-faq__contents {
+    margin-top: 3.5rem;
+  }
 }
 .p-faq__item {
   border-top: 0.5px solid;
@@ -1511,6 +1516,11 @@ button {
   list-style: none;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .p-faq__summary {
+    padding: 2.1rem 2rem 1.5rem;
+  }
+}
 .p-faq__summary::-webkit-details-marker {
   display: none;
 }
@@ -1520,6 +1530,11 @@ button {
   position: relative;
   top: -0.4rem;
   margin-right: 2rem;
+}
+@media (min-width: 768px) {
+  .p-faq__question-left {
+    margin-right: 1.2rem;
+  }
 }
 .p-faq__icon {
   width: 3.5rem;
