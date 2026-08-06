@@ -1518,7 +1518,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-faq__summary {
-    padding: 2.1rem 2rem 1.5rem;
+    padding: 2.1rem 2rem 1rem;
   }
 }
 .p-faq__summary::-webkit-details-marker {
@@ -1564,6 +1564,12 @@ button {
   line-height: 1.875;
   font-weight: 500;
   flex: 1;
+}
+@media (min-width: 768px) {
+  .p-faq__title {
+    font-size: 1.7rem;
+    line-height: 1.7647058824;
+  }
 }
 .p-faq__btn {
   position: relative;

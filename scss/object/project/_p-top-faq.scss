@@ -45,7 +45,7 @@
         cursor: pointer;
 
         @include pc {
-            padding: 2.1rem 2rem 1.5rem;
+            padding: 2.1rem 2rem 1rem;
         }
 
         &::-webkit-details-marker {
@@ -95,6 +95,11 @@
         line-height: calc(30 / 16);
         font-weight: 500;
         flex: 1;
+
+        @include pc {
+            font-size: 1.7rem;
+            line-height: calc(30 / 17);
+        }
     }
 
     &__btn {
