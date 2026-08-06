@@ -1404,7 +1404,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-flow__line::after {
-    bottom: 0.2rem;
+    bottom: 0.1rem;
   }
 }
 .p-flow__list {
