@@ -40,7 +40,7 @@
 
         @include pc {
             left: 6rem;
-            height: 100%
+            height: calc(100% + 0.5rem);
         }
 
         &::after {
@@ -48,13 +48,13 @@
             position: absolute;
             left: 50%;
             bottom: -0.1rem;
-            width: 3.7rem;
+            width: 3.7rem;            
             height: 2rem;
             transform: translateX(-50%);
             background: url("../images/top/arrow_down_sp.svg") no-repeat center / contain;
 
             @include pc {
-                bottom: -1.8rem;
+                bottom: -0.4rem;
             }
         }
     }

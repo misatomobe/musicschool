@@ -1393,7 +1393,7 @@ button {
 @media (min-width: 768px) {
   .p-flow__line {
     left: 6rem;
-    height: 100%;
+    height: calc(100% + 0.5rem);
   }
 }
 .p-flow__line::after {
@@ -1408,7 +1408,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-flow__line::after {
-    bottom: -1.8rem;
+    bottom: -0.4rem;
   }
 }
 .p-flow__list {
