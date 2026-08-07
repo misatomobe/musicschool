@@ -144,6 +144,11 @@
         p {
             font-weight: 600;
             color: $main-color;
+
+            @include pc {
+                font-size: 1.7rem;
+                line-height: calc(30 / 17);
+            }
         }
     }
 }

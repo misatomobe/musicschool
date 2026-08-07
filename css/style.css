@@ -1610,6 +1610,12 @@ button {
   font-weight: 600;
   color: #CB0000;
 }
+@media (min-width: 768px) {
+  .p-faq__content p {
+    font-size: 1.7rem;
+    line-height: 1.7647058824;
+  }
+}
 
 /* =========================
    BLOG
