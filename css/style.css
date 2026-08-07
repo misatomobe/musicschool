@@ -1624,11 +1624,16 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog {
-    padding: 6.7rem 0 19rem;
+    padding: 3.5rem 0 19rem;
   }
 }
 .p-blog__contents {
   margin-top: 3.9rem;
+}
+@media (min-width: 768px) {
+  .p-blog__contents {
+    margin-top: 3.3rem;
+  }
 }
 .p-blog__items {
   display: flex;
@@ -1677,7 +1682,12 @@ button {
   width: 10rem;
 }
 .p-blog-item__body {
-  padding-top: 3rem;
+  margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .p-blog-item__body {
+    margin-top: 2rem;
+  }
 }
 .p-blog-item__title {
   font-size: 2rem;
@@ -1696,6 +1706,11 @@ button {
   line-height: 1.7647058824;
   font-weight: 500;
   text-align: right;
+}
+@media (min-width: 768px) {
+  .p-blog-item__date {
+    margin-top: 1rem;
+  }
 }
 .p-blog__link {
   margin-top: 3.7rem;

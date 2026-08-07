@@ -8,11 +8,15 @@
     padding: 2.4rem 0 19rem;
 
     @include pc {
-        padding: 6.7rem 0 19rem;
+        padding: 3.5rem 0 19rem;
     }
 
     &__contents {
         margin-top: 3.9rem;
+
+        @include pc {
+            margin-top: 3.3rem;
+        }
     }
     
     &__items {
@@ -63,7 +67,11 @@
     }
 
     &-item__body {
-        padding-top: 3rem;
+        margin-top: 3rem;
+
+        @include pc {
+            margin-top: 2rem;
+        }
     }
 
     &-item__title {
@@ -74,6 +82,7 @@
             line-height: calc(25 / 20);
         }
     }
+
     &-item__date {
         display: block;
         margin-top: 0.6rem;
@@ -81,7 +90,12 @@
         line-height: calc(30 / 17);
         font-weight: 500;
         text-align: right;
+
+        @include pc {
+            margin-top: 1rem;
+        }
     }
+
     &__link {
         margin-top: 3.7rem;
         text-align: center;
