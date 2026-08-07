@@ -1500,13 +1500,6 @@ button {
 .p-faq__item:last-child {
   border-bottom: 0.5px solid;
 }
-.p-faq__item:last-child .p-faq__summary {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.p-faq__item:last-child .p-faq__question-left {
-  top: -0.2rem;
-}
 .p-faq__summary {
   display: flex;
   align-items: center;
@@ -1586,6 +1579,12 @@ button {
   margin-right: 1.4rem;
   transition: transform 0.4s ease;
   background: url("../images/top/faq-arrow-sp.svg") no-repeat center;
+}
+@media (min-width: 768px) {
+  .p-faq__btn {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
 }
 .p-faq__summary.is-active .p-faq__btn {
   transform: translateY(-0.4rem) rotate(180deg);
