@@ -1844,11 +1844,11 @@ button {
   }
 }
 .p-plan-price__wrapper {
-  margin-top: 3.9rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.9rem;
+  gap: 2rem;
 }
 @media (min-width: 768px) {
   .p-plan-price__wrapper {
@@ -1881,7 +1881,7 @@ button {
   }
 }
 .p-plan-price__text {
-  margin-top: 4.8rem;
+  margin-top: 4.7rem;
   font-weight: 500;
 }
 @media (min-width: 768px) {
@@ -1895,7 +1895,7 @@ button {
    P-Plan-Table
 ========================= */
 .p-plan-table {
-  padding: 4.6rem 0 18.6rem;
+  padding: 1.7rem 0 18.6rem;
 }
 @media (min-width: 768px) {
   .p-plan-table {
@@ -1908,7 +1908,7 @@ button {
 }
 .p-plan-table__scroll {
   position: relative;
-  margin-top: 4.8rem;
+  margin-top: -2rem;
   overflow-x: auto;
   overflow-y: hidden;
   padding-bottom: 1.75rem;
