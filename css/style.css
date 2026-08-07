@@ -1624,7 +1624,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog {
-    padding: 3.5rem 0 19rem;
+    padding: 3.5rem 0 20.5rem;
   }
 }
 .p-blog__contents {
