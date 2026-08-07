@@ -1516,6 +1516,10 @@ button {
 @media (min-width: 768px) {
   .p-faq__summary {
     padding: 1.9rem 2rem 1rem;
+    transition: opacity 0.4s ease;
+  }
+  .p-faq__summary:hover {
+    opacity: 0.7;
   }
 }
 .p-faq__summary::-webkit-details-marker {
