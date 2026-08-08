@@ -1905,7 +1905,7 @@ button {
 .p-plan-table__wrap {
   width: 100%;
   overflow: hidden;
-  margin-top: 1.2rem;
+  margin-top: 1.7rem;
 }
 .p-plan-table__scroll {
   position: relative;
@@ -1992,7 +1992,15 @@ button {
 }
 .p-plan-table__table th,
 .p-plan-table__table td {
-  width: 25%;
+  width: 25.666%;
+}
+.p-plan-table__table th:first-child {
+  width: 25.3%;
+}
+@media (min-width: 768px) {
+  .p-plan-table__table {
+    min-width: auto;
+  }
 }
 .p-plan-table {
   /* -------------------------
@@ -2089,7 +2097,7 @@ button {
   justify-content: center;
   font-size: 2rem;
   line-height: 1.25;
-  padding: 0.8rem 2rem 0;
+  padding: 0.2rem 2rem 0;
 }
 .p-plan-table__head p span {
   display: inline-block;
@@ -2108,14 +2116,14 @@ button {
 .p-plan-table__recommend p {
   width: 100%;
   height: 100%;
-  padding: 1rem;
+  padding-top: 2rem;
   background-color: #CB0000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  line-height: 1.5;
+  font-size: 1.8rem;
+  line-height: 1.2222222222;
   text-align: center;
 }
 .p-plan-table__recommend p span {
@@ -2134,8 +2142,14 @@ button {
 }
 .p-plan-table__small {
   width: 100%;
-  font-size: 1.7rem;
-  line-height: 1.7647058824;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+@media (min-width: 768px) {
+  .p-plan-table__small {
+    font-size: 1.7rem;
+    line-height: 1.9411764706;
+  }
 }
 .p-plan-table {
   /* -------------------------
