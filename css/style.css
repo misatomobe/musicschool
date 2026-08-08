@@ -1905,7 +1905,7 @@ button {
 .p-plan-table__wrap {
   width: 100%;
   overflow: hidden;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
 }
 .p-plan-table__scroll {
   position: relative;
@@ -2175,6 +2175,7 @@ button {
 .p-plan-table tbody tr:first-child th,
 .p-plan-table tbody tr:first-child td {
   border-top: 0.5px solid #000;
+  padding-top: 0.3rem;
 }
 .p-plan-table tbody tr:first-child th {
   font-size: 1.6rem;
