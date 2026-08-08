@@ -578,8 +578,8 @@ button {
 }
 @media (min-width: 768px) {
   .c-section-title {
-    font-size: 3rem;
-    line-height: 1.6666666667;
+    font-size: 2.5rem;
+    line-height: 1.2;
   }
 }
 .c-section-title--red {
@@ -1852,6 +1852,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-plan-price__wrapper {
+    margin-top: 4.6rem;
     flex-direction: row;
     justify-content: center;
     gap: 3.05rem;
@@ -1881,13 +1882,16 @@ button {
   }
 }
 .p-plan-price__text {
-  margin-top: 4.7rem;
+  margin-top: 4.5rem;
   font-weight: 500;
 }
 @media (min-width: 768px) {
   .p-plan-price__text {
+    width: calc(100% + 2rem);
+    margin-top: 4.7rem;
     font-size: 1.8rem;
     line-height: 1.6666666667;
+    text-align: left;
   }
 }
 

@@ -10,8 +10,8 @@
     text-align: center;
 
     @include pc {
-        font-size: 3rem;
-        line-height: calc(50 / 30);
+        font-size: 2.5rem;
+        line-height: calc(30 / 25);
     }
 
     &--red {
