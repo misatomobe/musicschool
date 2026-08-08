@@ -1905,6 +1905,7 @@ button {
 .p-plan-table__wrap {
   width: 100%;
   overflow: hidden;
+  margin-top: 2rem;
 }
 .p-plan-table__scroll {
   position: relative;
@@ -2170,6 +2171,10 @@ button {
 }
 .p-plan-table tbody tr {
   /* 月額料金 */
+}
+.p-plan-table tbody tr:first-child th,
+.p-plan-table tbody tr:first-child td {
+  border-top: 0.5px solid #000;
 }
 .p-plan-table tbody tr:first-child th {
   font-size: 1.6rem;
