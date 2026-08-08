@@ -2260,6 +2260,8 @@ button {
 @media (min-width: 768px) {
   .p-plan-table__note {
     margin-top: 2.85rem;
+    font-size: 1.7rem;
+    line-height: 1.4705882353;
   }
 }
 .p-plan-table__accent {

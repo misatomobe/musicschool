@@ -373,8 +373,11 @@
 ------------------------- */
 &__note {
     margin-top: 1.7rem;
+
     @include pc {
         margin-top: 2.85rem;
+        font-size: 1.7rem;
+        line-height: calc(25 / 17);
     }
 }
 &__accent {
