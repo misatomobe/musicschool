@@ -1913,6 +1913,7 @@ button {
 @media (min-width: 768px) {
   .p-plan-table__wrap {
     margin-top: 7.2rem;
+    overflow: visible;
   }
 }
 .p-plan-table__scroll {
@@ -2120,6 +2121,11 @@ button {
 }
 .p-plan-table {
   /* 赤背景 */
+}
+@media (min-width: 768px) {
+  .p-plan-table__recommend {
+    transform: trans lateY(-1rem);
+  }
 }
 .p-plan-table__recommend p {
   width: 100%;
