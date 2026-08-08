@@ -1903,13 +1903,18 @@ button {
 }
 @media (min-width: 768px) {
   .p-plan-table {
-    padding: 2.85rem 0 22.3rem;
+    padding: 3.6rem 0 22.3rem;
   }
 }
 .p-plan-table__wrap {
   width: 100%;
   overflow: hidden;
   margin-top: 1.7rem;
+}
+@media (min-width: 768px) {
+  .p-plan-table__wrap {
+    margin-top: 7.2rem;
+  }
 }
 .p-plan-table__scroll {
   position: relative;
