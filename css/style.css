@@ -1129,6 +1129,12 @@ button {
     padding: 6.4rem 0 8.9rem;
   }
 }
+@media (min-width: 768px) {
+  .p-reason__title-main {
+    font-size: 3rem;
+    line-height: 1.6666666667;
+  }
+}
 .p-reason__contents {
   margin-top: 3.7rem;
 }
