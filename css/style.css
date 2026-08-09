@@ -2404,6 +2404,14 @@ button {
     line-height: 1.6666666667;
   }
 }
+.p-blog-list__pagination .p-blog-list__dots {
+  padding: 0 0.8rem;
+}
+@media (min-width: 768px) {
+  .p-blog-list__pagination .p-blog-list__dots {
+    padding: 0 0.4rem;
+  }
+}
 
 /* =========================
    pagination

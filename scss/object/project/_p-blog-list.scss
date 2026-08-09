@@ -88,4 +88,15 @@
             }
         }
     }
+
+    //ページネーション
+    &__pagination {
+        .p-blog-list__dots {
+            padding: 0 0.7rem;
+
+            @include pc {
+                padding: 0 1rem;
+            }
+        }
+    }
 }
