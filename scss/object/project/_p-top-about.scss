@@ -16,13 +16,6 @@
         text-align: center;
     }
 
-    &__title {
-        @include pc {
-            font-size: 3rem;
-            line-height: calc(50 / 30);
-        }
-    }
-
     p {
         margin-top: 1.4rem;
         font-size: 1.8rem;

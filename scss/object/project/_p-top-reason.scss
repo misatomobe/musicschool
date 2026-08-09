@@ -10,13 +10,6 @@
         padding: 6.4rem 0 8.9rem;
     }
 
-    &__title-main {
-        @include pc {
-            font-size: 3rem;
-            line-height: calc(50 / 30);
-        }
-    }
-
     &__contents {
         margin-top: 3.7rem;
 
