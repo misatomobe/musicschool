@@ -8,7 +8,13 @@
     padding: 4.7rem 0 19.7rem;
 
     @include pc {
-        padding: 6.5rem 0 21rem;
+        padding: 7rem 0 21rem;
+    }
+
+    .p-blog__contents {
+        @include pc {
+            margin-top: 4.5rem;
+        }
     }
 }
 .p-result-list__items {

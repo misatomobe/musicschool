@@ -3367,7 +3367,12 @@ button {
 }
 @media (min-width: 768px) {
   .p-result-list {
-    padding: 6.5rem 0 21rem;
+    padding: 7rem 0 21rem;
+  }
+}
+@media (min-width: 768px) {
+  .p-result-list .p-blog__contents {
+    margin-top: 4.5rem;
   }
 }
 
