@@ -3402,7 +3402,7 @@ button {
   }
 }
 .p-result-list-item__link .p-result-list-item__body {
-  padding-top: 2rem;
+  margin-top: 2rem;
 }
 .p-result-list-item__link .p-result-list-item__date {
   margin-top: 1rem;
