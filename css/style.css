@@ -3320,6 +3320,11 @@ button {
   }
 }
 @media (min-width: 768px) {
+  .p-search-result .p-blog-list__items {
+    row-gap: 7rem;
+  }
+}
+@media (min-width: 768px) {
   .p-search-result .p-blog-item__item {
     display: flex;
     align-items: flex-start;
@@ -3336,6 +3341,7 @@ button {
   .p-search-result .p-blog-item__body {
     flex: 1;
     padding-top: 0;
+    margin-top: 0;
   }
 }
 @media (min-width: 768px) {
