@@ -7,6 +7,10 @@
 .p-result-details {
    &__breadcrumb {
       padding-top: 5.5rem;
+
+      @include pc {
+         padding-top: 8rem;
+      }
    }
 
    &__date {
