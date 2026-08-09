@@ -44,4 +44,13 @@
             }
         }
     }
+
+    //送信完了ページ専用
+    &--complete {
+        padding-bottom: 8rem;
+
+        @include pc {
+            padding-bottom: 0;
+        }
+    }
 }
