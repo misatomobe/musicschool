@@ -5,6 +5,10 @@
    RESULt-DETAILS
 ========================= */
 .p-result-details {
+   &__breadcrumb {
+      padding-top: 5.5rem;
+   }
+
    &__date {
       @include pc {
          margin-top: 1.5rem;

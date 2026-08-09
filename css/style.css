@@ -3458,6 +3458,9 @@ button {
 /* =========================
    RESULt-DETAILS
 ========================= */
+.p-result-details__breadcrumb {
+  padding-top: 5.5rem;
+}
 @media (min-width: 768px) {
   .p-result-details__date {
     margin-top: 1.5rem;
