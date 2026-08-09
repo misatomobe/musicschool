@@ -47,10 +47,10 @@
 
     //送信完了ページ専用
     &--complete {
-        padding-bottom: 8rem;
+        padding-bottom: 5rem;
 
         @include pc {
-            padding-bottom: 0;
+            padding-bottom: 9.1rem;
         }
     }
 }
