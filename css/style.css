@@ -1665,7 +1665,7 @@ button {
   }
 }
 .p-blog__contents {
-  margin-top: 3.9rem;
+  margin-top: 4.1rem;
 }
 @media (min-width: 768px) {
   .p-blog__contents {
@@ -1750,7 +1750,7 @@ button {
   }
 }
 .p-blog__link {
-  margin-top: 3.7rem;
+  margin-top: 3.8rem;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -1908,6 +1908,7 @@ button {
 @media (min-width: 768px) {
   .p-plan-price__plus {
     width: 1.85rem;
+    transform: translateY(0.5rem);
   }
 }
 .p-plan-price__text {
@@ -2050,6 +2051,13 @@ button {
   text-align: center;
   vertical-align: middle;
   border-left: 0.5px solid #000;
+  transform: translateY(2px);
+}
+@media (min-width: 768px) {
+  .p-plan-table tbody th,
+  .p-plan-table tbody td {
+    transform: translateY(3px);
+  }
 }
 .p-plan-table tbody th:first-child,
 .p-plan-table tbody td:first-child {

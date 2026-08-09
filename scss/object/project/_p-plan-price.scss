@@ -42,6 +42,7 @@
         width: 1.9rem;
         @include pc {
             width: 1.85rem;
+            transform: translateY(0.5rem);
         }
     } 
     &__text { 
