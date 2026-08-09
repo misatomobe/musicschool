@@ -1525,6 +1525,14 @@ button {
 .p-faq__item:last-child {
   border-bottom: 0.5px solid;
 }
+.p-faq__item:last-child .p-faq__summary {
+  padding-top: 1rem;
+}
+@media (min-width: 768px) {
+  .p-faq__item:last-child .p-faq__summary {
+    padding-top: 2rem;
+  }
+}
 .p-faq__summary {
   display: flex;
   align-items: center;
@@ -1627,7 +1635,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-faq__answer {
-    padding: 2.1rem 2rem 1rem;
+    padding: 2rem 2rem 1rem;
     gap: 0;
   }
 }

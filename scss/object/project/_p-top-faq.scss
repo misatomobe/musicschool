@@ -23,6 +23,14 @@
 
         &:last-child {
             border-bottom: 0.5px solid;
+
+            .p-faq__summary {
+                padding-top: 1rem;
+
+                @include pc {
+                    padding-top: 2rem;
+                }
+            }
         }
     }
 
@@ -134,7 +142,7 @@
         align-items: center;
 
         @include pc {
-            padding: 2.1rem 2rem 1rem;
+            padding: 2rem 2rem 1rem;
             gap: 0;
         }
     }
