@@ -20,7 +20,7 @@
    BLOG-DETAILS
 ========================= */
 .p-blog-details {
-    padding: 5rem 0 19.7rem;
+    padding: 5.2rem 0 19.7rem;
 
     @include pc {
         padding: 7rem 0 18.7rem;
@@ -267,7 +267,7 @@
         display: flex;
         justify-content: flex-start;
         column-gap: calc(22 / 334 * 100%);
-        margin-top: 4.5rem;
+        margin-top: 4.4rem;
 
         @include pc {
             column-gap: calc(80 / 600 * 100%);
