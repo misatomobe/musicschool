@@ -116,6 +116,14 @@
       margin-top: 0;
    }
 
+   &__related-label {
+      width: 8rem;
+
+      @include pc {
+         width: 10rem;
+      }
+   }
+
    &__related-date {
       @include pc {
          margin-top: 4rem;

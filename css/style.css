@@ -3573,6 +3573,14 @@ button {
 .p-result-details__related-heading {
   margin-top: 0;
 }
+.p-result-details__related-label {
+  width: 8rem;
+}
+@media (min-width: 768px) {
+  .p-result-details__related-label {
+    width: 10rem;
+  }
+}
 @media (min-width: 768px) {
   .p-result-details__related-date {
     margin-top: 4rem;
