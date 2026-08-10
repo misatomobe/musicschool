@@ -2495,6 +2495,11 @@ button {
   position: relative;
   top: -1rem;
 }
+@media (min-width: 768px) {
+  .c-breadcrumb__item--blog-details span {
+    top: 0;
+  }
+}
 
 /* =========================
    BLOG-DETAILS
@@ -2517,7 +2522,8 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog-details__breadcrumb {
-    padding-top: 6rem;
+    padding-top: 8rem;
+    padding-bottom: 1.9rem;
   }
 }
 .p-blog-details__breadcrumb .c-breadcrumb__list {
