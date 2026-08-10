@@ -31,6 +31,12 @@
         @include pc {
             padding-top: 6rem;
         }
+
+        // パンくずリスト全体を下へ
+        .c-breadcrumb__list {
+            position: relative;
+            top: 1.1rem;
+        }
     }
 
     /* =========================
@@ -232,7 +238,7 @@
     
     // サイドバー上余白
     &__sidebar > section {
-        margin-top: 2.9rem;
+        margin-top: 3rem;
         @include pc {
             &:first-child {
                 margin-top: 0;
@@ -461,7 +467,7 @@
 
     &__search-form {
         display: flex;
-        margin: 2rem;
+        margin: 1.9rem;
         justify-content: center;
         align-items: center;
         height: 5.4rem;

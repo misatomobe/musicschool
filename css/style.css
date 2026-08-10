@@ -2520,6 +2520,10 @@ button {
     padding-top: 6rem;
   }
 }
+.p-blog-details__breadcrumb .c-breadcrumb__list {
+  position: relative;
+  top: 1.1rem;
+}
 .p-blog-details {
   /* =========================
      ページ専用
@@ -2718,7 +2722,7 @@ button {
   text-underline-offset: 0.3rem;
 }
 .p-blog-details__sidebar > section {
-  margin-top: 2.9rem;
+  margin-top: 3rem;
 }
 @media (min-width: 768px) {
   .p-blog-details__sidebar > section:first-child {
@@ -2943,7 +2947,7 @@ button {
 }
 .p-blog-details__search-form {
   display: flex;
-  margin: 2rem;
+  margin: 1.9rem;
   justify-content: center;
   align-items: center;
   height: 5.4rem;
