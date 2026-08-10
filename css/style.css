@@ -2500,7 +2500,7 @@ button {
    BLOG-DETAILS
 ========================= */
 .p-blog-details {
-  padding: 5rem 0 20rem;
+  padding: 5rem 0 19.7rem;
 }
 @media (min-width: 768px) {
   .p-blog-details {
@@ -3050,8 +3050,13 @@ button {
   /*  カテゴリー */
 }
 .p-blog-details__category-item {
-  padding: 1.5rem 0 0.1rem;
+  padding: 1.2rem 0 0.6rem;
   border-bottom: 0.05rem solid #000;
+}
+.p-blog-details__category-item a {
+  display: block;
+  font-size: 1.7rem;
+  line-height: 1.6470588235;
 }
 
 /* =========================

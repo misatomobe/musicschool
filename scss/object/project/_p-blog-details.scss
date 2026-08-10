@@ -16,7 +16,7 @@
    BLOG-DETAILS
 ========================= */
 .p-blog-details {
-    padding: 5rem 0 20rem;
+    padding: 5rem 0 19.7rem;
 
     @include pc {
         padding: 7rem 0 18.7rem;
@@ -566,7 +566,13 @@
 
     /*  カテゴリー */
     &__category-item {
-        padding: 1.5rem 0 0.1rem;
+        padding: 1.2rem 0 0.6rem;
         border-bottom: 0.05rem solid $font-color;
+
+        a {
+            display: block;
+            font-size: 1.7rem;
+            line-height: calc(28 / 17);
+        }
     }
 }
