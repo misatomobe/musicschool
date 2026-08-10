@@ -3006,6 +3006,14 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog-details__mail-magazine-banner {
+    transition: opacity 0.4s ease;
+  }
+  .p-blog-details__mail-magazine-banner:hover {
+    opacity: 0.7;
+  }
+}
+@media (min-width: 768px) {
+  .p-blog-details__mail-magazine-banner {
     min-height: 17rem;
     margin: 1.5rem;
   }
@@ -3048,6 +3056,14 @@ button {
   align-items: center;
   flex-shrink: 0;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .p-blog-details__search-button {
+    transition: opacity 0.4s ease;
+  }
+  .p-blog-details__search-button:hover {
+    opacity: 0.7;
+  }
 }
 .p-blog-details__search-button img {
   display: block;

@@ -501,6 +501,8 @@
         min-height: 22.8rem;
         background: $banner;
 
+        @include hover-opacity;
+
         @include pc {
             min-height: 17rem;
             margin: 1.5rem;
@@ -545,6 +547,8 @@
         align-items: center;
         flex-shrink: 0;
         cursor: pointer;
+
+        @include hover-opacity;
 
         img {
             display: block;
