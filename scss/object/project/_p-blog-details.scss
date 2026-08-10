@@ -2,6 +2,16 @@
 @use "../../foundation/mixin" as *;
 
 /* =========================
+   BLOG-DETAILS パンくず専用
+========================= */
+.c-breadcrumb__item--blog-details {
+    span {
+        position: relative;
+        top: -1rem;
+    }
+}
+
+/* =========================
    BLOG-DETAILS
 ========================= */
 .p-blog-details {
@@ -9,6 +19,17 @@
 
     @include pc {
         padding: 7rem 0 18.7rem;
+    }
+
+    /* =========================
+       パンくずリスト
+    ========================= */
+    &__breadcrumb {
+        padding-top: 5.5rem;
+
+        @include pc {
+            padding-top: 0;
+        }
     }
 
     /* =========================
