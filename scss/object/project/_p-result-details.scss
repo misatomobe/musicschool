@@ -119,6 +119,8 @@
    }
 
    &__related-image {
+      height: 11.3rem;
+      
       @include pc {
          width: 26rem;
          height: 18.3rem;

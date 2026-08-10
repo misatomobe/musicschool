@@ -3572,6 +3572,9 @@ button {
 .p-result-details__related-item {
   margin-top: 1.9rem;
 }
+.p-result-details__related-image {
+  height: 11.3rem;
+}
 @media (min-width: 768px) {
   .p-result-details__related-image {
     width: 26rem;
