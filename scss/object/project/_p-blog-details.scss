@@ -5,6 +5,7 @@
    BLOG-DETAILS パンくず専用
 ========================= */
 .c-breadcrumb__item--blog-details {
+    
     span {
         position: relative;
         top: -1rem;
@@ -25,10 +26,10 @@
        パンくずリスト
     ========================= */
     &__breadcrumb {
-        padding-top: 5.5rem;
+        padding-top: 4.2rem;
 
         @include pc {
-            padding-top: 0;
+            padding-top: 6rem;
         }
     }
 
