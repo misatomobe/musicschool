@@ -5,6 +5,12 @@
    RESULt-DETAILS
 ========================= */
 .p-result-details {
+   padding: 5rem 0 19.5rem;
+
+   @include pc {
+      padding: 7rem 0 21rem;
+   }
+
    &__breadcrumb {
       padding-top: 5.5rem;
 
@@ -12,6 +18,7 @@
          padding-top: 8rem;
       }
    }
+
 
    &__date {
       @include pc {
@@ -115,12 +122,12 @@
    }
 
    &__related-item {
-      margin-top: 1.9rem;
+      margin-top: 2rem;
    }
 
    &__related-image {
       height: 11.3rem;
-      
+
       @include pc {
          width: 26rem;
          height: 18.3rem;
