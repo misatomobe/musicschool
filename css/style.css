@@ -3143,6 +3143,14 @@ button {
   font-size: 1.7rem;
   line-height: 1.6470588235;
 }
+@media (min-width: 768px) {
+  .p-blog-details__category-item a {
+    transition: opacity 0.4s ease;
+  }
+  .p-blog-details__category-item a:hover {
+    opacity: 0.7;
+  }
+}
 
 /* =========================
    CONTACT_FORM

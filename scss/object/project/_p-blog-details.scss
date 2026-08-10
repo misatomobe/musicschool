@@ -617,6 +617,8 @@
             display: block;
             font-size: 1.7rem;
             line-height: calc(28 / 17);
+
+            @include hover-opacity;
         }
     }
 }
