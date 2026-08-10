@@ -2509,7 +2509,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog-details {
-    padding: 7rem 0 18.7rem;
+    padding: 7rem 0 18.5rem;
   }
 }
 .p-blog-details {
@@ -2770,7 +2770,7 @@ button {
 @media (min-width: 768px) {
   .p-blog-details__pager {
     column-gap: 13.3333333333%;
-    margin-top: 5.3rem;
+    margin-top: 5.6rem;
   }
 }
 .p-blog-details__pager-image {

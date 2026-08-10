@@ -23,7 +23,7 @@
     padding: 5.2rem 0 19.7rem;
 
     @include pc {
-        padding: 7rem 0 18.7rem;
+        padding: 7rem 0 18.5rem;
     }
 
     /* =========================
@@ -284,7 +284,7 @@
 
         @include pc {
             column-gap: calc(80 / 600 * 100%);
-            margin-top: 5.3rem;
+            margin-top: 5.6rem;
         }
     }
 
