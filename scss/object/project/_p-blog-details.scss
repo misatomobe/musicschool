@@ -143,15 +143,9 @@
         flex: 0 1 auto;
         min-width: 0;
 
-        @include pc {
-            a {
-                display: block;
-                transition: opacity 0.4s ease;
-
-                &:hover {
-                    opacity: 0.7;
-                }
-            }
+        a {
+            display: block;
+            @include hover-opacity;
         }
     }
 

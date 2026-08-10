@@ -2632,9 +2632,11 @@ button {
   flex: 0 1 auto;
   min-width: 0;
 }
+.p-blog-details__share-item a {
+  display: block;
+}
 @media (min-width: 768px) {
   .p-blog-details__share-item a {
-    display: block;
     transition: opacity 0.4s ease;
   }
   .p-blog-details__share-item a:hover {

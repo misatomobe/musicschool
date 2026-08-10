@@ -28,3 +28,16 @@
   line-height: calc($line-height / strip-unit($size));
   font-weight: $weight;
 }
+
+// =========================
+// ホバー設定
+// =========================
+@mixin hover-opacity {
+  @include pc {
+    transition: opacity 0.4s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
