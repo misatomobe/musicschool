@@ -8,21 +8,22 @@
    padding: 5rem 0 19.5rem;
 
    @include pc {
-      padding: 7rem 0 21rem;
+      padding: 7.2rem 0 15.8rem;
    }
 
    &__breadcrumb {
-      padding-top: 5.5rem;
+      padding-top: 5.4rem;
 
       @include pc {
-         padding-top: 8rem;
+         padding-top: 9rem;
+         padding-bottom: 0.5rem;
       }
    }
 
 
    &__date {
       @include pc {
-         margin-top: 1.5rem;
+         margin-top: 2rem;
       }
    }
 
@@ -30,7 +31,7 @@
       margin-top: 2rem;
 
       @include pc {
-         margin-top: 4rem;
+         margin-top: 5.5rem;
          display: flex;
          align-items: flex-start;
          column-gap: 4rem;
@@ -84,7 +85,7 @@
       line-height: calc(30 / 18);
 
       @include pc {
-         margin-top: 1.5rem;
+         margin-top: 0;
          padding-right: 1rem;
       }
    }
@@ -114,6 +115,12 @@
    &__related-heading {
       margin-top: 0;
    }
+
+   &__related-date {
+      @include pc {
+         margin-top: 4rem;
+      }
+   }
    
    .p-blog-details__related-title--left {
       @include pc {
@@ -123,6 +130,10 @@
 
    &__related-item {
       margin-top: 2rem;
+
+      @include pc {
+         margin-top: 3rem;
+      }
    }
 
    &__related-image {

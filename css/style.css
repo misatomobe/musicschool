@@ -3470,20 +3470,21 @@ button {
 }
 @media (min-width: 768px) {
   .p-result-details {
-    padding: 7rem 0 21rem;
+    padding: 7.2rem 0 15.8rem;
   }
 }
 .p-result-details__breadcrumb {
-  padding-top: 5.5rem;
+  padding-top: 5.4rem;
 }
 @media (min-width: 768px) {
   .p-result-details__breadcrumb {
-    padding-top: 8rem;
+    padding-top: 9rem;
+    padding-bottom: 0.5rem;
   }
 }
 @media (min-width: 768px) {
   .p-result-details__date {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
 }
 .p-result-details__profile {
@@ -3491,7 +3492,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-result-details__profile {
-    margin-top: 4rem;
+    margin-top: 5.5rem;
     display: flex;
     align-items: flex-start;
     column-gap: 4rem;
@@ -3545,7 +3546,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-result-details__comment {
-    margin-top: 1.5rem;
+    margin-top: 0;
     padding-right: 1rem;
   }
 }
@@ -3573,12 +3574,22 @@ button {
   margin-top: 0;
 }
 @media (min-width: 768px) {
+  .p-result-details__related-date {
+    margin-top: 4rem;
+  }
+}
+@media (min-width: 768px) {
   .p-result-details .p-blog-details__related-title--left {
     margin-top: 0;
   }
 }
 .p-result-details__related-item {
   margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .p-result-details__related-item {
+    margin-top: 3rem;
+  }
 }
 .p-result-details__related-image {
   height: 11.3rem;
