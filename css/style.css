@@ -2600,12 +2600,19 @@ button {
 .p-blog-details__share {
   margin-top: 2.1rem;
 }
+@media (min-width: 768px) {
+  .p-blog-details__share {
+    margin-top: 2rem;
+  }
+}
 .p-blog-details__share .p-blog-card__text {
   margin-top: 2.7rem;
 }
 @media (min-width: 768px) {
   .p-blog-details__share .p-blog-card__text {
     margin-top: 4.8rem;
+    font-size: 1.8rem;
+    line-height: 1.6666666667;
   }
 }
 .p-blog-details {

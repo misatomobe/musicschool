@@ -113,10 +113,17 @@
 
     &__share {
         margin-top: 2.1rem;
+
+        @include pc {
+            margin-top: 2rem;
+        }
+
         .p-blog-card__text {
             margin-top: 2.7rem;
             @include pc {
                 margin-top: 4.8rem;
+                font-size: 1.8rem;
+                line-height: calc(30 / 18);
             }
         }
     }
