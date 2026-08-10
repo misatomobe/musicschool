@@ -2768,6 +2768,14 @@ button {
   text-decoration-thickness: 0.1rem;
   text-underline-offset: 0.3rem;
 }
+@media (min-width: 768px) {
+  .p-blog-details__text-link a {
+    transition: opacity 0.4s ease;
+  }
+  .p-blog-details__text-link a:hover {
+    opacity: 0.7;
+  }
+}
 .p-blog-details__sidebar > section {
   margin-top: 3rem;
 }
@@ -2848,6 +2856,14 @@ button {
 .p-blog-details__pager-link {
   display: block;
 }
+@media (min-width: 768px) {
+  .p-blog-details__pager-link {
+    transition: opacity 0.4s ease;
+  }
+  .p-blog-details__pager-link:hover {
+    opacity: 0.7;
+  }
+}
 .p-blog-details {
   /* 関連記事・サイドバー共通の見出し */
 }
@@ -2903,6 +2919,14 @@ button {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
+}
+@media (min-width: 768px) {
+  .p-blog-details__related-link {
+    transition: opacity 0.4s ease;
+  }
+  .p-blog-details__related-link:hover {
+    opacity: 0.7;
+  }
 }
 @media (min-width: 768px) {
   .p-blog-details__related-link {
