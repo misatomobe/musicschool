@@ -574,10 +574,14 @@
         display: flex;
         gap: 2rem;
         align-items: flex-start;
+    
         @include pc {
             gap: 1.5rem;
         }
+
+        @include hover-opacity;
     }
+
     &__recommend-image {
         width: 16rem;
         aspect-ratio: 16 / 11;

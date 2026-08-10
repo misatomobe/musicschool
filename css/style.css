@@ -3097,6 +3097,14 @@ button {
     gap: 1.5rem;
   }
 }
+@media (min-width: 768px) {
+  .p-blog-details__recommend-link {
+    transition: opacity 0.4s ease;
+  }
+  .p-blog-details__recommend-link:hover {
+    opacity: 0.7;
+  }
+}
 .p-blog-details__recommend-image {
   width: 16rem;
   aspect-ratio: 16/11;
