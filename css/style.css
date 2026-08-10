@@ -2500,7 +2500,7 @@ button {
    BLOG-DETAILS
 ========================= */
 .p-blog-details {
-  padding: 5rem 0 19.7rem;
+  padding: 5rem 0 20rem;
 }
 @media (min-width: 768px) {
   .p-blog-details {
