@@ -1552,6 +1552,10 @@ button {
 @media (min-width: 768px) {
   .p-faq__summary {
     padding: 1.9rem 2rem 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .p-faq__summary {
     transition: opacity 0.4s ease;
   }
   .p-faq__summary:hover {
