@@ -37,7 +37,13 @@
         font-weight: 500;
         &:not(:last-child)::after {
             content: ">";
-            margin-inline: 2rem;     
+            margin-inline: 2rem;
+            position: relative;
+            top: 0.2rem;
+            
+            @include pc {
+                top: 0;
+            }
         }
 
         &--result-details {
