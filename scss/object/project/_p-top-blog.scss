@@ -38,6 +38,10 @@
         }
     }
 
+    &-item__link {
+        @include hover-opacity;
+    }
+
     &-item__image {
         position: relative;
     }
@@ -114,7 +118,7 @@
 
         padding-bottom: 0.1rem;
 
-        transition: opacity 0.4s ease;
+        @include hover-opacity;
 
         &::after {
             content: "";

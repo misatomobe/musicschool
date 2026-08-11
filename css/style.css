@@ -1266,10 +1266,26 @@ button {
     opacity: 0.7;
   }
 }
+.p-voice {
+  /* =========================
+   VOICE CARD
+   ========================= */
+}
 @media (min-width: 768px) {
   .p-voice__card {
     width: 100%;
   }
+  .p-voice__card::hover .p-voice__image img {
+    transform: scale(1.1);
+  }
+  .p-voice__card::hover .p-voice__body {
+    opacity: 0.7;
+  }
+}
+.p-voice {
+  /* =========================
+   VOICE CARD
+   ========================= */
 }
 .p-voice__image {
   overflow: hidden;
@@ -1277,13 +1293,18 @@ button {
 .p-voice__image img {
   transition: transform 0.4s ease;
 }
+.p-voice {
+  /* =========================
+   BODY
+   ========================= */
+}
 .p-voice__body {
   margin-top: 2.7rem;
-  transition: opacity 0.4s ease;
 }
 @media (min-width: 768px) {
   .p-voice__body {
     margin-top: 1.8rem;
+    transition: opacity 0.4s ease;
   }
 }
 .p-voice__body h3 {
@@ -1320,6 +1341,11 @@ button {
   .p-voice__body p {
     font-size: 1.5rem;
   }
+}
+.p-voice {
+  /* =========================
+   SWIPER ARROW
+   ========================= */
 }
 .p-voice .swiper-button-prev,
 .p-voice .swiper-button-next {
@@ -1369,6 +1395,11 @@ button {
     right: 0;
     transform: translate(100%, 30%);
   }
+}
+.p-voice {
+  /* =========================
+   SWIPER ARROW
+   ========================= */
 }
 .p-voice .swiper,
 .p-voice .swiper-wrapper,
@@ -1697,6 +1728,14 @@ button {
     width: calc((100% - 6rem) / 3);
   }
 }
+@media (min-width: 768px) {
+  .p-blog-item__link {
+    transition: opacity 0.4s ease;
+  }
+  .p-blog-item__link:hover {
+    opacity: 0.7;
+  }
+}
 .p-blog-item__image {
   position: relative;
 }
@@ -1771,7 +1810,14 @@ button {
   line-height: 1.6666666667;
   font-weight: 500;
   padding-bottom: 0.1rem;
-  transition: opacity 0.4s ease;
+}
+@media (min-width: 768px) {
+  .p-blog__link-btn {
+    transition: opacity 0.4s ease;
+  }
+  .p-blog__link-btn:hover {
+    opacity: 0.7;
+  }
 }
 .p-blog__link-btn::after {
   content: "";
