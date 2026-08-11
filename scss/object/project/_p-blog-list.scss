@@ -40,6 +40,8 @@
             display: flex;
             align-items: flex-start;
             column-gap: calc(50 / 880 * 100%);
+
+            @include hover-opacity;
         } 
     }
 

@@ -34,6 +34,8 @@
     }
 }
 .p-result-list-item__link {
+    @include hover-opacity;
+
     @include pc {
         display: flex;
         flex-direction: column;
