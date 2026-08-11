@@ -15,34 +15,35 @@ document.addEventListener('DOMContentLoaded', () => {
 // ==============================
 // Swiper
 // ==============================
-const swiper = new Swiper('.p-voice__slider', {
-  // Optional parameters
-  slidesPerView: 1,
-  spaceBetween: 20,
-  loop: true,
-  loopAdditionalSlides: 1,
-  speed: 800,
+const swiperElement = document.querySelector('.p-voice__slider');
 
+if (swiperElement && typeof Swiper !== 'undefined') {
+    const swiper = new Swiper('.p-voice__slider', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        loopAdditionalSlides: 1,
+        speed: 800,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
 
-  watchOverflow: false,
+        watchOverflow: false,
 
-  breakpoints: {
-  768: {
-      slidesPerView: 3,
-      spaceBetween: 35
-    }
-  }
-});
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 35
+            }
+        }
+    });
+}
+
 // ==============================
 // FAQアコーディオン
 // ==============================
-
 const accordionDetails = '.js-details';
 const accordionSummary = '.js-summary';
 const accordionContent = '.js-details-content';
