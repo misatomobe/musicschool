@@ -1258,14 +1258,6 @@ button {
     margin-inline: auto;
   }
 }
-@media (min-width: 768px) {
-  .p-voice .p-voice__card:hover .p-voice__image img {
-    transform: scale(1.1);
-  }
-  .p-voice .p-voice__card:hover .p-voice__body {
-    opacity: 0.7;
-  }
-}
 .p-voice {
   /* =========================
    VOICE CARD
@@ -1275,10 +1267,10 @@ button {
   .p-voice__card {
     width: 100%;
   }
-  .p-voice__card::hover .p-voice__image img {
+  .p-voice__card:hover .p-voice__image img {
     transform: scale(1.1);
   }
-  .p-voice__card::hover .p-voice__body {
+  .p-voice__card:hover .p-voice__body {
     opacity: 0.7;
   }
 }
@@ -2209,11 +2201,6 @@ button {
 }
 .p-plan-table {
   /* 赤背景 */
-}
-@media (min-width: 768px) {
-  .p-plan-table__recommend {
-    transform: trans lateY(-1rem);
-  }
 }
 .p-plan-table__recommend p {
   width: 100%;
