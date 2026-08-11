@@ -89,6 +89,8 @@
             font-size: 1.5rem;
             line-height: calc(20 / 15);
             font-weight: 500;
+            word-break: normal;
+            overflow-wrap:normal;
             
             @include pc {
                 line-height: calc(33 / 15);
