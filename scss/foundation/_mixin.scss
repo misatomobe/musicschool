@@ -32,12 +32,29 @@
 // =========================
 // ホバー設定
 // =========================
+//※少し薄くする
 @mixin hover-opacity {
   @include pc {
     transition: opacity 0.4s ease;
 
     &:hover {
       opacity: 0.7;
+    }
+  }
+}
+
+//※色反転（赤、白）
+@mixin hover-invert {
+  @include pc {
+    transition: background-color 0.4s ease, color 0.4s ease;
+
+    &:hover {
+      background-color: $font-color02;
+      color: $main-color;
+
+      p {
+        color: $main-color;
+      }
     }
   }
 }

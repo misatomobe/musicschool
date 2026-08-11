@@ -45,17 +45,10 @@
     border-radius: 50%;
     display: grid;
     place-content: center;
-    transition:  transform 0.4s ease, opacity 0.4s ease;
-    &:hover {
-        opacity: 1;
-        transform: none;
-    }
-    @include pc {
-        &:hover {
-            opacity: 0.7;
-        }
-    }
+
+    @include hover-opacity;
 }
+
 /* =========================
    アイコン画像
 ========================= */

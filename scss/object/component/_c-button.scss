@@ -13,17 +13,12 @@
    display: flex;
    justify-content: center;
    align-items: center;
-    transition: background-color 0.4s ease;
+   transition: background-color 0.4s ease;
     
     @include pc {
       max-width: 25rem;
-      
-      &:hover {
-         background-color: $font-color02;
-         p {
-            color: $main-color;
-         }
-      }
+
+      @include hover-invert;
    }
    
    p {
