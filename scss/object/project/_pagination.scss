@@ -38,6 +38,7 @@
                 height: 5rem;
             }
         }
+
         // 現在ページ
         &.is-current {
             span {
@@ -45,16 +46,14 @@
                 color: $font-color02;
             } 
         }
+
         a {
             color: $font-color;
-            @include pc {
-                &:hover {
-                    background-color: $font-color;
-                    color: $font-color02;
-                }
-            }
+            
+            @include hover-invert02;
         }
     }
+    
     &__dots {
         display: flex;
         align-items: center;
