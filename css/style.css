@@ -1337,6 +1337,16 @@ button {
 @media (min-width: 768px) {
   .p-voice .swiper-button-prev,
   .p-voice .swiper-button-next {
+    transition: opacity 0.4s ease;
+  }
+  .p-voice .swiper-button-prev:hover,
+  .p-voice .swiper-button-next:hover {
+    opacity: 0.7;
+  }
+}
+@media (min-width: 768px) {
+  .p-voice .swiper-button-prev,
+  .p-voice .swiper-button-next {
     top: 14rem;
   }
 }
