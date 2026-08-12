@@ -34,11 +34,18 @@
         }
     }
 
-    .c-button--contact--404 .c-button--contact__icon {
+    .c-button--contact--404 {
         height: 5rem;
 
-        @include pc {
-            width: 100%;
+        span {
+            color: $font-color02;
         }
+
+        @include pc {
+            width: 25rem;
+            font-weight: 700;
+        }
+
+        @include hover-invert01;
     }
 }

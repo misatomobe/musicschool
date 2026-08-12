@@ -36,7 +36,7 @@
 
     @include hover-invert;
 
-    p {
+    span {
         color: $font-color02;
         font-size: 2rem;
         line-height: calc(33 / 20);
@@ -56,6 +56,7 @@
    c-button--contact--404
 ========================= */
 .c-button--contact--404 {
+    
 
     .c-button--contact__icon {
         height: 5rem;
@@ -63,7 +64,7 @@
 
     @include pc {
         width: 25rem;
-    }
+    }  
 }
 
 /* ==============================

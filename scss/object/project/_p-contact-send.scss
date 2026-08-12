@@ -38,7 +38,7 @@
             margin: 0 auto;
         }
         .c-button--contact__icon {
-            p {
+            span {
                 line-height: calc(26 / 20);
                 letter-spacing: normal;
             }
@@ -52,5 +52,9 @@
         @include pc {
             padding-bottom: 9.1rem;
         }
+    }
+
+    .c-button--contact__icon--404 {
+        @include hover-invert01;
     }
 }

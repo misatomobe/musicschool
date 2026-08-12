@@ -626,7 +626,7 @@ button {
     color: #CB0000;
   }
 }
-.c-button p {
+.c-button span {
   color: #fff;
   font-size: 2rem;
   line-height: 1.3;
@@ -634,7 +634,7 @@ button {
   transition: color 0.4s ease;
 }
 @media (min-width: 768px) {
-  .c-button p {
+  .c-button span {
     font-size: 2.5rem;
     line-height: 1.32;
   }
@@ -685,7 +685,7 @@ button {
     color: #CB0000;
   }
 }
-.c-button--contact__icon p {
+.c-button--contact__icon span {
   color: #fff;
   font-size: 2rem;
   line-height: 1.65;
@@ -694,7 +694,7 @@ button {
   transition: color 0.4s ease;
 }
 @media (min-width: 768px) {
-  .c-button--contact__icon p {
+  .c-button--contact__icon span {
     font-size: 2.5rem;
     line-height: 1.32;
     letter-spacing: 0.1em;
@@ -3380,6 +3380,22 @@ button {
 }
 
 /* =========================
+CONTACT FORM BUTTON
+========================= */
+@media (min-width: 768px) {
+  .c-button--contact-form {
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  .c-button--contact-form:hover {
+    background-color: #fff;
+    color: #CB0000;
+  }
+  .c-button--contact-form:hover span {
+    color: #CB0000;
+  }
+}
+
+/* =========================
    CONTACT-SEND
 ========================= */
 .c-button--contact--center {
@@ -3417,7 +3433,7 @@ button {
   display: block;
   margin: 0 auto;
 }
-.p-contact-send__button .c-button--contact__icon p {
+.p-contact-send__button .c-button--contact__icon span {
   line-height: 1.3;
   letter-spacing: normal;
 }
@@ -3427,6 +3443,18 @@ button {
 @media (min-width: 768px) {
   .p-contact-send--complete {
     padding-bottom: 9.1rem;
+  }
+}
+@media (min-width: 768px) {
+  .p-contact-send .c-button--contact__icon--404 {
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  .p-contact-send .c-button--contact__icon--404:hover {
+    background-color: #fff;
+    color: #CB0000;
+  }
+  .p-contact-send .c-button--contact__icon--404:hover span {
+    color: #CB0000;
   }
 }
 
@@ -3460,12 +3488,28 @@ button {
     margin-top: 4rem;
   }
 }
-.page-404 .c-button--contact--404 .c-button--contact__icon {
+.page-404 .c-button--contact--404 {
   height: 5rem;
 }
+.page-404 .c-button--contact--404 span {
+  color: #fff;
+}
 @media (min-width: 768px) {
-  .page-404 .c-button--contact--404 .c-button--contact__icon {
-    width: 100%;
+  .page-404 .c-button--contact--404 {
+    width: 25rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 768px) {
+  .page-404 .c-button--contact--404 {
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  .page-404 .c-button--contact--404:hover {
+    background-color: #fff;
+    color: #CB0000;
+  }
+  .page-404 .c-button--contact--404:hover span {
+    color: #CB0000;
   }
 }
 

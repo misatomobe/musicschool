@@ -205,3 +205,10 @@
         }
     }
 }
+
+/* =========================
+CONTACT FORM BUTTON
+========================= */
+.c-button--contact-form {
+    @include hover-invert01;
+}

@@ -61,6 +61,23 @@
   }
 }
 
+//※色反転（赤、白）span
+@mixin hover-invert01 {
+  @include pc {
+    transition: background-color 0.4s ease, color 0.4s ease;
+
+    &:hover {
+      background-color: $font-color02;
+      color: $main-color;
+
+      span {
+        color: $main-color;
+      }
+    }
+  }
+}
+
+
 //※色反転（黒、白）
 @mixin hover-invert02 {
   @include pc {
