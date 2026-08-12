@@ -714,12 +714,14 @@ button {
 }
 
 /* ==============================
-   メインページ用（フォントだけ変更）
+   メインページ用
 ============================== */
 .c-button--contact__icon-main p {
   font-size: 2rem;
   line-height: 1.65;
   letter-spacing: 0.3rem;
+  font-weight: 700;
+  color: #fff;
 }
 
 /* =========================
