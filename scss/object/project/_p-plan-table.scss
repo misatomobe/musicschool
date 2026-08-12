@@ -351,10 +351,12 @@
                 font-size: 1.6rem;
                 line-height: calc(25 / 16);
                 font-weight: 500;
+
                 @include pc {
                     font-size: 1.7rem;
                     line-height: calc(25 / 17);
                 }
+
             }
         }
         &:nth-child(even) {
