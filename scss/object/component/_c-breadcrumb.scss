@@ -47,10 +47,15 @@
         }
 
         &--result-details {
+            @include sp {
+                flex-basis: 100%;
+            }
+
             span {
                 position: relative;
                 top: -0.5rem;
                 line-height: calc(20 / 16);
+
 
                 @include pc {
                     line-height: calc(33 / 16);
