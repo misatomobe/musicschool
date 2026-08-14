@@ -2609,13 +2609,11 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog-details__article {
-    width: 0 1 68.1818181818%;
     min-width: 0;
   }
 }
 @media (min-width: 768px) {
   .p-blog-details__sidebar {
-    flex: 0 1 28.4090909091%;
     min-width: 0;
   }
 }

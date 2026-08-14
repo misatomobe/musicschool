@@ -68,15 +68,13 @@
     }
 
     &__article {
-        @include pc {
-            width: 0 1 calc(600 / 880 * 100%);
+        @include pc {            
             min-width: 0;
         }
     }
 
     &__sidebar {
         @include pc {
-            flex: 0 1 calc(250 / 880 * 100%);
             min-width: 0;
         }
     }
