@@ -837,17 +837,17 @@ button {
   }
 }
 @media (max-width: 767px) {
-  .c-breadcrumb__item--result-details {
+  .c-breadcrumb__item--result-details, .c-breadcrumb__item--blog-details {
     flex-basis: 100%;
   }
 }
-.c-breadcrumb__item--result-details span {
+.c-breadcrumb__item--result-details span, .c-breadcrumb__item--blog-details span {
   position: relative;
   top: -0.5rem;
   line-height: 1.25;
 }
 @media (min-width: 768px) {
-  .c-breadcrumb__item--result-details span {
+  .c-breadcrumb__item--result-details span, .c-breadcrumb__item--blog-details span {
     line-height: 2.0625;
     top: 0;
   }
@@ -2546,7 +2546,6 @@ button {
 ========================= */
 .c-breadcrumb__item--blog-details span {
   position: relative;
-  top: -1rem;
 }
 @media (min-width: 768px) {
   .c-breadcrumb__item--blog-details span {

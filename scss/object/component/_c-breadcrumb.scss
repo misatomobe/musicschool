@@ -46,7 +46,8 @@
             }
         }
 
-        &--result-details {
+        &--result-details,
+        &--blog-details {
             @include sp {
                 flex-basis: 100%;
             }
@@ -56,13 +57,13 @@
                 top: -0.5rem;
                 line-height: calc(20 / 16);
 
-
                 @include pc {
                     line-height: calc(33 / 16);
                     top: 0;
                 }
             }
         }
+
 
         a {
             @include pc {
