@@ -3531,7 +3531,7 @@ CONTACT FORM BUTTON
 }
 @media (min-width: 768px) {
   .p-search-result {
-    padding: 6.6rem 0 20.9rem;
+    padding: 6.4rem 0 20.9rem;
   }
 }
 .p-search-result__head {
@@ -3557,7 +3557,7 @@ CONTACT FORM BUTTON
 }
 @media (min-width: 768px) {
   .p-search-result .p-blog-list__items {
-    row-gap: 7rem;
+    row-gap: 6.5rem;
   }
 }
 @media (min-width: 768px) {
@@ -3588,10 +3588,14 @@ CONTACT FORM BUTTON
 }
 .p-search-result__text {
   margin-top: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 1.875;
 }
 @media (min-width: 768px) {
   .p-search-result__text {
     margin-top: 1.2rem;
+    font-size: 1.8rem;
+    line-height: 1.6666666667;
   }
 }
 
