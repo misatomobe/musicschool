@@ -1,0 +1,155 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   RESULt-DETAILS
+========================= */
+.p-result-details {
+   padding: 5rem 0 19.5rem;
+
+   @include pc {
+      padding: 7.2rem 0 15.8rem;
+   }
+
+   &__breadcrumb {
+      padding-top: 5.4rem;
+
+      @include pc {
+         padding-top: 9rem;
+         padding-bottom: 0.5rem;
+      }
+   }
+
+
+   &__date {
+      @include pc {
+         margin-top: 2rem;
+      }
+   }
+
+   &__profile {
+      margin-top: 2rem;
+
+      @include pc {
+         margin-top: 5.5rem;
+         display: flex;
+         align-items: flex-start;
+         column-gap: 4rem;
+      }
+   }
+
+   &__table {
+      width: 100%;
+      height: 19rem;
+      border-collapse: collapse;
+      
+
+      @include pc {
+         max-width: 40rem;
+         flex-shrink: 0;
+      }
+
+      th,
+      td {
+         padding: 0.7rem 0 0 1rem;
+         border: 0.05rem solid $font-color;
+         vertical-align: middle;
+         @include pc {
+            padding-left: 2rem;
+         }
+      }
+
+      th {
+         width: 12rem;
+         background: $banner;
+         text-align: left;
+         font-size: 1.8rem;
+         line-height: calc(30 / 18);
+         font-weight: 700;
+
+         @include pc {
+            width: 14rem;
+         }
+      }
+
+      td {
+         font-size: 1.8rem;
+         line-height: calc(30 / 18);
+         font-weight: 500;
+      }
+   }
+
+   &__comment {
+      margin-top: 2.8rem;
+      font-size: 1.8rem;
+      line-height: calc(30 / 18);
+
+      @include pc {
+         margin-top: 0;
+         padding-right: 1rem;
+      }
+   }
+
+   &__pager {
+      margin-top: 3.9rem;
+
+      @include pc {
+         margin-top: 6rem;
+         column-gap: calc(200 / 880 * 100%);
+      }
+   }
+   
+   .p-blog-details__pager-item.p-result-details__pager-item {
+      @include pc {
+         width: calc(340 / 880 * 100%);
+         flex: 0 0 calc(340 / 880 * 100%);
+         }  
+      }
+
+   &__related {
+      @include pc {
+         margin-top: 10rem;
+      }
+   }
+
+   &__related-heading {
+      margin-top: 0;
+   }
+
+   &__related-label {
+      width: 8rem;
+
+      @include pc {
+         width: 10rem;
+      }
+   }
+
+   &__related-date {
+      @include pc {
+         margin-top: 1.5rem;
+      }
+   }
+   
+   .p-blog-details__related-title--left {
+      @include pc {
+         margin-top: 0;
+      }
+   }
+
+   &__related-item {
+      margin-top: 2rem;
+
+      @include pc {
+         margin-top: 3rem;
+      }
+   }
+
+   &__related-image {
+      height: 11.3rem;
+
+      @include pc {
+         width: 26rem;
+         height: 18.3rem;
+      }
+  }
+}

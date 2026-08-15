@@ -1,0 +1,60 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   CONTACT-SEND
+========================= */
+
+.c-button--contact--center {
+    position: static;
+    transform: none;
+}
+.p-contact-send {
+    @include pc {
+        padding: 2rem 0 9rem;
+    }
+
+    &__text {
+        margin-top: 4.7rem;
+        font-weight: 500;
+        @include pc {
+            text-align: center;
+            font-size: 1.8rem;
+            line-height: calc(30 / 18);
+        }
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+
+        .c-button--contact {
+            position: relative;
+            left: auto;
+            right: auto;
+            bottom: auto;
+            transform: translateX(0);
+            display: block;
+            margin: 0 auto;
+        }
+        .c-button--contact__icon {
+            span {
+                line-height: calc(26 / 20);
+                letter-spacing: normal;
+            }
+        }
+    }
+
+    //送信完了ページ専用
+    &--complete {
+        padding-bottom: 5rem;
+
+        @include pc {
+            padding-bottom: 9.1rem;
+        }
+    }
+
+    .c-button--contact__icon--404 {
+        @include hover-invert01;
+    }
+}

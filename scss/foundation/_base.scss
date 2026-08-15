@@ -1,0 +1,53 @@
+@use "./_variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  word-break: break-all;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Yu Gothic", "YuGothic", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  font-size: 1.6rem;
+  line-height: calc(30 /16);
+  font-weight: 500;
+  color: variables.$font-color;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+html.is-fixed,
+body.is-fixed {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+button {
+  border: none;
+  outline: transparent;
+  outline: none;
+}

@@ -1,0 +1,415 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+/* =========================
+   P-Plan-Table
+========================= */
+.p-plan-table {
+    padding: 1.7rem 0 18.6rem;
+
+    @include pc {
+        padding: 3.6rem 0 22.3rem;
+    }
+
+    &__wrap {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 1.7rem;
+
+        @include pc {
+            margin-top: 7.2rem;
+            overflow: visible;
+        }
+    }
+
+    &__scroll {
+        position: relative;
+        margin-top: -2rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 1.75rem; // 白背景からスクロールバーまでの余白
+        -webkit-overflow-scrolling: touch;
+        display: block;
+
+        &::-webkit-scrollbar {
+            height: 2.5rem;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $table-back-color;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $table-back-color02;
+            min-width: 1rem;
+            height: 2.3rem; 
+        }
+
+        @include pc {
+            overflow: visible;
+            padding-bottom: 0;
+        }
+    }
+
+    &__hint {
+        min-width: 25rem;
+        min-height: 4rem;
+        position: absolute;
+        left: 50%;
+        bottom: 25rem;
+        transform: translateX(-50%);
+        padding: 0.6rem 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        background: $hint-color;
+        color: $font-color02;
+        font-size: 1.3rem;
+        z-index: 5;
+        transition:
+            opacity .4s,
+            visibility .4s;
+        animation: scrollHint 2s ease-in-out infinite;
+
+        @include pc {
+            display: none;
+        }
+
+        &.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+
+            // 消えたらアニメ停止
+            animation: none;
+        }
+    }
+
+    /* 横スクロールを促す揺れ */
+    @keyframes scrollHint {
+        0% {
+            transform: translateX(-50%);
+        }
+        25% {
+            transform: translateX(-55%);
+        }
+        50% {
+            transform: translateX(-45%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    &__table {
+        width: 100%;
+        min-width: 67.6rem;
+        border-collapse: collapse;
+        table-layout: fixed;
+
+        @include pc {
+            min-width: auto;
+        }
+        
+        th,
+        td {
+            width: 25.666%;
+        }
+
+        //左側の項目を少し縮める
+        th:first-child {
+            width: 25.3%;
+        }
+
+        @include pc {
+            min-width: auto;
+        }
+    }
+
+
+    /* -------------------------
+       共通セル
+    ------------------------- */
+    tbody th,
+    tbody td {
+        text-align: center;
+        vertical-align: middle;
+        border-left: 0.5px solid $font-color;
+
+        transform: translateY(2px);
+
+        @include pc {
+            transform: translateY(3px);
+        }
+    }
+
+    // 一番左端だけ線なし
+    tbody th:first-child,
+    tbody td:first-child {
+        border-left: none;
+    }
+
+    tbody th span {
+        display: inline-block;
+    }
+
+    /* -------------------------
+       テーブル見出し
+    ------------------------- */
+    thead {
+        th {
+            font-weight: 700;
+            color: $font-color02;
+            height: 10.6rem;
+            vertical-align: top;
+            
+            @include pc {
+                height: 8rem;
+            }
+        }
+
+        // 2番目（左右線）
+        th:nth-child(2) {
+            position: relative;
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0rem;
+                left: auto;
+                width: 0.5px;
+                height: 6.6rem;
+                background-color: $font-color;
+                @include pc {
+                    height: 5rem;
+                }
+            }
+            // 左線
+            &::before {
+                left: 0;
+            }
+            // 右線
+            &::after {
+                right: 0;
+            }
+        }
+
+        // 4番目（左線のみ）
+        th:nth-child(4) {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0.5px;
+                height: 6.6rem;
+                background-color: $font-color;
+
+                @include pc {
+                    height: 5rem;
+                }
+            }
+        }
+
+    }
+
+    /* 黒背景 */
+    &__head {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+
+        p {
+            min-height: 6.6rem;
+            width: 100%;
+            background-color: $font-color;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            font-size: 2rem;
+            line-height: calc(25 / 20);
+            padding: 0.2rem 2rem 0;
+            span {
+                display: inline-block;
+            }
+
+            @include pc {
+                padding-top: 0.5rem;
+                padding: 0.5rem 1rem 0;
+                min-height: 5rem;
+                line-height: calc(33 / 20);
+            }            
+        }
+    }
+
+    /* 赤背景 */
+    &__recommend {
+
+
+        p {
+            width: 100%;
+            height: 100%;
+            padding-top: 2rem;
+            background-color: $main-color;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            line-height: calc(22 / 18);
+            text-align: center;
+            
+            span {
+                display: inline-block;
+                
+            }
+
+            @include pc {
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 0.6rem 2rem 0;
+                width: 100%;
+                height: 100%;
+                font-size: 2rem;
+                line-height: calc(30 / 20);
+            }            
+        }
+    }
+
+    &__small {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: calc(24 / 15);
+
+        @include pc {
+            font-size: 1.7rem;
+            line-height: calc(33 / 17);
+        }
+    }
+
+    /* -------------------------
+        テーブル本文
+    ------------------------- */
+    tbody {
+        
+        /* セル共通 */
+        th,
+        td {
+            height: 8.5rem;
+        }
+        /* 左列 */
+        th {
+            text-align: left;
+            padding: 0 1rem;
+            font-size: 1.4rem;
+            line-height: calc(20 / 14);
+
+            @include pc {
+                padding: 0 2rem;
+            }
+
+             @include tab-only {
+                padding: 0 1rem;
+            }
+        }
+
+        td {
+            font-size: 2.2rem;
+            line-height: calc(33 / 22);
+            font-weight: 700;
+        }
+        tr {
+            /* 月額料金 */
+            &:first-child {
+                th,
+                td {
+                    border-top: 0.5px solid $font-color;
+                    padding-top: 0.3rem;
+                }
+                 
+                th {
+                    font-size: 1.6rem;
+                    line-height: calc(30 / 16);
+                    font-weight: 700;
+                        
+                    @include pc {
+                        font-size: 1.7rem;
+                        line-height: calc(30 / 17);
+                    }
+                }
+                td {
+                    font-size: 2.2rem;
+                    line-height: calc(33 / 22);
+                    font-weight: 700;
+                }
+            }
+            /* 2行目以降 */
+            &:not(:first-child) {
+            th,
+            td {
+                font-size: 1.6rem;
+                line-height: calc(25 / 16);
+                font-weight: 500;
+
+                @include pc {
+                    font-size: 1.7rem;
+                    line-height: calc(25 / 17);
+                }
+
+            }
+        }
+        &:nth-child(even) {
+            background-color: $table-back-color;
+        }    
+        /* 一番下だけ横線 */
+        &:last-child {
+            th,
+            td {
+                border-bottom: 0.5px solid $font-color;
+            }
+        }
+    }
+    /* 左端th 2行目以降だけ例外 */
+    tr.p-plan-table__lesson {
+        td {
+            font-size: 1.7rem;
+            line-height: calc(25 / 17);
+            font-weight: 500;
+        }
+    }
+}
+/* -------------------------
+    補足説明
+------------------------- */
+&__note {
+    margin-top: 1.7rem;
+
+    @include pc {
+        margin-top: 2.85rem;
+        font-size: 1.7rem;
+        line-height: calc(25 / 17);
+    }
+}
+&__accent {
+    color: $main-color;
+}
+}
+/* -------------------------
+    空セル
+------------------------- */
+.is-empty {
+    position: relative;
+    &::before {
+        content:"";
+        display: block;
+        width: 3rem;
+        height: 0.1px;
+        background-color: $font-color;
+        margin-inline: auto;
+    }
+}

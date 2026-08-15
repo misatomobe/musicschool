@@ -1,0 +1,86 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   SEARCH
+========================= */
+.p-search-result {
+    padding: 3.3rem 0 20.4rem;
+
+    @include pc {
+        padding: 6.4rem 0 20.9rem;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title,
+    &__count {
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+        font-weight: 500;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .p-blog__contents {
+        margin-top: 4.2rem;
+        
+        @include pc {
+            margin-top: 4rem;
+        }
+    }
+
+    .p-blog-list__items {
+        @include pc {
+            row-gap: 6.5rem;
+        }
+    }
+
+    .p-blog-item__item {
+        @include pc {
+            display: flex;
+            align-items: flex-start;
+            column-gap: calc(50 / 880 * 100%);
+        }
+    }
+
+    .p-blog-item__image {
+        @include pc {
+            width: 26rem;
+            flex-shrink: 0;
+        }
+    }
+
+    .p-blog-item__body {
+        @include pc {
+            flex: 1;
+            padding-top: 0;
+            margin-top: 0;
+        }
+    }
+
+    .p-blog-item__date {
+        @include pc {
+            text-align: left;
+            margin-top: 0.3rem;
+        }
+    }
+
+    &__text {
+        margin-top: 0.8rem;
+        font-size: 1.6rem;
+        line-height: calc(30 / 16);
+
+        @include pc {
+            margin-top: 1.2rem;
+            font-size: 1.8rem;
+            line-height: calc(30 / 18);
+        }
+    }
+}

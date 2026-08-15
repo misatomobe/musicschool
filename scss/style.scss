@@ -1,0 +1,66 @@
+@use "./foundation/reset";
+@use "./foundation/variables" as *;
+@use "./foundation/mixin";
+@use "./foundation/base";
+
+// layout（配置）
+@use "./layout/l-header";
+@use "./layout/l-footer";
+@use "./layout/l-inner";
+@use "./layout/l-main";
+
+
+// component（部品）
+@use "./object/component/c-logo";
+@use "./object/component/c-section-title";
+@use "./object/component/c-button";
+@use "./object/component/c-button--contact";
+@use "./object/component/c-button--top";
+@use "./object/component/c-breadcrumb";
+
+// project（ページ固有）
+// top
+@use "./object/project/p-top";
+@use "./object/project/p-top-fv";
+@use "./object/project/p-top-concept";
+@use "./object/project/p-top-about";
+@use "./object/project/p-top-reason";
+@use "./object/project/p-top-voice";
+@use "./object/project/p-top-flow";
+@use "./object/project/p-top-faq";
+@use "./object/project/p-top-blog";
+@use "./object/project/p-cta";
+@use "./object/project/p-fixed-buttons";
+
+
+// plan
+@use "./object/project/p-plan-fv";
+@use "./object/project/p-plan-price";
+@use "./object/project/p-plan-table";
+
+
+// blog_list
+@use "./object/project/p-blog-list";
+@use "./object/project/pagination";
+
+// blog_details
+@use "./object/project/p-blog-details";
+
+// contact
+@use "./object/project/p-contact";
+@use "./object/project/p-contact-send";
+
+    
+// 404
+@use "./object/project/p-404";
+
+// search
+@use "./object/project/p-search";
+
+// result
+@use "./object/project/p-result-list";
+@use "./object/project/p-result-details";
+
+
+// utility（補助）
+@use "./object/utility/utility";

@@ -1,0 +1,57 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   c-button--top
+========================= */
+.c-button--top {
+    position: absolute;
+    bottom: 8rem;
+    right: 2rem;
+    z-index: 99999;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    @include pc {
+        bottom: 9.5rem;
+        right: 11.5rem;
+    }
+}
+
+/* =======================================
+   c-button--top（contact_formページのみ）
+========================================== */
+.c-button--top2 {
+    position: absolute;
+    bottom: 1.8rem;
+    right: 3rem;
+    z-index: 99999;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    @include pc {
+        bottom: 3rem;
+        right: 10rem;
+    }
+}
+
+/* =========================
+   ボタン本体
+========================= */
+.c-button__icon {
+    width: 6.8rem;
+    height: 6.8rem;
+    background-color: $button-color;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+
+    @include hover-opacity;
+}
+
+/* =========================
+   アイコン画像
+========================= */
+.c-button__icon--img {
+    width: 100%;
+}

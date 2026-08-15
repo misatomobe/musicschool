@@ -1,0 +1,36 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* ==================================================
+   c-button（contact_form、404）高さ50pxのボタン
+================================================== */
+.c-button { 
+   width: 100%;
+   max-width: 33.5rem;
+   height: 5rem;
+   background-color: $main-color;
+   border: 0.1rem solid $main-color;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: background-color 0.4s ease;
+    
+    @include pc {
+      max-width: 25rem;
+
+      @include hover-invert;
+   }
+   
+   span {
+      color: $font-color02;
+      font-size: 2rem;
+      line-height: calc(26 / 20);
+      font-weight: 700;
+      transition: color 0.4s ease;
+
+      @include pc {
+         font-size: 2.5rem;
+         line-height: calc(33 / 25);
+      }
+   }
+}

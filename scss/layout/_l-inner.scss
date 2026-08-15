@@ -1,0 +1,11 @@
+@use "../foundation/variables" as *;
+@use "../foundation/mixin" as *;
+
+.l-inner {
+    padding: 0 2rem;
+    @include pc {
+        max-width: 940px;
+        margin: 0 auto;
+        padding: 0 3rem;
+    }
+}

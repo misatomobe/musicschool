@@ -1,0 +1,77 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   BREADCRUMB
+========================= */
+.c-breadcrumb {
+    background-color: $back-color;
+    position: relative;
+    z-index: 10;
+    -webkit-overflow-scrolling: touch;
+
+    @include pc {
+        min-height: 5rem;
+    }
+    
+    &__inner {
+        padding: 0.1rem 2rem;
+        @include pc {
+            height: 5rem;
+            max-width: 940px;
+            margin: 0 auto;
+            padding: 0.8rem 3rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        line-height: calc(33 / 16);
+        font-weight: 500;
+        &:not(:last-child)::after {
+            content: ">";
+            margin-inline: 2rem;
+            position: relative;
+            top: -0.2rem;
+            
+            @include pc {
+                top: 0;
+            }
+        }
+
+        &--result-details,
+        &--blog-details {
+            @include sp {
+                flex-basis: 100%;
+            }
+
+            span {
+                position: relative;
+                top: -0.5rem;
+                line-height: calc(20 / 16);
+
+                @include pc {
+                    line-height: calc(33 / 16);
+                    top: 0;
+                }
+            }
+        }
+
+
+        a {
+            @include pc {
+                transition: opacity 0.4s ease;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}

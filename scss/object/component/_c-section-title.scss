@@ -1,0 +1,26 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+// デフォルト
+.c-section-title {
+    font-size: 2.5rem;
+    line-height: calc(40 / 25);
+    font-weight: 700;
+    color: $font-color;
+    text-align: center;
+
+    @include pc {
+        font-size: 2.5rem;
+        line-height: calc(30 / 25);
+    }
+
+    &--red {
+        color: $main-color;
+    }
+
+    &--white {
+        color: $font-color02;
+    }
+}
+
+

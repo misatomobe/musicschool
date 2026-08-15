@@ -1,0 +1,51 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   404
+========================= */
+.page-404 {
+    .p-contact-send {
+        padding: 4.1rem 0 5rem;
+
+        @include pc {
+            padding: 7rem 0 9rem;
+        }
+
+        &__text--404 {
+            margin-top: 0;
+        }
+        
+        &__text {
+            font-weight: 500;
+            
+            @include pc {
+                text-align: center;
+            }
+        }
+        
+        &__button {
+            margin-top: 1rem;
+            @include pc {
+                margin-top: 4rem;
+            }
+
+
+        }
+    }
+
+    .c-button--contact--404 {
+        height: 5rem;
+
+        span {
+            color: $font-color02;
+        }
+
+        @include pc {
+            width: 25rem;
+            font-weight: 700;
+        }
+
+        @include hover-invert01;
+    }
+}

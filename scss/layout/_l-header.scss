@@ -1,0 +1,209 @@
+@use "../foundation/variables" as *;
+@use "../foundation/mixin" as *;
+
+/* =========================
+   HEADER
+========================= */
+.l-header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    @include pc {
+        height: 8rem;
+    }
+
+    &__inner {
+        max-width: 940px;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 2rem;
+
+        @include pc {
+            padding-inline: 3rem;
+        }
+    }
+
+    /* =========================
+       LOGO
+    ========================= */
+    &__logo a {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        
+        @include hover-opacity;
+    }
+
+    /* =========================
+       PC NAV
+    ========================= */
+    &__nav {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 3.3rem;
+
+            li:not(.is-contact) a {
+                font-size: 1.7rem;
+                line-height: calc(33 / 17);
+                font-weight: 700;
+                color: $font-color;
+                transition: opacity 0.4s ease;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    bottom: -0.4rem;
+                    width: 100%;
+                    height: 0.1rem;
+                    background-color: $font-color;
+                    transform: translateX(-50%) scaleX(0);
+                    transform-origin: left;
+                    transition: transform 0.7s ease;
+                    }
+                    &:hover::after {
+                    transform: translateX(-50%) scaleX(1);
+                    }
+                }
+
+            .is-contact a {
+                font-size: 1.5rem;
+                line-height: calc(28 / 15);
+                font-weight: 700;
+                background: $main-color;
+                color: $font-color02;
+                border: 0.1rem solid $main-color;
+                padding: 1.2rem 2.9rem;
+                
+                @include hover-invert;
+            }
+        }
+    }
+
+    /* =========================
+       SP NAV
+    ========================= */
+    &__sp-nav {
+        position: fixed;
+        width: 30rem;
+        top: 5rem;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform 0.4s ease;
+        background: $main-color;
+        z-index: 2000;
+
+        &.active {
+            transform: translateX(0);
+        }
+
+        &-lists {
+            margin: 0;
+            font-size: 1.8rem;
+            line-height: calc(33 / 18);
+            list-style: none;
+            font-weight: 700;
+
+            a {
+                color: $font-color02;
+                display: block;
+                padding: 1.5rem 0 1rem 2rem;
+            }
+        }
+    }
+
+    /* =========================
+       HAMBURGER
+    ========================= */
+    &__hamburger {
+        position: relative;
+        z-index: 9999;
+        display: block;
+
+        @include pc {
+            display: none;
+        }
+
+        .c-hamburger {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 7.1rem;
+            height: 5rem;
+            background: $main-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+
+            .c-hamburger__line,
+            .c-hamburger__line::before,
+            .c-hamburger__line::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 3.2rem;
+                height: 0.4rem;
+                background: $font-color02;
+                border-radius: 10px;
+                transition: top 0.4s ease,
+                            transform 0.4s ease,
+                            background-color 0.4s ease;
+                display: block;
+            }
+
+            .c-hamburger__line {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .c-hamburger__line::before {
+                top: -1.2rem;
+            }
+
+            .c-hamburger__line::after {
+                top: 1.2rem;
+            }
+
+            /* ACTIVE（×変形） */
+            &.active {
+
+                .c-hamburger__line {
+                    background: transparent;
+                }
+
+                .c-hamburger__line::before {
+                    top: 0;
+                    transform: rotate(45deg);
+                }
+
+                .c-hamburger__line::after {
+                    top: 0;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}

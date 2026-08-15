@@ -1,0 +1,163 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   VOICE
+========================= */
+.p-voice {
+
+   &__inner {
+      padding: 4.6rem 2rem 5rem;
+
+      @include pc {
+         max-width: 1040px;
+         margin-inline: auto;
+         padding: 4.4rem 6.5rem 8rem;
+      }
+   }
+
+   &__slider-wrap {
+      position: relative;
+      margin-top: 3.9rem;
+
+      @include pc {
+         max-width: 1040px;
+         margin-top: 3.5rem;
+      }
+   }
+
+   &__slider {
+      @include pc {
+         max-width: 882px;
+         margin-inline: auto;
+      }
+   }
+
+   /* =========================
+    VOICE CARD
+    ========================= */
+   &__card {
+      @include pc {
+         width: 100%;
+
+         &:hover {
+            .p-voice__image img {
+               transform: scale(1.1);
+            }
+
+            .p-voice__body {
+               opacity: 0.7;
+            }
+         }
+      }
+   }
+
+   /* =========================
+    VOICE CARD
+    ========================= */
+   &__image {
+      overflow: hidden;
+
+      img {
+         transition: transform 0.4s ease;
+      }
+   }
+
+   /* =========================
+    BODY
+    ========================= */
+   &__body {
+      margin-top: 2.7rem;
+
+      @include pc {
+         margin-top: 1.8rem;
+         transition: opacity 0.4s ease;
+      }
+
+      h3 {
+         font-size: 2.2rem;
+         line-height: calc(33 / 22);
+         font-weight: 700;
+         color: $font-color02;
+         text-align: center;
+
+         @include pc {
+            font-size: 2.2rem;
+         }
+
+         @include tab-only {
+            font-size: 1.6rem;
+         }
+      }
+
+      p {
+         margin-top: 1rem;
+         font-size: 1.8rem;
+         line-height: calc(30 / 18);
+         font-weight: 500;
+         color: $font-color02;
+
+         @include pc {
+            font-size: 1.8rem;
+            width: calc(100% + 4px);
+         }
+
+         @include tab-only {
+            font-size: 1.5rem;
+         }
+      }
+   }
+
+   /* =========================
+    SWIPER ARROW
+    ========================= */
+   .swiper-button-prev,
+   .swiper-button-next {
+      width: 3rem;
+      height: 3.6rem;
+
+      opacity: 1;
+      position: absolute;
+      top: 15rem;
+      z-index: 10;
+
+      &::after {
+         display: none;
+      }
+
+      @include hover-opacity;
+
+      @include pc {
+         top: 14rem;
+      }
+   }
+
+   .swiper-button-prev {
+      background: url("../images/top/arrow-l-sp.svg") no-repeat center / contain;
+      left: 0;
+
+      @include pc {
+         left: 0;
+         transform: translate(-100%, 30%);
+      }
+   }
+
+   .swiper-button-next {
+      background: url("../images/top/arrow-r-sp.svg") no-repeat center / contain;
+      right: 0;
+
+      @include pc {
+         right: 0;
+         transform: translate(100%, 30%);
+      }
+   }
+
+   /* =========================
+    SWIPER ARROW
+    ========================= */
+   .swiper,
+   .swiper-wrapper,
+   .swiper-slide {
+      height: auto;
+   }
+}

@@ -1,0 +1,29 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   ABOUT
+========================= */
+.p-about {
+    color: $font-color02;
+    padding: 5rem 0 4rem 0;
+
+    @include pc {
+        padding: 6.6rem 0 6.2rem;
+    }
+
+    &__contents {
+        text-align: center;
+    }
+
+    p {
+        margin-top: 1.4rem;
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+        font-weight: 500;
+
+        @include pc {
+            margin-top: 3rem;
+        }
+    }
+}

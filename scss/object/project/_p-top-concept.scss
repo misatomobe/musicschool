@@ -1,0 +1,178 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   CONCEPT
+========================= */
+.p-concept {
+    padding: 4.5rem 0 3.3rem;
+
+    @include pc {
+        padding: 6.6rem 0 5.7rem;
+    }
+
+    &__inner {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    &__title {
+        @include pc {
+            font-size: 3.5rem;
+            line-height: calc(50 / 35);
+        }
+    }
+
+    &__head {
+        text-align: left;
+        p {
+            font-size: 1.8rem;
+            line-height: calc(30 / 18);
+            font-weight: 500;
+        }
+    }
+
+    &__text {
+        margin-top: 0.7rem;
+
+        @include pc {
+            margin-top: 1.7rem;
+            text-align: center;
+        }
+    }
+
+    &__arch {
+        display: block;
+        margin-top: 2rem;
+        
+        @include pc {
+            margin-top: 3.4rem;
+            margin-inline: auto;
+            width: 85.815rem;
+            max-width: 100%;
+        }
+    }
+
+    &__items {
+        position: relative;
+        margin-top: 2.1rem;
+        @include pc {
+            margin-top: 0.5rem;
+        }
+    }
+
+    /* =========================
+        ARROW
+    ========================= */
+    &__arrow {
+        position: absolute;
+        top: -1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 3rem;
+        height: 1.5rem;
+        z-index: 2;
+    }
+    
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 0.7rem;
+
+
+        /* 中央線 */
+        &::before {
+            content: "";
+            position: absolute;
+            top: -1.5rem;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            background: $main-color;
+
+            @include pc {
+                top: -1rem;
+                bottom: 1.5rem;
+            }
+        }
+
+        /* 上向き矢印 */
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: -1.6rem;
+            transform: translateX(-50%);
+            width: 3.6rem;
+            height: 1.9rem;
+            background: url("../images/top/arrow_up_sp.svg") no-repeat center / contain;
+
+            @include pc {
+                top: -1rem;   
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr 3rem 1fr;
+        align-items: center;
+        height: 5rem;
+        margin-top: 1.2rem;
+    }
+
+    &__en {
+        text-align: right;
+        font-size: 2rem;
+        line-height: calc(50 / 20);
+        font-weight: 700;
+        color: $main-color;
+        padding-right: clamp(2.3rem, 3vw, 2.5rem);
+        white-space: nowrap;
+
+        @media (max-width: 350px) {
+            padding-right: 1rem;
+        }
+
+        @include pc {
+            font-size: 2.5rem;
+            line-height: calc(50 / 25);
+        }
+    }
+
+    &__center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__dot {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background: $main-color;
+    }
+
+    &__jp {
+        font-size: 2rem;
+        line-height: calc(50 / 20);
+        font-weight: 500;
+        padding-left: clamp(2.6rem, 3vw, 2.5rem);
+        white-space: nowrap;
+
+        @media (max-width: 350px) {
+            padding-left: 1rem;
+        }
+
+        @include pc {
+            font-size: 2.3rem;
+            line-height: calc(50 / 23);
+        }
+    }
+}
