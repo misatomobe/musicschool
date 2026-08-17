@@ -2022,52 +2022,6 @@ button {
     padding-bottom: 0;
   }
 }
-.p-plan-table__hint {
-  min-width: 25rem;
-  min-height: 4rem;
-  position: absolute;
-  left: 50%;
-  bottom: 25rem;
-  transform: translateX(-50%);
-  padding: 0.6rem 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.75);
-  color: #fff;
-  font-size: 1.3rem;
-  z-index: 5;
-  transition: opacity 0.4s, visibility 0.4s;
-  animation: scrollHint 2s ease-in-out infinite;
-}
-@media (min-width: 768px) {
-  .p-plan-table__hint {
-    display: none;
-  }
-}
-.p-plan-table__hint.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  animation: none;
-}
-.p-plan-table {
-  /* 横スクロールを促す揺れ */
-}
-@keyframes scrollHint {
-  0% {
-    transform: translateX(-50%);
-  }
-  25% {
-    transform: translateX(-55%);
-  }
-  50% {
-    transform: translateX(-45%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 .p-plan-table__table {
   width: 100%;
   min-width: 67.6rem;
