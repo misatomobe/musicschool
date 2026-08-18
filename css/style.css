@@ -893,6 +893,16 @@ button {
     margin-top: 8rem;
   }
 }
+.p-fv::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(80, 80, 80, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+}
 .p-fv picture {
   display: block;
 }
