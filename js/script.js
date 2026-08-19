@@ -80,13 +80,6 @@ $(accordionSummary).on('click', function (event) {
 
   } else {
 
-    // 他を閉じる
-    $(accordionDetails).removeAttr('open');
-
-    $(accordionSummary).removeClass('is-active');
-
-    $(accordionContent).slideUp(speed);
-
     // 現在を開く
     $details.attr('open', true);
 
@@ -95,6 +88,24 @@ $(accordionSummary).on('click', function (event) {
     $content.hide().slideDown(speed);
 
   }
+
+});
+
+$(accordionContent).on('click', function() {
+
+  const $content = $(this);
+  const $details = $content.parent(accordionDetails);
+  const $summary = $details.find(accordionSummary);
+
+  $summary.removeClass('is-active');
+
+  $content.slideUp(speed, function() {
+
+    $details.removeAttr('open');
+
+    $(this).show();
+  
+  });
 
 });
 

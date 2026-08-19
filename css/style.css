@@ -1689,6 +1689,7 @@ button {
   padding: 1.7rem 4.7rem 0.9rem 0;
   background: #f8e9e9;
   align-items: center;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .p-faq__answer {
