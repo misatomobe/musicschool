@@ -40,10 +40,16 @@
     ========================= */
     &__logo a {
         display: flex;
-        align-items: center;
+        align-items: center; 
+        width: 20.8rem;       
         height: 5rem;
         
         @include hover-opacity;
+
+        @include pc {
+            width: 19.2rem;
+            height: 8rem;
+        }
     }
 
     /* =========================
