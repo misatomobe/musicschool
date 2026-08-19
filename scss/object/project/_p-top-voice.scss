@@ -137,21 +137,23 @@
 
    .swiper-button-prev {
       background: url("../images/top/arrow-l-sp.svg") no-repeat center / contain;
-      left: 0;
+      top: 42%;
+      left: 0.1rem;
 
       @include pc {
-         left: 0;
-         transform: translate(-100%, 30%);
+         top: 44%;
+         left: -2.9rem;
       }
    }
 
    .swiper-button-next {
       background: url("../images/top/arrow-r-sp.svg") no-repeat center / contain;
-      right: 0;
+      top: 42%;
+      right: 0.1rem;
 
       @include pc {
-         right: 0;
-         transform: translate(100%, 30%);
+         top: 44%;
+         right: -2.9rem;
       }
    }
 
