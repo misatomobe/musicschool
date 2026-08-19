@@ -239,6 +239,9 @@ button {
   gap: 3.3rem;
 }
 .l-header__nav ul li:not(.is-contact) a {
+  display: flex;
+  align-items: center;
+  height: 8rem;
   font-size: 1.7rem;
   line-height: 1.9411764706;
   font-weight: 700;

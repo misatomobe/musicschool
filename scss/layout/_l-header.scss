@@ -68,6 +68,10 @@
             gap: 3.3rem;
 
             li:not(.is-contact) a {
+                display: flex;
+                align-items: center;
+                height: 8rem;
+
                 font-size: 1.7rem;
                 line-height: calc(33 / 17);
                 font-weight: 700;
