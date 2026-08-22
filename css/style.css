@@ -823,6 +823,7 @@ button {
   }
 }
 .c-breadcrumb__inner {
+  width: 100%;
   padding: 0.1rem 2rem;
 }
 @media (min-width: 768px) {
@@ -971,7 +972,7 @@ button {
   }
 }
 .p-concept__inner {
-  max-width: 1080px;
+  max-width: 108rem;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -1224,7 +1225,6 @@ button {
   line-height: 1.5;
   font-weight: 700;
   position: relative;
-  display: inline-block;
   padding-bottom: 1.1rem;
   display: block;
 }

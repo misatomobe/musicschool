@@ -15,7 +15,9 @@
     }
     
     &__inner {
+        width: 100%;
         padding: 0.1rem 2rem;
+        
         @include pc {
             height: 5rem;
             max-width: 940px;
