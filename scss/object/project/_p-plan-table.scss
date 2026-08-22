@@ -70,12 +70,7 @@
         th:first-child {
             width: 25.3%;
         }
-
-        @include pc {
-            min-width: auto;
-        }
     }
-
 
     /* -------------------------
        共通セル

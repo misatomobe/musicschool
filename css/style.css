@@ -2086,11 +2086,6 @@ button {
 .p-plan-table__table th:first-child {
   width: 25.3%;
 }
-@media (min-width: 768px) {
-  .p-plan-table__table {
-    min-width: auto;
-  }
-}
 .p-plan-table {
   /* -------------------------
      共通セル
@@ -2956,6 +2951,7 @@ button {
   }
 }
 .p-blog-details__related-image {
+  position: relative;
   width: 16rem;
   height: 11rem;
   overflow: hidden;
