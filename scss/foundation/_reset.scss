@@ -101,10 +101,10 @@ meter {
 /* Revert Modal native behavior */
 :where(dialog:modal) {
   all: revert;
-  box-sizing: border-box;}
+  box-sizing: border-box;
+}
 
 /* Remove details summary webkit styles */
-::-web
-kit-details-marker {
+::-webkit-details-marker {
   display: none;
 }

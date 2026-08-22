@@ -104,7 +104,7 @@ meter {
 }
 
 /* Remove details summary webkit styles */
-::-web kit-details-marker {
+::-webkit-details-marker {
   display: none;
 }
 
@@ -535,6 +535,7 @@ button {
 }
 @media (min-width: 768px) {
   .l-inner {
+    width: 100%;
     max-width: 940px;
     margin: 0 auto;
     padding: 0 3rem;
