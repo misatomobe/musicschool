@@ -121,6 +121,16 @@ html {
   word-break: break-all;
   font-size: 10px;
 }
+@media (min-width: 768px) and (max-width: 940px) {
+  html {
+    font-size: vw(10, 940);
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: vw(10, 375);
+  }
+}
 
 body {
   font-family: "Yu Gothic", "YuGothic", "Hiragino Sans", "Noto Sans JP", sans-serif;
@@ -156,7 +166,6 @@ h1, h2, h3, h4, h5, h6 {
 
 button {
   border: none;
-  outline: transparent;
   outline: none;
 }
 
