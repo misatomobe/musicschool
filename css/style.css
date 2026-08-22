@@ -1273,7 +1273,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-voice__inner {
-    max-width: 1040px;
+    max-width: 104rem;
     margin-inline: auto;
     padding: 4.4rem 6.5rem 8rem;
   }
@@ -1284,13 +1284,13 @@ button {
 }
 @media (min-width: 768px) {
   .p-voice__slider-wrap {
-    max-width: 1040px;
+    max-width: 104rem;
     margin-top: 3.5rem;
   }
 }
 @media (min-width: 768px) {
   .p-voice__slider {
-    max-width: 882px;
+    max-width: 88.2rem;
     margin-inline: auto;
   }
 }
@@ -1453,7 +1453,7 @@ button {
   }
 }
 .p-flow__inner {
-  max-width: 1080px;
+  max-width: 108rem;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -1760,7 +1760,7 @@ button {
 }
 @media (min-width: 768px) {
   .p-blog__item {
-    width: calc((100% - 6rem) / 3);
+    flex: 1;
   }
 }
 @media (min-width: 768px) {
