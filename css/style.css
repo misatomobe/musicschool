@@ -3624,7 +3624,7 @@ CONTACT FORM BUTTON
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 10.6rem;
+    column-gap: 5.6818181818%;
     row-gap: 6.1rem;
     justify-content: flex-start;
   }
