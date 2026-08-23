@@ -21,15 +21,15 @@
       margin-top: 3.9rem;
 
       @include pc {
-         max-width: 104rem;
+         max-width: 88.2rem;
          margin-top: 3.5rem;
+         margin-inline: auto;
       }
    }
 
    &__slider {
       @include pc {
-         max-width: 88.2rem;
-         margin-inline: auto;
+         width: 100%;
       }
    }
 
@@ -62,7 +62,15 @@
       overflow: hidden;
 
       img {
+         width: 100%;
+         aspect-ratio: 335 / 200;
+         object-fit: cover;
+         display: block;
          transition: transform 0.4s ease;
+
+         @include pc {
+            aspect-ratio: 270 / 190;
+         }
       }
    }
 

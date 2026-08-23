@@ -1284,14 +1284,14 @@ button {
 }
 @media (min-width: 768px) {
   .p-voice__slider-wrap {
-    max-width: 104rem;
+    max-width: 88.2rem;
     margin-top: 3.5rem;
+    margin-inline: auto;
   }
 }
 @media (min-width: 768px) {
   .p-voice__slider {
-    max-width: 88.2rem;
-    margin-inline: auto;
+    width: 100%;
   }
 }
 .p-voice {
@@ -1323,7 +1323,16 @@ button {
   overflow: hidden;
 }
 .p-voice__image img {
+  width: 100%;
+  aspect-ratio: 335/200;
+  object-fit: cover;
+  display: block;
   transition: transform 0.4s ease;
+}
+@media (min-width: 768px) {
+  .p-voice__image img {
+    aspect-ratio: 270/190;
+  }
 }
 .p-voice {
   /* =========================
