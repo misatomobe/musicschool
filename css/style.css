@@ -817,6 +817,10 @@ button {
   z-index: 10;
   -webkit-overflow-scrolling: touch;
 }
+.c-breadcrumb .l-inner {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
 @media (min-width: 768px) {
   .c-breadcrumb {
     min-height: 5rem;
@@ -836,7 +840,14 @@ button {
 }
 .c-breadcrumb__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  width: max-content;
+}
+@media (max-width: 767px) {
+  .c-breadcrumb__list {
+    width: max-content;
+  }
 }
 .c-breadcrumb__item {
   display: flex;
@@ -854,11 +865,6 @@ button {
 @media (min-width: 768px) {
   .c-breadcrumb__item:not(:last-child)::after {
     top: 0;
-  }
-}
-@media (max-width: 767px) {
-  .c-breadcrumb__item--result-details, .c-breadcrumb__item--blog-details {
-    flex-basis: 100%;
   }
 }
 .c-breadcrumb__item--result-details span, .c-breadcrumb__item--blog-details span {

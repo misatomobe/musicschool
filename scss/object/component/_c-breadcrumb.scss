@@ -10,6 +10,11 @@
     z-index: 10;
     -webkit-overflow-scrolling: touch;
 
+    .l-inner {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
     @include pc {
         min-height: 5rem;
     }
@@ -28,7 +33,12 @@
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        width: max-content;
+        @include sp {
+            width: max-content;
+        }
     }
 
     &__item {
@@ -37,6 +47,7 @@
         font-size: 1.6rem;
         line-height: calc(33 / 16);
         font-weight: 500;
+
         &:not(:last-child)::after {
             content: ">";
             margin-inline: 2rem;
@@ -50,10 +61,6 @@
 
         &--result-details,
         &--blog-details {
-            @include sp {
-                flex-basis: 100%;
-            }
-
             span {
                 position: relative;
                 top: -0.5rem;
@@ -65,7 +72,6 @@
                 }
             }
         }
-
 
         a {
             @include pc {
