@@ -820,6 +820,11 @@ button {
 .c-breadcrumb .l-inner {
   overflow-x: auto;
   overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.c-breadcrumb .l-inner::-webkit-scrollbar {
+  display: none;
 }
 @media (min-width: 768px) {
   .c-breadcrumb {
@@ -864,17 +869,6 @@ button {
 }
 @media (min-width: 768px) {
   .c-breadcrumb__item:not(:last-child)::after {
-    top: 0;
-  }
-}
-.c-breadcrumb__item--result-details span, .c-breadcrumb__item--blog-details span {
-  position: relative;
-  top: -0.5rem;
-  line-height: 1.25;
-}
-@media (min-width: 768px) {
-  .c-breadcrumb__item--result-details span, .c-breadcrumb__item--blog-details span {
-    line-height: 2.0625;
     top: 0;
   }
 }
@@ -2548,18 +2542,6 @@ button {
 }
 
 /* =========================
-   BLOG-DETAILS パンくず専用
-========================= */
-.c-breadcrumb__item--blog-details span {
-  position: relative;
-}
-@media (min-width: 768px) {
-  .c-breadcrumb__item--blog-details span {
-    top: 0;
-  }
-}
-
-/* =========================
    BLOG-DETAILS
 ========================= */
 .p-blog-details {
@@ -2576,17 +2558,13 @@ button {
   ========================= */
 }
 .p-blog-details__breadcrumb {
-  padding-top: 4.2rem;
+  padding-top: 5.4rem;
 }
 @media (min-width: 768px) {
   .p-blog-details__breadcrumb {
     padding-top: 8rem;
     padding-bottom: 1.9rem;
   }
-}
-.p-blog-details__breadcrumb .c-breadcrumb__list {
-  position: relative;
-  top: 1.1rem;
 }
 .p-blog-details {
   /* =========================
@@ -3630,7 +3608,7 @@ CONTACT FORM BUTTON
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 5.6818181818%;
+    column-gap: 10.6rem;
     row-gap: 6.1rem;
     justify-content: flex-start;
   }
