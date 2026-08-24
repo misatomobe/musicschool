@@ -1916,6 +1916,20 @@ button {
 }
 
 /* =========================
+   DETAILS 共通
+========================= */
+.p-details__breadcrumb {
+  padding-top: 5.4rem;
+  padding-bottom: 0.1rem;
+}
+@media (min-width: 768px) {
+  .p-details__breadcrumb {
+    padding-top: 9rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* =========================
    P-Plan-FV
 ========================= */
 .p-plan-fv {
@@ -2550,20 +2564,6 @@ button {
 @media (min-width: 768px) {
   .p-blog-details {
     padding: 7rem 0 18.5rem;
-  }
-}
-.p-blog-details {
-  /* =========================
-     パンくずリスト
-  ========================= */
-}
-.p-blog-details__breadcrumb {
-  padding-top: 5.4rem;
-}
-@media (min-width: 768px) {
-  .p-blog-details__breadcrumb {
-    padding-top: 8rem;
-    padding-bottom: 1.9rem;
   }
 }
 .p-blog-details {

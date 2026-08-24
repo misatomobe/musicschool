@@ -11,17 +11,6 @@
         padding: 7rem 0 18.5rem;
     }
 
-    /* =========================
-       パンくずリスト
-    ========================= */
-    &__breadcrumb {
-        padding-top: 5.4rem;
-
-        @include pc {
-            padding-top: 8rem;
-            padding-bottom: 1.9rem;
-        }
-    }
 
     /* =========================
        ページ専用
