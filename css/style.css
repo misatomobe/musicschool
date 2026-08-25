@@ -1392,7 +1392,7 @@ button {
 .p-voice .swiper-button-next {
   width: 2.8rem;
   height: 4rem;
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 1;
@@ -1420,8 +1420,8 @@ button {
 }
 @media (min-width: 768px) {
   .p-voice .swiper-button-prev {
-    top: 50%;
-    left: -2.8rem;
+    top: 43.5%;
+    left: -4.1rem;
   }
 }
 .p-voice .swiper-button-next {
@@ -1431,8 +1431,8 @@ button {
 }
 @media (min-width: 768px) {
   .p-voice .swiper-button-next {
-    top: 50%;
-    right: -2.8rem;
+    top: 43.5%;
+    right: -4.1rem;
   }
 }
 .p-voice {
