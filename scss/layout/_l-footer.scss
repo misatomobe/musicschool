@@ -90,7 +90,7 @@
             line-height: calc(20 / 15);
             font-weight: 500;
             word-break: normal;
-            overflow-wrap:normal;
+            overflow-wrap: normal;
             
             @include pc {
                 line-height: calc(33 / 15);
@@ -123,7 +123,6 @@
                     @include pc {
                         &:hover {
                             opacity: 0.7;
-                            transform: scale(1.2);
                         }
                     }
                 }

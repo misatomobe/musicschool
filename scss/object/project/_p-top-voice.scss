@@ -10,7 +10,7 @@
       padding: 4.6rem 2rem 5rem;
 
       @include pc {
-         max-width: 1040px;
+         max-width: 104rem;
          margin-inline: auto;
          padding: 4.4rem 6.5rem 8rem;
       }
@@ -21,15 +21,15 @@
       margin-top: 3.9rem;
 
       @include pc {
-         max-width: 1040px;
+         max-width: 88.2rem;
          margin-top: 3.5rem;
+         margin-inline: auto;
       }
    }
 
    &__slider {
       @include pc {
-         max-width: 882px;
-         margin-inline: auto;
+         width: 100%;
       }
    }
 
@@ -37,12 +37,15 @@
     VOICE CARD
     ========================= */
    &__card {
+      display: block;
+
       @include pc {
          width: 100%;
 
          &:hover {
             .p-voice__image img {
                transform: scale(1.1);
+               opacity: 0.7;
             }
 
             .p-voice__body {
@@ -59,7 +62,15 @@
       overflow: hidden;
 
       img {
+         width: 100%;
+         aspect-ratio: 335 / 200;
+         object-fit: cover;
+         display: block;
          transition: transform 0.4s ease;
+
+         @include pc {
+            aspect-ratio: 270 / 190;
+         }
       }
    }
 
@@ -113,12 +124,15 @@
     ========================= */
    .swiper-button-prev,
    .swiper-button-next {
-      width: 3rem;
-      height: 3.6rem;
+      width: 2.8rem;
+      height: 4rem;
+
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
 
       opacity: 1;
       position: absolute;
-      top: 15rem;
       z-index: 10;
 
       &::after {
@@ -126,29 +140,27 @@
       }
 
       @include hover-opacity;
-
-      @include pc {
-         top: 14rem;
-      }
    }
 
    .swiper-button-prev {
-      background: url("../images/top/arrow-l-sp.svg") no-repeat center / contain;
-      left: 0;
+      background-image: url("../images/top/arrow-l-sp.svg");
+      top: 42%;
+      left: 0.2rem;
 
       @include pc {
-         left: 0;
-         transform: translate(-100%, 30%);
+         top: 43.5%;
+         left: -4.1rem;
       }
    }
 
    .swiper-button-next {
-      background: url("../images/top/arrow-r-sp.svg") no-repeat center / contain;
-      right: 0;
+      background-image: url("../images/top/arrow-r-sp.svg");
+      top: 42%;
+      right: 0.2rem;
 
       @include pc {
-         right: 0;
-         transform: translate(100%, 30%);
+         top: 43.5%;
+         right: -4.1rem;
       }
    }
 

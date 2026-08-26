@@ -80,13 +80,6 @@ $(accordionSummary).on('click', function (event) {
 
   } else {
 
-    // 他を閉じる
-    $(accordionDetails).removeAttr('open');
-
-    $(accordionSummary).removeClass('is-active');
-
-    $(accordionContent).slideUp(speed);
-
     // 現在を開く
     $details.attr('open', true);
 
@@ -95,6 +88,24 @@ $(accordionSummary).on('click', function (event) {
     $content.hide().slideDown(speed);
 
   }
+
+});
+
+$(accordionContent).on('click', function() {
+
+  const $content = $(this);
+  const $details = $content.parent(accordionDetails);
+  const $summary = $details.find(accordionSummary);
+
+  $summary.removeClass('is-active');
+
+  $content.slideUp(speed, function() {
+
+    $details.removeAttr('open');
+
+    $(this).show();
+  
+  });
 
 });
 
@@ -152,43 +163,3 @@ function updateTopBtn() {
 window.addEventListener('scroll', updateTopBtn);
 window.addEventListener('load', updateTopBtn);
 window.addEventListener('resize', updateTopBtn);
-
-
-// ==============================
-// テーブル横スクロールヒント
-// ==============================
-
-const tableScroll = document.querySelector('.p-plan-table__scroll');
-const tableHint = document.querySelector('.p-plan-table__hint');
-
-if (tableScroll && tableHint) {
-
-  const toggleHint = () => {
-
-    // 横スクロール可能か判定
-    const isScrollable =
-      tableScroll.scrollWidth > tableScroll.clientWidth;
-
-    // スクロール不要なら非表示
-    if (!isScrollable) {
-      tableHint.classList.add('is-hidden');
-      return;
-    }
-
-    // 少しでもスクロールしたら非表示
-    if (tableScroll.scrollLeft > 5) {
-      tableHint.classList.add('is-hidden');
-    } else {
-      tableHint.classList.remove('is-hidden');
-    }
-  };
-
-  // 初回
-  toggleHint();
-
-  // 横スクロール
-  tableScroll.addEventListener('scroll', toggleHint);
-
-  // 画面幅変更
-  window.addEventListener('resize', toggleHint);
-}

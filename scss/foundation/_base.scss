@@ -1,4 +1,5 @@
 @use "./_variables";
+@use "./mixin" as *;
 
 *,
 *::before,
@@ -12,12 +13,20 @@ html {
   scroll-behavior: smooth;
   word-break: break-all;
   font-size: 10px;
+
+  @media (min-width: 768px) and (max-width: 940px) {
+    font-size: vw(10, 940);
+  }
+
+  @include sp {
+    font-size: vw(10, 375);
+  }
 }
 
 body {
   font-family: "Yu Gothic", "YuGothic", "Hiragino Sans", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
-  line-height: calc(30 /16);
+  line-height: calc(30 / 16);
   font-weight: 500;
   color: variables.$font-color;
   letter-spacing: 0;
@@ -48,6 +57,5 @@ h1, h2, h3, h4, h5, h6 {
 
 button {
   border: none;
-  outline: transparent;
   outline: none;
 }

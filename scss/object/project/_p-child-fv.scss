@@ -1,16 +1,16 @@
 @use "../../foundation/variables" as *;
 @use "../../foundation/mixin" as *;
 /* =========================
-   FV
+   P-Child-FV
 ========================= */
-.p-fv {
+.p-child-fv {
     position: relative;
     margin-top: 5rem;
 
     @include pc {
         margin-top: 8rem;
     }
-
+    
     &::before {
         content: "";
         width: 100%;
@@ -21,6 +21,7 @@
         left: 0;
         mix-blend-mode: multiply;
     }
+
 
     picture {
         display: block;
@@ -36,25 +37,17 @@
     &__contents {
         width: 100%;
         position: absolute;
-        top: 51%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         
         z-index: 1;
         text-align: center;
     }
-
     &__title {
-        font-size: 3rem;
-        line-height: calc(50 / 30);
+        font-size: 2.5rem;
+        line-height: calc(60 / 25);
         font-weight: 700;
         color: $font-color02;
-        @include sp-small {
-            font-size: 2.5rem;
-        }
-        @include pc {
-            font-size: 4rem;
-            line-height: calc(60 / 40);
-        }
     }
 }

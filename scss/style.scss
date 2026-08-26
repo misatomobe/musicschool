@@ -32,6 +32,9 @@
 @use "./object/project/p-cta";
 @use "./object/project/p-fixed-buttons";
 
+//details 共通
+@use "./object/project/_p-details";
+
 
 // plan
 @use "./object/project/p-plan-fv";
@@ -60,6 +63,9 @@
 // result
 @use "./object/project/p-result-list";
 @use "./object/project/p-result-details";
+
+//fv（下層共通）
+@use "./object/project/p-child-fv";
 
 
 // utility（補助）

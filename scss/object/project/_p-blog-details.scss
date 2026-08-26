@@ -2,20 +2,6 @@
 @use "../../foundation/mixin" as *;
 
 /* =========================
-   BLOG-DETAILS パンくず専用
-========================= */
-.c-breadcrumb__item--blog-details {
-    
-    span {
-        position: relative;
-
-        @include pc {
-            top: 0;
-        }
-    }
-}
-
-/* =========================
    BLOG-DETAILS
 ========================= */
 .p-blog-details {
@@ -25,24 +11,6 @@
         padding: 7rem 0 18.5rem;
     }
 
-    /* =========================
-       パンくずリスト
-    ========================= */
-    &__breadcrumb {
-        padding-top: 4.2rem;
-
-        @include pc {
-            padding-top: 8rem;
-            padding-bottom: 1.9rem;
-        }
-
-        // パンくずリスト全体を下へ
-        .c-breadcrumb__list {
-            position: relative;
-            top: 1.1rem;
-
-        }
-    }
 
     /* =========================
        ページ専用
@@ -409,6 +377,7 @@
     }
 
     &__related-image {
+        position: relative;
         width: 16rem;
         height: 11rem;
         overflow: hidden;
@@ -525,7 +494,6 @@
             margin: 1.5rem;
             height: 4rem;
         }
-        
     }
 
     &__search-input {

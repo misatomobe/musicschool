@@ -1,0 +1,17 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+/* =========================
+   DETAILS 共通
+========================= */
+.p-details {
+    &__breadcrumb {
+        padding-top: 5.4rem;
+        padding-bottom: 0.1rem;
+
+        @include pc {
+            padding-top: 9rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+}

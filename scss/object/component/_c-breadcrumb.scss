@@ -10,12 +10,25 @@
     z-index: 10;
     -webkit-overflow-scrolling: touch;
 
+    .l-inner {
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
     @include pc {
         min-height: 5rem;
     }
     
     &__inner {
+        width: 100%;
         padding: 0.1rem 2rem;
+        
         @include pc {
             height: 5rem;
             max-width: 940px;
@@ -26,7 +39,12 @@
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        width: max-content;
+        @include sp {
+            width: max-content;
+        }
     }
 
     &__item {
@@ -35,6 +53,7 @@
         font-size: 1.6rem;
         line-height: calc(33 / 16);
         font-weight: 500;
+
         &:not(:last-child)::after {
             content: ">";
             margin-inline: 2rem;
@@ -45,25 +64,6 @@
                 top: 0;
             }
         }
-
-        &--result-details,
-        &--blog-details {
-            @include sp {
-                flex-basis: 100%;
-            }
-
-            span {
-                position: relative;
-                top: -0.5rem;
-                line-height: calc(20 / 16);
-
-                @include pc {
-                    line-height: calc(33 / 16);
-                    top: 0;
-                }
-            }
-        }
-
 
         a {
             @include pc {

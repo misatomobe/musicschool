@@ -50,55 +50,6 @@
         }
     }
 
-    &__hint {
-        min-width: 25rem;
-        min-height: 4rem;
-        position: absolute;
-        left: 50%;
-        bottom: 25rem;
-        transform: translateX(-50%);
-        padding: 0.6rem 1.2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 999px;
-        background: $hint-color;
-        color: $font-color02;
-        font-size: 1.3rem;
-        z-index: 5;
-        transition:
-            opacity .4s,
-            visibility .4s;
-        animation: scrollHint 2s ease-in-out infinite;
-
-        @include pc {
-            display: none;
-        }
-
-        &.is-hidden {
-            opacity: 0;
-            visibility: hidden;
-
-            // 消えたらアニメ停止
-            animation: none;
-        }
-    }
-
-    /* 横スクロールを促す揺れ */
-    @keyframes scrollHint {
-        0% {
-            transform: translateX(-50%);
-        }
-        25% {
-            transform: translateX(-55%);
-        }
-        50% {
-            transform: translateX(-45%);
-        }
-        100% {
-            transform: translateX(-50%);
-        }
-    }
 
     &__table {
         width: 100%;
@@ -119,12 +70,7 @@
         th:first-child {
             width: 25.3%;
         }
-
-        @include pc {
-            min-width: auto;
-        }
     }
-
 
     /* -------------------------
        共通セル

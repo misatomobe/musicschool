@@ -33,11 +33,7 @@
     .p-contact__item {
         @include pc {
             display: flex;
-            align-items: flex-start;
-
-            @include pc {
-                align-items: center;
-            }
+            align-items: center;
         }
 
         dt {
