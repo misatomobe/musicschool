@@ -1,4 +1,4 @@
-@use "./_variables";
+@use "./variables" as *;
 @use "./mixin" as *;
 
 *,
@@ -26,7 +26,7 @@ body {
   font-size: 1.6rem;
   line-height: calc(30 / 16);
   font-weight: 500;
-  color: variables.$font-color;
+  color: $font-color;
   letter-spacing: 0;
   margin: 0;
 }
