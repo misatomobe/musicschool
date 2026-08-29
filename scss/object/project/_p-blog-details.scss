@@ -108,12 +108,26 @@
     }
 
     &__share-item {
-        flex: 0 1 auto;
+        flex: 1;
         min-width: 0;
 
         a {
             display: block;
+            width: 100%;
+
             @include hover-opacity;
+        }
+
+        @include pc {
+            flex: 0 1 auto;
+
+            a {
+                width: auto;
+            }
+
+            img {
+                width: auto;
+            }
         }
     }
 
@@ -578,11 +592,14 @@
 
     /*  カテゴリー */
     &__category-item {
-        padding: 1.2rem 0 0.6rem;
         border-bottom: 0.05rem solid $font-color;
 
         a {
-            display: block;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 4.6rem;
             font-size: 1.7rem;
             line-height: calc(28 / 17);
 
