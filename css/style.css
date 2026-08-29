@@ -826,21 +826,15 @@ button {
 .c-breadcrumb .l-inner::-webkit-scrollbar {
   display: none;
 }
-@media (min-width: 768px) {
-  .c-breadcrumb {
-    min-height: 5rem;
-  }
-}
 .c-breadcrumb__inner {
   width: 100%;
-  padding: 0.1rem 2rem;
+  padding: 0 2rem;
 }
 @media (min-width: 768px) {
   .c-breadcrumb__inner {
-    height: 5rem;
     max-width: 940px;
     margin: 0 auto;
-    padding: 0.8rem 3rem;
+    padding: 0 3rem;
   }
 }
 .c-breadcrumb__list {
@@ -857,20 +851,30 @@ button {
 .c-breadcrumb__item {
   display: flex;
   align-items: center;
+  height: 3.6rem;
   font-size: 1.6rem;
   line-height: 2.0625;
   font-weight: 500;
+}
+@media (min-width: 768px) {
+  .c-breadcrumb__item {
+    height: 5rem;
+  }
 }
 .c-breadcrumb__item:not(:last-child)::after {
   content: ">";
   margin-inline: 2rem;
   position: relative;
-  top: -0.2rem;
 }
-@media (min-width: 768px) {
-  .c-breadcrumb__item:not(:last-child)::after {
-    top: 0;
-  }
+.c-breadcrumb__item a,
+.c-breadcrumb__item span {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.c-breadcrumb__item a {
+  height: 3.6rem;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .c-breadcrumb__item a {
