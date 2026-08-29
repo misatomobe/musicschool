@@ -136,11 +136,13 @@
       }
    }
 
-   &__related-item {
-      margin-top: 2rem;
+   &__related-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
 
       @include pc {
-         margin-top: 3rem;
+         row-gap: 3rem;
       }
    }
 

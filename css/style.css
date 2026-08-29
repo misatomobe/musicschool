@@ -3850,12 +3850,14 @@ CONTACT FORM BUTTON
     margin-top: 0;
   }
 }
-.p-result-details__related-item {
-  margin-top: 2rem;
+.p-result-details__related-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
 }
 @media (min-width: 768px) {
-  .p-result-details__related-item {
-    margin-top: 3rem;
+  .p-result-details__related-list {
+    row-gap: 3rem;
   }
 }
 .p-result-details__related-image {
