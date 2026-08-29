@@ -3047,11 +3047,18 @@ button {
     width: 100%;
   }
 }
+.p-blog-details__mail-magazine-contents {
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .p-blog-details__mail-magazine-contents {
+    padding: 1.5rem;
+  }
+}
 .p-blog-details__mail-magazine-banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
   min-height: 22.8rem;
   background: #E8E8E8;
 }
@@ -3066,7 +3073,6 @@ button {
 @media (min-width: 768px) {
   .p-blog-details__mail-magazine-banner {
     min-height: 17rem;
-    margin: 1.5rem;
   }
 }
 .p-blog-details {
@@ -3075,16 +3081,22 @@ button {
 .p-blog-details__search {
   border: 0.05rem solid #000;
 }
+.p-blog-details__search-contents {
+  padding: 1.9rem;
+}
+@media (min-width: 768px) {
+  .p-blog-details__search-contents {
+    padding: 1.5rem;
+  }
+}
 .p-blog-details__search-form {
   display: flex;
-  margin: 1.9rem;
   justify-content: center;
   align-items: center;
   height: 5.4rem;
 }
 @media (min-width: 768px) {
   .p-blog-details__search-form {
-    margin: 1.5rem;
     height: 4rem;
   }
 }
@@ -3130,12 +3142,22 @@ button {
 .p-blog-details {
   /*  おすすめの記事 */
 }
-.p-blog-details__recommend-item {
+.p-blog-details__recommend-contents {
   margin-top: 2rem;
 }
 @media (min-width: 768px) {
-  .p-blog-details__recommend-item {
+  .p-blog-details__recommend-contents {
     margin-top: 1.5rem;
+  }
+}
+.p-blog-details__recommend-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+@media (min-width: 768px) {
+  .p-blog-details__recommend-list {
+    row-gap: 1.5rem;
   }
 }
 .p-blog-details__recommend-link {

@@ -475,11 +475,18 @@
         }
     }
 
+    &__mail-magazine-contents {
+        padding: 2rem;
+
+        @include pc {
+            padding: 1.5rem;
+        }
+    }
+
     &__mail-magazine-banner {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2rem;
         
         min-height: 22.8rem;
         background: $banner;
@@ -488,7 +495,6 @@
 
         @include pc {
             min-height: 17rem;
-            margin: 1.5rem;
         }
     }
 
@@ -497,15 +503,21 @@
         border: 0.05rem solid $font-color;
     }
 
+    &__search-contents {
+        padding: 1.9rem;
+
+        @include pc {
+            padding: 1.5rem;
+        }
+    }
+
     &__search-form {
         display: flex;
-        margin: 1.9rem;
         justify-content: center;
         align-items: center;
         height: 5.4rem;
 
         @include pc {
-            margin: 1.5rem;
             height: 4rem;
         }
     }
@@ -545,10 +557,20 @@
     }
 
     /*  おすすめの記事 */
-    &__recommend-item {
+    &__recommend-contents {
         margin-top: 2rem;
         @include pc {
             margin-top: 1.5rem;
+        }
+    }
+
+    &__recommend-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+
+        @include pc {
+            row-gap: 1.5rem;
         }
     }
 
