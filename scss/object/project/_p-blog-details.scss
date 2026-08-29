@@ -42,8 +42,13 @@
     }
 
     &__sidebar {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        margin-top: 3rem;
         @include pc {
             min-width: 0;
+            margin-top: 0;
         }
     }
 
@@ -259,16 +264,6 @@
 
             @include hover-opacity;
 
-        }
-    }
-    
-    // サイドバー上余白
-    &__sidebar > section {
-        margin-top: 3rem;
-        @include pc {
-            &:first-child {
-                margin-top: 0;
-            }
         }
     }
 
