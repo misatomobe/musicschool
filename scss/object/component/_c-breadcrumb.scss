@@ -4,80 +4,63 @@
 /* =========================
    BREADCRUMB
 ========================= */
-.c-breadcrumb {
+//模範サイト版
+.c-breadcrumbs {
     background-color: $back-color;
-    position: relative;
-    z-index: 10;
-    -webkit-overflow-scrolling: touch;
 
-    .l-inner {
-        overflow-x: auto;
-        overflow-y: hidden;
-        scrollbar-width: none;
+    .inner {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0 2rem;
+        line-height: 1.4;
+        overflow-x: scroll;
         -ms-overflow-style: none;
+        scrollbar-width: none;
+        column-gap: 2rem;
+
 
         &::-webkit-scrollbar {
             display: none;
         }
-    }
-    
-    &__inner {
-        width: 100%;
-        padding: 0 2rem;
-        
+
         @include pc {
-            max-width: 940px;
-            margin: 0 auto;
-            padding: 0 3rem;
+            padding: 0;
         }
     }
 
-    &__list {
-        display: flex;
-        flex-wrap: nowrap;
-        white-space: nowrap;
-        width: max-content;
-        @include sp {
-            width: max-content;
-        }
-    }
-
-    &__item {
-        display: flex;
-        align-items: center;
+    &__text {
         height: 3.6rem;
-        font-size: 1.6rem;
-        line-height: calc(33 / 16);
-        font-weight: 500;
-        
+        white-space: nowrap;
+
+        text-decoration: none;
+        color: $font-color;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+
         @include pc {
             height: 5rem;
+            font-size: 1.6rem;
         }
+    }
+    
+    &__sign {
+        display: block;
+        font-size: 1.6rem;
+    }
 
-        &:not(:last-child)::after {
-            content: ">";
-            margin-inline: 2rem;
-            position: relative;    
-        }
-
-        a,
-        span {
-            display: flex;
-            align-items: center;
-            height: 100%;
-        }
-
-        a {
-            height: 3.6rem;
-            align-items: center;
-
-            @include pc {
-                transition: opacity 0.4s ease;
-                
-                &:hover {
-                    opacity: 0.7;
-                }
+    a {
+        height: 3.6rem;
+        align-items: center;
+        
+        @include pc {
+            transition: opacity 0.4s ease;
+            
+            &:hover {
+                opacity: 0.7
             }
         }
     }
 }
+

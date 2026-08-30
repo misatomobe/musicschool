@@ -809,76 +809,56 @@ button {
 /* =========================
    BREADCRUMB
 ========================= */
-.c-breadcrumb {
+.c-breadcrumbs {
   background-color: #E8E8E8;
-  position: relative;
-  z-index: 10;
-  -webkit-overflow-scrolling: touch;
 }
-.c-breadcrumb .l-inner {
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-.c-breadcrumb .l-inner::-webkit-scrollbar {
-  display: none;
-}
-.c-breadcrumb__inner {
+.c-breadcrumbs .inner {
+  display: flex;
+  align-items: center;
   width: 100%;
   padding: 0 2rem;
+  line-height: 1.4;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  column-gap: 2rem;
+}
+.c-breadcrumbs .inner::-webkit-scrollbar {
+  display: none;
 }
 @media (min-width: 768px) {
-  .c-breadcrumb__inner {
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0 3rem;
+  .c-breadcrumbs .inner {
+    padding: 0;
   }
 }
-.c-breadcrumb__list {
-  display: flex;
-  flex-wrap: nowrap;
+.c-breadcrumbs__text {
+  height: 3.6rem;
   white-space: nowrap;
-  width: max-content;
-}
-@media (max-width: 767px) {
-  .c-breadcrumb__list {
-    width: max-content;
-  }
-}
-.c-breadcrumb__item {
+  text-decoration: none;
+  color: #000;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
-  height: 3.6rem;
-  font-size: 1.6rem;
-  line-height: 2.0625;
-  font-weight: 500;
 }
 @media (min-width: 768px) {
-  .c-breadcrumb__item {
+  .c-breadcrumbs__text {
     height: 5rem;
+    font-size: 1.6rem;
   }
 }
-.c-breadcrumb__item:not(:last-child)::after {
-  content: ">";
-  margin-inline: 2rem;
-  position: relative;
+.c-breadcrumbs__sign {
+  display: block;
+  font-size: 1.6rem;
 }
-.c-breadcrumb__item a,
-.c-breadcrumb__item span {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-.c-breadcrumb__item a {
+.c-breadcrumbs a {
   height: 3.6rem;
   align-items: center;
 }
 @media (min-width: 768px) {
-  .c-breadcrumb__item a {
+  .c-breadcrumbs a {
     transition: opacity 0.4s ease;
   }
-  .c-breadcrumb__item a:hover {
+  .c-breadcrumbs a:hover {
     opacity: 0.7;
   }
 }
