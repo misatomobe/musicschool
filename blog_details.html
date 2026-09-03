@@ -66,27 +66,20 @@
         </header>
 
         <!-- 【main】 -->
-        <main class="l-main">
+        <main class="l-main c-breadcrumb--no-fv">
 
-            <!-- 【breadcrumb】 -->
-            <nav class="c-breadcrumb" aria-label="パンくずリスト">
-                <div class="l-inner p-details__breadcrumb">
-                    <ol class="c-breadcrumb__list">
-                        <li class="c-breadcrumb__item">
-                            <a href="./index.html">ホーム</a>
-                        </li>
-                        <li class="c-breadcrumb__item">
-                            <a href="./blog_list.html">ブログ</a>
-                        </li>
-                        <li class="c-breadcrumb__item">
-                            <a href="./blog_details.html">ギター</a>
-                        </li>
-                        <li class="c-breadcrumb__item">
-                            <span>アルペジオが劇的に向上する３つの習慣</span>
-                        </li>
-                    </ol>
+             <!-- パンくずリスト -->
+            <div class="c-breadcrumbs">
+                <div class="inner">
+                    <a href="./index.html" class="c-breadcrumbs__text">ホーム</a>
+                    <span class="c-breadcrumbs__sign">&#62;</span>
+                    <a href="./blog_list.html" class="c-breadcrumbs__text">ブログ</a>
+                    <span class="c-breadcrumbs__sign">&#62;</span>
+                    <a href="./blog_list.html" class="c-breadcrumbs__text">ギター</a>
+                    <span class="c-breadcrumbs__sign">&#62;</span>
+                    <p class="c-breadcrumbs__text">アルペジオが劇的に向上する３つの習慣</p>
                 </div>
-            </nav>
+            </div>
 
             <!-- blog details -->
              <div class="p-blog-details">
@@ -172,7 +165,7 @@
                                             本文が入ります。本文が入ります。
                                         </p>
 
-                                        </div>
+                                    </div>
                                     
                                 </div>
                                 
@@ -215,7 +208,7 @@
                                 </blockquote>
                                 
                                 <p class="p-blog-details__text-link">
-                                    <a href="./404.html">
+                                    <a href="./blog_details.html">
                                         テキストリンク
                                     </a>                                    
                                 </p>
@@ -227,7 +220,7 @@
                                 
                                 <!-- 前の記事 -->
                                 <div class="p-blog-details__pager-item">
-                                    <a href="./404.html" class="p-blog-details__pager-link">
+                                    <a href="./blog_details.html" class="p-blog-details__pager-link">
                                         <div class="p-blog-details__pager-heading">
                                             <span>◀︎ 前の記事</span>
                                         </div>
@@ -249,7 +242,7 @@
 
                                 <!-- 次の記事 -->
                                 <div class="p-blog-details__pager-item">
-                                    <a href="./404.html" class="p-blog-details__pager-link">
+                                    <a href="./blog_details.html" class="p-blog-details__pager-link">
                                         <div class="p-blog-details__pager-heading p-blog-details__pager-heading--next">
                                             <span>次の記事 ▶</span>
                                         </div>
@@ -279,7 +272,7 @@
 
                                 <!-- 関連記事一覧1 -->
                                 <div class="p-blog-details__related-item">
-                                    <a href="./404.html" class="p-blog-details__related-link">
+                                    <a href="./blog_details.html" class="p-blog-details__related-link">
                                         <div class="p-blog-item__image p-blog-details__related-image">
                                             <picture>
                                                 <source media="(min-width: 768px)" srcset="./images/blog_details/related02_pc.jpg">
@@ -298,7 +291,7 @@
                                 
                                 <!-- 関連記事一覧2 -->
                                 <div class="p-blog-details__related-item">
-                                    <a href="./404.html" class="p-blog-details__related-link">
+                                    <a href="./blog_details.html" class="p-blog-details__related-link">
                                         <div class="p-blog-item__image p-blog-details__related-image">
                                             <picture>
                                                 <source media="(min-width: 768px)" srcset="./images/blog_details/related02_pc.jpg">
@@ -317,7 +310,7 @@
 
                                 <!-- 関連記事一覧3 -->
                                 <div class="p-blog-details__related-item">
-                                    <a href="./404.html" class="p-blog-details__related-link">
+                                    <a href="./blog_details.html" class="p-blog-details__related-link">
                                         <div class="p-blog-item__image p-blog-details__related-image">
                                             <picture>
                                                 <source media="(min-width: 768px)" srcset="./images/blog_details/related02_pc.jpg">
@@ -342,48 +335,69 @@
                             
                             <!-- 無料メルマガ -->
                             <section class="p-blog-details__mail-magazine">
-                                <h2 class="p-blog-details__sidebar-title">
-                                    無料メールマガジン
-                                </h2>
+                                <div class="p-blog-details__sidebar-title">
+                                    <p>無料メールマガジン</p>
+                                </div>
 
-                                <a href="./404.html" class="p-blog-details__mail-magazine-banner">
-                                    <span>バナー広告</span>
-                                </a>
+                                <div class="p-blog-details__mail-magazine-contents">
+                                    <a href="./blog_details.html" class="p-blog-details__mail-magazine-banner">
+                                        <span>バナー広告</span>
+                                    </a>
+                                </div>
+
                             </section>
 
                             <!-- 検索 -->
                             <section class="p-blog-details__search">
-                                <h2 class="p-blog-details__sidebar-title">
-                                    ブログ内を検索
-                                </h2>
+                                <div class="p-blog-details__sidebar-title">
+                                    <p>ブログ内を検索</p>
+                                </div>
 
-                                <form action="./search.html" class="p-blog-details__search-form" method="get">
+                                <div class="p-blog-details__search-contents">
+                                    <form action="./search.html" class="p-blog-details__search-form" method="get">
 
-                                    <input
-                                        type="search"
-                                        name="keyword"
-                                        class="p-blog-details__search-input"
-                                        placeholder="">
+                                        <input
+                                            type="search"
+                                            name="keyword"
+                                            class="p-blog-details__search-input"
+                                            placeholder="">
 
-                                    <button type="submit" class="p-blog-details__search-button">
-                                        <picture>
-                                            <source media="(min-width: 768px)" srcset="./images/blog_details/search_pc.svg">
-                                            <img src="./images/blog_details/search_sp.svg" alt="検索">
-                                        </picture>
-                                    </button>
+                                        <button type="submit" class="p-blog-details__search-button">
+                                            <picture>
+                                                <source media="(min-width: 768px)" srcset="./images/blog_details/search_pc.svg">
+                                                <img src="./images/blog_details/search_sp.svg" alt="検索">
+                                            </picture>
+                                        </button>
 
-                                </form>
+                                    </form>
+                                </div>
+
                             </section>
 
                             <!-- おすすめの記事 -->
                             <section class="p-blog-details__recommend">
-                                <h2 class="p-blog-details__sidebar-title">
-                                    おすすめの記事
-                                </h2>
+                                <div class="p-blog-details__sidebar-title">
+                                    <p>おすすめの記事</p>
+                                </div>
+                                
+                                <div class="p-blog-details__recommend-contents">
+                                    <ul class="p-blog-details__recommend-list">
+                                        <li class="p-blog-details__recommend-item">
+                                            <a href="./blog_details.html" class="p-blog-details__recommend-link">
+                                                <div class="p-blog-details__recommend-image">
+                                                    <span></span>
+                                                </div>
 
-                                <ul class="p-blog-details__recommend-list">
-                                    <li class="p-blog-details__recommend-item">
-                                        <a href="./404.html" class="p-blog-details__recommend-link">
+                                                <div class="p-blog-details__recommend-body">
+                                                    <h3 class="p-blog-details__recommend-title">
+                                                        タイトルが入ります。タイトル 
+                                                    </h3>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="p-blog-details__recommend-item">
+                                        <a href="./blog_details.html" class="p-blog-details__recommend-link">
                                             <div class="p-blog-details__recommend-image">
                                                 <span></span>
                                             </div>
@@ -394,10 +408,10 @@
                                                 </h3>
                                             </div>
                                         </a>
-                                    </li>
+                                        </li>
 
-                                    <li class="p-blog-details__recommend-item">
-                                        <a href="./404.html" class="p-blog-details__recommend-link">
+                                        <li class="p-blog-details__recommend-item">
+                                        <a href="./blog_details.html" class="p-blog-details__recommend-link">
                                             <div class="p-blog-details__recommend-image">
                                                 <span></span>
                                             </div>
@@ -408,60 +422,52 @@
                                                 </h3>
                                             </div>
                                         </a>
-                                    </li>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                                    <li class="p-blog-details__recommend-item">
-                                        <a href="./404.html" class="p-blog-details__recommend-link">
-                                            <div class="p-blog-details__recommend-image">
-                                                <span></span>
-                                            </div>
-
-                                            <div class="p-blog-details__recommend-body">
-                                                <h3 class="p-blog-details__recommend-title">
-                                                    タイトルが入ります。タイトル 
-                                                </h3>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
                             </section>
 
                             <!-- カテゴリー -->
                             <section class="p-blog-details__category">
-                                <h2 class="p-blog-details__sidebar-title">
-                                    カテゴリー
-                                </h2>
-                                <ul class="p-blog-details__category-list">
-                                    <li class="p-blog-details__category-item">
-                                        <a href="./404.html">
-                                            カテゴリー
-                                        </a>
-                                    </li>
+                                <div class="p-blog-details__sidebar-title">
+                                    <p>カテゴリー</p>
+                                </div>
+                                
+                                <div class="p-blog-details__category-contents">
+                                    <ul class="p-blog-details__category-list">
+                                        <li class="p-blog-details__category-item">
+                                            <a href="./blog_details.html">
+                                                カテゴリー
+                                            </a>
+                                        </li>
 
-                                    <li class="p-blog-details__category-item">
-                                        <a href="./404.html">
-                                            カテゴリー
-                                        </a>
-                                    </li>
+                                        <li class="p-blog-details__category-item">
+                                            <a href="./blog_details.html">
+                                                カテゴリー
+                                            </a>
+                                        </li>
 
-                                    <li class="p-blog-details__category-item">
-                                        <a href="./404.html">
-                                            カテゴリー
-                                        </a>
-                                    </li>
+                                        <li class="p-blog-details__category-item">
+                                            <a href="./blog_details.html">
+                                                カテゴリー
+                                            </a>
+                                        </li>
 
-                                    <li class="p-blog-details__category-item">
-                                        <a href="./404.html">
-                                            カテゴリー
-                                        </a>
-                                    </li>
+                                        <li class="p-blog-details__category-item">
+                                            <a href="./blog_details.html">
+                                                カテゴリー
+                                            </a>
+                                        </li>
 
-                                    <li class="p-blog-details__category-item">
-                                        <a href="./404.html">
-                                            カテゴリー
-                                        </a>
-                                    </li>
-                                </ul>
+                                        <li class="p-blog-details__category-item">
+                                            <a href="./blog_details.html">
+                                                カテゴリー
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
                             </section>
 
                         </aside>

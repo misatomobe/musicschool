@@ -42,8 +42,13 @@
     }
 
     &__sidebar {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        margin-top: 3rem;
         @include pc {
             min-width: 0;
+            margin-top: 0;
         }
     }
 
@@ -108,12 +113,26 @@
     }
 
     &__share-item {
-        flex: 0 1 auto;
+        flex: 1;
         min-width: 0;
 
         a {
             display: block;
+            width: 100%;
+
             @include hover-opacity;
+        }
+
+        @include pc {
+            flex: 0 1 auto;
+
+            a {
+                width: auto;
+            }
+
+            img {
+                width: auto;
+            }
         }
     }
 
@@ -245,16 +264,6 @@
 
             @include hover-opacity;
 
-        }
-    }
-    
-    // サイドバー上余白
-    &__sidebar > section {
-        margin-top: 3rem;
-        @include pc {
-            &:first-child {
-                margin-top: 0;
-            }
         }
     }
 
@@ -461,11 +470,18 @@
         }
     }
 
+    &__mail-magazine-contents {
+        padding: 2rem;
+
+        @include pc {
+            padding: 1.5rem;
+        }
+    }
+
     &__mail-magazine-banner {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2rem;
         
         min-height: 22.8rem;
         background: $banner;
@@ -474,7 +490,6 @@
 
         @include pc {
             min-height: 17rem;
-            margin: 1.5rem;
         }
     }
 
@@ -483,15 +498,21 @@
         border: 0.05rem solid $font-color;
     }
 
+    &__search-contents {
+        padding: 1.9rem;
+
+        @include pc {
+            padding: 1.5rem;
+        }
+    }
+
     &__search-form {
         display: flex;
-        margin: 1.9rem;
         justify-content: center;
         align-items: center;
         height: 5.4rem;
 
         @include pc {
-            margin: 1.5rem;
             height: 4rem;
         }
     }
@@ -531,10 +552,20 @@
     }
 
     /*  おすすめの記事 */
-    &__recommend-item {
+    &__recommend-contents {
         margin-top: 2rem;
         @include pc {
             margin-top: 1.5rem;
+        }
+    }
+
+    &__recommend-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+
+        @include pc {
+            row-gap: 1.5rem;
         }
     }
 
@@ -578,11 +609,14 @@
 
     /*  カテゴリー */
     &__category-item {
-        padding: 1.2rem 0 0.6rem;
         border-bottom: 0.05rem solid $font-color;
 
         a {
-            display: block;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 4.6rem;
             font-size: 1.7rem;
             line-height: calc(28 / 17);
 

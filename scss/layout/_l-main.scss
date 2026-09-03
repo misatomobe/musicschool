@@ -6,11 +6,9 @@
 ========================= */
 /* FVなしページ専用 */
 .c-breadcrumb--no-fv {
-    padding-top: 5.5rem;
+    padding-top: 5rem;
+
     @include pc {
-        padding-top: 9rem;
-        padding-bottom: 1rem;
-        display: flex;
-        text-align: center;
+        padding-top: 8rem;
     }
 }

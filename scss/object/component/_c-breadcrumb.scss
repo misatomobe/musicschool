@@ -4,74 +4,63 @@
 /* =========================
    BREADCRUMB
 ========================= */
-.c-breadcrumb {
+//模範サイト版
+.c-breadcrumbs {
     background-color: $back-color;
-    position: relative;
-    z-index: 10;
-    -webkit-overflow-scrolling: touch;
 
-    .l-inner {
-        overflow-x: auto;
-        overflow-y: hidden;
-        scrollbar-width: none;
+    .inner {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0 2rem;
+        line-height: 1.4;
+        overflow-x: scroll;
         -ms-overflow-style: none;
+        scrollbar-width: none;
+        column-gap: 2rem;
+
 
         &::-webkit-scrollbar {
             display: none;
         }
+
+        @include pc {
+            padding: 0;
+        }
     }
 
-    @include pc {
-        min-height: 5rem;
-    }
-    
-    &__inner {
-        width: 100%;
-        padding: 0.1rem 2rem;
-        
+    &__text {
+        height: 3.6rem;
+        white-space: nowrap;
+
+        text-decoration: none;
+        color: $font-color;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+
         @include pc {
             height: 5rem;
-            max-width: 940px;
-            margin: 0 auto;
-            padding: 0.8rem 3rem;
+            font-size: 1.6rem;
         }
     }
-
-    &__list {
-        display: flex;
-        flex-wrap: nowrap;
-        white-space: nowrap;
-        width: max-content;
-        @include sp {
-            width: max-content;
-        }
-    }
-
-    &__item {
-        display: flex;
-        align-items: center;
+    
+    &__sign {
+        display: block;
         font-size: 1.6rem;
-        line-height: calc(33 / 16);
-        font-weight: 500;
+    }
 
-        &:not(:last-child)::after {
-            content: ">";
-            margin-inline: 2rem;
-            position: relative;
-            top: -0.2rem;
+    a {
+        height: 3.6rem;
+        align-items: center;
+        
+        @include pc {
+            transition: opacity 0.4s ease;
             
-            @include pc {
-                top: 0;
-            }
-        }
-
-        a {
-            @include pc {
-                transition: opacity 0.4s ease;
-                &:hover {
-                    opacity: 0.7;
-                }
+            &:hover {
+                opacity: 0.7
             }
         }
     }
 }
+

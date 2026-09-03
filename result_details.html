@@ -63,27 +63,20 @@
         </header>
 
         <!-- 【main】 -->
-        <main class="l-main">
+        <main class="l-main c-breadcrumb--no-fv">
 
-            <!-- 【breadcrumb】 -->
-            <nav class="c-breadcrumb" aria-label="パンくずリスト">
-                <div class="l-inner p-details__breadcrumb">
-                    <ol class="c-breadcrumb__list">
-                        <li class="c-breadcrumb__item">
-                            <a href="./index.html">ホーム</a>
-                        </li>
-                        <li class="c-breadcrumb__item">
-                            <a href="./result_list.html">卒業実績</a>
-                        </li>
-                        <li class="c-breadcrumb__item">
-                            <a href="./result_list.html">ポップス</a>
-                        </li>
-                        <li class="c-breadcrumb__item">
-                            <span>タイトルが入ります。タイトルが入ります。タイトルが入ります。</span>
-                        </li>
-                    </ol>
+            <!-- パンくずリスト -->
+            <div class="c-breadcrumbs">
+                <div class="inner">
+                    <a href="./index.html" class="c-breadcrumbs__text">ホーム</a>
+                    <span class="c-breadcrumbs__sign">&#62;</span>
+                    <a href="./result_list.html" class="c-breadcrumbs__text">卒業実績</a>
+                    <span class="c-breadcrumbs__sign">&#62;</span>
+                    <a href="./result_list.html" class="c-breadcrumbs__text">ポップス</a>
+                    <span class="c-breadcrumbs__sign">&#62;</span>
+                    <p class="c-breadcrumbs__text">タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
                 </div>
-            </nav>
+            </div>
 
             <!-- result details -->
              <div class="p-blog-details p-result-details">
@@ -200,68 +193,71 @@
                                     関連記事
                                 </h2>
 
-                                <!-- 関連記事一覧1 -->
-                                <div class="p-blog-details__related-item p-result-details__related-item">
-                                    <a href="./search.html" class="p-blog-details__related-link">
-                                        <div class="p-blog-item__image
-                                                    p-blog-details__related-image
-                                                    p-result-details__related-image">
-                                            <picture>
-                                                <source media="(min-width: 768px)" srcset="./images/result/result-related01_pc.jpg">
-                                                <img src="./images/result/result-related01_sp.jpg" alt="ロック">
-                                            </picture>
-                                            <span class="p-blog-item__label p-blog-details__related-label p-result-details__related-label">ロック</span>
-                                        </div>
-                                        <div class="p-blog-details__related-body">
-                                            <h3 class="p-blog-details__related-heading p-result-details__related-heading">
-                                                タイトルが入ります。タイトル
-                                            </h3>
-                                            <time class="p-blog-details__related-date p-result-details__related-date" datetime="0000.00.00">0000.00.00</time>
-                                        </div>
-                                    </a>
-                                </div>
+                                <div class="p-blog-details__related-list">
+                                    <!-- 関連記事一覧1 -->
+                                    <div class="p-blog-details__related-item p-result-details__related-item">
+                                        <a href="./blog_details.html" class="p-blog-details__related-link">
+                                            <div class="p-blog-item__image
+                                                        p-blog-details__related-image
+                                                        p-result-details__related-image">
+                                                <picture>
+                                                    <source media="(min-width: 768px)" srcset="./images/result/result-related01_pc.jpg">
+                                                    <img src="./images/result/result-related01_sp.jpg" alt="ロック">
+                                                </picture>
+                                                <span class="p-blog-item__label p-blog-details__related-label p-result-details__related-label">ロック</span>
+                                            </div>
+                                            <div class="p-blog-details__related-body">
+                                                <h3 class="p-blog-details__related-heading p-result-details__related-heading">
+                                                    タイトルが入ります。タイトル
+                                                </h3>
+                                                <time class="p-blog-details__related-date p-result-details__related-date" datetime="0000.00.00">0000.00.00</time>
+                                            </div>
+                                        </a>
+                                    </div>
 
-                                <!-- 関連記事一覧2 -->
-                                <div class="p-blog-details__related-item p-result-details__related-item">
-                                    <a href="./search.html" class="p-blog-details__related-link">
-                                        <div class="p-blog-item__image
-                                                    p-blog-details__related-image
-                                                    p-result-details__related-image">
-                                            <picture>
-                                                <source media="(min-width: 768px)" srcset="./images/result/result-related02_pc.jpg">
-                                                <img src="./images/result/result-related02_sp.jpg" alt="ジャズ">
-                                            </picture>
-                                            <span class="p-blog-item__label p-blog-details__related-label p-result-details__related-label">ジャズ</span>
-                                        </div>
-                                        <div class="p-blog-details__related-body">
-                                            <h3 class="p-blog-details__related-heading p-result-details__related-heading">
-                                                タイトルが入ります。タイトル
-                                            </h3>
-                                            <time class="p-blog-details__related-date p-result-details__related-date" datetime="0000.00.00">0000.00.00</time>
-                                        </div>
-                                    </a>
+                                    <!-- 関連記事一覧2 -->
+                                    <div class="p-blog-details__related-item p-result-details__related-item">
+                                        <a href="./blog_details.html" class="p-blog-details__related-link">
+                                            <div class="p-blog-item__image
+                                                        p-blog-details__related-image
+                                                        p-result-details__related-image">
+                                                <picture>
+                                                    <source media="(min-width: 768px)" srcset="./images/result/result-related02_pc.jpg">
+                                                    <img src="./images/result/result-related02_sp.jpg" alt="ジャズ">
+                                                </picture>
+                                                <span class="p-blog-item__label p-blog-details__related-label p-result-details__related-label">ジャズ</span>
+                                            </div>
+                                            <div class="p-blog-details__related-body">
+                                                <h3 class="p-blog-details__related-heading p-result-details__related-heading">
+                                                    タイトルが入ります。タイトル
+                                                </h3>
+                                                <time class="p-blog-details__related-date p-result-details__related-date" datetime="0000.00.00">0000.00.00</time>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <!-- 関連記事一覧3 -->
+                                    <div class="p-blog-details__related-item p-result-details__related-item">
+                                        <a href="./blog_details.html" class="p-blog-details__related-link">
+                                            <div class="p-blog-item__image
+                                                        p-blog-details__related-image
+                                                        p-result-details__related-image">
+                                                <picture>
+                                                    <source media="(min-width: 768px)" srcset="./images/result/result-related03_pc.jpg">
+                                                    <img src="./images/result/result-related03_sp.jpg" alt="ラテン">
+                                                </picture>
+                                                <span class="p-blog-item__label p-blog-details__related-label p-result-details__related-label">ラテン</span>
+                                            </div>
+                                            <div class="p-blog-details__related-body">
+                                                <h3 class="p-blog-details__related-heading p-result-details__related-heading">
+                                                    タイトルが入ります。タイトル
+                                                </h3>
+                                                <time class="p-blog-details__related-date p-result-details__related-date" datetime="0000.00.00">0000.00.00</time>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                                 
-                                <!-- 関連記事一覧3 -->
-                                <div class="p-blog-details__related-item p-result-details__related-item">
-                                    <a href="./search.html" class="p-blog-details__related-link">
-                                        <div class="p-blog-item__image
-                                                    p-blog-details__related-image
-                                                    p-result-details__related-image">
-                                            <picture>
-                                                <source media="(min-width: 768px)" srcset="./images/result/result-related03_pc.jpg">
-                                                <img src="./images/result/result-related03_sp.jpg" alt="ラテン">
-                                            </picture>
-                                            <span class="p-blog-item__label p-blog-details__related-label p-result-details__related-label">ラテン</span>
-                                        </div>
-                                        <div class="p-blog-details__related-body">
-                                            <h3 class="p-blog-details__related-heading p-result-details__related-heading">
-                                                タイトルが入ります。タイトル
-                                            </h3>
-                                            <time class="p-blog-details__related-date p-result-details__related-date" datetime="0000.00.00">0000.00.00</time>
-                                        </div>
-                                    </a>
-                                </div>
                             </section>
 
                         </article>
